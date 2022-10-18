@@ -42,6 +42,9 @@ $('.owl-carousel-slider').owlCarousel({
       375:{
         items:2.2,
       },
+      400:{
+        items:2.9
+      },
       450:{
         items:3.2,
     },
