@@ -1,3 +1,8 @@
+// aos animation
+AOS.init({
+  duration:3000,
+});
+
 function leftMenu(evt, cityName) {
   var i,tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -114,3 +119,5 @@ function myFeeds(evt, cityName) {
   evt.currentTarget.className += " activeFeed";
 }
 document.getElementById("default-feed").click();
+
+

@@ -22,6 +22,40 @@ a{
 
     }
 }
+.shopping-zone-loading{
+    display: flex;
+    justify-content: center;
+    color: $green;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    border: 1px solid $green;
+    background-color: #EBFFE5;
+    border-radius: 3px;
+    min-width: 200px;
+    &:hover{
+        color: white;
+        background-color: $green;
+
+    }
+}
+.multi-zone{
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    color: $dark-blue;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    border: 1px solid $dark-blue;
+    background-color: #EBFFE5;
+    border-radius: 3px;
+    &:hover{
+        color: white;
+        background-color: $dark-blue;
+
+    }
+}
 .btn-blank{
     font-size: 18px;
     padding: 5px 20px;
