@@ -36,10 +36,8 @@ $('.owl-carousel-slider').owlCarousel({
     autoplayHoverPause:true,
     dots:false,
     responsive:{
+      
       0:{
-          items:1.7,
-      },
-      375:{
         items:2.2,
       },
       400:{
