@@ -613,6 +613,13 @@ a {
     height: 25px;
     width: 25px;
     margin-right: 10px; }
+    @media only screen and (max-width: 400px) {
+      .category-tag img {
+        height: 20px;
+        width: 20px; } }
+  @media only screen and (max-width: 400px) {
+    .category-tag .f-18 {
+      font-size: 16px; } }
 
 .viewed-card {
   border: 1px solid #DEE0E2;
@@ -729,6 +736,9 @@ a {
   background-color: #0093FF;
   font-size: 16px;
   border-radius: 6px; }
+  @media only screen and (max-width: 400px) {
+    .follow-btn {
+      right: 0px; } }
 
 .image-card-text {
   padding: 15px 10px;
@@ -901,10 +911,18 @@ a {
       padding: 5px 3px !important; } }
   @media only screen and (max-width: 550px) {
     .grid-card-text .f-18 {
-      font-size: 14px !important;
+      font-size: 16px !important;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden; } }
+  @media only screen and (max-width: 550px) {
+    .grid-card-text .f-20 {
+      font-size: 16px !important; } }
+
+@media only screen and (max-width: 430px) {
+  .grid-dp {
+    height: 20px !important;
+    width: 20px !important; } }
 
 .rating-3 {
   position: absolute;
@@ -942,3 +960,12 @@ a {
   border: none;
   top: 0;
   right: 0; }
+
+.grid-name {
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+  @media only screen and (max-width: 430px) {
+    .grid-name {
+      font-size: 12px !important; } }

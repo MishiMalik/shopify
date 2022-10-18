@@ -80,8 +80,8 @@ $('.categories-carousel').owlCarousel({
     0:{
         items:2.5,
     },
-    375:{
-      items:3.5,
+    340:{
+      items:3.3,
   },
     767:{
         items:4.5,
