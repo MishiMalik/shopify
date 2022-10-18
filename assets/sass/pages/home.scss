@@ -397,9 +397,11 @@
 
 .image-icons-row {
     @media only screen and (max-width:390px) {
-        .image-dp{
+        .image-dp img{
             height: 20px !important;
             width: 20px !important;
+            display: flex;
+            flex-shrink: 0 !important;
         }
         .image-name{
             font-size: 14px !important;

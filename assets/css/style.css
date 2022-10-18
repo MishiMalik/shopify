@@ -807,9 +807,11 @@ a {
     margin-left: auto !important; } }
 
 @media only screen and (max-width: 390px) {
-  .image-icons-row .image-dp {
+  .image-icons-row .image-dp img {
     height: 20px !important;
-    width: 20px !important; }
+    width: 20px !important;
+    display: flex;
+    flex-shrink: 0 !important; }
   .image-icons-row .image-name {
     font-size: 14px !important; } }
 
