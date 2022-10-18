@@ -31,20 +31,23 @@ function closeNav() {
 $('.owl-carousel-slider').owlCarousel({
     loop:true,
     margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
+    // autoplay:true,
+    // autoplayTimeout:2000,
+    // autoplayHoverPause:true,
     dots:false,
     responsive:{
       
       0:{
+        items:1.8,
+      },
+      330:{
+        items:2.2
+      },
+      347:{
         items:2.2,
       },
       400:{
-        items:2.9
-      },
-      450:{
-        items:3.2,
+        items:2.2,
     },
       767:{
           items:4.3,
