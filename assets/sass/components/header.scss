@@ -1,0 +1,125 @@
+// component header
+.header{
+background-color: $primary;
+padding:6px 0px 5px 0px;
+position: fixed;
+z-index: 10;
+top: 0;
+left: 0;
+right: 0;
+height: 60px;
+}
+.center-header{
+    @media only screen and (max-width:991px){
+        display: none;
+    }
+}
+// Logo side
+.logo{
+    width:auto;
+    height:50px;
+    object-fit: contain;
+    padding: 10px 0px;
+   
+}
+.logo-div{
+    text-decoration: none !important;
+    p{
+        color: white;
+        @media only screen and  (max-width:768px){
+            display: none;
+        }
+    }
+}
+
+.header-menu{
+   
+    position: relative;
+    a{
+        text-decoration: none;
+        i{
+            color:white;
+            font-size: 20px;
+            @media only screen and  (max-width:991px){
+                color: black;
+            }
+        }
+        p{
+            @media only screen and  (max-width:991px){
+                color: black !important;
+                font-weight: 500 !important;
+            }
+        }
+        .active-header{
+            color: white;
+        }
+        .active-menu{
+            @media only screen and  (max-width:991px){
+                color: $primary !important;
+            }
+        }
+        
+    }
+    p{
+        line-height: 5px;
+        margin-top: 4px;
+        font-weight: 500;
+        color: $varient-blue;
+    }
+    .chats-num{
+        position: absolute;
+        top: -5px;
+        right: -4px;
+        height: 15px;
+        width: 15px;
+        color: white;
+        background-color: red;
+        border-radius: 100%;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+    .chats-num2{
+        right: 5px !important;
+    }
+    .chats-num3{
+       top: -2px !important;
+    }
+    
+}
+.dp{
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    object-position: center;
+    object-fit: cover;
+    padding: 2px;
+    
+}
+.dp-radius{
+    border: 3px solid $gray;
+}
+.log-menu{
+    top: 15px !important;
+    border-radius: 3px !important;
+    min-width: 100px;
+    right: -10px !important;
+    border: none !important;
+    padding: 10px !important;
+}
+
+
+
+
+.backdrop{
+    background-color: rgba(0, 0, 0, 0.458);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: none;
+}

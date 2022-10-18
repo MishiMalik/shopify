@@ -1,0 +1,95 @@
+// colors
+$primary:#16367B;
+$secondary:#0F92F3;
+$yellow:#FBCA3F;
+$light-gray:#DEE0E2;
+$light-blue:#E0F2FE;
+$dark-blue:#257CD3;
+$varient-blue:#84C7FD;
+$off-white:#F8F9FC;
+$green:#006600;
+$red:#990000;
+$gray:rgb(118, 118, 118);
+$light-gray2:#EFF0F2;
+$navi-blue:#0093FF;
+// fonts
+.f-40{
+    font-size: 40px;
+}
+.f-30{
+    font-size: 30px;
+}
+.f-25{
+    font-size: 25px !important;
+    
+}
+.f-20{
+    font-size: 20px;
+    
+}
+.f-22{
+    font-size: 22px;
+}
+.f-18{
+    font-size: 18px;
+}
+.f-16{
+    font-size: 16px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-12{
+    font-size: 12px;
+}
+
+
+// weights
+.w-400{
+    font-weight: 400;
+}
+.w-500{
+    font-weight: 500;
+}
+.w-600{
+    font-weight: 600;
+}
+.w-700{
+    font-weight: 700;
+}
+
+
+// text colors
+.blue-text{
+    color: $dark-blue;
+}
+.dark-text{
+    color: rgb(72, 72, 72) !important;
+       
+    &:hover{
+        color: black !important;
+    }
+}
+.primary-text{
+    color: $primary ;
+}
+.text-gray{
+    color: $gray !important;
+}
+.text-varient{
+    color: $varient-blue;
+}
+.underline{
+    text-decoration: underline !important;
+}
+.text-primary{
+    color: $primary !important;
+}
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-dark{
+    color: black !important;
+}

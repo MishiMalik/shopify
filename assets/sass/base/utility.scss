@@ -1,0 +1,54 @@
+.line-height-14{
+    line-height: 14px;
+}
+a{
+    text-decoration: none !important;
+}
+
+
+// buttons
+.shopping-zone{
+    display: flex;
+    color: $green;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    border: 1px solid $green;
+    background-color: #EBFFE5;
+    border-radius: 3px;
+    &:hover{
+        color: white;
+        background-color: $green;
+
+    }
+}
+.btn-blank{
+    font-size: 18px;
+    padding: 5px 20px;
+    color: $primary;
+    background-color: $light-blue;
+    border: 1px solid $primary;
+    border-radius: 6px;
+    min-width: 170px;
+    margin: 0px 5px;
+
+    &:hover{
+        background-color: $primary;
+        color: white;
+    }
+}
+.btn-fill{
+    font-size: 18px;
+    padding: 5px 20px;
+    color:white;
+    background-color: $primary;
+    border: 1px solid $primary;
+    border-radius: 6px;
+    min-width: 170px;
+    margin: 0px 5px;
+
+    &:hover{
+        background-color: $light-blue;
+        color: $primary;
+    }
+}

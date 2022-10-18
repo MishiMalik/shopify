@@ -1,0 +1,15 @@
+{
+  "name": "classifiedapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Mehwish",
+  "license": "ISC",
+  "dependencies": {
+    "node-modules": "^1.0.1",
+    "node-sass": "^7.0.3"
+  }
+}
