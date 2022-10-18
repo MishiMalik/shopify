@@ -37,16 +37,22 @@ $('.owl-carousel-slider').owlCarousel({
     dots:false,
     responsive:{
       0:{
-          items:1.2,
+          items:1.7,
       },
       375:{
         items:2.2,
+      },
+      450:{
+        items:3.2,
     },
       767:{
-          items:3.3,
+          items:4.3,
+      },
+      992:{
+        items:2.7,
       },
       1200:{
-        items:2.3,
+        items:3.3,
         
       },
       1360:{
