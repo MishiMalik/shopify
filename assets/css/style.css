@@ -808,18 +808,12 @@ a {
 
 @media only screen and (max-width: 390px) {
   .image-icons-row .image-dp img {
-    height: 25px !important;
-    width: 25px !important;
+    height: 23px !important;
+    width: 23px !important;
     display: flex;
     flex-shrink: 0 !important; }
   .image-icons-row .image-name {
     font-size: 14px !important; } }
-
-@media only screen and (max-width: 345px) {
-  .image-icons-row {
-    flex-direction: column;
-    justify-content: flex-start !important;
-    align-items: flex-start !important; } }
 
 .list-card {
   display: flex; }
