@@ -7,6 +7,9 @@
 .f-25 {
   font-size: 25px !important; }
 
+.f-27 {
+  font-size: 27px; }
+
 .f-20 {
   font-size: 20px; }
 
@@ -692,7 +695,6 @@ a {
   border: none !important;
   padding: none !important;
   margin: 0px 0px 0px 0px;
-  font-size: 25px;
   line-height: 20px; }
   .feedlinks:hover {
     color: #16367B; }
