@@ -397,6 +397,15 @@
 
 .image-icons-row {
     @media only screen and (max-width:390px) {
+        .image-dp{
+            height: 20px !important;
+            width: 20px !important;
+        }
+        .image-name{
+            font-size: 14px !important;
+        }
+    }
+    @media only screen and (max-width:330px) {
         flex-direction: column;
         justify-content: flex-start !important;
         align-items: flex-start !important;
