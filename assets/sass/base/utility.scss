@@ -36,6 +36,11 @@ a{
         background-color: $primary;
         color: white;
     }
+    @media only screen and(max-width:400px){
+        min-width: 120px;
+        padding: 3px 10px;
+        font-size: 16px;
+    }
 }
 .btn-fill{
     font-size: 18px;
@@ -50,5 +55,10 @@ a{
     &:hover{
         background-color: $light-blue;
         color: $primary;
+    }
+    @media only screen and(max-width:400px){
+        min-width: 140px;
+        padding: 3px 10px;
+        font-size: 16px;
     }
 }
