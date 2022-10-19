@@ -77,9 +77,9 @@ $('.owl-carousel-slider').owlCarousel({
 $('.categories-carousel').owlCarousel({
   loop:true,
   margin:10,
-  autoplay:true,
-  autoplayTimeout:2000,
-  autoplayHoverPause:true,
+  // autoplay:true,
+  // autoplayTimeout:2000,
+  // autoplayHoverPause:true,
   dots:false,
   responsive:{
     0:{
@@ -121,3 +121,14 @@ function myFeeds(evt, cityName) {
 document.getElementById("default-feed").click();
 
 
+// make header static
+$(window).scroll(function(e){ 
+  var $el = $('.main-header'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 60 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px','left':'0','right':'0'}); 
+  }
+  if ($(this).scrollTop() < 60 && isPositionFixed){
+    $el.css({'position': 'sticky', 'top': '0px'}); 
+  } 
+});

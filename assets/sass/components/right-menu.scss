@@ -20,7 +20,7 @@
    
   .right-menu::-webkit-scrollbar-thumb {
     background-color: $primary;
-    outline: 1px solid $primary;
+    outline: 1px solid transparent;
     border-radius: 10px;
   }
 
@@ -36,6 +36,10 @@
     font-size: 16px;
     font-weight: 600;
     color: $primary;
+    position: sticky;
+    top: 0px !important;
+   left: 0;
+   z-index: 90;
   }
   .right-content{
     padding: 6px 10px;
@@ -116,15 +120,15 @@
     &-btn{
       a{
         button{
-          border: 1px solid $primary;
+          border: 1px solid $navi-blue;
           border-radius: 3px;
-          background-color: $light-blue;
-          color: $primary;
+          background-color: white;
+          color: $navi-blue;
           font-size: 14px;
           font-weight: 600;
 
           &:hover{
-            background-color: $primary;
+            background-color: $navi-blue;
             color: white;
           }
         }

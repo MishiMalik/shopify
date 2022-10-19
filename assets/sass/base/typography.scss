@@ -12,6 +12,9 @@ $red:#990000;
 $gray:rgb(118, 118, 118);
 $light-gray2:#EFF0F2;
 $navi-blue:#0093FF;
+$light-dark:#333333;
+$brand-blue:#003399;
+$dark-orange:#993300;
 // fonts
 .f-40{
     font-size: 40px;
@@ -31,6 +34,7 @@ $navi-blue:#0093FF;
 }
 .f-27{
     font-size: 27px;
+    line-height: 20px;
 }
 .f-20{
     font-size: 20px;
@@ -47,6 +51,9 @@ $navi-blue:#0093FF;
 }
 .f-14{
     font-size: 14px;
+}
+.f-13{
+    font-size: 13px;
 }
 .f-12{
     font-size: 12px;
@@ -101,4 +108,10 @@ $navi-blue:#0093FF;
 }
 .text-dark{
     color: black !important;
+}
+.light-dark{
+    color: $light-dark;
+}
+.brand-blue{
+    color: $brand-blue;
 }

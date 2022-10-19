@@ -21,7 +21,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-     <title>Home</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -29,12 +29,27 @@
     <header class="header">
         <div class="container ">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center">
                     <a href="index.html" class="d-flex align-items-center logo-div">
                         <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
                             class="img-fluid logo">
                         <p class="mb-0 pb-0 f-25 w-600 ms-2">CompanyName</p>
+                        
                     </a>
+                   <div class="d-flex flex-column ms-2">
+                    <div class="dropdown classified-dropdown">
+                        <button class="classified-drop-small dropdown-toggle ms-1 dark-text" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Classifieds
+                        </button>
+                        <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-dollar-coin-64.png" alt="" class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-money-bag-50.png" alt="" class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt="" class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-dollar-coin-64.png" alt="" class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                        </ul>
+                      </div>
+                      <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-small">Offer</p>
+                   </div>
                 </div>
                 <div class="col-lg-6  my-auto center-header">
                     <div class="d-flex justify-content-around align-items-end">
@@ -66,7 +81,7 @@
                         </div>
                         <div class="header-menu">
                             <a href="" class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-plus-square"></i>
+                                <i class="bi bi-plus-circle"></i>
                                 <p class="f-12  w-400 pb-0 mb-0">Post</p>
                             </a>
                         </div>
@@ -160,30 +175,50 @@
                             </div>
                             <div>
                                 <a href="" class="left-menu-icon">
-                                    <i class="bi bi-bookmark-heart-fill"></i><br>
+                                    <i class="bi bi-clipboard-check-fill"></i><br>
                                 </a>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">copy<br>Share</p>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Copy<br>link</p>
 
                             </div>
                             <div>
                                 <a href="" class="left-menu-icon ">
-                                    <i class="bi bi-share-fill "></i><br>
+                                    <img src="assets/images/icons/arrow.png" alt="" class="img-fluid mb-1" height="15px" width="17px">
                                 </a>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2">Forward</p>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2">Share</p>
 
                             </div>
 
                         </div>
 
                         <div class="mt-3">
-                            <button class="shopping-zone mx-auto">
-                                <i class="bi bi-cart4 f-25 me-2"></i>
-                                SHOPPING ZONE
-                            </button>
+                            <h1 class="f-18 blue-text w-500">Quick Links</h1>
+                            <ul class="m-0 p-0 left-list">
+                                
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/plus.jpg" alt=""
+                                            class="img-fluid ">
+                                        </div>
+                                        <a href="" class="f-16 w-500 dark-text ms-3 ">Add New Post</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/blood.jpg" alt=""
+                                            class="img-fluid" >
+                                        </div>
+                                        
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Blood Donation</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
                         </div>
 
-                        <div class="mt-3">
-                            <h1 class="f-18 blue-text w-600">Posts</h1>
+                        <div class="mt-4 pt-2">
+                            <h1 class="f-18 blue-text w-500">Posts</h1>
                             <ul class="m-0 p-0 left-list">
                                 <li>
                                     <div class="d-flex align-items-center">
@@ -194,14 +229,14 @@
                                 </li>
                                 <li>
                                     <div class="d-flex align-items-center">
-                                        <i class="bi bi-balloon-heart me-3  left-list-icon "></i>
+                                        <i class="bi bi-bag-heart me-3  left-list-icon"></i>
                                         <a href="" class="f-16 w-500 dark-text">My Interests </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="d-flex align-items-center">
                                         <i class="bi bi-chat-square-heart me-3  left-list-icon"></i>
-                                        <a href="" class="f-16 w-500 dark-text">RecievedInterests<span
+                                        <a href="" class="f-16 w-500 dark-text">Recieved Interests<span
                                                 class="stats f-12">13</span></a>
                                     </div>
                                 </li>
@@ -214,13 +249,16 @@
                             </ul>
                         </div>
 
-                        <div class="mt-4">
-                            <h1 class="f-18 blue-text w-600">Affilliate</h1>
+                        <div class="mt-4 pt-2">
+                            <h1 class="f-18 blue-text w-500">Affilliate</h1>
                             <ul class="m-0 p-0 left-list">
                                 <li>
-                                    <div class="d-flex align-items-start">
-                                        <img src="assets/images/icons/PRO Membership.png" alt=""
-                                            class="img-fluid affilliate-iocn">
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                            class="img-fluid">
+                                        </div>
+                                        
                                         <div>
                                             <div class="d-flex align-items-center flex-wrap">
                                                 <a href="" class="f-16 w-500 blue-text  ms-3">PRO&nbsp;</a>
@@ -228,45 +266,46 @@
                                                     Membership
                                                 </a>
                                                 <p class="stats f-12 text-center my-0 py-0 "><span
-                                                        class="text-gray">Expiary:</span> 16 Mar 22</p>
+                                                        class="text-gray">Expiry:</span> 16 Mar 22</p>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/icons/Featured.png" alt=""
-                                            class="img-fluid affilliate-iocn2">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Featured.png" alt=""
+                                            class="img-fluid ">
+                                        </div>
+                                        
                                         <a href="" class="f-16 w-500 dark-text ms-3">Featured Posts</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/icons/SPonsored.jpg" alt=""
-                                            class="img-fluid affilliate-iocn">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/SPonsored.jpg" alt=""
+                                            class="img-fluid ">
+                                        </div>
+                                       
                                         <a href="" class="f-16 w-500 dark-text ms-3">Sponsored ads</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/icons/Banner.png" alt=""
-                                            class="img-fluid affilliate-iocn">
-                                        <a href="" class="f-16 w-500 dark-text ms-3">Loading Page Banner<span
-                                                class="text-danger f-12"></span></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/images/icons/Partner.png" alt=""
-                                            class="img-fluid affilliate-iocn ">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Partner.png" alt=""
+                                            class="img-fluid  ">
+                                        </div>
+                                        
                                         <a href="" class="f-16 w-500 dark-text ms-3">Be Our Partner<span
                                                 class="text-danger f-12"></span></a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="mt-4 icons-div">
-                            <h1 class="f-18 blue-text w-600">General</h1>
+                        <div class="mt-4 py-0 pt-2 pb-3  icons-div">
+                            <h1 class="f-18 blue-text w-500">General</h1>
                             <ul class="m-0 p-0 left-list">
                                 <li>
                                     <div class="d-flex align-items-center">
@@ -308,11 +347,24 @@
 
                 </div>
                 <!-- main area -->
-                <div class="col-lg-6 col-md-12 bg-light text-center p-0 m-0 center-part">
+                <div class="col-lg-6 col-md-12 text-center  center-part">
                     <div class="main-header">
                         <div class="d-flex align-items-center">
                             <img src="assets/images/image 224.png" alt="" class="img-fluid dp me-2">
                             <button class="add-post "><i class="bi bi-plus-circle-fill me-1"></i>Add Posts</button>
+                            <div class="dropdown">
+                                <button class="classified-drop dropdown-toggle ms-1 dark-text" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Classifieds
+                                </button>
+                                <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-dollar-coin-64.png" alt="" class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                                  <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-money-bag-50.png" alt="" class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                                  <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt="" class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                                  <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-dollar-coin-64.png" alt="" class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                </ul>
+                              </div>
+                              <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text">Offer</p>
+                       
                         </div>
                         <div>
                             <a href=""><img src="assets/images/BLOOD.png" alt="" class="img-fluid blood-img"></a>
@@ -323,7 +375,7 @@
                         <div class="row post">
 
                             <!-- banner -->
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 px-1">
                                 <div class="w-100 banner ">
                                     <img src="assets/images/categories.png" alt="" class="img-fluid">
                                 </div>
@@ -331,136 +383,175 @@
 
                             <!-- slider 1 -->
 
-                            <div class="col-lg-12 mt-4">
+                            <div class="col-lg-12 mt-4 pb-0">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        <h2 class="f-20 w-500 text-dark">Fashion </h2>
+                                        <h2 class="f-20 w-500 text-dark my-0 py-0">Categories</h2>
                                     </div>
                                     <div>
-                                        <a href="" class="varient-text underline f-16 w-500"> view All</a>
+                                        <a href="" class="varient-text underline f-16 w-500"> View All</a>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-1 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-10 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-2 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-4 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-5 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-1 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-3 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-1 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3 px-1 py-0">
+                                <a href="">
+                                    <div class="carousel__slide-1">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/images/pdc-7 - Copy.png" alt="">
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </a>
+                            </div>
 
-                            <div class="col-lg-12 mt-1">
+                            <!-- <div class="col-lg-12 mt-2">
+
                                 <div class="owl-carousel owl-theme owl-carousel-slider">
                                     <div class="img-card">
                                         <a href="">
-                                            <img src="assets/images/pdc-1 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-1 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="img-card">
                                         <a href="">
-                                            <img src="assets/images/pdc-2 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-10 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="img-card">
                                         <a href="">
-                                            <img src="assets/images/pdc-3 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-3 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="img-card">
                                         <a href="">
-                                            <img src="assets/images/pdc-4 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-4 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- slider 2 -->
-
-                            <div class="col-lg-12 mt-4">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h2 class="f-20 w-500 text-dark">Gift Items</h2>
-                                    </div>
-                                    <div>
-                                        <a href="" class="varient-text underline f-16 w-500"> view All</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 mt-1">
-                                <div class="owl-carousel owl-theme owl-carousel-slider">
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/pdc-6 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/pdc-7 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/pdc-8 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/pdc-9 - Copy.png" alt=""
-                                                class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- slider 3 -->
-
-                            <div class="col-lg-12 mt-4">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h2 class="f-20 w-500 text-dark">Beauty</h2>
-                                    </div>
-                                    <div>
-                                        <a href="" class="varient-text underline f-16 w-500"> view All</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 mt-1">
-                                <div class="owl-carousel owl-theme owl-carousel-slider">
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/s1 - Copy.jpg" alt="" class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/s2 - Copy.jpg" alt="" class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/s3 - Copy.jpg" alt="" class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <img src="assets/images/s5 - Copy.jpg" alt="" class="img-fluid slider-img">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
 
 
                             <!-- load more and show all btns -->
 
-                            <div class="col-lg-12 mt-2">
+                            <!-- <div class="col-lg-12 mt-3">
                                 <div class="d-flex justify-content-center flex-wrap">
                                     <a href=""><button class="btn-blank mt-2">Load More</button></a>
                                     <a href=""><button class="btn-fill mt-2">All Categories</button></a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="row post mt-3">
@@ -475,51 +566,51 @@
                                 <div class="d-flex align-items-center flex-wrap">
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-buildings-64.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">company</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">company</p>
                                     </div>
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-buildings-66.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Houses</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Houses</p>
                                     </div>
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-group-of-vegetables-48.png" alt=""
                                             class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Vegitables</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Vegitables</p>
                                     </div>
 
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-money-bag-50.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Statistics</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Statistics</p>
                                     </div>
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-fruits-64.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Fruits</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Fruits</p>
                                     </div>
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-buildings-66.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Houses</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Houses</p>
                                     </div>
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-group-of-vegetables-48.png" alt=""
                                             class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Vegitables</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Vegitables</p>
                                     </div>
 
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-money-bag-50.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Statistics</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Statistics</p>
                                     </div>
 
                                     <div class="category-tag">
                                         <img src="assets/images/icons/icons8-buildings-66.png" alt="" class="img-fluid">
-                                        <p class="f-18 w-500 mb-0 pb-0">Houses</p>
+                                        <p class="f-18 w-400 mb-0 pb-0">Houses</p>
                                     </div>
                                 </div>
 
@@ -535,7 +626,7 @@
                                         <h2 class="f-20 w-500 text-dark">Recently Viewed</h2>
                                     </div>
                                     <div>
-                                        <a href="" class="varient-text underline f-16 w-500"> view All</a>
+                                        <a href="" class="varient-text underline f-16 w-500"> View All</a>
                                     </div>
                                 </div>
                             </div>
@@ -546,21 +637,30 @@
                                         <a href="">
                                             <div class="viewed-card">
                                                 <div class="img-div">
-                                                    <img src="assets/images/s1 - Copy.jpg" alt="" class="img-fluid">
-                                                    <p class="mb-0 pb-0 price">50,000 Rupees</p>
+                                                    <div class="carousel__slide">
+                                                        <figure>
+                                                            <div>
+                                                                <img src="assets/images/s1 - Copy.jpg" alt="">
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <p class="mb-0 pb-0 price
+                                                    ">50,000 Rupees</p>
                                                 </div>
                                                 <div class="text-div py-2">
                                                     <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
                                                         dolor sit amet.</p>
-                                                    <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center ">
                                                         <div class="d-flex">
                                                             <img src="assets/images/image 224.png" alt=""
                                                                 class="img-fluid small-dp me-1">
-                                                            <p class="text-gray m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
                                                         </div>
-                                                        <div class="d-flex">
-                                                            <i class="bi bi-person-fill f-14 text-blue"></i>
-                                                            <i class="bi bi-person-fill f-14 text-blue"></i>
+                                                        <div class="d-flex align-items-center">
+                                                            
+                                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                            class="follow-icons ms-1">
+                                                        <i class="bi bi-person-fill f-14 follow-text "></i>
                                                             <!-- <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
                                                             class="follow-icons">
                                                         <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
@@ -576,21 +676,30 @@
                                         <a href="">
                                             <div class="viewed-card">
                                                 <div class="img-div">
-                                                    <img src="assets/images/s2 - Copy.jpg" alt="" class="img-fluid">
+                                                    <div class="carousel__slide">
+                                                        <figure>
+                                                            <div>
+                                                                <img src="assets/images/s5 - Copy.jpg" alt="">
+                                                            </div>
+                                                        </figure>
+                                                    </div>
                                                     <p class="mb-0 pb-0 price">50,000 Rupees</p>
                                                 </div>
                                                 <div class="text-div py-2">
-                                                    <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
+                                                    <p class="f-16 w-600 mb-0 mb-2 light-dark">Publishing designer Lorem
+                                                        ipsum
                                                         dolor sit amet.</p>
-                                                    <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center ">
                                                         <div class="d-flex">
                                                             <img src="assets/images/image 224.png" alt=""
                                                                 class="img-fluid small-dp me-1">
-                                                            <p class="text-gray m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
                                                         </div>
-                                                        <div class="d-flex">
-                                                            <i class="bi bi-person-fill f-14 text-blue"></i>
-                                                            <i class="bi bi-person-fill f-14 text-blue"></i>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
+                                                          
                                                         </div>
 
                                                     </div>
@@ -620,12 +729,16 @@
                                     <div class="recent-card">
                                         <a href="">
                                             <div class="category-card">
-                                                <div class="img-div">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid">
+                                                <div class="carousel__slide">
+                                                    <figure>
+                                                        <div>
+                                                            <img src="assets/images/icons/icons8-buildings-66.png" alt="">
+                                                        </div>
+                                                    </figure>
                                                 </div>
+                                                
                                                 <div class="text-div pt-2 pb-1">
-                                                    <p class="f-16 w-600 mb-0  text-dark">Buildings</p>
+                                                    <p class="f-14 w-500 mb-0  text-dark">Buildings</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -634,12 +747,33 @@
                                     <div class="recent-card">
                                         <a href="">
                                             <div class="category-card">
-                                                <div class="img-div">
-                                                    <img src="assets/images/icons/icons8-money-bag-50.png" alt=""
-                                                        class="img-fluid">
+                                                <div class="carousel__slide">
+                                                    <figure>
+                                                        <div>
+                                                            <img src="assets/images/icons/icons8-buildings-66.png" alt="">
+                                                        </div>
+                                                    </figure>
                                                 </div>
+                                                
                                                 <div class="text-div pt-2 pb-1">
-                                                    <p class="f-16 w-600 mb-0  text-dark">Moneeeeeeeeiiiiiy</p>
+                                                    <p class="f-14 w-500 mb-0  text-dark">Buildings</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="recent-card">
+                                        <a href="">
+                                            <div class="category-card">
+                                                <div class="carousel__slide">
+                                                    <figure>
+                                                        <div>
+                                                            <img src="assets/images/icons/icons8-buildings-66.png" alt="">
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                
+                                                <div class="text-div pt-2 pb-1">
+                                                    <p class="f-14 w-500 mb-0  text-dark">Buildings</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -648,44 +782,21 @@
                                     <div class="recent-card">
                                         <a href="">
                                             <div class="category-card">
-                                                <div class="img-div">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid">
+                                                <div class="carousel__slide">
+                                                    <figure>
+                                                        <div>
+                                                            <img src="assets/images/icons/icons8-buildings-66.png" alt="">
+                                                        </div>
+                                                    </figure>
                                                 </div>
+                                                
                                                 <div class="text-div pt-2 pb-1">
-                                                    <p class="f-16 w-600 mb-0  text-dark">Dollar</p>
+                                                    <p class="f-14 w-500 mb-0  text-dark">Buildings</p>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
 
-                                    <div class="recent-card">
-                                        <a href="">
-                                            <div class="category-card">
-                                                <div class="img-div">
-                                                    <img src="assets/images/icons/icons8-money-bag-50.png" alt=""
-                                                        class="img-fluid">
-                                                </div>
-                                                <div class="text-div pt-2 pb-1">
-                                                    <p class="f-16 w-600 mb-0  text-dark">Money</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="recent-card">
-                                        <a href="">
-                                            <div class="category-card">
-                                                <div class="img-div">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid">
-                                                </div>
-                                                <div class="text-div pt-2 pb-1">
-                                                    <p class="f-16 w-600 mb-0  text-dark">Dollar</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
 
                                 </div>
                             </div>
@@ -696,21 +807,21 @@
 
                         <!-- My feeds -->
                         <div class="row post mt-3 feeds-row">
-                            <div class="col-lg-12 pb-1 pt-2 ">
-                                <div class="d-flex justify-content-between">
+                            <div class="col-lg-12 ">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
                                         <h2 class="f-20 w-500 text-dark mb-0 pb-0">My Feeds</h2>
                                     </div>
                                     <div>
 
                                         <div class="feed">
-                                            <button class="feedlinks" id="default-feed" onclick="myFeeds(event, 'Image')"><i
-                                                    class="bi bi-image f-24 "></i></button>
-                                            <button class="feedlinks" 
-                                                onclick="myFeeds(event, 'List')"><i
+                                            <button class="feedlinks" id="default-feed"
+                                                onclick="myFeeds(event, 'Image')"><i
+                                                    class="bi bi-image f-25 "></i></button>
+                                            <button class="feedlinks"  onclick="myFeeds(event, 'List')"><i
                                                     class="bi bi-card-list f-27 mt-1"></i></button>
-                                            <button class="feedlinks" onclick="myFeeds(event, 'Grid')"><i
-                                                    class="bi bi-grid f-22"></i></button>
+                                            <button class="feedlinks"  onclick="myFeeds(event, 'Grid')"><i
+                                                    class="bi bi-grid f-22 pb-1"></i></button>
                                         </div>
 
 
@@ -723,20 +834,26 @@
                                 <div class="col-lg-12">
                                     <div class="image-card">
                                         <div class="image-card-img mx-auto">
-                                            <span class="f-14 text-gray">Sponsored</span>
+                                            <span class="f-13 text-gray">Sponsored</span>
                                             <img src="assets/images/ab1.jpg" alt="" class="img-fluid">
+                                            <div class="listing-badges-image">
+                                                <span class="featured-img">
+                                                    Featured
+                                                </span>
+                                            </div>
                                             <button class="follow-btn"><i class="bi bi-person-plus-fill me-1"></i>
                                                 Follow</button>
                                         </div>
                                         <div class="image-card-text">
-                                            <div class="d-flex justify-content-between">
-                                                <h2 class="f-20 w-600 text-primary my-0 py-0">Brand New</h2>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">Brand New</h2>
                                                 <div class="rating">
                                                     <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                     <i class="bi bi-star-fill ms-1 f-12"></i>
                                                 </div>
                                             </div>
-                                            <p class="mb-0 pb-0 ellipsis f-16 w-500 text-dark mt-1 mb-1 text-left">Lorem
+                                            <p class="mb-0 pb-0 ellipsis f-16 w-500 light-dark mt-1 mb-1 text-left ">
+                                                Lorem
                                                 ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
                                                 adipisicing elit. Dicta, libero!</p>
                                             <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
@@ -749,16 +866,20 @@
                                                         <img src="assets/images/image 224.png" alt=""
                                                             class="img-fluid me-1">
                                                     </div>
-                                                    <p class="mb-0 pb-0 img-name f-18 w-500 text-dark mt-1 image-name">
+                                                    <p class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
                                                         Jerry
                                                         Varghese</p>
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                    <i class="bi bi-person-fill f-14 follow-text ms-1"></i>
+                                                    
                                                 </div>
                                                 <div class="d-flex align-items-center image-icons">
-                                                    <i class="far fa-heart f-22 me-2"></i>
-                                                    <buttom class="select-btn"><i class="bi bi-check2-square w-600"></i>
-                                                        Select</buttom>
+                                                    <!-- <i class="far fa-heart f-22 "></i> -->
+                                                    
+<svg xmlns="http://www.w3.org/2000/svg" class="like" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                                    <buttom class="selected-btn">
+                                                        Selected</buttom>
                                                     <i class="bi bi-three-dots-vertical f-25 w-500"></i>
                                                 </div>
                                             </div>
@@ -767,56 +888,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row post mt-3">
-                                <div class="col-lg-12">
-                                    <div class="image-card">
-                                        <div class="image-card-img mx-auto">
-                                            <span class="f-14 text-gray">Sponsored</span>
-                                            <img src="assets/images/ab1.jpg" alt="" class="img-fluid">
-                                            <button class="follow-btn"><i class="bi bi-person-plus-fill me-1"></i>
-                                                Follow</button>
-                                        </div>
-                                        <div class="image-card-text">
-                                            <div class="d-flex justify-content-between">
-                                                <h2 class="f-20 w-600 text-primary my-0 py-0">Brand New</h2>
-                                                <div class="rating">
-                                                    <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                    <i class="bi bi-star-fill ms-1 f-12"></i>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 pb-0 ellipsis f-16 w-500 text-dark mt-1 mb-1 text-left">Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div
-                                                class="d-flex justify-content-between align-items-center image-icons-row">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="image-dp">
-                                                        <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-1">
-                                                    </div>
-                                                    <p class="mb-0 pb-0 img-name f-18 w-500 text-dark mt-1 image-name">
-                                                        Jerry
-                                                        Varghese</p>
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center image-icons">
-                                                    <i class="far fa-heart f-22 me-2"></i>
-                                                    <buttom class="select-btn"><i class="bi bi-check2-square w-600"></i>
-                                                        Select</buttom>
-                                                    <i class="bi bi-three-dots-vertical f-25 w-500"></i>
-                                                </div>
-                                            </div>
-                                            <div class="seprator"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        
 
                         </div>
                         <div id="List" class="feedcontent">
@@ -824,173 +896,109 @@
                                 <div class="col-lg-12">
                                     <div class="list-card">
                                         <div class="list-card-img mx-auto">
-                                            <span class="f-14 text-gray">Sponsored</span>
+                                            <div class="listing-badges-list">
+                                                <span class="featured-list">
+                                                    Featured
+                                                </span>
+                                            </div>
+                                            <span class="f-13 text-gray">Sponsored</span>
                                             <img src="assets/images/s1.jpg" alt="" class="img-fluid">
-                                            <div class="rating rating-2">
+                                            <div class="rating-2">
                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                 <i class="bi bi-star-fill ms-1 f-12"></i>
                                             </div>
                                         </div>
                                         <div class="list-card-text">
-                                            <h2 class="f-20 w-600 text-primary my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-18 w-500 text-dark mt-1 mb-1 ellipsis-multiple">Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+                                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                                            <p class="mb-0 pb-0  f-16 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
+                                                Lorem
+                                                ipsum dolor sit amet, consectetur ipsum dolor sit amet.
                                                 adipisicing elit. Dicta, libero!</p>
                                             <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
                                                     class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
                                             <div class="seprator"></div>
-                                            <div class="d-flex align-items-center flex-wrap list-desktop">
+                                            <div class="d-flex align-items-center ">
                                                 <div class="image-dp">
                                                     <img src="assets/images/image 224.png" alt=""
-                                                        class="img-fluid me-2">
+                                                        class="img-fluid me-1">
                                                 </div>
-                                                <p class="mb-0 pb-0 img-name f-18 w-500 text-dark mt-1">Jerry
+                                                <p class="mb-0 pb-0 list-img-name f-16 w-500 light-dark mt-1 ellipsis">Jerry
                                                     Varghese</p>
-                                                <div class="ms-auto">
-                                                    <!-- <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="follow-icons me-1 ms-2">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="follow-icons"> -->
-                                                        <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                        <i class="bi bi-person-fill f-14 blue-text"></i>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
                                                 </div>
                                             </div>
-                                            <div class="seprator list-desktop"></div>
+                                            <div class="seprator "></div>
                                             <div
-                                                class="d-flex align-items-center justify-content-end image-icons list-desktop">
-                                                <i class="far fa-heart f-22 me-2 list-desktop"></i>
-                                                <buttom class="select-btn list-desktop"><i
+                                                class="d-flex align-items-center justify-content-end  list-image-iocns">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+
+                                                <buttom class="select-btn "><i
                                                         class="bi bi-check2-square w-600"></i> Select</buttom>
-                                                <i class="bi bi-three-dots-vertical f-25 w-500 list-desktop"></i>
+                                                <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="d-flex align-items-center flex-wrap desktop-list">
-                                        <div class="image-dp">
-                                            <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
-                                        </div>
-                                        <p class="mb-0 pb-0 img-name f-18 w-500 text-dark mt-1">Jerry
-                                            Varghese</p>
-                                        <div class="ms-auto">
-                                            <!-- <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                class="follow-icons me-1 ms-2">
-                                            <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                class="follow-icons"> -->
-                                                <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                <i class="bi bi-person-fill f-14 blue-text"></i>
-                                        </div>
-                                    </div>
-                                    <div class="seprator desktop-list"></div>
-                                    <div class="d-flex align-items-center justify-content-end image-icons desktop-list">
-                                        <i class="far fa-heart f-22 me-2 desktop-list"></i>
-                                        <buttom class="select-btn desktop-list"><i
-                                                class="bi bi-check2-square w-600"></i> Select</buttom>
-                                        <i class="bi bi-three-dots-vertical f-25 w-500 desktop-list"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row post mt-3">
-                                <div class="col-lg-12">
-                                    <div class="list-card">
-                                        <div class="list-card-img mx-auto">
-                                            <span class="f-14 text-gray">Sponsored</span>
-                                            <img src="assets/images/s1.jpg" alt="" class="img-fluid">
-                                            <div class="rating rating-2">
-                                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                <i class="bi bi-star-fill ms-1 f-12"></i>
-                                            </div>
-                                        </div>
-                                        <div class="list-card-text">
-                                            <h2 class="f-20 w-600 text-primary my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-18 w-500 text-dark mt-1 mb-1 ellipsis-multiple">Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div class="d-flex align-items-center flex-wrap list-desktop">
-                                                <div class="image-dp">
-                                                    <img src="assets/images/image 224.png" alt=""
-                                                        class="img-fluid me-2">
-                                                </div>
-                                                <p class="mb-0 pb-0 img-name f-18 w-500 text-dark mt-1">Jerry
-                                                    Varghese</p>
-                                                <div class="ms-auto">
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
-                                                </div>
-                                            </div>
-                                            <div class="seprator list-desktop"></div>
-                                            <div
-                                                class="d-flex align-items-center justify-content-end image-icons list-desktop">
-                                                <i class="far fa-heart f-22 me-2 list-desktop"></i>
-                                                <buttom class="select-btn list-desktop"><i
-                                                        class="bi bi-check2-square w-600"></i> Select</buttom>
-                                                <i class="bi bi-three-dots-vertical f-25 w-500 list-desktop"></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex align-items-center flex-wrap desktop-list">
-                                        <div class="image-dp">
-                                            <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
-                                        </div>
-                                        <p class="mb-0 pb-0 img-name f-18 w-500 text-dark mt-1">Jerry
-                                            Varghese</p>
-                                        <div class="ms-auto">
-                                            <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                            <i class="bi bi-person-fill f-14 blue-text"></i>
-                                        </div>
-                                    </div>
-                                    <div class="seprator desktop-list"></div>
-                                    <div class="d-flex align-items-center justify-content-end image-icons desktop-list">
-                                        <i class="far fa-heart f-22 me-2 desktop-list"></i>
-                                        <buttom class="select-btn desktop-list"><i
-                                                class="bi bi-check2-square w-600"></i> Select</buttom>
-                                        <i class="bi bi-three-dots-vertical f-25 w-500 desktop-list"></i>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div id="Grid" class="feedcontent">
                             <div class="row post mt-3">
-                                <div class="col-6 mb-3">
-                                    <p class="f-14 text-gray text-start mb-0 pb-0">Sponsored</p>
+                                <div class="col-6  px-1">
+                                    <p class="f-13 text-gray text-start mb-0 pb-0">Sponsored</p>
                                     <div class="grid-card">
+                                        
                                         <div class="grid-card-img mx-auto">
-                                            <img src="assets/images/post.jpg" alt="" class="img-fluid">
-                                            <div class=" rating rating-3">
+                                            <div class="listing-badges">
+                                                <span class="featured">
+                                                    Featured
+                                                </span>
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/post.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="rating-2 rating-3">
                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                 <i class="bi bi-star-fill ms-1 f-12"></i>
                                             </div>
                                         </div>
                                         <div class="grid-card-text">
-                                            <h2 class="f-20 w-600 text-primary my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-18 w-500 text-dark mt-1 mb-1 ellipsis-multiple">Lorem
+                                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                                            <p class="mb-0 pb-0  f-18 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
+                                                Lorem
                                                 ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
                                                 adipisicing elit. Dicta, libero!</p>
                                             <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
                                                     class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
                                             <div class="seprator"></div>
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
                                                 <div class="d-flex">
                                                     <div class="image-dp">
                                                         <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-2  grid-dp">
+                                                            class="img-fluid me-1">
                                                     </div>
-                                                    <p class="mb-0 pb-0   w-500 text-dark mt-1 grid-name">Jerry
+                                                    <p class="mb-0 pb-0   w-500 light-dark mt-1 grid-name  ellipsis">Jerry
                                                         Varghese</p>
                                                 </div>
-                                                <div class="d-flex">
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
+                                                <div class="d-flex align-items-center">
+                                                    
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                        <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
-                                            <div class="d-flex align-items-center justify-content-end image-icons ">
-                                                <i class="far fa-heart f-22 me-2 "></i>
+                                            <div class="d-flex align-items-center justify-content-end grid-icons ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+
                                                 <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
                                                     Select</buttom>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -998,41 +1006,51 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 mb-3">
-                                    <p class="f-14 text-gray text-start mb-0 pb-0">Sponsored</p>
+                                <div class="col-6  px-1">
+                                    <p class="f-13 text-gray text-start mb-0 pb-0">Sponsored</p>
                                     <div class="grid-card">
                                         <div class="grid-card-img mx-auto">
-                                            <img src="assets/images/post.jpg" alt="" class="img-fluid">
-                                            <div class=" rating rating-3">
+                                            <div class="carousel__slide">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/post.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="rating-2 rating-3">
                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                 <i class="bi bi-star-fill ms-1 f-12"></i>
                                             </div>
                                         </div>
                                         <div class="grid-card-text">
-                                            <h2 class="f-20 w-600 text-primary my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-18 w-500 text-dark mt-1 mb-1 ellipsis-multiple">Lorem
+                                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                                            <p class="mb-0 pb-0  f-18 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
+                                                Lorem
                                                 ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
                                                 adipisicing elit. Dicta, libero!</p>
                                             <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
                                                     class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
                                             <div class="seprator"></div>
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center ">
                                                 <div class="d-flex">
                                                     <div class="image-dp">
                                                         <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-2  grid-dp">
+                                                            class="img-fluid me-1">
                                                     </div>
-                                                    <p class="mb-0 pb-0   w-500 text-dark mt-1 grid-name">Jerry
+                                                    <p class="mb-0 pb-0   w-500 light-dark mt-1 grid-name  ellipsis">Jerry
                                                         Varghese</p>
                                                 </div>
-                                                <div class="d-flex">
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
+                                                <div class="d-flex align-items-center">
+                                                    
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                        <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
-                                            <div class="d-flex align-items-center justify-content-end image-icons ">
-                                                <i class="far fa-heart f-22 me-2 "></i>
+                                            <div class="d-flex align-items-center justify-content-end grid-icons ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2 fill" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+
                                                 <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
                                                     Select</buttom>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1040,91 +1058,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 mb-3">
-                                    <p class="f-14 text-gray text-start mb-0 pb-0">Sponsored</p>
-                                    <div class="grid-card">
-                                        <div class="grid-card-img mx-auto">
-                                            <img src="assets/images/post.jpg" alt="" class="img-fluid">
-                                            <div class=" rating rating-3">
-                                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                <i class="bi bi-star-fill ms-1 f-12"></i>
-                                            </div>
-                                        </div>
-                                        <div class="grid-card-text">
-                                            <h2 class="f-20 w-600 text-primary my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-18 w-500 text-dark mt-1 mb-1 ellipsis-multiple">Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="d-flex">
-                                                    <div class="image-dp">
-                                                        <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-2  grid-dp">
-                                                    </div>
-                                                    <p class="mb-0 pb-0   w-500 text-dark mt-1 grid-name">Jerry
-                                                        Varghese</p>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
-                                                </div>
-                                            </div>
-                                            <div class="seprator "></div>
-                                            <div class="d-flex align-items-center justify-content-end image-icons ">
-                                                <i class="far fa-heart f-22 me-2 "></i>
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
-                                                <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <p class="f-14 text-gray text-start mb-0 pb-0">Sponsored</p>
-                                    <div class="grid-card">
-                                        <div class="grid-card-img mx-auto">
-                                            <img src="assets/images/post.jpg" alt="" class="img-fluid">
-                                            <div class=" rating rating-3">
-                                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                <i class="bi bi-star-fill ms-1 f-12"></i>
-                                            </div>
-                                        </div>
-                                        <div class="grid-card-text">
-                                            <h2 class="f-20 w-600 text-primary my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-18 w-500 text-dark mt-1 mb-1 ellipsis-multiple">Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div class="d-flex">
-                                                    <div class="image-dp">
-                                                        <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-2  grid-dp">
-                                                    </div>
-                                                    <p class="mb-0 pb-0   w-500 text-dark mt-1 grid-name">Jerry
-                                                        Varghese</p>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <i class="bi bi-person-fill f-14 blue-text ms-1"></i>
-                                                    <i class="bi bi-person-fill f-14 blue-text"></i>
-                                                </div>
-                                            </div>
-                                            <div class="seprator "></div>
-                                            <div class="d-flex align-items-center justify-content-end image-icons ">
-                                                <i class="far fa-heart f-22 me-2 "></i>
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
-                                                <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
                             </div>
 
                         </div>
@@ -1147,9 +1080,9 @@
                                     <div class="mayFollow-card">
                                         <a href="">
                                             <img src="assets/images/s1 - Copy.jpg" alt="" class="img-fluid ">
-                                            <h2 class="f-16 w-600 text-dark mb-0 pb-0">Jerry Varghese</h2>
-                                            <p class="mb-0 pb-0 f-14 text-gray w-500">Engineering Manager</p>
-                                            <p class="mb-0 pb-0 f-14 text-gray w-400">City,Distt</p>
+                                            <h2 class="f-16 w-600 light-dark mb-0 pb-0 ellipsis">Jerry Varghese</h2>
+                                            <p class="mb-0 pb-0 f-14 text-gray w-500 ellipsis">Engineering Manager</p>
+                                            <p class="mb-0 pb-0 f-14 text-gray w-400 ellipsis">City,Distt</p>
                                             <button class="follow-btn2"><i class="bi bi-person-plus-fill"></i>
                                                 Follow</button>
                                         </a>
@@ -1160,9 +1093,9 @@
                                     <div class="mayFollow-card">
                                         <a href="">
                                             <img src="assets/images/s1 - Copy.jpg" alt="" class="img-fluid ">
-                                            <h2 class="f-16 w-600 text-dark mb-0 pb-0">Jerry Varghese</h2>
-                                            <p class="mb-0 pb-0 f-14 text-gray w-500">Engineering Manager</p>
-                                            <p class="mb-0 pb-0 f-14 text-gray w-400">City,Distt</p>
+                                            <h2 class="f-16 w-600 light-dark mb-0 pb-0 ellipsis">Jerry Varghese</h2>
+                                            <p class="mb-0 pb-0 f-14 text-gray w-500 ellipsis">Engineering Manager</p>
+                                            <p class="mb-0 pb-0 f-14 text-gray w-400 ellipsis">City,Distt</p>
                                             <button class="follow-btn2"><i class="bi bi-person-plus-fill"></i>
                                                 Follow</button>
                                         </a>
@@ -1173,9 +1106,9 @@
                                     <div class="mayFollow-card">
                                         <a href="">
                                             <img src="assets/images/s1 - Copy.jpg" alt="" class="img-fluid ">
-                                            <h2 class="f-16 w-600 text-dark mb-0 pb-0">Jerry Varghese</h2>
-                                            <p class="mb-0 pb-0 f-14 text-gray w-500">Engineering Manager</p>
-                                            <p class="mb-0 pb-0 f-14 text-gray w-400">City,Distt</p>
+                                            <h2 class="f-16 w-600 light-dark mb-0 pb-0 ellipsis">Jerry Varghese</h2>
+                                            <p class="mb-0 pb-0 f-14 text-gray w-500 ellipsis">Engineering Manager</p>
+                                            <p class="mb-0 pb-0 f-14 text-gray w-400 ellipsis">City,Distt</p>
                                             <button class="follow-btn2"><i class="bi bi-person-plus-fill"></i>
                                                 Follow</button>
                                         </a>
@@ -1188,18 +1121,18 @@
                         </div>
 
 
-                        <div class="row mt-3 post">
-                            <div class="col-lg-3 col-md-6 col-6">
-                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto">
+                        <div class="row post mt-3">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
-                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
-                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
-                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                                <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
                         </div>
 
