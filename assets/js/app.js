@@ -166,10 +166,10 @@ $(window).scroll(function(e){
   
   if (currentScrollTop < lastScrollTop) {
     darkHeader.addClass('dark-header');
-    lightHeader.css('margin-top', '60px');
+    lightHeader.addClass('mt-60');
   } else if (currentScrollTop > lastScrollTop) {
     darkHeader.removeClass('dark-header');
-    lightHeader.css('margin-top', '0');
+    lightHeader.removeClass('mt-60');
   }
 
   lastScrollTop = currentScrollTop;
