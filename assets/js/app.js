@@ -3,6 +3,12 @@ AOS.init({
   duration:3000,
 });
 
+// modal on page load
+$(document).ready(function(){
+  $("#staticBackdrop-load").modal('show');
+});
+
+// open left menu
 function leftMenu(evt, cityName) {
   var i,tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -23,12 +29,12 @@ document.getElementById("defaultOpen1").click();
 function openNave(){
   document.getElementById("left-menu").style.left = "0";
   document.getElementById("left-menu").style.display = "block";
-  document.getElementById("backdrop").style.display="block"
+  document.getElementById("backdrop-menu").style.display="block"
 }
 // close-nav
 function closeNav() {
   document.getElementById("left-menu").style.display = "none";
-  document.getElementById("backdrop").style.display="none"
+  document.getElementById("backdrop-menu").style.display="none"
 }
 
 
@@ -150,27 +156,64 @@ document.getElementById("default-feed").click();
 //   scrollTop = $(this).scrollTop();
 
 // });
+// if (currentScrollTop < lastScrollTop) {
+  //   darkHeader.addClass('dark-header');
+  //   lightHeader.addClass('mt-60');
+  // } else if (currentScrollTop > lastScrollTop) {
+  //   darkHeader.removeClass('dark-header');
+  //   lightHeader.removeClass('mt-60');
+  // }
+
+  // lastScrollTop = currentScrollTop;
 
 
-var lastScrollTop = 0;
-var lightHeader = $('.main-header');
-var darkHeader = $('.header');
-$(window).scroll(function(e){
-  var currentScrollTop = $(this).scrollTop();
 
-  if(currentScrollTop > 60) {
-    lightHeader.addClass('light-header');
-  }else if ((currentScrollTop < 60)) {
-    lightHeader.removeClass('light-header');
-  }
+$('.select-btn').click(function() {
+  $(this).addClass('d-none');
+  $(this).siblings('.selected-btn').removeClass('d-none')
+})
+
+
+$('.like').on('click', function() {
+  $(this).addClass('fill');
+  $(this).removeClass('like');
+})
+var prevScrollpos = window.pageYOffset;
+
+
+
+
+// var lastScrollTop = 0;
+// var lightHeader = $('.main-header');
+// var darkHeader = $('.header');
+// $(window).scroll(function(e){
+//   var currentScrollTop = $(this).scrollTop();
+
+//   if(currentScrollTop > 25) {
+//     lightHeader.addClass('light-header');
+//   }else if ((currentScrollTop < 25)) {
+//     // lightHeader.removeClass('light-header');
+//   }
   
-  if (currentScrollTop < lastScrollTop) {
-    darkHeader.addClass('dark-header');
-    lightHeader.addClass('mt-60');
-  } else if (currentScrollTop > lastScrollTop) {
-    darkHeader.removeClass('dark-header');
-    lightHeader.removeClass('mt-60');
+
+// });
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+
+  if(currentScrollPos > 25) {
+    document.getElementById("light-header").classList.add('light-header')
   }
 
-  lastScrollTop = currentScrollTop;
-});
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+    document.getElementById("body").style.paddingTop = "110px";
+    document.getElementById("light-header").style.top = "60px";
+    
+  } else {
+    document.getElementById("header").style.top = "-60px";
+    document.getElementById("body").style.paddingTop = "0";
+    document.getElementById("light-header").style.top = "0";
+    
+  }
+  prevScrollpos = currentScrollPos;
+}

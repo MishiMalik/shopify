@@ -24,9 +24,9 @@
     <title>Home</title>
 </head>
 
-<body>
+<body id="body">
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container ">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center">
@@ -107,14 +107,16 @@
                         class="d-flex justify-content-lg-end justify-content-md-end align-items-center justify-content-end">
                         <div class="header-menu header-menu2 me-4">
                             <a href="" class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-search f-25 text-white"></i>
+                                <!-- <i class="bi bi-search f-25 text-white"></i> -->
+                                <i class="fas fa-search f-25 text-white"></i>
                             </a>
                         </div>
                         <div class="header-menu header-menu2 me-4">
                             <a href="" class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-bell f-25 text-white"></i>
+                                <!-- <i class="bi bi-bell f-25 text-white"></i> -->
+                                <i class="fas fa-bell f-25 text-white"></i>
                             </a>
-                            <p class="chats-num m-0 p-0 chats-num3">2</p>
+                            <p class="chats-num m-0 p-0 chats-num">2</p>
                         </div>
                         <!-- <div class="header-menu d-none d-lg-block">
                             <a href="" class="d-flex flex-column align-items-center justify-content-center">
@@ -167,7 +169,7 @@
                     </div>
 
                     <div id="menu" class="tabcontent">
-                        <div class="d-flex align-items-center justify-content-between icons-div">
+                        <div class="d-flex align-items-center justify-content-around icons-div">
                             <div>
                                 <a href="" class="left-menu-icon">
                                     <i class="bi bi-house-heart-fill "></i><br>
@@ -183,7 +185,7 @@
                             </div>
                             <div>
                                 <a href="" class="left-menu-icon">
-                                    <i class="bi bi-clipboard-check-fill"></i><br>
+                                    <i class="fas fa-link"></i><br>
                                 </a>
                                 <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Copy<br>link</p>
 
@@ -351,7 +353,7 @@
                 </div>
                 <!-- main area -->
                 <div class="col-lg-6 col-md-12 text-center  center-part">
-                    <div class="main-header ">
+                    <div class="main-header " id="light-header">
                         <div class="d-flex align-items-center">
                             <img src="assets/images/image 224.png" alt="" class="img-fluid dp me-2">
                             <button class="add-post "><i class="bi bi-plus-circle-fill me-1"></i>Add Posts</button>
@@ -382,7 +384,7 @@
                             <a href=""><img src="assets/images/NOTICE BOARD.png" alt="" class="img-fluid blood-img"></a>
                         </div>
                     </div>
-                    <div class="container-fluid pb-5">
+                    <div class="container-fluid pb-2">
                         <div class="row post">
 
                             <!-- banner -->
@@ -655,8 +657,14 @@
                                                             </div>
                                                         </figure>
                                                     </div>
-                                                    <p class="mb-0 pb-0 price
-                                                    ">50,000 Rupees</p>
+                                                    <div class="d-flex justify-content-between price">
+                                                        <p class="mb-0 pb-0 ">50,000 RS</p>
+                                                        <div class="rating-recent-viewd">
+                                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                                            <i class="bi bi-star-fill ms-1 f-12"></i>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <div class="text-div py-2">
                                                     <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
@@ -668,14 +676,10 @@
                                                             <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
                                                         </div>
                                                         <div class="d-flex align-items-center">
-
                                                             <img src="assets/images/icons/PRO Membership.png" alt=""
                                                                 class="follow-icons ms-1">
                                                             <i class="bi bi-person-fill f-14 follow-text "></i>
-                                                            <!-- <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                            class="follow-icons">
-                                                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                            class="follow-icons"> -->
+
                                                         </div>
 
                                                     </div>
@@ -690,15 +694,21 @@
                                                     <div class="carousel__slide">
                                                         <figure>
                                                             <div>
-                                                                <img src="assets/images/s5 - Copy.jpg" alt="">
+                                                                <img src="assets/images/s1 - Copy.jpg" alt="">
                                                             </div>
                                                         </figure>
                                                     </div>
-                                                    <p class="mb-0 pb-0 price">50,000 Rupees</p>
+                                                    <div class="d-flex justify-content-between price">
+                                                        <p class="mb-0 pb-0 ">50,000 RS</p>
+                                                        <div class="rating-recent-viewd">
+                                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                                            <i class="bi bi-star-fill ms-1 f-12"></i>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <div class="text-div py-2">
-                                                    <p class="f-16 w-600 mb-0 mb-2 light-dark">Publishing designer Lorem
-                                                        ipsum
+                                                    <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
                                                         dolor sit amet.</p>
                                                     <div class="d-flex align-items-center ">
                                                         <div class="d-flex">
@@ -718,6 +728,89 @@
                                             </div>
                                         </a>
                                     </div>
+                                    <div class="img-card">
+                                        <a href="">
+                                            <div class="viewed-card">
+                                                <div class="img-div">
+                                                    <div class="carousel__slide">
+                                                        <figure>
+                                                            <div>
+                                                                <img src="assets/images/s1 - Copy.jpg" alt="">
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between price">
+                                                        <p class="mb-0 pb-0 ">50,000 RS</p>
+                                                        <div class="rating-recent-viewd">
+                                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                                            <i class="bi bi-star-fill ms-1 f-12"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="text-div py-2">
+                                                    <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
+                                                        dolor sit amet.</p>
+                                                    <div class="d-flex align-items-center ">
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/image 224.png" alt=""
+                                                                class="img-fluid small-dp me-1">
+                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                                class="follow-icons ms-1">
+                                                            <i class="bi bi-person-fill f-14 follow-text "></i>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="img-card">
+                                        <a href="">
+                                            <div class="viewed-card">
+                                                <div class="img-div">
+                                                    <div class="carousel__slide">
+                                                        <figure>
+                                                            <div>
+                                                                <img src="assets/images/s1 - Copy.jpg" alt="">
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between price">
+                                                        <p class="mb-0 pb-0 ">50,000 RS</p>
+                                                        <div class="rating-recent-viewd">
+                                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                                            <i class="bi bi-star-fill ms-1 f-12"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="text-div py-2">
+                                                    <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
+                                                        dolor sit amet.</p>
+                                                    <div class="d-flex align-items-center ">
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/image 224.png" alt=""
+                                                                class="img-fluid small-dp me-1">
+                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                                class="follow-icons ms-1">
+                                                            <i class="bi bi-person-fill f-14 follow-text "></i>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
 
 
                                 </div>
@@ -818,8 +911,6 @@
 
                         </div>
 
-
-
                         <!-- My feeds -->
                         <div class="row post mt-3 feeds-row">
                             <div class="col-lg-12 ">
@@ -901,27 +992,51 @@
                                                             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                                         </path>
                                                     </svg>
-                                                    <buttom class="selected-btn">
-                                                        Selected</buttom>
-                                                        
+                                                    <button class="select-btn "><i
+                                                        class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
+                                                    <button class="selected-btn d-none">
+                                                        Selected</button>
+                                                    
+
                                                     <div class="dropdown">
-                                                        <button class="menu-post" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <button class="menu-post" type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="bi bi-three-dots-vertical f-25 w-500"></i>
                                                         </button>
-                                                        <ul class="dropdown-menu menu-post-drop" aria-labelledby="dropdownMenuButton1">
-                                                            <li><a class="dropdown-item" href="#"><img
-                                                                        src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                                        class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
-                                                            <li><a class="dropdown-item" href="#"><img
-                                                                        src="assets/images/icons/icons8-money-bag-50.png" alt=""
-                                                                        class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
-                                                            <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt=""
-                                                                        class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
-                                                            <li><a class="dropdown-item" href="#"><img
-                                                                        src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                                        class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                                        <ul class="dropdown-menu menu-post-drop"
+                                                            aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-share me-4"></i>Share this
+                                                                    post</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-link me-4"></i>Copy Link</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-concierge-bell me-4"></i>Alert
+                                                                    Similar Posts</a></li>
+                                                            <div class="seprator"></div>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-user-times me-4"></i>Unfollow
+                                                                    Jerry</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-eye-slash me-4"></i>Hide Post</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-minus-circle me-4"></i>Show Less
+                                                                    Such posts</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fas fa-flag me-4"></i>Report post</a>
+                                                            </li>
+                                                            <div class="seprator"></div>
+                                                            <li><a class="dropdown-item d-flex " href="#"><i
+                                                                        class="fas fa-lightbulb me-4"></i>Last Active
+                                                                    <div class="menu-date">12 Mar 22</div></a></li>
+                                                            <li><a class="dropdown-item d-flex" href="#"><i
+                                                                        class="fas fa-calendar-alt me-4"></i>Posting
+                                                                    Date <div class="menu-date">12 Mar 22</div></a></li>
+
                                                         </ul>
-                                                      </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="seprator"></div>
@@ -986,8 +1101,11 @@
                                                             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                                         </path>
                                                     </svg>
-                                                    <buttom class="selected-btn">
-                                                        Selected</buttom>
+                                                    <button class="select-btn "><i
+                                                        class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
+                                                    <button class="selected-btn d-none">
+                                                        Selected</button>
                                                     <i class="bi bi-three-dots-vertical f-25 w-500"></i>
                                                 </div>
                                             </div>
@@ -1043,8 +1161,6 @@
 
                                                 </div>
                                                 <div class="d-flex align-items-center image-icons">
-                                                    <!-- <i class="far fa-heart f-22 "></i> -->
-
                                                     <svg xmlns="http://www.w3.org/2000/svg" class="like" width="23"
                                                         height="23" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1053,8 +1169,11 @@
                                                             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                                         </path>
                                                     </svg>
-                                                    <buttom class="selected-btn">
-                                                        Selected</buttom>
+                                                    <button class="select-btn "><i
+                                                        class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
+                                                    <button class="selected-btn d-none">
+                                                        Selected</button>
                                                     <i class="bi bi-three-dots-vertical f-25 w-500"></i>
                                                 </div>
                                             </div>
@@ -1067,70 +1186,9 @@
 
                         </div>
                         <div id="List" class="feedcontent">
-                            <div class="row post mt-3">
-                                <div class="col-lg-12">
-                                    <div class="list-card">
-                                        <div class="list-card-img mx-auto">
-                                            <div class="listing-badges-list">
-                                                <span class="featured-list">
-                                                    Featured
-                                                </span>
-                                            </div>
-                                            <span class="f-13 text-gray">Sponsored</span>
-                                            <img src="assets/images/s1.jpg" alt="" class="img-fluid">
-                                            <div class="rating-2">
-                                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                <i class="bi bi-star-fill ms-1 f-12"></i>
-                                            </div>
-                                        </div>
-                                        <div class="list-card-text">
-                                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
-                                            <p class="mb-0 pb-0  f-16 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
-                                                Lorem
-                                                ipsum dolor sit amet, consectetur ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div class="d-flex align-items-center ">
-                                                <div class="image-dp">
-                                                    <img src="assets/images/image 224.png" alt=""
-                                                        class="img-fluid me-1">
-                                                </div>
-                                                <p class="mb-0 pb-0 list-img-name f-16 w-500 light-dark mt-1 ellipsis">
-                                                    Jerry
-                                                    Varghese</p>
-                                                <div class="d-flex align-items-center">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
-                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                        class="follow-icons ms-1">
-                                                </div>
-                                            </div>
-                                            <div class="seprator "></div>
-                                            <div
-                                                class="d-flex align-items-center justify-content-end  list-image-iocns">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2" width="23"
-                                                    height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-heart">
-                                                    <path
-                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                    </path>
-                                                </svg>
-
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
-                                                <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
 
                             <div class="row post mt-3">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 list-card-col">
                                     <div class="list-card">
                                         <div class="list-card-img mx-auto">
                                             <div class="listing-badges-list">
@@ -1181,8 +1239,11 @@
                                                     </path>
                                                 </svg>
 
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
+                                                <button class="select-btn "><i
+                                                    class="bi bi-check2-square w-600"></i>
+                                                Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
@@ -1191,9 +1252,8 @@
 
                                 </div>
                             </div>
-
                             <div class="row post mt-3">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 list-card-col">
                                     <div class="list-card">
                                         <div class="list-card-img mx-auto">
                                             <div class="listing-badges-list">
@@ -1244,8 +1304,11 @@
                                                     </path>
                                                 </svg>
 
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
+                                                <button class="select-btn "><i
+                                                    class="bi bi-check2-square w-600"></i>
+                                                Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
@@ -1254,10 +1317,11 @@
 
                                 </div>
                             </div>
+
                         </div>
                         <div id="Grid" class="feedcontent">
                             <div class="row post mt-3">
-                                <div class="col-6  px-1 mb-2">
+                                <div class="col-6  grid-card-col mb-2">
                                     <p class="f-13 text-gray text-start mb-0 pb-0">Sponsored</p>
                                     <div class="grid-card">
 
@@ -1316,14 +1380,17 @@
                                                     </path>
                                                 </svg>
 
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
+                                                <button class="select-btn "><i
+                                                    class="bi bi-check2-square w-600"></i>
+                                                Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6  px-1 mb-2">
+                                <div class="col-6 grid-card-col  mb-2">
                                     <p class="f-13 text-gray text-start mb-0 pb-0">Sponsored</p>
                                     <div class="grid-card">
                                         <div class="grid-card-img mx-auto">
@@ -1376,14 +1443,17 @@
                                                     </path>
                                                 </svg>
 
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
+                                                <button class="select-btn "><i
+                                                    class="bi bi-check2-square w-600"></i>
+                                                Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6  px-1 mb-2">
+                                <div class="col-6  grid-card-col mb-2">
                                     <p class="f-13 text-gray text-start mb-0 pb-0">Sponsored</p>
                                     <div class="grid-card">
 
@@ -1442,14 +1512,17 @@
                                                     </path>
                                                 </svg>
 
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
+                                                <button class="select-btn "><i
+                                                    class="bi bi-check2-square w-600"></i>
+                                                Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6  px-1 mb-2">
+                                <div class="col-6 grid-card-col  mb-2">
                                     <p class="f-13 text-gray text-start mb-0 pb-0">Sponsored</p>
                                     <div class="grid-card">
                                         <div class="grid-card-img mx-auto">
@@ -1502,13 +1575,17 @@
                                                     </path>
                                                 </svg>
 
-                                                <buttom class="select-btn "><i class="bi bi-check2-square w-600"></i>
-                                                    Select</buttom>
+                                                <button class="select-btn "><i
+                                                    class="bi bi-check2-square w-600"></i>
+                                                Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -1516,7 +1593,8 @@
 
                         <div class="row post mt-3">
                             <div class="col-lg-12 py-0">
-                                <a href=""><button class="btn-blank mt-2 mx-auto py-2 px-4 w-500"><img
+                                <a href=""><button
+                                        class="btn-blank mt-2 mx-auto py-2 px-5 w-500 f-20 d-flex align-items-center"><img
                                             src="assets/images/icons/gif.gif" alt="" class="img-fluid me-3"
                                             height="25px" width="25px"> Load More</button></a>
                             </div>
@@ -1524,13 +1602,10 @@
                         <div class="row post mt-3">
                             <div class="col-lg-12 py-0 d-flex align-items-center justify-content-center view-btn-div">
                                 <a href=""><button class="view-btn mt-2  py-2 px-4 w-500 mx-2"><img
-                                            src="assets/images/icons/btn-pro.PNG" alt="" class="img-fluid me-1"
-                                            height="30px" width="30px"> Go Pro</button></a>
-                                <a href=""><button class="view-btn mt-2  py-2 px-4 w-500 mx-2"><img
                                             src="assets/images/icons/post-btn.PNG" alt="" class="img-fluid me-1"
                                             height="30px" width="30px">Post Notice</button></a>
                                 <a href=""><button class="view-btn mt-2  py-2 px-4 w-500 mx-2"><img
-                                            src="assets/images/icons/notice-btn.PNG" alt="" class="img-fluid me-1"
+                                            src="assets/images/icons/alert2222.PNG" alt="" class="img-fluid me-1"
                                             height="30px" width="30px"> Alert</button></a>
                             </div>
                         </div>
@@ -1557,7 +1632,7 @@
                                         <h2 class="f-20 w-500 text-dark">You May Want To Follow</h2>
                                     </div>
                                     <div>
-                                        <a href="" class="varient-text underline f-16 w-500"> view All</a>
+                                        <a href="" class="varient-text underline f-16 w-500"> View All</a>
                                     </div>
                                 </div>
                             </div>
@@ -1609,16 +1684,16 @@
 
 
                         <div class="row post mt-3">
-                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1 p-0">
                                 <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1 p-0">
                                 <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1 p-0">
                                 <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1">
+                            <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1 p-0">
                                 <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
                             </div>
                         </div>
@@ -1657,13 +1732,13 @@
                                     <div class="online"></div>
                                 </div>
                                 <div class="info ms-2">
-                                    <h3 class="f-14 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
                                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                                         <div class="text-div">
-                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-12">Member Tag line Lorem, ipsum
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
                                                 dolor.
                                             </p>
-                                            <p class="mb-0 pb-0 f-12 text-gray w-400 f-12">Distt, State</p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
                                         </div>
                                         <div class="follow-card-btn">
                                             <a href=""><button>Follow</button></a>
@@ -1675,19 +1750,19 @@
                         </div>
 
                         <div class="follow-card">
-                            <div class="follow-card-people mt-4">
+                            <div class="follow-card-people mt-3">
                                 <div class="dp">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
                                     <div class="online"></div>
                                 </div>
                                 <div class="info ms-2">
-                                    <h3 class="f-14 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
                                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                                         <div class="text-div">
-                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-12">Member Tag line Lorem, ipsum
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
                                                 dolor.
                                             </p>
-                                            <p class="mb-0 pb-0 f-12 text-gray w-400 f-12">Distt, State</p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
                                         </div>
                                         <div class="follow-card-btn">
                                             <a href=""><button>Follow</button></a>
@@ -1699,19 +1774,211 @@
                         </div>
 
                         <div class="follow-card">
-                            <div class="follow-card-people mt-4">
+                            <div class="follow-card-people mt-3">
                                 <div class="dp">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
                                     <div class="online"></div>
                                 </div>
                                 <div class="info ms-2">
-                                    <h3 class="f-14 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
                                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                                         <div class="text-div">
-                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-12">Member Tag line Lorem, ipsum
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
                                                 dolor.
                                             </p>
-                                            <p class="mb-0 pb-0 f-12 text-gray w-400 f-12">Distt, State</p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
                                         </div>
                                         <div class="follow-card-btn">
                                             <a href=""><button>Follow</button></a>
@@ -1724,19 +1991,44 @@
 
 
                         <div class="follow-card">
-                            <div class="follow-card-people mt-4">
+                            <div class="follow-card-people mt-3">
                                 <div class="dp">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
                                     <div class="online"></div>
                                 </div>
                                 <div class="info ms-2">
-                                    <h3 class="f-14 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
                                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                                         <div class="text-div">
-                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-12">Member Tag line Lorem, ipsum
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
                                                 dolor.
                                             </p>
-                                            <p class="mb-0 pb-0 f-12 text-gray w-400 f-12">Distt, State</p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
+                                        </div>
+                                        <div class="follow-card-btn">
+                                            <a href=""><button>Follow</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="follow-card">
+                            <div class="follow-card-people mt-3">
+                                <div class="dp">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="info ms-2">
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <div class="text-div">
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
+                                                dolor.
+                                            </p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
                                         </div>
                                         <div class="follow-card-btn">
                                             <a href=""><button>Follow</button></a>
@@ -1748,19 +2040,19 @@
                         </div>
 
                         <div class="follow-card">
-                            <div class="follow-card-people mt-4">
+                            <div class="follow-card-people mt-3">
                                 <div class="dp">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
                                     <div class="online"></div>
                                 </div>
                                 <div class="info ms-2">
-                                    <h3 class="f-14 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
                                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                                         <div class="text-div">
-                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-12">Member Tag line Lorem, ipsum
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
                                                 dolor.
                                             </p>
-                                            <p class="mb-0 pb-0 f-12 text-gray w-400 f-12">Distt, State</p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
                                         </div>
                                         <div class="follow-card-btn">
                                             <a href=""><button>Follow</button></a>
@@ -1772,19 +2064,19 @@
                         </div>
 
                         <div class="follow-card">
-                            <div class="follow-card-people mt-4">
+                            <div class="follow-card-people mt-3">
                                 <div class="dp">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid me-2">
                                     <div class="online"></div>
                                 </div>
                                 <div class="info ms-2">
-                                    <h3 class="f-14 w-600 m-0 p-0 text-dark">Member Name</h3>
+                                    <h3 class="f-15 w-600 m-0 p-0 text-dark">Member Name</h3>
                                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                                         <div class="text-div">
-                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-12">Member Tag line Lorem, ipsum
+                                            <p class="mb-0 pb-0 f-12 text-gray w-500 f-14">Member Tag line Lorem, ipsum
                                                 dolor.
                                             </p>
-                                            <p class="mb-0 pb-0 f-12 text-gray w-400 f-12">Distt, State</p>
+                                            <p class="mb-0 pb-0 f-12 text-gray-light w-400 f-12">Distt, State</p>
                                         </div>
                                         <div class="follow-card-btn">
                                             <a href=""><button>Follow</button></a>
@@ -1794,6 +2086,7 @@
                             </div>
 
                         </div>
+
 
                     </div>
                 </div>
@@ -1847,10 +2140,73 @@
     </footer>
 
     <!-- backdrop -->
-    <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeNav()"></div>
+    <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
 
+    <!-- Button trigger modal -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-load">
+    Launch static backdrop modal
+  </button> -->
 
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="staticBackdrop-load" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered loading-modal">
+            <div class="modal-content classify-modal-body">
+                <div class="modal-body ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 modal-col">
+                                <div class="d-flex align-items-center justify-content-center loading-name-col ">
+                                    <div class="loading-logo-div me-2">
+                                        <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="">
+                                        <h1 class="f-32 text-primary w-600 mb-0 pb-0">WebSite Name</h1>
+                                        <p class="f-20 w-500 text-gray mb-0 pb-0 line-height-14">Company Tag Line will
+                                            be Here</p>
+                                    </div>
+                                </div>
+                                <div class="loading-name-mobile">
+                                    <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
+                                        class="img-fluid mx-auto loading-logo" data-aos="zoom-in">
+                                    <div class="mt-2 text-center">
+                                        <h1 class="f-32 text-primary w-600 mb-0 pb-0">WebSite Name</h1>
+                                        <p class="f-20 w-500 text-gray mb-0 pb-0">Company Tag Line will be Here</p>
+                                    </div>
+                                </div>
+                                <div class="click-to-go mx-auto mt-3">
+                                    <p class="mb-0 pb-0 f-20">Click to Go</p>
+                                </div>
+                                <div class="mt-3 d-flex justify-content-center">
+                                    <button data-bs-dismiss="modal">
+                                        <img src="assets/images/icons/Group 1.png" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                                <div class="mt-2  d-flex justify-content-center">
+                                    <button data-bs-dismiss="modal">
+                                        <img src="assets/images/icons/Group 1 copy.png" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                                <div class="mt-2  d-flex justify-content-center">
+                                    <button data-bs-dismiss="modal">
+                                        <img src="assets/images/icons/Group 1 copy 2.png" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                                <div class="mt-2  d-flex justify-content-center">
+                                    <button data-bs-dismiss="modal">
+                                        <img src="assets/images/icons/Group 1 copy 3.png" alt="" class="img-fluid">
+                                    </button>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -1859,10 +2215,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
