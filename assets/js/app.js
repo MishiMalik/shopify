@@ -83,20 +83,23 @@ $('.categories-carousel').owlCarousel({
   dots:false,
   responsive:{
     0:{
-        items:2.5,
+        items:3.5,
     },
     340:{
-      items:3.3,
+      items:4.3,
+  },
+  500:{
+items:5.1
   },
     767:{
-        items:4.5,
+        items:5.5,
     },
     1200:{
-      items:5.5,
+      items:6.5,
       
     },
     1360:{
-        items:6.5,
+        items:7.5,
       
     }
 }
@@ -122,13 +125,52 @@ document.getElementById("default-feed").click();
 
 
 // make header static
-$(window).scroll(function(e){ 
-  var $el = $('.main-header'); 
-  var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() > 60 && !isPositionFixed){ 
-    $el.css({'position': 'fixed', 'top': '0px','left':'0','right':'0'}); 
+// var scrollTop = 0;
+// $(window).scroll(function(e){ 
+//   var $el = $('.main-header'); 
+//   var $el2 = $('.header'); 
+
+//   var isPositionFixed = ($el.css('position') == 'fixed');
+//   if ($(this).scrollTop() > 60 && !isPositionFixed){ 
+//     $el.css({'position': 'fixed', 'top': '0px','left':'0','right':'0'}); 
+//   }
+//   if ($(this).scrollTop() < 60 && isPositionFixed){
+//     $el.css({'position': 'sticky', 'top': '0px'}); 
+//   } 
+
+//   var isPositionFixed2 = false;
+//   if(!isPositionFixed2) {
+//     if($(this).scrollTop() < scrollTop) {
+//       $('body').css('padding-top', '60px')
+//       $el2.css('position', 'fixed');
+//       isPositionFixed2 = true;
+//       $el.css({'margin-top': '60px'}); 
+//     }
+//   }
+//   scrollTop = $(this).scrollTop();
+
+// });
+
+
+var lastScrollTop = 0;
+var lightHeader = $('.main-header');
+var darkHeader = $('.header');
+$(window).scroll(function(e){
+  var currentScrollTop = $(this).scrollTop();
+
+  if(currentScrollTop > 60) {
+    lightHeader.addClass('light-header');
+  }else if ((currentScrollTop < 60)) {
+    lightHeader.removeClass('light-header');
   }
-  if ($(this).scrollTop() < 60 && isPositionFixed){
-    $el.css({'position': 'sticky', 'top': '0px'}); 
-  } 
+  
+  if (currentScrollTop < lastScrollTop) {
+    darkHeader.addClass('dark-header');
+    lightHeader.css('margin-top', '60px');
+  } else if (currentScrollTop > lastScrollTop) {
+    darkHeader.removeClass('dark-header');
+    lightHeader.css('margin-top', '0');
+  }
+
+  lastScrollTop = currentScrollTop;
 });
