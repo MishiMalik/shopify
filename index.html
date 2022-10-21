@@ -8,6 +8,16 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // modal on page load
+        $(window).on('load', function () {
+            $('#staticBackdrop-load').modal('show');
+        });
+    </script>
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- font awsome -->
@@ -21,6 +31,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Home</title>
 </head>
 
@@ -142,6 +153,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="main-header small-main-header" >
+            <div class="d-flex align-items-center">
+                <img src="assets/images/image 224.png" alt="" class="img-fluid dp me-2">
+                <button class="add-post "><i class="bi bi-plus-circle-fill me-1"></i>Add Posts</button>
+                <div class="dropdown">
+                    <button class="classified-drop dropdown-toggle ms-1 dark-text" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Classifieds
+                    </button>
+                    <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#"><img
+                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                    class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                        <li><a class="dropdown-item" href="#"><img
+                                    src="assets/images/icons/icons8-money-bag-50.png" alt=""
+                                    class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png"
+                                    alt="" class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                        <li><a class="dropdown-item" href="#"><img
+                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                    class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                    </ul>
+                </div>
+                <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text">Offer</p>
+
+            </div>
+            <div>
+                <a href=""><img src="assets/images/BLOOD.png" alt="" class="img-fluid blood-img"></a>
+                <a href=""><img src="assets/images/NOTICE BOARD.png" alt="" class="img-fluid blood-img"></a>
             </div>
         </div>
     </header>
@@ -352,8 +394,8 @@
 
                 </div>
                 <!-- main area -->
-                <div class="col-lg-6 col-md-12 text-center  center-part">
-                    <div class="main-header " id="light-header">
+                <div class="col-lg-6 col-md-12 text-center  center-part" id="center">
+                   <div class="main-header desktop-light-header" id="light-header">
                         <div class="d-flex align-items-center">
                             <img src="assets/images/image 224.png" alt="" class="img-fluid dp me-2">
                             <button class="add-post "><i class="bi bi-plus-circle-fill me-1"></i>Add Posts</button>
@@ -383,7 +425,8 @@
                             <a href=""><img src="assets/images/BLOOD.png" alt="" class="img-fluid blood-img"></a>
                             <a href=""><img src="assets/images/NOTICE BOARD.png" alt="" class="img-fluid blood-img"></a>
                         </div>
-                    </div>
+                    </div> 
+                
                     <div class="container-fluid pb-2">
                         <div class="row post">
 
@@ -669,17 +712,17 @@
                                                 <div class="text-div py-2">
                                                     <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
                                                         dolor sit amet.</p>
-                                                    <div class="d-flex align-items-center ">
+                                                    <div class="d-flex align-items-center justify-content-start">
                                                         <div class="d-flex">
                                                             <img src="assets/images/image 224.png" alt=""
                                                                 class="img-fluid small-dp me-1">
-                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                            <p class="light-dark m-0 p-0 w-500 f-14 view-name">Jerry
+                                                                Verrages</p>
                                                         </div>
                                                         <div class="d-flex align-items-center">
                                                             <img src="assets/images/icons/PRO Membership.png" alt=""
                                                                 class="follow-icons ms-1">
                                                             <i class="bi bi-person-fill f-14 follow-text "></i>
-
                                                         </div>
 
                                                     </div>
@@ -710,17 +753,17 @@
                                                 <div class="text-div py-2">
                                                     <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
                                                         dolor sit amet.</p>
-                                                    <div class="d-flex align-items-center ">
+                                                    <div class="d-flex align-items-center justify-content-start">
                                                         <div class="d-flex">
                                                             <img src="assets/images/image 224.png" alt=""
                                                                 class="img-fluid small-dp me-1">
-                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                            <p class="light-dark m-0 p-0 w-500 f-14 view-name">Jerry
+                                                                Verrages</p>
                                                         </div>
                                                         <div class="d-flex align-items-center">
                                                             <img src="assets/images/icons/PRO Membership.png" alt=""
                                                                 class="follow-icons ms-1">
                                                             <i class="bi bi-person-fill f-14 follow-text "></i>
-
                                                         </div>
 
                                                     </div>
@@ -751,17 +794,17 @@
                                                 <div class="text-div py-2">
                                                     <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
                                                         dolor sit amet.</p>
-                                                    <div class="d-flex align-items-center ">
+                                                    <div class="d-flex align-items-center justify-content-start">
                                                         <div class="d-flex">
                                                             <img src="assets/images/image 224.png" alt=""
                                                                 class="img-fluid small-dp me-1">
-                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
+                                                            <p class="light-dark m-0 p-0 w-500 f-14 view-name">Jerry
+                                                                Verrages</p>
                                                         </div>
                                                         <div class="d-flex align-items-center">
                                                             <img src="assets/images/icons/PRO Membership.png" alt=""
                                                                 class="follow-icons ms-1">
                                                             <i class="bi bi-person-fill f-14 follow-text "></i>
-
                                                         </div>
 
                                                     </div>
@@ -769,47 +812,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="img-card">
-                                        <a href="">
-                                            <div class="viewed-card">
-                                                <div class="img-div">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/s1 - Copy.jpg" alt="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between price">
-                                                        <p class="mb-0 pb-0 ">50,000 RS</p>
-                                                        <div class="rating-recent-viewd">
-                                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                            <i class="bi bi-star-fill ms-1 f-12"></i>
-                                                        </div>
-                                                    </div>
 
-                                                </div>
-                                                <div class="text-div py-2">
-                                                    <p class="f-16 w-600 mb-0 mb-2">Publishing designer Lorem ipsum
-                                                        dolor sit amet.</p>
-                                                    <div class="d-flex align-items-center ">
-                                                        <div class="d-flex">
-                                                            <img src="assets/images/image 224.png" alt=""
-                                                                class="img-fluid small-dp me-1">
-                                                            <p class="light-dark m-0 p-0 w-500 f-14">Jerry Verrages</p>
-                                                        </div>
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                                class="follow-icons ms-1">
-                                                            <i class="bi bi-person-fill f-14 follow-text "></i>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
 
 
 
@@ -976,9 +979,11 @@
                                                         class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
                                                         Jerry
                                                         Varghese</p>
-                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                        class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text ms-1"></i>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                            class="follow-icons ms-1">
+                                                        <i class="bi bi-person-fill f-14 follow-text "></i>
+                                                    </div>
 
                                                 </div>
                                                 <div class="d-flex align-items-center image-icons">
@@ -993,16 +998,17 @@
                                                         </path>
                                                     </svg>
                                                     <button class="select-btn "><i
-                                                        class="bi bi-check2-square w-600"></i>
-                                                    Select</button>
+                                                            class="bi bi-check2-square w-600"></i>
+                                                        Select</button>
                                                     <button class="selected-btn d-none">
                                                         Selected</button>
-                                                    
 
+                                                    <!--3 dot post view on desktop-screen -->
                                                     <div class="dropdown">
                                                         <button class="menu-post" type="button" id="dropdownMenuButton1"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="bi bi-three-dots-vertical f-25 w-500"></i>
+                                                            <i
+                                                                class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots"></i>
                                                         </button>
                                                         <ul class="dropdown-menu menu-post-drop"
                                                             aria-labelledby="dropdownMenuButton1">
@@ -1030,13 +1036,28 @@
                                                             <div class="seprator"></div>
                                                             <li><a class="dropdown-item d-flex " href="#"><i
                                                                         class="fas fa-lightbulb me-4"></i>Last Active
-                                                                    <div class="menu-date">12 Mar 22</div></a></li>
+                                                                    <div class="menu-date">12 Mar 22</div>
+                                                                </a></li>
                                                             <li><a class="dropdown-item d-flex" href="#"><i
                                                                         class="fas fa-calendar-alt me-4"></i>Posting
                                                                     Date <div class="menu-date">12 Mar 22</div></a></li>
 
                                                         </ul>
                                                     </div>
+
+                                                    <!--3 dot post view on small-screen -->
+                                                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop-load">
+                                                        <i
+                                                            class="bi bi-three-dots-vertical f-25 w-500 mobile-menu-dots"></i>
+                                                    </button> -->
+                                                    <button class="menu-post" type="button" id="dropdownMenuButton1"
+                                                        data-bs-toggle="modal" data-bs-target="#dots-menu-post">
+                                                        <i
+                                                            class="bi bi-three-dots-vertical f-25 w-500 mobile-menu-dots"></i>
+                                                    </button>
+
+                                                  
                                                 </div>
                                             </div>
                                             <div class="seprator"></div>
@@ -1085,9 +1106,11 @@
                                                         class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
                                                         Jerry
                                                         Varghese</p>
-                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                        class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text ms-1"></i>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                            class="follow-icons ms-1">
+                                                        <i class="bi bi-person-fill f-14 follow-text "></i>
+                                                    </div>
 
                                                 </div>
                                                 <div class="d-flex align-items-center image-icons">
@@ -1102,8 +1125,8 @@
                                                         </path>
                                                     </svg>
                                                     <button class="select-btn "><i
-                                                        class="bi bi-check2-square w-600"></i>
-                                                    Select</button>
+                                                            class="bi bi-check2-square w-600"></i>
+                                                        Select</button>
                                                     <button class="selected-btn d-none">
                                                         Selected</button>
                                                     <i class="bi bi-three-dots-vertical f-25 w-500"></i>
@@ -1155,9 +1178,11 @@
                                                         class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
                                                         Jerry
                                                         Varghese</p>
-                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                        class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text ms-1"></i>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                            class="follow-icons ms-1">
+                                                        <i class="bi bi-person-fill f-14 follow-text "></i>
+                                                    </div>
 
                                                 </div>
                                                 <div class="d-flex align-items-center image-icons">
@@ -1170,8 +1195,8 @@
                                                         </path>
                                                     </svg>
                                                     <button class="select-btn "><i
-                                                        class="bi bi-check2-square w-600"></i>
-                                                    Select</button>
+                                                            class="bi bi-check2-square w-600"></i>
+                                                        Select</button>
                                                     <button class="selected-btn d-none">
                                                         Selected</button>
                                                     <i class="bi bi-three-dots-vertical f-25 w-500"></i>
@@ -1223,8 +1248,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <img src="assets/images/icons/PRO Membership.png" alt=""
                                                         class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
-
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
@@ -1239,9 +1263,8 @@
                                                     </path>
                                                 </svg>
 
-                                                <button class="select-btn "><i
-                                                    class="bi bi-check2-square w-600"></i>
-                                                Select</button>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1288,8 +1311,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <img src="assets/images/icons/PRO Membership.png" alt=""
                                                         class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
-
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
@@ -1304,9 +1326,8 @@
                                                     </path>
                                                 </svg>
 
-                                                <button class="select-btn "><i
-                                                    class="bi bi-check2-square w-600"></i>
-                                                Select</button>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1363,10 +1384,9 @@
                                                         Varghese</p>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-
                                                     <img src="assets/images/icons/PRO Membership.png" alt=""
                                                         class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
@@ -1380,9 +1400,8 @@
                                                     </path>
                                                 </svg>
 
-                                                <button class="select-btn "><i
-                                                    class="bi bi-check2-square w-600"></i>
-                                                Select</button>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1426,10 +1445,9 @@
                                                         Varghese</p>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-
                                                     <img src="assets/images/icons/PRO Membership.png" alt=""
                                                         class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
@@ -1443,9 +1461,8 @@
                                                     </path>
                                                 </svg>
 
-                                                <button class="select-btn "><i
-                                                    class="bi bi-check2-square w-600"></i>
-                                                Select</button>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1495,10 +1512,9 @@
                                                         Varghese</p>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-
                                                     <img src="assets/images/icons/PRO Membership.png" alt=""
                                                         class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
@@ -1512,9 +1528,8 @@
                                                     </path>
                                                 </svg>
 
-                                                <button class="select-btn "><i
-                                                    class="bi bi-check2-square w-600"></i>
-                                                Select</button>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1558,10 +1573,9 @@
                                                         Varghese</p>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-
                                                     <img src="assets/images/icons/PRO Membership.png" alt=""
                                                         class="follow-icons ms-1">
-                                                    <i class="bi bi-person-fill f-14 follow-text mt-1 ms-1"></i>
+                                                    <i class="bi bi-person-fill f-14 follow-text "></i>
                                                 </div>
                                             </div>
                                             <div class="seprator "></div>
@@ -1575,9 +1589,8 @@
                                                     </path>
                                                 </svg>
 
-                                                <button class="select-btn "><i
-                                                    class="bi bi-check2-square w-600"></i>
-                                                Select</button>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
                                                 <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -1606,7 +1619,7 @@
                                             height="30px" width="30px">Post Notice</button></a>
                                 <a href=""><button class="view-btn mt-2  py-2 px-4 w-500 mx-2"><img
                                             src="assets/images/icons/alert2222.PNG" alt="" class="img-fluid me-1"
-                                            height="30px" width="30px"> Alert</button></a>
+                                            height="30px" width="30px">Set Alert</button></a>
                             </div>
                         </div>
 
@@ -1700,6 +1713,8 @@
 
                     </div>
 
+<!-- go to top -->
+<button onclick="topFunction()" id="topBtn" title="Go to top"><img src="assets/images/icons/top.png" alt="" class="img-fluid"></button>
 
 
                 </div>
@@ -2142,14 +2157,15 @@
     <!-- backdrop -->
     <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
 
+    
     <!-- Button trigger modal -->
     <!-- Button trigger modal -->
     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-load">
     Launch static backdrop modal
   </button> -->
 
-    <!-- Modal -->
-     <div class="modal fade" id="staticBackdrop-load" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!--Loading Categories -->
+    <div class="modal " id="staticBackdrop-load" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered loading-modal">
             <div class="modal-content classify-modal-body">
@@ -2206,11 +2222,69 @@
                 </div>
             </div>
         </div>
-    </div> 
-  
-    <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </div>
 
+
+
+
+
+
+
+    <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content ">
+            <div class="modal-body p-0">
+                <div class="mobile-post-popup">
+                    <ul class=" menu-post-drop">
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-share me-4"></i>Share
+                                this
+                                post</a></li>
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-link me-4"></i>Copy
+                                Link</a></li>
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-concierge-bell me-4"></i>Alert
+                                Similar Posts</a></li>
+                        <div class="seprator"></div>
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-user-times me-4"></i>Unfollow
+                                Jerry</a></li>
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-eye-slash me-4"></i>Hide
+                                Post</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-minus-circle me-4"></i>Show
+                                Less
+                                Such posts</a></li>
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="fas fa-flag me-4"></i>Report
+                                post</a>
+                        </li>
+                        <div class="seprator"></div>
+                        <li><a class="dropdown-item d-flex "
+                                href="#"><i
+                                    class="fas fa-lightbulb me-4"></i>Last
+                                Active
+                                <div class="menu-date">12 Mar 22
+                                </div>
+                            </a></li>
+                        <li><a class="dropdown-item d-flex"
+                                href="#"><i
+                                    class="fas fa-calendar-alt me-4"></i>Posting
+                                Date <div class="menu-date">12 Mar
+                                    22</div></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Script -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -2218,9 +2292,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
 
 
 

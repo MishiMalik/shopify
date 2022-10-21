@@ -13,7 +13,8 @@ body{
         padding-bottom: 50px;
         min-height: 100% !important;
         max-height: 100% !important;
-        // padding-top: 0px;
+        padding-top: 99px;
+        
     }
 }
 .mobile-body{
@@ -38,3 +39,27 @@ body{
     }
     
 }
+
+
+// gototop
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 26.8%; /* Place the button 30px from the right */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    background-color: transparent;
+    z-index: 1001;
+    @media only screen and (max-width:991px){
+right: 10px;
+    }
+  
+    img{
+        height: 50px;
+        width: 50px;
+    }
+  }
+  
+ 

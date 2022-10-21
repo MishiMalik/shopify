@@ -1,11 +1,10 @@
+
+
+
+
 // aos animation
 AOS.init({
   duration:3000,
-});
-
-// modal on page load
-$(document).ready(function(){
-  $("#staticBackdrop-load").modal('show');
 });
 
 // open left menu
@@ -52,13 +51,13 @@ $('.owl-carousel-slider').owlCarousel({
         items:1.8,
       },
       330:{
-        items:2.2
+        items:2.1
       },
       347:{
         items:2.2,
       },
-      400:{
-        items:2.2,
+      500:{
+        items:3.2,
     },
       767:{
           items:4.3,
@@ -197,23 +196,50 @@ var prevScrollpos = window.pageYOffset;
   
 
 // });
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
 
-  if(currentScrollPos > 25) {
-    document.getElementById("light-header").classList.add('light-header')
-  }
 
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-    document.getElementById("body").style.paddingTop = "110px";
-    document.getElementById("light-header").style.top = "60px";
-    
+
+// go to top
+// Get the button:
+let mybutton = document.getElementById("topBtn");
+let center=document.getElementById("center");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+center.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 || center.scrollTop > 100 ) {
+    mybutton.style.display = "block";
   } else {
-    document.getElementById("header").style.top = "-60px";
-    document.getElementById("body").style.paddingTop = "0";
-    document.getElementById("light-header").style.top = "0";
-    
+    mybutton.style.display = "none";
   }
-  prevScrollpos = currentScrollPos;
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.getElementById("center").scrollTop=0;
+}
+
+
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  
+    // if(currentScrollPos > 25) {
+    //   document.getElementById("light-header").classList.add('light-header')
+    // }
+  
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").style.top = "0";
+      // document.getElementById("body").style.paddingTop = "110px";
+      // document.getElementById("light-header").style.top = "60px";
+      
+    } else {
+      document.getElementById("header").style.top = "-60px";
+      // document.getElementById("body").style.paddingTop = "0";
+      // document.getElementById("light-header").style.top = "0";
+      
+    }
+    prevScrollpos = currentScrollPos;
+  }

@@ -1,90 +1,99 @@
-.right-menu{
-    max-height: calc(100vh - 60px);
-    overflow-y: scroll;
-    position: sticky;
-    left: 0;
-    top: 60px;
-    padding: 0px !important;
-    @media only screen and (max-width:991px){
-      display: none;
-    }
+.right-menu {
+  max-height: calc(100vh - 60px);
+  overflow-y: scroll;
+  position: sticky;
+  left: 0;
+  top: 60px;
+  padding: 0px !important;
+
+  @media only screen and (max-width:991px) {
+    display: none;
+  }
 }
 
 .right-menu::-webkit-scrollbar {
-    width: 10px;
-  }
-   
-  .right-menu::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  .right-menu::-webkit-scrollbar-thumb {
-    background-color: $primary;
-    outline: 1px solid transparent;
-    border-radius: 10px;
-  }
+  width: 10px;
+}
 
-  // content
-  .right-header{
-    background-color: $light-blue;
-    width: 100%;
-    height: 50px;
-    text-align: center;
+.right-menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.right-menu::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  outline: 1px solid transparent;
+  border-radius: 10px;
+}
+
+// content
+.right-header {
+  background-color: $light-blue;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: $primary;
+  position: sticky;
+  top: 0px !important;
+  left: 0;
+  z-index: 90;
+}
+
+.right-content {
+  padding: 6px 10px;
+  background-color: white;
+}
+
+.info-notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #FFFDEC;
+  padding: 5px;
+  border: 1px solid #BCA078;
+  border-radius: 3px;
+
+  .icon {
+    color: $dark-blue;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: $primary;
-    position: sticky;
-    top: 0px !important;
-   left: 0;
-   z-index: 90;
-  }
-  .right-content{
-    padding: 6px 10px;
-    background-color: white;
-  }
-  .info-notice{
-    display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    background-color: #FFFDEC;
-    padding: 5px;
-    border: 1px solid #BCA078;
-    border-radius: 3px;
-    .icon{
-      color: $dark-blue;
-      font-size: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .text{
-      font-size: 12px;
-      text-align: justify;
-    }
   }
-  .follow-card{
-   cursor: pointer;
 
-    &-people{
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      width: 100%;
-     .dp {
+  .text {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+
+.follow-card {
+  cursor: pointer;
+
+  &-people {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    .dp {
       height: 50px;
       width: 50px;
       display: flex;
       flex-shrink: 0;
       position: relative;
-      img{
+
+      img {
         object-fit: cover;
         border-radius: 100% !important;
         flex-shrink: 0 !important;
-       }
-       .online{
+      }
+
+      .online {
         height: 15px;
         width: 15px;
         background-color: #339900;
@@ -92,47 +101,51 @@
         position: absolute;
         bottom: -1px;
         right: 0px;
-       }
-     }
-     .info{
+      }
+    }
+
+    .info {
       text-align: left;
       overflow: hidden;
       width: 100%;
-      .text-div{
+
+      .text-div {
         max-width: 150px;
 
       }
-      h3{
+
+      h3 {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis !important;
       }
-      p{
+
+      p {
         font-weight: 500;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis !important;
       }
-     }
-
     }
 
-    &-btn{
-      a{
-        button{
-          border: 1px solid $navi-blue;
-          border-radius: 3px;
-          background-color: white;
-          color: $navi-blue;
-          font-size: 14px;
-          font-weight: 600;
+  }
 
-          &:hover{
-            background-color: $navi-blue;
-            color: white;
-          }
+  &-btn {
+    a {
+      button {
+        border: 1px solid $navi-blue;
+        border-radius: 3px;
+        background-color: white;
+        color: $navi-blue;
+        font-size: 14px;
+        font-weight: 600;
+
+        &:hover {
+          background-color: $navi-blue;
+          color: white;
         }
-
       }
+
     }
   }
+}

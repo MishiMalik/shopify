@@ -109,7 +109,8 @@ body {
     body {
       padding-bottom: 50px;
       min-height: 100% !important;
-      max-height: 100% !important; } }
+      max-height: 100% !important;
+      padding-top: 99px; } }
 
 .mobile-body {
   padding-top: 60px; }
@@ -133,6 +134,30 @@ body {
 @media only screen and (max-width: 1200px) {
   .container {
     max-width: 100%; } }
+
+#topBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 80px;
+  /* Place the button at the bottom of the page */
+  right: 26.8%;
+  /* Place the button 30px from the right */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  background-color: transparent;
+  z-index: 1001; }
+  @media only screen and (max-width: 991px) {
+    #topBtn {
+      right: 10px; } }
+  #topBtn img {
+    height: 50px;
+    width: 50px; }
 
 .line-height-14 {
   line-height: 14px; }
@@ -647,6 +672,16 @@ a {
       padding: 0px 12px; } }
 
 @media only screen and (max-width: 991px) {
+  .desktop-light-header {
+    display: none; } }
+
+.small-main-header {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    .small-main-header {
+      display: flex; } }
+
+@media only screen and (max-width: 991px) {
   .light-header {
     position: fixed;
     left: 0;
@@ -774,14 +809,28 @@ a {
 .text-div p {
   overflow: hidden;
   text-overflow: ellipsis;
-  color: black;
+  color: #333333;
   white-space: nowrap; }
+  @media only screen and (max-width: 550px) {
+    .text-div p {
+      font-size: 14px;
+      font-weight: 500; } }
+
+@media only screen and (max-width: 550px) {
+  .text-div .view-name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px; } }
 
 .text-div .small-dp {
   height: 20px !important;
   width: 20px !important;
   border-radius: 100%;
   object-fit: cover; }
+  @media only screen and (max-width: 550px) {
+    .text-div .small-dp {
+      height: 18px !important;
+      width: 18px !important; } }
 
 .follow-icons {
   height: 13px;
@@ -942,10 +991,16 @@ a {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  min-width: 200px; }
+  width: 200px; }
   @media only screen and (max-width: 450px) {
     .view-btn {
-      min-width: 145px;
+      width: 155px !important;
+      height: 45px;
+      padding: 0px;
+      margin: 0px 3px !important; } }
+  @media only screen and (max-width: 330px) {
+    .view-btn {
+      width: 145px !important;
       height: 45px;
       padding: 0px;
       margin: 0px 3px !important; } }
@@ -1567,24 +1622,46 @@ a {
 .menu-post-drop {
   padding: 10px 20px !important;
   border-radius: 3px !important;
-  border: 1px solid #0093FF !important;
-  background-color: white !important; }
+  border: 1px solid #f0f0f0 !important;
+  background-color: white !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important; }
+  @media only screen and (max-height: 991px) {
+    .menu-post-drop {
+      list-style: none !important;
+      border: 0px solid blue !important;
+      padding: 20px 20px !important;
+      margin: 0px !important;
+      margin-bottom: 0px !important; } }
   .menu-post-drop .dropdown-item {
     padding: 5px 10px !important;
     font-size: 16px;
     font-weight: 400;
     min-width: 260px; }
+    @media only screen and (max-height: 550px) {
+      .menu-post-drop .dropdown-item {
+        padding: 0px px !important; } }
     .menu-post-drop .dropdown-item:hover {
       background-color: #EFF0F2 !important; }
     .menu-post-drop .dropdown-item .menu-date {
       margin-left: auto; }
 
 .bi-person-fill {
-  padding-top: 2px; }
+  padding: 0px !important;
+  line-height: 0; }
   @media only screen and (max-width: 768px) {
     .bi-person-fill {
       padding-top: 0px;
       padding-bottom: 3px; } }
+
+@media only screen and (max-width: 991px) {
+  .desktop-menu-dots {
+    display: none; } }
+
+.mobile-menu-dots {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    .mobile-menu-dots {
+      display: block; } }
 
 .loading-body {
   display: flex;

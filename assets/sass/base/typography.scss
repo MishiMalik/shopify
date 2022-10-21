@@ -16,112 +16,141 @@ $navi-blue:#0093FF;
 $light-dark:#333333;
 $brand-blue:#003399;
 $dark-orange:#993300;
+
 // fonts
-.f-40{
+.f-40 {
     font-size: 40px;
 }
-.f-32{
+
+.f-32 {
     font-size: 32px;
 }
-.f-30{
+
+.f-30 {
     font-size: 30px;
 }
-.f-25{
+
+.f-25 {
     font-size: 25px !important;
-    
+
 }
-.f-24{
+
+.f-24 {
     font-size: 24px;
 }
-.f-27{
+
+.f-27 {
     font-size: 27px;
     line-height: 20px;
 }
-.f-20{
+
+.f-20 {
     font-size: 20px;
-    
+
 }
-.f-22{
+
+.f-22 {
     font-size: 22px;
 }
-.f-18{
+
+.f-18 {
     font-size: 18px;
 }
-.f-16{
+
+.f-16 {
     font-size: 16px;
 }
-.f-15{
+
+.f-15 {
     font-size: 15px;
 }
-.f-14{
+
+.f-14 {
     font-size: 14px;
 }
-.f-13{
+
+.f-13 {
     font-size: 13px;
 }
-.f-12{
+
+.f-12 {
     font-size: 12px;
 }
-.f-10{
+
+.f-10 {
     font-size: 10px;
 }
 
 
 // weights
-.w-400{
+.w-400 {
     font-weight: 400;
 }
-.w-500{
+
+.w-500 {
     font-weight: 500;
 }
-.w-600{
+
+.w-600 {
     font-weight: 600;
 }
-.w-700{
+
+.w-700 {
     font-weight: 700;
 }
 
 
 // text colors
-.blue-text{
+.blue-text {
     color: $dark-blue;
 }
-.dark-text{
+
+.dark-text {
     color: rgb(72, 72, 72) !important;
-       
-    &:hover{
+
+    &:hover {
         color: black !important;
     }
 }
-.primary-text{
-    color: $primary ;
+
+.primary-text {
+    color: $primary;
 }
-.text-gray{
+
+.text-gray {
     color: $gray !important;
 }
-.text-gray-light{
+
+.text-gray-light {
     color: $light-gray3 !important;
 }
-.text-varient{
+
+.text-varient {
     color: $varient-blue;
 }
-.underline{
+
+.underline {
     text-decoration: underline !important;
 }
-.text-primary{
+
+.text-primary {
     color: $primary !important;
 }
-.ellipsis{
+
+.ellipsis {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.text-dark{
+
+.text-dark {
     color: black !important;
 }
-.light-dark{
+
+.light-dark {
     color: $light-dark;
 }
-.brand-blue{
+
+.brand-blue {
     color: $brand-blue;
 }
