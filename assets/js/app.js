@@ -231,12 +231,12 @@ window.onscroll = function() {
     //   document.getElementById("light-header").classList.add('light-header')
     // }
   
-    if (prevScrollpos + 10 > currentScrollPos ) {
+    if (prevScrollpos > currentScrollPos ) {
       document.getElementById("header").style.top = "0";
       // document.getElementById("body").style.paddingTop = "110px";
       // document.getElementById("light-header").style.top = "60px";
       
-    } else if (prevScrollpos + 10 < currentScrollPos ) {
+    } else{
       document.getElementById("header").style.top = "-60px";
       // document.getElementById("body").style.paddingTop = "0";
       // document.getElementById("light-header").style.top = "0";
