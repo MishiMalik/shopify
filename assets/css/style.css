@@ -372,7 +372,7 @@ a {
       background-color: white;
       height: 100%;
       overflow-y: scroll;
-      padding: 50px 0px; } }
+      padding: 10px 0px; } }
 
 .main-row {
   position: relative; }
@@ -1653,6 +1653,9 @@ a {
       padding: 20px 20px !important;
       margin: 0px !important;
       margin-bottom: 0px !important; } }
+  @media only screen and (max-width: 400px) {
+    .menu-post-drop {
+      padding: 15px 15px !important; } }
   .menu-post-drop .dropdown-item {
     padding: 7px 10px !important;
     font-size: 16px;
@@ -1664,9 +1667,15 @@ a {
       margin-left: auto; }
     .menu-post-drop .dropdown-item i {
       width: 16px; }
+      @media only screen and (max-width: 400px) {
+        .menu-post-drop .dropdown-item i {
+          width: 14px; } }
 
 .post-view-content {
   max-width: 300px !important; }
+  @media only screen and (max-width: 400px) {
+    .post-view-content {
+      max-width: 290px !important; } }
 
 .bi-person-fill {
   padding: 0px !important;

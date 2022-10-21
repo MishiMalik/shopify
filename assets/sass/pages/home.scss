@@ -1388,6 +1388,9 @@
         margin: 0px !important;
         margin-bottom: 0px !important;
     }
+    @media only screen and (max-width:400px){
+        padding:15px 15px !important;
+    }
     
   
     .dropdown-item {
@@ -1396,8 +1399,8 @@
         font-weight: 400;
         min-width: 260px;
 
-        // @media only screen and (max-height:550px) {
-        //     padding: 0px px !important;
+        // @media only screen and (max-height:450px) {
+        //     min-width: 240px;
         // }
         &:hover {
             background-color: $light-gray2 !important;
@@ -1409,11 +1412,17 @@
 
         i{
             width: 16px;
+            @media only screen and (max-width:400px){
+                width: 14px;
+            }
         }
     }
 }
 .post-view-content{
     max-width: 300px !important;
+    @media only screen and (max-width:400px){
+        max-width: 290px !important;
+    }
 }
 // .mobile-post-menu {
 
