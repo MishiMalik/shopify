@@ -204,7 +204,7 @@ var prevScrollpos = window.pageYOffset;
 let mybutton = document.getElementById("topBtn");
 let center=document.getElementById("center");
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 center.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 || center.scrollTop > 100 ) {
@@ -224,18 +224,19 @@ function topFunction() {
 
 
 window.onscroll = function() {
+  // scrollFunction()
   var currentScrollPos = window.pageYOffset ;
   
     // if(currentScrollPos > 25) {
     //   document.getElementById("light-header").classList.add('light-header')
     // }
   
-    if (prevScrollpos > currentScrollPos ) {
+    if (prevScrollpos + 10 > currentScrollPos ) {
       document.getElementById("header").style.top = "0";
       // document.getElementById("body").style.paddingTop = "110px";
       // document.getElementById("light-header").style.top = "60px";
       
-    } else {
+    } else if (prevScrollpos + 10 < currentScrollPos ) {
       document.getElementById("header").style.top = "-60px";
       // document.getElementById("body").style.paddingTop = "0";
       // document.getElementById("light-header").style.top = "0";
