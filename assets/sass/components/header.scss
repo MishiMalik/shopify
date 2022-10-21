@@ -145,3 +145,21 @@ transition: top 0.9s ease-in-out;
     z-index: 20;
     display: none;
 }
+.backdrop-loading{
+    background-color: rgba(0, 0, 0, 0.658);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 100%;
+    overflow-y: auto;
+    @media only screen and (max-width:991px) {
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 50px 0px;
+    }
+}

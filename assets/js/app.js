@@ -35,7 +35,11 @@ function closeNav() {
   document.getElementById("left-menu").style.display = "none";
   document.getElementById("backdrop-menu").style.display="none"
 }
+// close loading backdrop
+function closeLoading(){
+    document.getElementById("loading").style.display="none";
 
+}
 
 // slider
 $('.owl-carousel-slider').owlCarousel({

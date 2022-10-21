@@ -1391,14 +1391,14 @@
     
   
     .dropdown-item {
-        padding: 5px 10px !important;
+        padding: 7px 10px !important;
         font-size: 16px;
         font-weight: 400;
         min-width: 260px;
 
-        @media only screen and (max-height:550px) {
-            padding: 0px px !important;
-        }
+        // @media only screen and (max-height:550px) {
+        //     padding: 0px px !important;
+        // }
         &:hover {
             background-color: $light-gray2 !important;
         }
@@ -1412,7 +1412,9 @@
         }
     }
 }
-
+.post-view-content{
+    max-width: 300px !important;
+}
 // .mobile-post-menu {
 
 //     .menu-post-drop {
