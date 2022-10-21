@@ -222,24 +222,14 @@ function topFunction() {
 }
 
 
-
 window.onscroll = function() {
-  // scrollFunction()
+  scrollFunction()
   var currentScrollPos = window.pageYOffset ;
-  
-    // if(currentScrollPos > 25) {
-    //   document.getElementById("light-header").classList.add('light-header')
-    // }
-  
-    if (prevScrollpos > currentScrollPos ) {
-      document.getElementById("header").style.top = "0";
-      // document.getElementById("body").style.paddingTop = "110px";
-      // document.getElementById("light-header").style.top = "60px";
-      
+
+    if (currentScrollPos < prevScrollpos) {
+        document.getElementById("header").style.top = "0";
     } else{
-      document.getElementById("header").style.top = "-60px";
-      // document.getElementById("body").style.paddingTop = "0";
-      // document.getElementById("light-header").style.top = "0";
+        document.getElementById("header").style.top = "-60px";
       
     }
     prevScrollpos = currentScrollPos;

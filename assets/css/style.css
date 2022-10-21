@@ -254,7 +254,7 @@ a {
   left: 0;
   right: 0;
   height: 60px;
-  transition: top 0.4s ease-in-out; }
+  transition: top 0.9s ease-in-out; }
 
 @media only screen and (max-width: 991px) {
   .dark-header {
@@ -1647,6 +1647,8 @@ a {
       background-color: #EFF0F2 !important; }
     .menu-post-drop .dropdown-item .menu-date {
       margin-left: auto; }
+    .menu-post-drop .dropdown-item i {
+      width: 16px; }
 
 .bi-person-fill {
   padding: 0px !important;
