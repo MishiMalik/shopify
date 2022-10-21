@@ -666,10 +666,13 @@ a {
   top: 0px;
   left: 0;
   z-index: 90;
-  transition: top 0.4s ease-in-out; }
+  transition: top 4s ease-in-out; }
   @media only screen and (max-width: 550px) {
     .main-header {
       padding: 0px 12px; } }
+  @media only screen and (max-width: 991px) {
+    .main-header {
+      top: 99px; } }
 
 @media only screen and (max-width: 991px) {
   .desktop-light-header {

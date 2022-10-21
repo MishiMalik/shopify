@@ -224,13 +224,13 @@ function topFunction() {
 
 
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+  var currentScrollPos = window.pageYOffset ;
   
     // if(currentScrollPos > 25) {
     //   document.getElementById("light-header").classList.add('light-header')
     // }
   
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos ) {
       document.getElementById("header").style.top = "0";
       // document.getElementById("body").style.paddingTop = "110px";
       // document.getElementById("light-header").style.top = "60px";
