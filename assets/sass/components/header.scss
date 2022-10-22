@@ -146,7 +146,8 @@ transition: top 0.9s ease-in-out;
     display: none;
 }
 .backdrop-loading{
-    background-color: rgba(0, 0, 0, 0.658);
+    // background-color: rgba(0, 0, 0, 0.658);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -154,7 +155,7 @@ transition: top 0.9s ease-in-out;
     bottom: 0;
     z-index: 1000;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     @media only screen and (max-width:991px) {
         position: fixed;
         background-color: white;
