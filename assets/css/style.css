@@ -110,7 +110,8 @@ body {
       padding-bottom: 50px;
       min-height: 100% !important;
       max-height: 100% !important;
-      padding-top: 99px; } }
+      padding-top: 99px;
+      overflow-y: hidden; } }
 
 .mobile-body {
   padding-top: 60px; }
@@ -355,24 +356,6 @@ a {
   bottom: 0;
   z-index: 20;
   display: none; }
-
-.backdrop-loading {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1000;
-  height: 100%;
-  overflow-y: scroll; }
-  @media only screen and (max-width: 991px) {
-    .backdrop-loading {
-      position: fixed;
-      background-color: white;
-      height: 100%;
-      overflow-y: scroll;
-      padding: 10px 0px; } }
 
 .main-row {
   position: relative; }
@@ -1695,10 +1678,6 @@ a {
     .mobile-menu-dots {
       display: block; } }
 
-.loading-body {
-  display: flex;
-  align-items: center; }
-
 .loading-logo {
   height: 70px;
   width: auto;
@@ -1760,3 +1739,22 @@ a {
       padding-bottom: 30px !important;
       padding: 0px;
       border: 0px !important; } }
+
+.backdrop-loading {
+  background-color: rgba(0, 0, 0, 0.658);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  height: 100%;
+  overflow-y: scroll; }
+  @media only screen and (max-width: 991px) {
+    .backdrop-loading {
+      position: fixed;
+      background-color: white;
+      height: 100%;
+      overflow-y: scroll;
+      padding: 10px 0px; } }

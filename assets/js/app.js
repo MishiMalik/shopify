@@ -38,7 +38,7 @@ function closeNav() {
 // close loading backdrop
 function closeLoading(){
     document.getElementById("loading").style.display="none";
-
+    document.getElementById("body").style.overflowY="auto";
 }
 
 // slider

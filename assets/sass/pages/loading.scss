@@ -1,6 +1,6 @@
 .loading-body {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 
 .loading-logo {
@@ -83,5 +83,25 @@
             }
 
         }
+    }
+}
+
+.backdrop-loading{
+    background-color: rgba(0, 0, 0, 0.658);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 100%;
+    overflow-y: scroll;
+    @media only screen and (max-width:991px) {
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 10px 0px;
     }
 }

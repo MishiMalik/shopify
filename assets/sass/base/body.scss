@@ -9,11 +9,13 @@ body{
     font-family: 'Roboto', sans-serif;
     max-height: 100vh;
     
+    
     @media only screen and (max-width: 991px){
         padding-bottom: 50px;
         min-height: 100% !important;
         max-height: 100% !important;
         padding-top: 99px;
+        overflow-y: hidden;
     }
 }
 .mobile-body{
