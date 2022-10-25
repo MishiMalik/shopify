@@ -2565,12 +2565,15 @@ a {
       align-items: center; }
       .directory-card .directory-icons .chat .online-msg {
         position: absolute;
-        top: 11px;
+        top: 3px;
         right: -3px;
         height: 10px;
         width: 10px;
         border-radius: 100%;
         background-color: #00BA00; }
+        @media only screen and (max-width: 991px) {
+          .directory-card .directory-icons .chat .online-msg {
+            top: 11px; } }
     .directory-card .directory-icons i {
       color: #767676;
       font-size: 32px;
