@@ -654,7 +654,7 @@ a {
   position: relative; }
   .filter-div .filter-number {
     position: absolute;
-    top: -5px;
+    top: 5px;
     right: -20px;
     height: 15px;
     width: 15px;
@@ -2491,7 +2491,16 @@ a {
   .directory-card .directory-img {
     flex-shrink: 0 !important;
     height: 100px !important;
-    width: 100px !important; }
+    width: 100px !important;
+    position: relative; }
+    .directory-card .directory-img .online {
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      background-color: #00BA00;
+      bottom: 10px;
+      right: 5px; }
     .directory-card .directory-img img {
       height: 100px !important;
       width: 100px !important;
@@ -2549,6 +2558,16 @@ a {
     @media only screen and (max-width: 1035px) {
       .directory-card .directory-icons {
         margin-left: auto; } }
+    .directory-card .directory-icons .chat {
+      position: relative; }
+      .directory-card .directory-icons .chat .online-msg {
+        position: absolute;
+        top: 2px;
+        right: -3px;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background-color: #00BA00; }
     .directory-card .directory-icons i {
       color: #767676;
       font-size: 32px;
