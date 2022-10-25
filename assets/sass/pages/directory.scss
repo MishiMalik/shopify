@@ -97,9 +97,12 @@ width: 100%;
           }
         .chat{
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .online-msg{
                 position: absolute;
-                top: 2px;
+                top: 11px;
                 right: -3px;
                 height: 10px;
                 width: 10px;
