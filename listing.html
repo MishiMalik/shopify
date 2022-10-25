@@ -2479,7 +2479,7 @@
                             <!-- Tab links -->
                             <button class="filters-list-tablinks" onclick="filterTabs(event, 'budget')"> By
                                 Budget</button>
-                            <button class="filters-list-tablinks" onclick="filterTabs(event, 'Years')">By
+                            <button class="filters-list-tablinks" id="default-filter" onclick="filterTabs(event, 'Years')">By
                                 Years</button>
                             <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">By No of.
                                 Owners</button>
@@ -2531,10 +2531,82 @@
                                 </label>
                                 <label
                                     class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox " class="ms-auto filter-checkboxes">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
                             </div>
+
+                           <div id="Years" class="filters-list-tabcontent">
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Years
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div id="Owners" class="filters-list-tabcontent">
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Owners
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> 
                         </div>
                     </div>
 
@@ -2659,6 +2731,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/multiselect-dropdown-main/multiselect-dropdown.js"></script>
+    <script src="assets/js/filter.js"></script>
     <script src="assets/js/app.js"></script>
 
 

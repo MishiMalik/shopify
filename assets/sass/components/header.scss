@@ -49,7 +49,7 @@ transition: top 0.9s ease-in-out;
     flex-shrink: 0 !important;
     p{
         color: white;
-        @media only screen and  (max-width:768px){
+        @media only screen and  (max-width:991px){
             display: none;
         }
     }

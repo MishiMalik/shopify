@@ -158,8 +158,8 @@
                     </a>
                 </div>
                 <div>
-                    <a href="">
-                        <p class="mb-0 pb-0 f-18 text-primary w-600 header-link">DIRECTORY</p>
+                    <a href="listing.html">
+                        <p class="mb-0 pb-0 f-18 text-primary w-600 header-link">Listing</p>
                     </a>
                 </div>
                 <div class=" d-flex justify-content-between align-items-center py-auto ">
@@ -1191,9 +1191,7 @@
                     <div
                         class="right-header d-flex justify-content-between align-items-center py-auto zones-right my-auto filter-desktop">
                         <div class="d-flex align-items-center filter-div">
-                            <!-- <img src="assets/images/icons/filter.svg" alt="" class="img-fluid me-2" height="22px"
-                                width="22px"> -->
-                            <i class="bi bi-filter-left f-32 me-2"></i>
+                            <i class="bi bi-filter-left f-30 me-2"></i>
                             <h2 class="f-20 w-600 text-dark m-0 p-0 mb-1">Filters</h2>
 
                             <div class="filter-number">
@@ -1638,29 +1636,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="zones-right-filter py-2">
+                        <div class="zones-right-filter py-2 d-none">
                             <p class="mb-0 pb-0 f-14 w-500 light-dark text-start pt-1">Selected Filters</p>
+                           <!-- tags -->
                             <div class=" tags-div">
-                                <div class="fiter-selected-tag my-1">
-                                    <p class="mb-0 pb-0 ">Diesel</p>
-                                    <i class="fas fa-times f-12 ms-2"></i>
-                                </div>
-                                <div class="fiter-selected-tag my-1">
-                                    <p class="mb-0 pb-0 ">Diesel</p>
-                                    <i class="fas fa-times f-12 ms-2"></i>
-                                </div>
-                                <div class="fiter-selected-tag my-1">
-                                    <p class="mb-0 pb-0 ">Diesel</p>
-                                    <i class="fas fa-times f-12 ms-2"></i>
-                                </div>
-                                <div class="fiter-selected-tag my-1">
-                                    <p class="mb-0 pb-0 ">Diesel</p>
-                                    <i class="fas fa-times f-12 ms-2"></i>
-                                </div>
-                                <div class="fiter-selected-tag my-1">
-                                    <p class="mb-0 pb-0 ">Diesel</p>
-                                    <i class="fas fa-times f-12 ms-2"></i>
-                                </div>
+                                
 
                             </div>
 
@@ -1672,7 +1652,7 @@
                             <!-- Tab links -->
                             <button class="filters-list-tablinks" onclick="filterTabs(event, 'budget')"> By
                                 Budget</button>
-                            <button class="filters-list-tablinks" onclick="filterTabs(event, 'Years')">By
+                            <button class="filters-list-tablinks" id="default-filter" onclick="filterTabs(event, 'Years')">By
                                 Years</button>
                             <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">By No of.
                                 Owners</button>
@@ -1692,45 +1672,118 @@
                                 Cars</button>
                         </div>
                         <div class="filters-list-contents">
+                            <!-- checkboxes -->
                             <div id="budget" class="filters-list-tabcontent">
                                 <label
                                     class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
-                                    <input type="checkbox" checked="checked" class="ms-auto mb-3">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
                                     <span class="checkmark "></span>
                                 </label>
 
                                 <label
                                     class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
-                                    <input type="checkbox" checked="checked" class="ms-auto">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
                                 <label
                                     class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" checked="checked" class="ms-auto">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
 
                                 <label
                                     class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
-                                    <input type="checkbox" checked="checked" class="ms-auto mb-3">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
                                     <span class="checkmark "></span>
                                 </label>
 
                                 <label
                                     class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
-                                    <input type="checkbox" checked="checked" class="ms-auto">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
                                 <label
                                     class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" checked="checked" class="ms-auto">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
                             </div>
+
+                           <div id="Years" class="filters-list-tabcontent">
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Years
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div id="Owners" class="filters-list-tabcontent">
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Owners
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
+                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <span class="checkmark "></span>
+                                </label>
+
+                                <label
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> 
                         </div>
                     </div>
 
-                    <div class="fix-filter-btns mobile-filter2">
+                    <div class="fix-filter-btns mobile-filter2" id="fix-filter-btns">
                         <button>22 Checked</button>
                         <button class="clear">ClEAR</button>
                         <button class="select">SELECT</button>
@@ -1851,6 +1904,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/multiselect-dropdown-main/multiselect-dropdown.js"></script>
+    <script src="assets/js/filter.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
