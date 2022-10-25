@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Zones</title>
+</head>
+
+<body id="body">
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center">
+                    <a href="index.html" class="d-flex align-items-center logo-div">
+                        <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
+                            class="img-fluid logo">
+                        <p class="mb-0 pb-0 f-25 w-600 ms-2">CompanyName</p>
+
+                    </a>
+                    <div class="d-flex flex-column ms-2">
+                        <div class="dropdown classified-dropdown">
+                            <button class="classified-drop-small dropdown-toggle ms-1 dark-text" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Classifieds
+                            </button>
+                            <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                            class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="assets/images/icons/icons8-money-bag-50.png" alt=""
+                                            class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt=""
+                                            class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                            class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                            </ul>
+                        </div>
+                        <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-small">Offer</p>
+                    </div>
+                </div>
+                <div class="col-lg-6  my-auto center-header">
+                    <div class="d-flex justify-content-around align-items-end">
+                        <div class="header-menu ">
+                            <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-house-door "></i>
+                                <p class="f-12  w-400 pb-0 mb-0 ">Home</p>
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <!-- <i class="bi bi-border-all"></i> -->
+                                <i class="fas fa-th-large "></i>
+                                <p class="f-12  w-400 pb-0 mb-0 active-header">Zones</p>
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-chat-dots"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Chats</p>
+                            </a>
+                            <p class="chats-num m-0 p-0">2</p>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-heart"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Saved</p>
+                            </a>
+                            <p class="chats-num m-0 p-0">2</p>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-plus-circle"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Post</p>
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-check2-square"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Selected</p>
+                            </a>
+                            <p class="chats-num m-0 p-0 chats-num2">10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-auto col-6">
+                    <div
+                        class="d-flex justify-content-lg-end justify-content-md-end align-items-center justify-content-end">
+                        <div class="header-menu header-menu2 me-4">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <!-- <i class="bi bi-search f-25 text-white"></i> -->
+                                <i class="fas fa-search f-25 text-white"></i>
+                            </a>
+                        </div>
+                        <div class="header-menu header-menu2 me-4">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <!-- <i class="bi bi-bell f-25 text-white"></i> -->
+                                <i class="fas fa-bell f-25 text-white"></i>
+                            </a>
+                            <p class="chats-num m-0 p-0 chats-num">2</p>
+                        </div>
+                        <!-- <div class="header-menu d-none d-lg-block">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <p class="f-18 w-400 m-0 p-0 text-white">Log Out</p>
+                            </a>
+                        </div> -->
+                        <div class="header-menu d-none d-lg-block ">
+                            <div class="dropdown">
+                                <a href="" class="text-white dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid dp  dp-radius">
+                                </a>
+                                <ul class="dropdown-menu log-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class="me-2 bi bi-box-arrow-left text-dark"></i> Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-menu header-menu2 d-block d-lg-none" onclick="openNave()">
+                            <a class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-list f-25 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header small-main-header">
+            <div class="zonestab d-flex justify-content-between w-100">
+                <button class="zonestablinks me-3" id="defaultOpenzones" onclick="zonestabs(event, 'offer-zone')"><img
+                        src="assets/images/icons/gift-icon.png" alt="" class="img-fluid gift-icon mb-1"></i> OFFER
+                    Zone</button>
+                <button class="zonestablinks" onclick="zonestabs(event, 'notice-board')"><img
+                        src="assets/images/icons/notice-icon.png" alt="" class="img-fluid notice-icon">NOTICE
+                    Board</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <div class="container h-100 ">
+            <div class="row h-100 main-row">
+                <!-- left menu -->
+                <div class="col-lg-3  bg-white left-menu" id="left-menu">
+                    <div class="small-blue-header">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/image 224.png" alt="" class="dp dp-radius">
+                            <p class="f-20 w-400 text-white ms-2 my-0 py-0">Jerry Varghese</p>
+                        </div>
+                        <div>
+                            <a class="f-18 w-500  ms-2 my-0 py-0 underline text-varient">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks" id="defaultOpen1" onclick="leftMenu(event, 'menu')"><i
+                                class="fas fa-bars me-1"></i></i> Menu</button>
+                        <button class="tablinks" onclick="leftMenu(event, 'my-account')"> <i
+                                class="far fa-user me-1"></i> My Account</button>
+                    </div>
+
+                    <div id="menu" class="tabcontent">
+                        <div class="d-flex align-items-center justify-content-around icons-div">
+                            <div>
+                                <a href="index.html" class="left-menu-icon">
+                                    <i class="bi bi-house-heart-fill "></i><br>
+                                </a>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Home<br>Screen</p>
+                            </div>
+                            <div>
+                                <a href="" class="left-menu-icon">
+                                    <i class="bi bi-chat-heart-fill"></i><br>
+                                </a>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Tell a<br>friend</p>
+
+                            </div>
+                            <div>
+                                <a href="" class="left-menu-icon">
+                                    <i class="fas fa-link"></i><br>
+                                </a>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Copy<br>link</p>
+
+                            </div>
+                            <div>
+                                <a href="" class="left-menu-icon ">
+                                    <img src="assets/images/icons/arrow.png" alt="" class="img-fluid mb-1" height="15px"
+                                        width="17px">
+                                </a>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2">Share</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3">
+                            <h1 class="f-18 blue-text w-500">Quick Links</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/plus.jpg" alt="" class="img-fluid ">
+                                        </div>
+                                        <a href="" class="f-16 w-500 dark-text ms-3 ">Add New Post</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Blood Donation</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 pt-2">
+                            <h1 class="f-18 blue-text w-500">Posts</h1>
+                            <ul class="m-0 p-0 left-list">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-check2-square me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Selected <span
+                                                class="stats f-12">123</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-bag-heart me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">My Interests </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-chat-square-heart me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Recieved Interests<span
+                                                class="stats f-12">13</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-chat-left-text me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Messages </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 pt-2">
+                            <h1 class="f-18 blue-text w-500">Affilliate</h1>
+                            <ul class="m-0 p-0 left-list">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/PRO Membership.png" alt="" class="img-fluid">
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <a href="" class="f-16 w-500 blue-text  ms-3">PRO&nbsp;</a>
+                                                <a href="" class="f-16 w-500 dark-text ">
+                                                    Membership
+                                                </a>
+                                                <p class="stats f-12 text-center my-0 py-0 "><span
+                                                        class="text-gray">Expiry:</span> 16 Mar 22</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Featured.png" alt="" class="img-fluid ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Featured Posts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/SPonsored.jpg" alt="" class="img-fluid ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Sponsored ads</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Partner.png" alt="" class="img-fluid  ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Be Our Partner<span
+                                                class="text-danger f-12"></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 py-0 pt-2 pb-3  icons-div">
+                            <h1 class="f-18 blue-text w-500">General</h1>
+                            <ul class="m-0 p-0 left-list">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-coin  me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Payment History </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-gear me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Settings </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-chat-square-text  me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Feedback </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex flex-wrap align-items-center justify-content-center mt-3">
+                            <a href="" class="dark-text f-16 w-500 me-2">About Us |</a>
+                            <a href="" class="dark-text f-16 w-500 me-2">Terms & Conditions |</a>
+                            <a href="" class="dark-text f-16 w-500 me-2">Privacy |</a>
+                            <a href="" class="dark-text f-16 w-500 me-2">Need Help |</a>
+                            <a href="" class="dark-text f-16 w-500">Contact Us </a>
+                        </div>
+
+
+                    </div>
+
+                    <div id="my-account" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                </div>
+                <!-- main area -->
+                <div class="col-lg-6 col-md-12 text-center center-part" id="center">
+                    <div class="main-header desktop-light-header" id="light-header">
+                        <div>
+                            <div class="dropdown">
+                                <button class="classified-drop dropdown-toggle ms-1 dark-text" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Classifieds
+                                </button>
+                                <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src="assets/images/icons/icons8-money-bag-50.png" alt=""
+                                                class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                                    <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png"
+                                                alt="" class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="zonestab d-flex justify-content-between ">
+                                <button class="zonestablinks me-3 activezone" id="defaultOpenzones2"
+                                    onclick="zonestabs(event, 'offer-zone')"><img
+                                        src="assets/images/icons/gift-icon.png" alt=""
+                                        class="img-fluid gift-icon mb-1"></i> OFFER
+                                    Zone</button>
+                                <button class="zonestablinks" onclick="zonestabs(event, 'notice-board')"><img
+                                        src="assets/images/icons/notice-icon.png" alt=""
+                                        class="img-fluid notice-icon">NOTICE Boards</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid pb-2">
+
+                        <div class="post row zones-post">
+                            <div id="offer-zone" class="zonestabcontent">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6 px-1 py-0 mb-3">
+                                        <div class="offer-zones-card offer-zones-card-active">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-4 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6 px-1 py-0 mb-3">
+                                        <div class="offer-zones-card">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-6 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="zones-right-mobile">
+                                        <div
+                                            class=" d-flex justify-content-between align-items-center py-auto zones-right my-auto ">
+                                            <div>
+                                                <h2 class="f-20 w-500 text-dark m-0 p-0">Electronics</h2>
+                                            </div>
+                                            <div>
+                                                <a href="zones.html" class="varient-text underline f-16 w-500 m-0 p-0">
+                                                    View All</a>
+                                            </div>
+                                        </div>
+                                        <div class="zones-right mt-3">
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item1.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection Lorem, ipsum dolor.</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500  ellipsis-multiple text-dark">
+                                                            Shoes Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6 px-1 py-0 mb-3">
+                                        <div class="offer-zones-card">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-9 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="zones-right-mobile-tablet">
+                                        <div
+                                            class=" d-flex justify-content-between align-items-center py-auto zones-right my-auto ">
+                                            <div>
+                                                <h2 class="f-20 w-500 text-dark m-0 p-0">Electronics</h2>
+                                            </div>
+                                            <div>
+                                                <a href="zones.html" class="varient-text underline f-16 w-500 m-0 p-0">
+                                                    View All</a>
+                                            </div>
+                                        </div>
+                                        <div class="zones-right mt-3">
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item1.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection Lorem, ipsum dolor.</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500 ellipsis-multiple text-dark">Shoes
+                                                            Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="listing.html">
+                                                <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                                    <div class="zones-menu-img me-3">
+                                                        <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div class="zones-menu-text">
+                                                        <h3 class="m-0 p-0 f-18 w-500  ellipsis-multiple text-dark">
+                                                            Shoes Of Brand New Collection</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6 px-1 py-0 mb-3">
+                                        <div class="offer-zones-card">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-8 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6 px-1 py-0 mb-3">
+                                        <div class="offer-zones-card">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-6 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6 px-1 py-0 mb-3">
+                                        <div class="offer-zones-card">
+                                            <div class="carousel__slide-1">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/pdc-3 - Copy.png" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="notice-board" class="zonestabcontent">
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- go to top -->
+                    <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="assets/images/icons/top.png"
+                            alt="" class="img-fluid"></button>
+
+
+                </div>
+
+
+
+
+
+                <!-- right menu -->
+                
+                 <div class="col-lg-3 text-end bg-white  m-0 right-menu ">
+                    <div
+                        class="right-header d-flex justify-content-between align-items-center py-auto zones-right my-auto ">
+                        <div>
+                            <h2 class="f-20 w-500 text-dark m-0 p-0">Electronics</h2>
+                        </div>
+                        <div>
+                            <a href="zones.html" class="varient-text underline f-16 w-500 m-0 p-0"> View All</a>
+                        </div>
+                    </div>
+                    <div class="zones-right mt-3">
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item1.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection Lorem, ipsum dolor.</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item2.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500 ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="listing.html">
+                            <div class="d-flex align-items-center mt-4 zones-right-menu">
+                                <div class="zones-menu-img me-3">
+                                    <img src="assets/images/item3.png" alt="" class="img-fluid ">
+                                </div>
+                                <div class="zones-menu-text">
+                                    <h3 class="m-0 p-0 f-16 w-500  ellipsis-multiple text-dark">Shoes Of Brand New
+                                        Collection</h3>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="d-block d-lg-none mobile-footer d-flex align-items-center w-100">
+        <div class="d-flex justify-content-around align-items-center w-100">
+            <div class="header-menu ">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-house-door"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0 ">Home</p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <!-- <i class="bi bi-border-all"></i> -->
+                    <i class="fas fa-th-large"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0 active-menu">Zones</p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-chat-dots"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Chats</p>
+                </a>
+                <p class="chats-num  chats-num3 m-0 p-0">2</p>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-heart"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Saved</p>
+                </a>
+                <p class="chats-num m-0 p-0">2</p>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-plus-circle"></i>
+
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Post</p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-check2-square"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Selected</p>
+                </a>
+                <p class="chats-num m-0 p-0 chats-num2">10</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- backdrop -->
+    <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
+
+    <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
+                                    this
+                                    post</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
+                                    Link</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
+                                    Similar Posts</a></li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
+                                    Jerry</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
+                                    Post</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-minus-circle me-4"></i>Show
+                                    Less
+                                    Such posts</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
+                                    post</a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item d-flex " href="#"><i class="fas fa-lightbulb me-4"></i>Last
+                                    Active
+                                    <div class="menu-date">12 Mar 22
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item d-flex" href="#"><i class="fas fa-calendar-alt me-4"></i>Posting
+                                    Date <div class="menu-date">12 Mar
+                                        22</div></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/zones.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+
+
+</body>
+
+</html>

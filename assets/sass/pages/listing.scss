@@ -1,0 +1,374 @@
+.check-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.listing-accordian {
+    border: none !important;
+    border-top: 1.5px solid $light-gray2 !important;
+    bottom: -100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+    
+
+    &:last-child {
+        border-bottom: 1.5px solid $light-gray2 !important;
+    }
+
+    .accordion-button {
+        color: $light-dark !important;
+        background-color: white !important;
+        box-shadow: none !important;
+        border-top: 0px solid $light-gray2 !important;
+        padding-bottom: 7px !important;
+        padding-top: 18px;
+        font-size: 18px;
+        font-weight: 500;
+
+        &::after {
+            @media only screen and (max-width:991px) {
+                background-image: none !important;
+            }
+        }
+    }
+
+    .small-footer {
+        display: none !important;
+    }
+
+
+    .accordion-body {
+        .checks-div {
+            @media only screen and (max-width:991px) {
+                height: 80vh;
+                overflow-y: scroll;
+            }
+        }
+
+        padding: 5px 0px !important;
+        border-top: 0px solid $light-gray2 !important;
+
+        &-item {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid $light-gray2;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            border-top: 0px solid $light-gray2 !important;
+
+            &:hover {
+                background-color: #EFF0F2;
+            }
+
+            label {
+                cursor: pointer !important;
+            }
+        }
+
+        .accordian-fixed-button {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+            @media only screen and (max-width:991px) {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                justify-content: space-around;
+                padding-bottom: 10px;
+            }
+
+            button {
+                background-color: transparent;
+                border: 1px solid $light-gray;
+                padding: 3px 10px;
+                min-width: 100px;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0px 5px;
+                border-radius: 3px;
+                color: $navi-blue;
+
+                &:hover {
+                    color: white;
+                    background-color: $navi-blue;
+                }
+            }
+        }
+    }
+}
+
+.listing-accordian-small {
+    @media only screen and (max-width:991px) {
+        position: fixed;
+        top: 0px !important;
+        right: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        z-index: 100 !important;
+        transition: all .5s;
+    }
+}
+
+.sort-radio {
+    opacity: 0;
+}
+
+.enter-btn {
+    background-color: #044DEB;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 3px;
+    border: none;
+    width: 150px;
+    margin-top: 18px;
+
+    &:hover {
+        background-color: #2262eb;
+    }
+}
+
+.interested-menu-icon {
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    z-index: 1000;
+}
+
+.close-accordian-div {
+    display: none;
+
+    @media only screen and (max-width:991px) {
+        display: block;
+    }
+}
+
+
+
+
+// multiple dropdown
+
+.dropdown-multiple {
+    position: relative;
+    font-size: 16px;
+    color: black;
+    width: 100px;
+    font-weight: 500;
+    @media only screen and (max-width:991px){
+        width: 150px;
+        border-bottom: 2px solid $light-gray;
+    }
+    .dropdown-list {
+        width: 200px;
+        padding: 12px;
+        background: #fff;
+        position: absolute;
+        top: 40px;
+        right: 3px;
+        font-size: 16px;
+        box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+        transform-origin: 50% 0;
+        transform: scale(1, 0);
+        transition: transform .15s ease-in-out .15s;
+        border-radius: 4px;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        //   max-height: 66vh;
+        //   overflow-y: scroll;
+    }
+
+    .dropdown-option {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8px 0px;
+        opacity: 0;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        transition: opacity .15s ease-in-out;
+    }
+
+    .dropdown-label {
+        display: block;
+        height: 30px;
+        background: transparent;
+        border: 1px solid transparent;
+        padding: 6px 3px;
+        line-height: 1;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        width: 90%;
+        @media only screen and (max-width:991px) {
+            text-align: left !important;
+        }
+        &::after {
+            // content: '▼';
+            // float: right;
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            position: absolute;
+            top: 12px;
+            right: 5px;
+
+        }
+    }
+
+    &.on {
+        .dropdown-list {
+            transform: scale(1, 1);
+            transition-delay: 0s;
+
+            .dropdown-option {
+                opacity: 1;
+                transition-delay: .2s;
+            }
+        }
+
+        //   .dropdown-label:before {
+        //     content: '▲';
+        //   }
+    }
+
+    [type="checkbox"] {
+        position: relative;
+        top: -1px;
+        margin-right: 4px;
+    }
+}
+
+
+// =======================custome dropdown
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    width: 120px;
+
+    @media only screen and (max-width:991px){
+        width: 150px;
+        border-bottom: 2px solid $light-gray;
+    }
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: transparent;
+    color: black !important;
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px;
+    @media only screen and (max-width:991px) {
+        text-align: left !important;
+    }
+}
+
+/* Style the arrow inside the select element: */
+.select-selected::after {
+    // display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 0px;
+    // width: 0;
+    // height: 0;
+    // border: 6px solid transparent;
+    // border-color: #fff transparent transparent transparent;
+    // content: '▼';
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+//   .select-selected.select-arrow-active:after {
+//     // border-color: transparent transparent #fff transparent;
+//     content: '▲';
+//     top: 7px;
+//   }
+
+/* style the items (options), including the selected item: */
+.select-items div{
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.select-selected {
+    color: black;
+    padding: 3px 16px;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    width: 200px;
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    top: 44px;
+    right: 3px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+    color: black !important;
+    border-radius: 4px;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    text-align: left;
+    font-weight: 500;
+
+    @media only screen and (max-width:991px) {
+        right:unset !important;
+    }
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}

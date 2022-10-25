@@ -9,19 +9,20 @@
   left: 0;
   top: 60px;
   padding: 0 !important;
-
+  transition: all .5s;
   @media only screen and (max-width:991px) {
     min-height: 100vh;
     position: fixed;
     top: 0px !important;
     left: -100%;
-    width: 90%;
+    width: 88%;
     z-index: 1000;
-
+    transition: all .5s;
   }
 
   @media only screen and (max-width:330px) {
     width: 285px;
+    transition: all .5s;
   }
 }
 

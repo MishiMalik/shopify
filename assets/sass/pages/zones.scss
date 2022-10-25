@@ -1,0 +1,160 @@
+// ================================================================ zones tabs
+.zonestab {
+  display: flex;
+  justify-content: space-between;
+  background-color: $light-blue;
+  padding: 13px 10px 0px 10px;
+  height: 50px;
+  position: sticky;
+  top: 0px !important;
+  left: 0;
+  z-index: 90;
+}
+
+.zonestab button {
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 4px solid transparent;
+
+  @media only screen and (max-width:350px) {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.zonestab button:hover {
+  border-bottom: 4px solid $primary;
+  color: $primary;
+}
+
+.zonestab button.activezone {
+  border-bottom: 4px solid $primary !important;
+  color: $primary !important;
+}
+
+/* Style the zones-tab content */
+.zonestabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+}
+
+.offer-zone-btn {
+  border: none !important;
+  padding: 0px !important;
+}
+
+
+.offer-zones-card {
+  cursor: pointer;
+  border: 5px solid transparent;
+  overflow: hidden;
+
+  img {
+    transform: scale(1);
+    transition: transform 1.2s;
+  }
+}
+
+.offer-zones-card:hover {
+  border: 7px solid $primary;
+
+  img {
+    transform: scale(1.1);
+  }
+
+}
+
+.offer-zones-card-active {
+  border: 7px solid $primary;
+
+  img {
+    transform: scale(1.1);
+  }
+}
+
+.zones-right {
+  padding: 0px 12px !important;
+
+  @media only screen and (max-width:550px) {
+    padding: 0px 0px !important;
+  }
+
+}
+
+.zones-right {
+  .zones-right-menu:hover {
+    background-color: #EFF0F2 !important;
+  }
+
+  .zones-menu-img {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    flex-shrink: 0;
+    @media only screen and (max-width:575px) {
+      height: 50px;
+      width: 50px;
+      margin-right: 10px !important;
+    }
+    img {
+      height: 55px;
+      width: 55px;
+      display: flex;
+      flex-shrink: 0;
+      border-radius: 6px;
+      @media only screen and (max-width:575px) {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+  .zones-menu-text {
+    text-align: left;
+  }
+
+  h3 {
+    @media only screen and (max-width:575px) {
+      font-size: 16px;
+    }
+
+  }
+}
+
+.zones-right-mobile {
+  display: none;
+
+  @media only screen and (max-width:575px) {
+    display: block;
+  }
+}
+
+.zones-right-mobile-tablet {
+  display: none;
+
+  @media only screen and (max-width:991px) {
+    display: block;
+  }
+
+  @media only screen and (max-width:575px) {
+    display: none;
+  }
+}
+
+.zones-post {
+  min-height: 100vh;
+}
+
+.gift-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.notice-icon {
+  height: 30px;
+  width: 30px;
+}

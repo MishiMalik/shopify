@@ -1,6 +1,6 @@
 .right-menu {
   max-height: calc(100vh - 60px);
-  overflow-y: scroll;
+  overflow-y: auto;
   position: sticky;
   left: 0;
   top: 60px;
@@ -111,7 +111,9 @@
 
       .text-div {
         max-width: 150px;
-
+        @media only screen and (max-width:1170px){
+          max-width: 100px;
+        }
       }
 
       h3 {

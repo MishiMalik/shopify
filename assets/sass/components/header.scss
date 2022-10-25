@@ -61,8 +61,13 @@ transition: top 0.9s ease-in-out;
     a{
         text-decoration: none;
         i{
+            width: 20px ;
+            height: 30px;
             color:white;
             font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             @media only screen and  (max-width:991px){
                 color: black;
             }
@@ -142,6 +147,14 @@ transition: top 0.9s ease-in-out;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 20;
+    z-index: 100;
     display: none;
+}
+
+.header-link{
+    text-decoration: underline;
+    @media only screen and (max-width:500px){
+        font-size: 16px !important;
+        font-weight: 600 !important;
+    }
 }

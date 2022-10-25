@@ -1,0 +1,106 @@
+.directory-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $light-gray;
+    padding: 20px 0px;
+    @media only screen and (max-width:1035px){
+        align-items: flex-start;
+      }
+    .directory-img{
+        flex-shrink: 0 !important;
+            height: 100px !important;
+            width: 100px !important;
+        img{
+            height: 100px !important;
+            width: 100px !important;
+            border-radius: 100%;
+            display: flex;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+    }
+    .directory-details{
+display: flex;
+justify-content: space-between !important;
+align-items: flex-end;
+width: 100%;
+@media only screen and (max-width:1035px){
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    }
+    .directory-text{
+        padding-left: 10px;
+        text-align: left !important;
+        h2{
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        a{
+            text-decoration: underline !important;
+            color:$navi-blue;
+            margin-left: 5px;
+        }
+        .tag-line{
+            font-size: 13px;
+            color: $text-gray;
+            font-weight: 500;
+            margin-top: -7px;
+        }
+        .location-text{
+            i{
+                color: #3C6944;
+                margin-right: 5px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                color: $light-dark;
+            }
+        }
+        .status{
+            p{
+                color: $text-gray-light;
+            font-size: 12px;
+            font-weight: 500;
+            a{
+                color: $primary;
+                font-size: 13px;
+                text-decoration: none !important;
+            }
+            }
+
+        }
+    }
+    .directory-icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media only screen and (max-width:1035px){
+            margin-left: auto;
+          }
+       i{
+        color: $gray;
+        font-size: 32px;
+        margin-left: 30px;
+        cursor: pointer;
+        @media only screen and (max-width:1180px){
+            margin-left: 20px;
+        }
+        @media only screen and (max-width:1180px){
+            margin-left: 15px;
+        }
+        @media only screen and (max-width:991px){
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+       }
+
+    }
+}
