@@ -176,6 +176,14 @@
     object-position: center;
     object-fit: cover;
     padding: 2px;
+    @media only screen and (max-width: 440px) {
+       margin-right: 2px !important;
+
+    }
+    @media only screen and (max-width: 440px) {
+        margin-right: 0px !important;
+ 
+     }
 
 }
 

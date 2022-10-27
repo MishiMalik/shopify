@@ -402,7 +402,7 @@
     font-size: 16px !important;
     font-weight: 500 !important;
     color: $light-dark;
-
+   z-index: 3;
 }
 
 
@@ -414,7 +414,7 @@
 //     }
 //   }
 .dropdown-category-multiple.on .dropdown-list::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     position: relative;
     z-index: 10000 !important;
 }

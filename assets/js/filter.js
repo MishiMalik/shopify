@@ -45,6 +45,9 @@ $('.filter-checkboxes').each(function() {
     }
   })
   // ==========================================================change checked label color
-  $("input[type=checkbox]").on('click', function(){
-    $(this).parent().css('color','#0033cc');
-  })
+  // $("input[type=checkbox]").on('click', function(){
+  //   $(this).parent().css('color','#0033cc');
+  // })
+  $( '.dropdown-list' ).on( 'click', 'input[type="checkbox"]', function () {
+    $(this).parent().toggleClass( 'highlight', this.checked );
+});

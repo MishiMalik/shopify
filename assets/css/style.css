@@ -115,9 +115,6 @@ body {
       max-height: 100% !important;
       padding-top: 99px; } }
 
-.home-body {
-  overflow-y: hidden; }
-
 .mobile-body {
   padding-top: 60px; }
 
@@ -377,6 +374,12 @@ a {
   object-position: center;
   object-fit: cover;
   padding: 2px; }
+  @media only screen and (max-width: 440px) {
+    .dp {
+      margin-right: 2px !important; } }
+  @media only screen and (max-width: 440px) {
+    .dp {
+      margin-right: 0px !important; } }
 
 .dp-radius {
   border: 3px solid #767676; }
@@ -572,8 +575,7 @@ a {
   position: sticky;
   left: 0;
   top: 60px;
-  padding: 0px !important;
-  padding-bottom: 6px !important; }
+  padding: 0px !important; }
   @media only screen and (max-width: 991px) {
     .right-menu {
       display: none; } }
@@ -604,6 +606,9 @@ a {
   top: 0px !important;
   left: 0;
   z-index: 90; }
+  @media only screen and (max-width: 991px) {
+    .right-header {
+      z-index: 0 !important; } }
 
 .right-content {
   padding: 6px 10px;
@@ -738,8 +743,23 @@ a {
   left: 0 !important;
   right: 0 !important;
   top: 0 !important;
-  height: 100% !important;
-  padding: 12px !important; }
+  padding: 12px !important;
+  height: 400px !important;
+  overflow-y: auto; }
+  .dropdown-filter-multile.on .dropdown-list::-webkit-scrollbar {
+    width: 5px;
+    position: relative;
+    z-index: 10000 !important; }
+  .dropdown-filter-multile.on .dropdown-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10000 !important; }
+  .dropdown-filter-multile.on .dropdown-list::-webkit-scrollbar-thumb {
+    background-color: #16367B;
+    outline: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10000 !important; }
 
 .dropdown-filter-multile .dropdown-list {
   position: relative !important;
@@ -757,7 +777,8 @@ a {
 .dropdown-filter-multile .dropdown-label {
   font-size: 16px !important;
   font-weight: 500 !important;
-  color: #333333; }
+  color: #333333;
+  z-index: 3; }
 
 .filter-heading {
   color: #767676; }
@@ -786,16 +807,17 @@ a {
   padding: 10px 0;
   padding-top: 0px;
   background-color: white;
-  border-top: 1px solid #EFF0F2; }
+  border-top: 1px solid #EFF0F2;
+  z-index: 4; }
   .zones-right-filter-footer .select {
-    color: #002B95;
-    border: 1px solid #002B95;
-    background-color: #F2F8FE;
-    padding: 5px 30px;
+    color: white;
+    border: 1px solid #16367B;
+    background-color: #16367B;
+    padding: 2px 30px;
     border-radius: 3px;
     text-decoration: none !important;
-    font-size: 18px;
-    font-weight: 600; }
+    font-size: 16px;
+    font-weight: 500; }
   .zones-right-filter-footer button {
     background-color: transparent;
     border: none;
@@ -975,10 +997,10 @@ a {
       margin: 0px 5px; } }
 
 .fix-filter-btns .select {
-  color: #003FA3 !important;
-  border: 1px solid #003FA3;
-  background-color: #F2F8FF;
-  font-weight: 600; }
+  color: white !important;
+  border: 1px solid #16367B;
+  background-color: #16367B;
+  font-weight: 500; }
 
 .mobile-filter,
 .mobile-filter1 {
@@ -1008,6 +1030,9 @@ a {
 
 .bi-caret-down-fill {
   cursor: pointer; }
+
+.highlight {
+  color: #0033cc; }
 
 .center-part {
   max-height: calc(100vh - 60px);
@@ -1053,12 +1078,15 @@ a {
   left: 0;
   z-index: 90;
   transition: top 4s ease-in-out; }
-  @media only screen and (max-width: 550px) {
-    .main-header {
-      padding: 0px 12px; } }
   @media only screen and (max-width: 991px) {
     .main-header {
       top: 99px; } }
+  @media only screen and (max-width: 550px) {
+    .main-header {
+      padding: 0px 12px; } }
+  @media only screen and (max-width: 370px) {
+    .main-header {
+      padding: 0px 5px; } }
 
 @media only screen and (max-width: 991px) {
   .desktop-light-header {
@@ -1093,15 +1121,43 @@ a {
       padding: 3px 6px; } }
   @media only screen and (max-width: 433px) {
     .add-post {
-      padding: 5px 6px;
-      font-size: 12px;
+      padding: 3px 8px;
+      font-size: 14px;
       font-weight: 500; } }
+  @media only screen and (max-width: 433px) {
+    .add-post {
+      padding: 0px 8px;
+      font-size: 14px;
+      font-weight: 500; } }
+  @media only screen and (max-width: 350px) {
+    .add-post {
+      padding: 0px 6px;
+      font-size: 14px;
+      font-weight: 500;
+      height: 32px; } }
+  @media only screen and (max-width: 339px) {
+    .add-post {
+      padding: 0px 6px;
+      font-size: 14px;
+      font-weight: 500;
+      height: 30px; } }
+  @media only screen and (max-width: 333px) {
+    .add-post {
+      padding: 0px 4px;
+      font-size: 12px;
+      height: 32px; } }
   .add-post i {
     color: #F75314;
     font-size: 18px; }
     @media only screen and (max-width: 433px) {
       .add-post i {
+        font-size: 18px; } }
+    @media only screen and (max-width: 350px) {
+      .add-post i {
         font-size: 16px; } }
+    @media only screen and (max-width: 333px) {
+      .add-post i {
+        font-size: 14px; } }
   .add-post:hover {
     background-color: #E0F2FE;
     color: #16367B; }
@@ -1117,14 +1173,15 @@ a {
 
 .blood-img {
   width: 100px;
-  height: auto; }
+  height: auto;
+  object-fit: contain; }
   @media only screen and (max-width: 1180px) {
     .blood-img {
       width: 80px;
       height: auto; } }
   @media only screen and (max-width: 1100px) {
     .blood-img {
-      width: 58px;
+      width: 55px;
       height: auto; } }
   @media only screen and (max-width: 991px) {
     .blood-img {
@@ -1132,8 +1189,16 @@ a {
       height: auto; } }
   @media only screen and (max-width: 433px) {
     .blood-img {
+      height: 35px;
+      width: auto; } }
+  @media only screen and (max-width: 372px) {
+    .blood-img {
       height: 33px;
-      width: 77px; } }
+      width: auto; } }
+  @media only screen and (max-width: 372px) {
+    .blood-img {
+      height: 32px;
+      width: auto; } }
 
 .owl-nav {
   display: none !important; }
@@ -2304,6 +2369,9 @@ a {
   height: 30px;
   width: 30px; }
 
+.fa-arrow-left {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
 .check-icon {
   height: 23px;
   width: 23px;
@@ -2469,7 +2537,8 @@ a {
     text-overflow: ellipsis !important;
     overflow: hidden !important;
     width: 100%;
-    position: relative; }
+    position: relative;
+    z-index: 3; }
     @media only screen and (max-width: 991px) {
       .dropdown-multiple .dropdown-label {
         text-align: left !important; } }
@@ -2499,8 +2568,8 @@ a {
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
-  width: 100px;
-  margin-right: 15px; }
+  width: 120px;
+  margin-right: 5px; }
   @media only screen and (max-width: 991px) {
     .custom-select {
       width: 150px;
@@ -2593,7 +2662,7 @@ a {
   position: absolute;
   right: 20px;
   top: 10px;
-  z-index: 2; }
+  z-index: 1; }
 
 .directory-card {
   display: flex;
@@ -2897,10 +2966,11 @@ a {
 .dropdown-category-multiple .dropdown-label {
   font-size: 16px !important;
   font-weight: 500 !important;
-  color: #333333; }
+  color: #333333;
+  z-index: 3; }
 
 .dropdown-category-multiple.on .dropdown-list::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   position: relative;
   z-index: 10000 !important; }
 

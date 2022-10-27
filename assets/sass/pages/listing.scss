@@ -221,7 +221,7 @@
         overflow: hidden !important;
         width: 100%;
         position: relative;
-
+        z-index: 3;
         @media only screen and (max-width:991px) {
             text-align: left !important;
         }
@@ -272,8 +272,8 @@
 /* The container must be positioned relative: */
 .custom-select {
     position: relative;
-    width: 100px;
-    margin-right: 15px;
+    width: 120px;
+    margin-right: 5px;
 
     @media only screen and (max-width:991px) {
         width: 150px;
@@ -398,5 +398,5 @@
     position: absolute;
     right: 20px;
     top: 10px;
-    z-index: 2;
+    z-index: 1;
 }

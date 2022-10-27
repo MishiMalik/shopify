@@ -49,13 +49,17 @@
     z-index: 90;
     transition: top 4s ease-in-out;
 
-    @media only screen and (max-width:550px) {
-        padding: 0px 12px;
-    }
+   
 
     @media only screen and (max-width:991px) {
         top: 99px;
 
+    }
+    @media only screen and (max-width:550px) {
+        padding: 0px 12px;
+    }
+    @media only screen and (max-width:370px) {
+        padding: 0px 5px;
     }
 
 }
@@ -107,20 +111,46 @@
     }
 
     @media only screen and (max-width:433px) {
-        padding: 5px 6px;
-        font-size: 12px;
+        padding: 3px 8px;
+        font-size: 14px;
         font-weight: 500;
     }
-
+    @media only screen and (max-width:433px) {
+        padding: 0px 8px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    @media only screen and (max-width:350px) {
+        padding: 0px 6px;
+        font-size: 14px;
+        font-weight: 500;
+        height: 32px;
+    }
+    @media only screen and (max-width:339px) {
+        padding: 0px 6px;
+        font-size: 14px;
+        font-weight: 500;
+        height: 30px;
+    }
+    @media only screen and (max-width:333px) {
+        padding: 0px 4px;
+        font-size: 12px;
+        height: 32px;
+    }
     i {
         color: #F75314;
         font-size: 18px;
 
         @media only screen and (max-width:433px) {
+            font-size: 18px;
+        }
+        @media only screen and (max-width:350px) {
             font-size: 16px;
         }
+    @media only screen and (max-width:333px) {
+font-size: 14px;
     }
-
+    }
     &:hover {
         background-color: $light-blue;
         color: $primary;
@@ -141,6 +171,7 @@
 .blood-img {
     width: 100px;
     height: auto;
+    object-fit: contain;
 
     @media only screen and (max-width:1180px) {
         width: 80px;
@@ -148,7 +179,7 @@
     }
 
     @media only screen and (max-width:1100px) {
-        width: 58px;
+        width: 55px;
         height: auto;
     }
 
@@ -158,9 +189,18 @@
     }
 
     @media only screen and (max-width:433px) {
-        height: 33px;
-        width: 77px;
+        height: 35px;
+        width: auto;
     }
+    @media only screen and (max-width:372px) {
+        height: 33px;
+        width: auto;
+    }
+    @media only screen and (max-width:372px) {
+        height: 32px;
+        width: auto;
+    }
+   
 }
 
 
