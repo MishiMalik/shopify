@@ -6,7 +6,7 @@
     top: 60px;
     padding: 0 !important;
     z-index: 1;
-  
+
 
     @media only screen and (max-width:991px) {
         position: relative;
@@ -52,21 +52,25 @@
     @media only screen and (max-width:550px) {
         padding: 0px 12px;
     }
+
     @media only screen and (max-width:991px) {
         top: 99px;
 
     }
 
 }
-.desktop-light-header{
+
+.desktop-light-header {
     @media only screen and (max-width:991px) {
         display: none;
     }
 }
-.small-main-header{
+
+.small-main-header {
     display: none;
-    @media only screen and (max-width:991px){
-        display: flex ;
+
+    @media only screen and (max-width:991px) {
+        display: flex;
     }
 }
 
@@ -201,6 +205,7 @@
     padding: 3px 15px;
     margin-right: 5px;
     margin-bottom: 7px;
+    cursor: pointer;
 
     img {
         height: 23px;
@@ -291,9 +296,11 @@
 .category-card {
 
     padding-bottom: 0px;
+    object-fit: contain;
 
     img {
-        padding: 20px 10px 0px 10px;
+        padding: 0px 0px 0px 0px;
+        object-fit: contain;
     }
 
 }
@@ -350,7 +357,7 @@
 
 // image-card
 .image-card {
-
+    cursor: pointer;
 
     .image-card-img {
         position: relative;
@@ -621,6 +628,7 @@
 }
 
 .list-card {
+    cursor: pointer;
     display: flex;
 
     .list-card-img {
@@ -745,7 +753,7 @@
     }
 
     @media only screen and (max-width:360px) {
-        margin-left: 8px;
+        margin-left: 15px;
         margin-top: -5px;
         justify-content: space-between !important;
 
@@ -832,6 +840,7 @@
 }
 
 .grid-card {
+    cursor: pointer;
     border: 2px solid $light-gray;
 
 }
@@ -1091,7 +1100,7 @@
     padding: 10px;
     position: relative;
 
-    img {
+    .mayFollow-card-img {
         height: 130px;
         width: 130px !important;
         border-radius: 100%;
@@ -1151,6 +1160,7 @@
     height: 26px !important;
     width: 26px !important;
     cursor: pointer;
+    stroke: $gray;
 
     &:hover {
         stroke: $gray;
@@ -1293,7 +1303,7 @@
     background-color: transparent !important;
     border: none !important;
     font-size: 20px !important;
-    color: $primary !important;
+    color: $active-blue !important;
     font-weight: 600;
 
     &:hover {
@@ -1323,9 +1333,10 @@
     border-radius: 4px;
     border: solid 0px #ced4da;
     animation: growDown 300ms ease-in-out forwards;
-      transform-origin: top center;
+    transform-origin: top center;
     position: absolute;
     top: 40px !important;
+
     .dropdown-item {
         padding: 8px 10px !important;
         font-size: 16px;
@@ -1391,11 +1402,12 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
     border: 7px solid $light-gray !important;
     border-radius: 4px;
+
     // animation: growDown 300ms ease-in-out forwards;
     // transform-origin: top center;
     @media only screen and (max-height:991px) {
         list-style: none !important;
-        padding:20px 20px !important;
+        padding: 20px 20px !important;
         margin: 0px !important;
         margin-bottom: 0px !important;
         // position: fixed !important;
@@ -1405,25 +1417,26 @@
         // z-index: 100 !important;
         // height: 80% !important;
 
-    //     inset: 0px auto auto 0px;
-    // margin: 0px;
-    // transform: none !important;
-    // overflow-y: scroll;
+        //     inset: 0px auto auto 0px;
+        // margin: 0px;
+        // transform: none !important;
+        // overflow-y: scroll;
     }
-    @media only screen and (max-width:400px){
-        padding:15px 15px !important;
+
+    @media only screen and (max-width:400px) {
+        padding: 15px 15px !important;
     }
-   
-    .seprator{
+
+    .seprator {
         margin: 10px 0px !important;
     }
-    
+
     .dropdown-item {
         padding: 13px 10px !important;
         font-size: 16px;
         font-weight: 400;
         min-width: 260px;
-     
+
         // @media only screen and (max-height:450px) {
         //     min-width: 240px;
         // }
@@ -1435,25 +1448,29 @@
             margin-left: auto;
         }
 
-        i{
+        i {
             font-size: 16px;
             width: 15px;
-            @media only screen and (max-width:400px){
+
+            @media only screen and (max-width:400px) {
                 width: 14px;
             }
         }
-        .close-menu-drop{
-        padding: 8px 10px !important;
+
+        .close-menu-drop {
+            padding: 8px 10px !important;
+        }
     }
-    }
-    .close-menu-drop{
+
+    .close-menu-drop {
         padding: 8px 10px !important;
         display: flex;
         align-items: center;
         width: 150px;
     }
 }
-.more-option{
+
+.more-option {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1461,10 +1478,12 @@
     color: black !important;
     text-align: center !important;
     font-size: 20px !important;
-    a{
+
+    a {
         color: black !important;
     }
 }
+
 // .post-view-content{
 //     max-width: 300px !important;
 //     @media only screen and (max-width:400px){
@@ -1479,7 +1498,7 @@
 //         border: 1px solid $navi-blue !important;
 //         background-color: white !important;
 
-        
+
 
 //         .dropdown-item {
 //             padding: 5px 10px !important;

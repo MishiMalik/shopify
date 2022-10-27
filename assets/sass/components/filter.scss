@@ -1,6 +1,8 @@
-.filter-div{
+.filter-div {
     position: relative;
-    .filter-number{
+    cursor: pointer;
+
+    .filter-number {
         position: absolute;
         top: 5px;
         right: -20px;
@@ -13,10 +15,12 @@
         justify-content: center;
         align-items: center;
         border-radius: 3px;
+
         padding: 3px;
     }
 }
-.dropdown-filter-multile{
+
+.dropdown-filter-multile {
     border: 1px solid $light-gray;
     padding: 3px;
     border-radius: 3px;
@@ -25,45 +29,48 @@
     transition: all .6s;
     // overflow-y: none;
 }
-.on.dropdown-filter-multile{
+
+.on.dropdown-filter-multile {
     min-height: 200px;
     transition: all .6s;
     // overflow-y: auto;
     max-height: 700px;
 }
+
 .on.dropdown-filter-multile::-webkit-scrollbar {
     width: 5px;
     position: relative;
     z-index: 10000 !important;
-  }
-  
-  .on.dropdown-filter-multile::-webkit-scrollbar-track {
+}
+
+.on.dropdown-filter-multile::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 10000 !important;
-  }
-  
-  .on.dropdown-filter-multile::-webkit-scrollbar-thumb {
+}
+
+.on.dropdown-filter-multile::-webkit-scrollbar-thumb {
     background-color: $primary;
     outline: 1px solid transparent;
     border-radius: 5px;
     position: relative;
     z-index: 10000 !important;
-  }
+}
 
-.dropdown-filter-multile.on .dropdown-list{
-   
-    position: relative ;
+.dropdown-filter-multile.on .dropdown-list {
+
+    position: relative;
     width: 100% !important;
     left: 0 !important;
     right: 0 !important;
     top: 0 !important;
     height: 100% !important;
     padding: 12px !important;
-   
+
 }
-.dropdown-filter-multile .dropdown-list{
- position: relative !important;
+
+.dropdown-filter-multile .dropdown-list {
+    position: relative !important;
     width: 100% !important;
     left: 0 !important;
     right: 40px !important;
@@ -76,27 +83,31 @@
     transition: all 5s;
 
 }
-.dropdown-filter-multile .dropdown-label{
+
+.dropdown-filter-multile .dropdown-label {
     font-size: 16px !important;
     font-weight: 500 !important;
     color: $light-dark;
 }
-.filter-heading{
+
+.filter-heading {
     color: $gray;
 }
-.zones-right-filter{
+
+.zones-right-filter {
     padding: 0px 12px !important;
-    
-   
+
+
 }
-.right-menu{
-    @media only screen and (max-width:991px){
+
+.right-menu {
+    @media only screen and (max-width:991px) {
         display: block;
         position: fixed;
         right: 0;
         left: auto;
-        top:100%;
-        bottom: -100% ;
+        top: 100%;
+        bottom: -100%;
         width: 100%;
         z-index: 1000;
         height: 100vh;
@@ -104,47 +115,56 @@
     }
 }
 
-.zones-right-filter-footer{
+.zones-right-filter-footer {
     position: sticky;
     bottom: 0px;
     right: 0px;
     left: 0;
     padding: 10px 0;
-background-color: white;
-border-top: 1px solid $light-gray2;
-.select{
-    color: #002B95;
-    border: 1px solid #002B95;
-    background-color: #F2F8FE;
-    padding: 5px 30px;
-    border-radius: 3px;
-    text-decoration: none !important;
-    font-size: 18px;
-    font-weight: 600;
-}
-button{
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: underline;
-}
+    padding-top: 0px;
+    background-color: white;
+    border-top: 1px solid $light-gray2;
+
+    .select {
+        color: #002B95;
+        border: 1px solid #002B95;
+        background-color: #F2F8FE;
+        padding: 5px 30px;
+        border-radius: 3px;
+        text-decoration: none !important;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
 
 }
 
-.filter-desktop{
-    @media only screen and (max-width:991px){
+.filter-desktop {
+    @media only screen and (max-width:991px) {
         display: none !important;
     }
 }
-.mobile-filter-header{
+
+.mobile-filter-header {
     background-color: #E0F2FE;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 3px 12px;
+
+    @media only screen and (max-width:500px) {
+        justify-content: space-between;
+    }
 }
-.fiter-selected-tag{
+
+.fiter-selected-tag {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,85 +173,146 @@ button{
     border-radius: 6px;
     color: $gray;
     margin: 5px !important;
-    .fa-times{
+
+    .fa-times {
         cursor: pointer;
+        font-size: 12px !important;
+    }
+
+    p {
+        font-size: 15px;
     }
 }
 
-.filters-list{
+.filters-list {
     border-top: 2px solid $light-gray;
 }
+
 // filters list tabs
 /* Style the tab */
-.filters-list-tabs{
+.filters-list-tabs {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     float: left;
-    width: 120px;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .filters-list-tabs button {
+    width: 200px;
+
+    @media only screen and (max-width:625px) {
+        width: 150px;
+    }
+
+    @media only screen and (max-width:500px) {
+        width: 120px;
+    }
+}
+
+/* Style the buttons that are used to open the tab content */
+.filters-list-tabs button {
     background-color: #EBECF0;
     border: none !important;
     padding: 10px 10px;
-    width: 120px;
+    width: 200px;
     text-align: start;
     transition: 0.3s;
     border-bottom: 1px solid $light-gray !important;
     color: $light-dark;
     font-size: 14px;
     font-weight: 500;
-  }
-  .filters-list-contents{
-    width: 100%;
-  }
-  .filters-list-tabcontent{
-    padding: 15px 10px !important;
-    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  }
-  
-  /* Change background color of buttons on hover */
-  .filters-list-tabs button:hover {
+    @media only screen and (max-width:625px) {
+        width: 150px;
+    }
+
+    @media only screen and (max-width:500px) {
+        width: 120px;
+    }
+
+    span {
+        color: #0033ff !important;
+    }
+}
+
+.filters-list-contents {
+    width: 100%;
+}
+
+.filters-list-tabcontent {
+    padding: 15px 10px !important;
+    width: 100%;
+
+    label {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media only screen and (max-width:625px) {
+            width: 300px;
+        }
+
+        @media only screen and (max-width:500px) {
+            width: 300px;
+        }
+
+        @media only screen and (max-width:470px) {
+            width: 60%;
+        }
+
+        padding: 5px;
+
+        &:hover {
+            background-color: $light-gray;
+            align-items: center !important;
+        }
+
+        input {
+            margin-bottom: 0px !important;
+        }
+    }
+}
+
+/* Change background color of buttons on hover */
+.filters-list-tabs button:hover {
     background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .filters-list-tabs button.filters-list-active {
+}
+
+/* Create an active/current tablink class */
+.filters-list-tabs button.filters-list-active {
     background-color: white;
     color: $light-dark;
-  }
-  
-  /* Style the filters-list-tabs content */
-  .tabcontent {
+}
+
+/* Style the filters-list-tabs content */
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-  }
-  .tags-div{
+}
+
+.tags-div {
     display: flex;
     align-items: center;
     overflow-x: auto;
-  }
-  
+}
+
 .tags-div::-webkit-scrollbar {
     height: 5px;
-  }
-  
-  .tags-div::-webkit-scrollbar-track {
+}
+
+.tags-div::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  .tags-div::-webkit-scrollbar-thumb {
+}
+
+.tags-div::-webkit-scrollbar-thumb {
     background-color: $primary;
     outline: 1px solid transparent;
     border-radius: 10px;
-  }
-  
-  .fix-filter-btns{
+}
+
+.fix-filter-btns {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -239,65 +320,90 @@ button{
     background-color: white;
     padding: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
     transition: all .3s;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         position: relative;
     }
-  }
-  .mobile-filter-fix{
+
+    @media only screen and (max-width:500px) {
+        justify-content: space-around;
+    }
+}
+
+.mobile-filter-fix {
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
-  }
-  .fix-filter-btns{
- button{
-    background-color: transparent;
-    border: 1px solid $light-gray;
-    border-radius: 3px;
-    font-size: 15px;
-    color: $light-dark;
-    min-width: 100px;
-    font-weight: 600;
-    padding: 5px ;
- }
- .clear{
-    background-color: $light-gray2 !important;
 }
-.select{
-    color: #003FA3 !important;
-    border: 1px solid #003FA3;
-    background-color: #F2F8FF;
-    font-weight: 600;
+
+.fix-filter-btns {
+    button {
+        background-color: transparent;
+        border: 1px solid $light-gray;
+        border-radius: 3px;
+        font-size: 15px;
+        color: $light-dark;
+        min-width: 100px;
+        font-weight: 600;
+        padding: 5px;
+    }
+
+    .clear {
+        background-color: $light-gray2 !important;
+        margin: 0px 15px;
+
+        @media only screen and (max-width:500px) {
+            margin: 0px 5px;
+        }
+    }
+
+    .select {
+        color: #003FA3 !important;
+        border: 1px solid #003FA3;
+        background-color: #F2F8FF;
+        font-weight: 600;
+    }
 }
-}
+
 .mobile-filter,
-.mobile-filter1{
+.mobile-filter1 {
     display: none;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         display: block;
     }
 }
-.mobile-filter2{
+
+.mobile-filter2 {
     display: none;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         display: flex;
     }
 }
-.remove-logo{
-    @media only screen and (max-width:991px){
+
+.remove-logo {
+    @media only screen and (max-width:991px) {
         display: none;
     }
 }
-.back-arrow{
+
+.back-arrow {
     display: none !important;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         display: block !important;
         height: 50px;
         padding: 10px 0px;
     }
+}
+
+.bi-caret-down-fill {
+    cursor: pointer;
 }

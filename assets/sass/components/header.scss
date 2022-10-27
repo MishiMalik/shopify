@@ -1,100 +1,116 @@
 // component header
-.header{
-background-color: $primary;
-padding:6px 0px 5px 0px;
-position: fixed;
-z-index: 99;
-top: 0;
-left: 0;
-right: 0;
-height: 60px;
-transition: top 0.9s ease-in-out;
-// @media only screen and (max-width:991px) {
-//     position: relative;
-// }
+.header {
+    background-color: $primary;
+    padding: 6px 0px 5px 0px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    transition: top 0.9s ease-in-out;
+    // @media only screen and (max-width:991px) {
+    //     position: relative;
+    // }
 }
+
 // .nav-up {
 //     top: -40px; // same as header height. use variables in LESS/SASS
 //   }
-.dark-header{
-//    position: relative;
+.dark-header {
+
+    //    position: relative;
     // transition: top 0.2s ease-in-out;
     @media only screen and (max-width:991px) {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
     }
-   
+
 }
 
 
-.center-header{
-    @media only screen and (max-width:991px){
+.center-header {
+    @media only screen and (max-width:991px) {
         display: none;
     }
 }
+
 // Logo side
-.logo{
-    width:auto;
-    height:50px;
+.logo {
+    width: auto;
+    height: 50px;
     object-fit: contain;
     padding: 10px 0px;
     display: flex;
     flex-shrink: 0 !important;
 }
-.logo-div{
+
+.logo-div {
     text-decoration: none !important;
     display: flex;
     flex-shrink: 0 !important;
-    p{
+
+    p {
         color: white;
-        @media only screen and  (max-width:991px){
+
+        @media only screen and (max-width:991px) {
             display: none;
         }
     }
 }
 
-.header-menu{
-   
+.header-menu {
+
     position: relative;
-    a{
+
+    a {
         text-decoration: none;
-        i{
-            width: 20px ;
+
+        i {
+            width: 20px;
             height: 30px;
-            color:white;
+            color: white;
             font-size: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            @media only screen and  (max-width:991px){
+
+            @media only screen and (max-width:991px) {
                 color: black;
             }
+
+            cursor: pointer;
         }
-        p{
-            @media only screen and  (max-width:991px){
+
+        p {
+            @media only screen and (max-width:991px) {
                 color: black !important;
                 font-weight: 500 !important;
             }
         }
-        .active-header{
+
+        .active-header {
             color: white;
         }
-        .active-menu{
-            @media only screen and  (max-width:991px){
-                color: $primary !important;
+
+        .active-menu {
+            @media only screen and (max-width:991px) {
+                color: #0066cc !important;
             }
         }
-        
+
     }
-    p{
+
+    p {
         line-height: 5px;
         margin-top: 4px;
         font-weight: 500;
         color: $varient-blue;
     }
-    .chats-num{
+
+    .chats-num {
         position: absolute;
         top: -5px;
         right: -4px;
@@ -109,27 +125,65 @@ transition: top 0.9s ease-in-out;
         align-items: center;
         padding: 2px;
     }
-    .chats-num2{
+
+    .chats-num2 {
         right: 5px !important;
     }
-    .chats-num3{
-       top: -2px !important;
+
+    .chats-num3 {
+        top: -2px !important;
     }
-    
+
+    .bi-bell {
+        display: none;
+
+        @media only screen and (max-width:991px) {
+            display: block;
+        }
+    }
+
+    .fa-bell {
+        display: block;
+
+        @media only screen and (max-width:991px) {
+            display: none;
+        }
+    }
+
+    .bi-search {
+        display: none;
+
+        @media only screen and (max-width:991px) {
+            display: block;
+        }
+    }
+
+    .fa-search {
+        display: block;
+
+        @media only screen and (max-width:991px) {
+            display: none;
+        }
+    }
+
+
 }
-.dp{
+
+.dp {
     height: 38px;
     width: 38px;
     border-radius: 100%;
     object-position: center;
     object-fit: cover;
     padding: 2px;
-    
+
 }
-.dp-radius{
+
+.dp-radius {
     border: 3px solid $gray;
 }
-.log-menu{
+
+.log-menu {
     top: 15px !important;
     border-radius: 3px !important;
     min-width: 100px;
@@ -140,7 +194,7 @@ transition: top 0.9s ease-in-out;
 
 
 
-.backdrop-menu{
+.backdrop-menu {
     background-color: rgba(0, 0, 0, 0.458);
     position: fixed;
     top: 0;
@@ -151,9 +205,11 @@ transition: top 0.9s ease-in-out;
     display: none;
 }
 
-.header-link{
+.header-link {
+    color: $brand-blue !important;
     text-decoration: underline;
-    @media only screen and (max-width:500px){
+
+    @media only screen and (max-width:500px) {
         font-size: 16px !important;
         font-weight: 600 !important;
     }

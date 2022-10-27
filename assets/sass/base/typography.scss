@@ -18,6 +18,7 @@ $brand-blue:#0033cc;
 $dark-orange:#993300;
 $text-gray:#7A7A7A;
 $text-gray-light:#aeadad;
+$active-blue:#003399;
 
 // fonts
 .f-40 {
@@ -146,7 +147,7 @@ $text-gray-light:#aeadad;
 }
 
 .text-dark {
-    color: black !important;
+    color: #000000 !important;
 }
 
 .light-dark {
@@ -155,4 +156,8 @@ $text-gray-light:#aeadad;
 
 .brand-blue {
     color: $brand-blue;
+}
+
+.text-green {
+    color: $green;
 }

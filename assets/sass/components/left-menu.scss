@@ -9,7 +9,9 @@
   left: 0;
   top: 60px;
   padding: 0 !important;
+
   transition: all .5s;
+
   @media only screen and (max-width:991px) {
     min-height: 100vh;
     position: fixed;
@@ -76,20 +78,20 @@
 .tab button {
   background-color: transparent;
   border: none;
-  color: #333333;
+  color: $light-dark;
   font-size: 16px;
   font-weight: 600;
   border-bottom: 4px solid transparent;
 }
 
 .tab button:hover {
-  border-bottom: 4px solid $primary;
+  border-bottom: 4px solid $active-blue;
   color: $primary;
 }
 
 .tab button.active {
-  border-bottom: 4px solid $primary;
-  color: $primary;
+  border-bottom: 4px solid $active-blue;
+  color: $active-blue;
 }
 
 /* Style the tab content */
@@ -97,6 +99,7 @@
   display: none;
   padding: 6px 12px;
   border: none;
+  padding-bottom: 20px !important;
 }
 
 //   left menu icons

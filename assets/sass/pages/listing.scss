@@ -1,6 +1,7 @@
 .check-icon {
-    height: 30px;
-    width: 30px;
+    height: 23px;
+    width: 23px;
+    margin-bottom: 3px !important;
 }
 
 .listing-accordian {
@@ -11,7 +12,7 @@
     left: 0;
     right: 0;
     transition: all .5s;
-    
+
 
     &:last-child {
         border-bottom: 1.5px solid $light-gray2 !important;
@@ -159,16 +160,19 @@
 .dropdown-multiple {
     position: relative;
     font-size: 16px;
-    color: black;
+    color: $light-dark;
     width: 100px;
     font-weight: 500;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         width: 150px;
         border-bottom: 2px solid $light-gray;
+        // height: 32px;
     }
+
     .dropdown-list {
         width: 200px;
-        padding: 12px;
+        padding: 12px 0px;
         background: #fff;
         position: absolute;
         top: 40px;
@@ -181,7 +185,7 @@
         border-radius: 4px;
         white-space: nowrap !important;
         text-overflow: ellipsis !important;
-        overflow: hidden !important;
+        // overflow: hidden !important;
         //   max-height: 66vh;
         //   overflow-y: scroll;
     }
@@ -190,12 +194,16 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 8px 0px;
+        padding: 8px 10px;
         opacity: 0;
         white-space: nowrap !important;
         text-overflow: ellipsis !important;
         overflow: hidden !important;
         transition: opacity .15s ease-in-out;
+
+        &:hover {
+            background-color: $light-gray;
+        }
     }
 
     .dropdown-label {
@@ -211,10 +219,13 @@
         white-space: nowrap !important;
         text-overflow: ellipsis !important;
         overflow: hidden !important;
-        width: 90%;
+        width: 100%;
+        position: relative;
+
         @media only screen and (max-width:991px) {
             text-align: left !important;
         }
+
         &::after {
             // content: '▼';
             // float: right;
@@ -261,11 +272,18 @@
 /* The container must be positioned relative: */
 .custom-select {
     position: relative;
-    width: 120px;
+    width: 100px;
+    margin-right: 15px;
 
-    @media only screen and (max-width:991px){
+    @media only screen and (max-width:991px) {
         width: 150px;
         border-bottom: 2px solid $light-gray;
+        height: 32px;
+    }
+
+    @media only screen and (max-width:500px) {
+
+        margin-right: 0px;
     }
 }
 
@@ -283,6 +301,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 120px;
+    text-align: left;
+
     @media only screen and (max-width:991px) {
         text-align: left !important;
     }
@@ -300,7 +320,7 @@
     border-left: 0.3em solid transparent;
     position: absolute;
     content: "";
-    top: 17px;
+    top: 12px;
     right: 0px;
     // width: 0;
     // height: 0;
@@ -317,21 +337,22 @@
 //   }
 
 /* style the items (options), including the selected item: */
-.select-items div{
+.select-items div {
     color: black;
     padding: 8px 16px;
     cursor: pointer;
 }
+
 .select-selected {
     color: black;
-    padding: 3px 16px;
+    padding: 3px 16px 3px 6px;
     cursor: pointer;
 }
 
 /* Style items (options): */
 .select-items {
     width: 200px;
-    padding: 12px;
+    padding: 12px 0px;
     background: #fff;
     position: absolute;
     top: 44px;
@@ -345,7 +366,7 @@
     font-weight: 500;
 
     @media only screen and (max-width:991px) {
-        right:unset !important;
+        right: unset !important;
     }
 }
 
@@ -371,4 +392,11 @@
     100% {
         transform: scaleY(1)
     }
+}
+
+.absolute-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 2;
 }

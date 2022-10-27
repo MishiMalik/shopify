@@ -1,5 +1,6 @@
 .line-height-14 {
     line-height: 14px;
+    cursor: pointer;
 }
 
 a {
@@ -77,7 +78,7 @@ a {
     justify-content: center;
 
     &:hover {
-        background-color: $primary;
+        background-color: $navi-blue;
         color: white;
     }
 
@@ -87,6 +88,7 @@ a {
         font-size: 16px;
         min-width: 320px;
     }
+
     @media only screen and(max-width:330px) {
         min-width: 120px;
         padding: 3px 10px;

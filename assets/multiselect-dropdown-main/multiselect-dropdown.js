@@ -89,8 +89,8 @@ function MultiselectDropdown(options){
   var config={
     search:true,
     height:'15rem',
-    placeholder:'View All',
-    txtSelected:'selected',
+    placeholder:'Select',
+    // txtSelected:'selected',
     txtAll:'All',
     txtRemove: 'Remove',
     txtSearch:'search',
@@ -205,6 +205,8 @@ function MultiselectDropdown(options){
     });
     
     document.addEventListener('click', function(event) {
+      alert()
+      console.log(event.target)
       if (!div.contains(event.target)) {
         listWrap.style.display='none';
         div.refresh();
@@ -214,5 +216,5 @@ function MultiselectDropdown(options){
 }
 
 window.addEventListener('load',()=>{
-  MultiselectDropdown(window.MultiselectDropdownOptions);
+  // MultiselectDropdown(window.MultiselectDropdownOptions);
 });

@@ -44,3 +44,7 @@ $('.filter-checkboxes').each(function() {
       $('.zones-right-filter').addClass('d-none')
     }
   })
+  // ==========================================================change checked label color
+  $("input[type=checkbox]").on('click', function(){
+    $(this).parent().css('color','#0033cc');
+  })

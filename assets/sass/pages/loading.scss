@@ -1,4 +1,3 @@
-
 .loading-logo {
     height: 70px;
     width: auto;
@@ -82,7 +81,7 @@
     }
 }
 
-.backdrop-loading{
+.backdrop-loading {
     background-color: rgba(0, 0, 0, 0.658);
     background-color: white;
     position: fixed;
@@ -93,6 +92,7 @@
     z-index: 1000;
     height: 100%;
     overflow-y: scroll;
+
     @media only screen and (max-width:991px) {
         position: fixed;
         background-color: white;
