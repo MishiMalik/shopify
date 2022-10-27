@@ -317,7 +317,7 @@
     transition: all .5s;
     top: 100%;
     border-bottom: 2px solid $light-gray;
-
+   
     @media only screen and (max-width:991px) {
         min-height: 45px;
         max-height: 45px;
@@ -330,7 +330,10 @@
     transition: all .6s;
     // overflow-y: auto;
     max-height: 700px;
-
+    >div{
+        border-bottom: 2px solid $light-gray;
+        padding-bottom: 6px;
+    }
 
     .category-fixed-button {
         display: flex !important;
@@ -373,11 +376,16 @@
     top: 0 !important;
     height: 400px !important;
     padding: 12px 0px !important;
+    padding-top: 0px!important;
     overflow-y: scroll !important;
 
     @media only screen and (max-width:991px) {
         height: 100% !important;
         overflow-y: scroll !important;
+    }
+    .dropdown-option{
+        font-size: 16px !important;
+        font-weight: 400 !important;
     }
 }
 
@@ -399,10 +407,11 @@
 }
 
 .dropdown-category-multiple .dropdown-label {
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 500 !important;
     color: $light-dark;
    z-index: 3;
+   
 }
 
 

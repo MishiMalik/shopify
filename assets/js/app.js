@@ -236,7 +236,8 @@ window.onscroll = function() {
       // $('body').css('overflow-y','hidden');
       // $(this).find('.accordion-collapse').addClass('show')
       $('.mobile-footer').css('z-index','0');
-      $('#body').css('overflow-y','hidden')
+      $('#body').css('overflow-y','hidden');
+      $('.absolute-icon').css('z-index','10');
     })
     $('.category-close').click(function(e) {
       e.stopPropagation();
@@ -253,7 +254,8 @@ window.onscroll = function() {
       $('.mobile-footer').css('z-index','10');
       // $('body').css('overflow-y','auto');
       $(this).parents('.listing-accordian').find('.accordion-collapse').removeClass('show')
-      $('#body').css('overflow-y','scroll')
+      $('#body').css('overflow-y','scroll');
+      $('.absolute-icon').css('z-index','1');
     })
   };
 
