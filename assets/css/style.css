@@ -2571,8 +2571,11 @@ a {
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
-  width: 120px;
+  width: 145px;
   margin-right: 5px; }
+  @media only screen and (max-width: 1124px) {
+    .custom-select {
+      width: 120px; } }
   @media only screen and (max-width: 991px) {
     .custom-select {
       width: 150px;
