@@ -115,6 +115,9 @@ body {
       max-height: 100% !important;
       padding-top: 99px; } }
 
+.home-body {
+  overflow-y: hidden; }
+
 .mobile-body {
   padding-top: 60px; }
 
@@ -2092,6 +2095,9 @@ a {
   @media only screen and (max-width: 991px) {
     .mobile-menu-dots {
       display: block; } }
+
+.mayFollow-card-name {
+  min-width: 120px; }
 
 .loading-logo {
   height: 70px;

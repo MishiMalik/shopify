@@ -23,12 +23,14 @@ document.getElementById("defaultOpen1").click();
 //============================================================================ open nav
 function openNave(){
   document.getElementById("left-menu").style.left = "0";
-  document.getElementById("backdrop-menu").style.display="block"
+  document.getElementById("backdrop-menu").style.display="block";
+  document.getElementById("body").style.overflowY="hidden";
 }
 // ==============================================================================close-nav
 function closeNav() {
   document.getElementById("left-menu").style.left = "-100%";
   document.getElementById("backdrop-menu").style.display="none"
+  document.getElementById("body").style.overflowY="auto";
 }
 //=========================================================================== close loading backdrop
 function closeLoading(){
@@ -64,13 +66,13 @@ $(function() {
           items:2.1
         },
         347:{
-          items:2.2,
+          items:2.1,
         },
         500:{
-          items:3.2,
+          items:2.2,
       },
         767:{
-            items:4.3,
+            items:4.2,
         },
         992:{
           items:2.7,
@@ -234,6 +236,7 @@ window.onscroll = function() {
       // $('body').css('overflow-y','hidden');
       // $(this).find('.accordion-collapse').addClass('show')
       $('.mobile-footer').css('z-index','0');
+      $('#body').css('overflow-y','hidden')
     })
     $('.category-close').click(function(e) {
       e.stopPropagation();
@@ -250,6 +253,7 @@ window.onscroll = function() {
       $('.mobile-footer').css('z-index','10');
       // $('body').css('overflow-y','auto');
       $(this).parents('.listing-accordian').find('.accordion-collapse').removeClass('show')
+      $('#body').css('overflow-y','scroll')
     })
   };
 
@@ -350,8 +354,6 @@ window.onscroll = function() {
 })(jQuery);
 
 
-
-
 // =====================================================================custome select
 
 var x, i, j, l, ll, selElmnt, a, b, c;
@@ -442,6 +444,8 @@ function openFilter(){
   document.getElementById("right-menu").style.top = "10%";
   document.getElementById("backdrop-filter").style.display="block"
   document.getElementById("fix-filter-btns").style.position="fixed"
+  document.getElementById("body").style.overflowY="hidden";
+
 }
 // ==================================================================close right filter
 function closeFilter() {
@@ -449,6 +453,7 @@ function closeFilter() {
   document.getElementById("right-menu").style.top = "100%";
   document.getElementById("backdrop-filter").style.display="none"
   document.getElementById("fix-filter-btns").style.position="relative"
+  document.getElementById("body").style.overflowY="auto";
 }
 
 
@@ -499,3 +504,16 @@ function myFeeds(evt, cityName) {
 
 
 
+
+// ==============================================================cremove card you may follow
+ $(document).ready(function() {
+  $('.close-wants, .may-want-follow').click(function() {
+    $(this).closest('.owl-item').remove()
+   })
+ })
+//  ==============================================================reomove member in right menu
+$(document).ready(function() {
+  $('.remove-member, .follow-card-btn').click(function() {
+    $(this).closest('.follow-card-people').remove()
+   })
+ })
