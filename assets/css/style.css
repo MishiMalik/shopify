@@ -2372,6 +2372,9 @@ a {
 .fa-arrow-left {
   color: rgba(255, 255, 255, 0.8) !important; }
 
+.bi-caret-down-fill-rotate {
+  transform: rotate(3.142rad); }
+
 .check-icon {
   height: 23px;
   width: 23px;

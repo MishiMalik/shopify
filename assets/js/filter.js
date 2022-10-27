@@ -51,3 +51,6 @@ $('.filter-checkboxes').each(function() {
   $( '.dropdown-list' ).on( 'click', 'input[type="checkbox"]', function () {
     $(this).parent().toggleClass( 'highlight', this.checked );
 });
+$('.dropdown-multiple').on('click',function(){
+  $(this).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill-rotate');
+})
