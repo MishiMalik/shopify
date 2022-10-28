@@ -521,6 +521,6 @@ $( 'input[type="checkbox' ).on( 'click', function () {
 
 
 //=========================================================== aos animation
-// AOS.init({
-//   duration:3000,
-// });
+AOS.init({
+  duration:3000,
+});
