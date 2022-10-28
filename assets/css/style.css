@@ -118,6 +118,9 @@ body {
       max-height: 100% !important;
       padding-top: 99px; } }
 
+.home-body {
+  overflow-y: hidden; }
+
 .mobile-body {
   padding-top: 60px; }
 
