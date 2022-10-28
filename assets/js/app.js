@@ -1,8 +1,4 @@
 
-//=========================================================== aos animation
-AOS.init({
-  duration:3000,
-});
 
 //============================================================open left menu tabs
 function leftMenu(evt, cityName) {
@@ -521,4 +517,10 @@ $('.dropdown-multiple').on('click',function(){
 });
 $( 'input[type="checkbox' ).on( 'click', function () {
   $(this).parent().toggleClass( 'highlight', this.checked );
+});
+
+
+//=========================================================== aos animation
+AOS.init({
+  duration:3000,
 });
