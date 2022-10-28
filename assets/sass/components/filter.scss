@@ -196,6 +196,7 @@
     border-radius: 6px;
     color: $gray;
     margin: 5px !important;
+    max-width: 100px;
 
     .fa-times {
         cursor: pointer;
@@ -204,6 +205,9 @@
 
     p {
         font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -270,19 +274,37 @@
         width: 400px;
         margin-left: auto;
         margin-right: auto;
-
+        
+        p{
+        line-height: 16px;
+        width: 90%;
+        text-align:left ;
+        }
         @media only screen and (max-width:625px) {
-            width: 300px;
+            width: 350px;
         }
 
-        @media only screen and (max-width:500px) {
+        @media only screen and (max-width:530px) {
             width: 300px;
         }
 
         @media only screen and (max-width:470px) {
-            width: 60%;
+            width: 70%;
         }
-
+        @media only screen and (max-width:400px) {
+            margin-right: 0px !important;
+            width: 60%;
+            margin-left: 125px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        @media only screen and (max-width:330px) {
+            margin-right: 0px !important;
+            width: 60%;
+            margin-left: 120px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
         padding: 5px;
 
         &:hover {

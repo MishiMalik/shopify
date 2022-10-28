@@ -44,13 +44,3 @@ $('.filter-checkboxes').each(function() {
       $('.zones-right-filter').addClass('d-none')
     }
   })
-  // ==========================================================change checked label color
-  // $("input[type=checkbox]").on('click', function(){
-  //   $(this).parent().css('color','#0033cc');
-  // })
-  $( '.dropdown-list' ).on( 'click', 'input[type="checkbox"]', function () {
-    $(this).parent().toggleClass( 'highlight', this.checked );
-});
-$('.dropdown-multiple').on('click',function(){
-  $(this).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill-rotate');
-})

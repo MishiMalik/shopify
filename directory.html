@@ -69,7 +69,7 @@
                         <div class="header-menu ">
                             <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
                                 <i class="bi bi-house-door "></i>
-                                <p class="f-12  w-400 pb-0 mb-0 ">Feed</p>
+                                <p class="f-12  w-400 pb-0 mb-0 ">Feeds</p>
                             </a>
                         </div>
                         <div class="header-menu">
@@ -165,11 +165,10 @@
                 <div class=" d-flex justify-content-between align-items-center py-auto ">
                     <div class="d-flex align-items-center filter-div" id="right-filter" href="javascript:void(0)"
                         onclick="openFilter()">
-                        <img src="assets/images/icons/filter.svg" alt="" class="img-fluid me-2" height="18px"
-                            width="18px">
+                        <img src="assets/images/icons/filter.png" alt="" class="img-fluid me-2" >
                         <!-- <h2 class="f-16 w-500 text-dark m-0 p-0">Filters</h2> -->
                         <!-- <i class="bi bi-filter-left f-30 me-1"></i> -->
-                        <h2 class="f-16 w-500 text-dark m-0 p-0 ">Filters</h2>
+                        <h2 class="f-18 w-600 text-dark m-0 p-0 ">Filters</h2>
                     </div>
 
                 </div>
@@ -202,36 +201,43 @@
                     </div>
 
                     <div id="menu" class="tabcontent">
-                        <div class="d-flex align-items-center justify-content-around icons-div">
+                       <div class="d-flex align-items-center justify-content-around icons-div">
                             <div>
-                                <a href="index.html" class="left-menu-icon">
+                               <a href="">
+                                <div class="left-menu-icon">
                                     <i class="bi bi-house-heart-fill "></i><br>
-                                </a>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Feed<br>Screen</p>
+                                </div>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Feeds<br>Screen</p>
+                               </a>
                             </div>
                             <div>
-                                <a href="" class="left-menu-icon">
-                                    <i class="bi bi-chat-dots-fill"></i><br>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="bi bi-person-fill f-20"></i>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Tell a<br>friend</p>
+    
                                 </a>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Tell a<br>friend</p>
-
                             </div>
                             <div>
-                                <a href="" class="left-menu-icon">
-                                    <i class="fas fa-link"></i><br>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="fas fa-link"></i><br>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Copy<br>link</p>
+    
                                 </a>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2">Copy<br>link</p>
-
                             </div>
                             <div>
-                                <a href="" class="left-menu-icon ">
+                               <a href="">
+                                <div class="left-menu-icon ">
                                     <img src="assets/images/icons/arrow.png" alt="" class="img-fluid mb-1" height="15px"
                                         width="17px">
-                                </a>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2">Share</p>
+                                </div>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2 text-dark">Share</p>
 
+                               </a>
                             </div>
-
                         </div>
 
                         <div class="mt-3">
@@ -291,7 +297,7 @@
                             </ul>
                         </div>
 
-                        <div class="mt-4 pt-2">
+                         <div class="mt-4 pt-2">
                             <h1 class="f-18 blue-text w-500">Affilliate</h1>
                             <ul class="m-0 p-0 left-list">
                                 <li>
@@ -327,7 +333,16 @@
                                             <img src="assets/images/icons/SPonsored.jpg" alt="" class="img-fluid ">
                                         </div>
 
-                                        <a href="" class="f-16 w-500 dark-text ms-3">Sponsored ads</a>
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Sponsored Ads</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Banner.png" alt="" class="img-fluid ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Banner Ads</a>
                                     </div>
                                 </li>
                                 <li>
@@ -426,7 +441,6 @@
                                         <option value="0">SORT Default</option>
                                         <option value="0">SORT Default</option>
                                         <option value="1">Newest on top</option>
-                                        <option value="2">Oldest on top</option>
                                         <option value="3">Popular on top</option>
                                         <option value="4">Active member on top</option>
                                         <option value="5">Price Heighest on top</option>
@@ -448,6 +462,10 @@
                                         <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                             Check All
                                         </a> -->
+                                        <label class="dropdown-option">
+                                            <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
+                                            &nbsp;View All
+                                        </label>
 
                                         <label class="dropdown-option">
                                             <input type="checkbox" name="dropdown-group" value="Selection 1" />
@@ -482,7 +500,39 @@
                     <div class="container-fluid pb-2">
 
                         <div class="post row ">
-                            <div class="col-lg-12">
+                             <!-- banner -->
+                             <div class="col-lg-12 px-1 bg-white ">
+                                
+                                <div id="carouselExampleControls" data-interval="false" class="carousel slide" >
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class="w-100 banner ">
+                                            <img src="assets/images/categories.png" alt="" class="img-fluid">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                       <div class="w-100 banner ">
+                                    <img src="assets/images/categories.png" alt="" class="img-fluid">
+                                </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                       <div class="w-100 banner ">
+                                    <img src="assets/images/categories.png" alt="" class="img-fluid">
+                                </div>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+
+                            <div class="col-lg-12 pt-2">
                                 <h2 class="f-20 w-600 text-dark m-0 p-0 text-start mt-2 mb-3">Electronics</h2>
                                 <div>
                                     <div class="dropdown-multiple  w-100  dropdown-category-multiple pt-2 categories-dropdown"
@@ -756,13 +806,13 @@
                                 </div>
                                 <div class="category-fixed-button">
                                     <a>
-                                        <button class="category-total-checked">0 Checked</button>
+                                        <button class="category-total-checked">0 Selected</button>
                                     </a>
                                     <a>
-                                        <button class="category-clear-all">CLEAR</button>
+                                        <button class="category-clear-all">Clear All</button>
                                     </a>
                                     <a>
-                                        <button class="accordian-select-all">APPLY</button>
+                                        <button class="accordian-select-all">Apply</button>
                                     </a>
                                 </div>
                             </div>
@@ -1311,9 +1361,7 @@
                     <div
                         class="right-header d-flex justify-content-between align-items-center py-auto zones-right my-auto filter-desktop">
                         <div class="d-flex align-items-center filter-div">
-                            <!-- <i class="bi bi-filter-left f-30 me-2"></i> -->
-                            <img src="assets/images/icons/filter.svg" alt="" class="img-fluid me-2" height="18px"
-                                width="18px">
+                            <img src="assets/images/icons/filter.png" alt="" class="img-fluid me-2" >
                             <h2 class="f-20 w-600 text-dark m-0 p-0 ">Filters</h2>
 
                             <div class="filter-number">
@@ -1324,7 +1372,8 @@
                     </div>
                     <div class="zones-right-filter pt-3 filter-desktop">
 
-                        <p class="f-16 mb-0 pb-0 mt-3 text-start w-500 filter-heading">Brand</p>
+                        <p class="f-16 mb-0 pb-0 mt-3 text-start w-500 filter-heading" id="b">Brand</p>
+                       <!-- selctbox 1 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
 
@@ -1359,6 +1408,53 @@
                                 </label>
 
                                 <label class="dropdown-option justify-content-between">
+                                    Featured Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Sponsored Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    PRO Members only
+                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Folowees Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
+
+                                </label>
+                                <label class="dropdown-option justify-content-between">
+                                    Featured Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Sponsored Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    PRO Members only
+                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Folowees Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
                                     Std Posts
                                     <input type="checkbox" name="dropdown-group" value="Selection 5" />
 
@@ -1366,8 +1462,8 @@
                             </div>
                         </div>
 
-
-                        <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Kilometer</p>
+                        <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading" id="c">Kilometer</p>
+                       <!-- selectbox 2 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
 
@@ -1407,9 +1503,9 @@
                                 </label>
                             </div>
                         </div>
-
 
                         <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Budget</p>
+                       <!-- selectbox3 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
 
@@ -1449,9 +1545,9 @@
                                 </label>
                             </div>
                         </div>
-
 
                         <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Fuel Type</p>
+                      <!-- selectbox4-->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
                             <div class="dropdown-list dropdown-filter-list">
@@ -1491,91 +1587,8 @@
                             </div>
                         </div>
 
-
                         <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
-                        <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
-                            <label class="dropdown-label me-auto text-start">Select</label>
-
-                            <div class="dropdown-list dropdown-filter-list">
-                                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                    Check All
-                                </a> -->
-
-                                <label class="dropdown-option justify-content-between">
-                                    Featured Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    Sponsored Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    PRO Members only
-                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    Folowees Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    Std Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 5" />
-
-                                </label>
-                            </div>
-                        </div>
-
-                        <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
-                        <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
-                            <label class="dropdown-label me-auto text-start">Select</label>
-
-                            <div class="dropdown-list dropdown-filter-list">
-                                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                    Check All
-                                </a> -->
-
-                                <label class="dropdown-option justify-content-between">
-                                    Featured Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    Sponsored Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    PRO Members only
-                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    Folowees Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
-
-                                </label>
-
-                                <label class="dropdown-option justify-content-between">
-                                    Std Posts
-                                    <input type="checkbox" name="dropdown-group" value="Selection 5" />
-
-                                </label>
-                            </div>
-                        </div>
-
-
-                        <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
+                       <!-- selectbox5 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
 
@@ -1617,6 +1630,7 @@
                         </div>
 
                         <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
+                        <!-- selectbox6 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
 
@@ -1658,6 +1672,91 @@
                         </div>
 
                         <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
+                        <!-- selectbox7 -->
+                        <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
+                            <label class="dropdown-label me-auto text-start">Select</label>
+
+                            <div class="dropdown-list dropdown-filter-list">
+                                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                                    Check All
+                                </a> -->
+
+                                <label class="dropdown-option justify-content-between">
+                                    Featured Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Sponsored Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    PRO Members only
+                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Folowees Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Std Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 5" />
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
+                       <!-- selectbox8 -->
+                        <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
+                            <label class="dropdown-label me-auto text-start">Select</label>
+
+                            <div class="dropdown-list dropdown-filter-list">
+                                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                                    Check All
+                                </a> -->
+
+                                <label class="dropdown-option justify-content-between">
+                                    Featured Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Sponsored Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    PRO Members only
+                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Folowees Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
+
+                                </label>
+
+                                <label class="dropdown-option justify-content-between">
+                                    Std Posts
+                                    <input type="checkbox" name="dropdown-group" value="Selection 5" />
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <p class="f-16 mb-0 pb-0 mt-4 text-start w-500 filter-heading">Ownership</p>
+                       <!-- selectbox9 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
                             <div class="dropdown-list dropdown-filter-list">
@@ -1700,19 +1799,19 @@
                     </div>
                     <div class="zones-right-filter-footer filter-desktop">
                         <div class="w-100 d-flex justify-content-center">
-                            <button class="select my-3">Select</button>
+                            <button class="select my-3">Apply</button>
                         </div>
                         <div class="d-flex justify-content-around">
-                            <p class="mb-0 pb-0 f-16 w-500">24 Checked</p>
+                            <p class="mb-0 pb-0 f-16 w-500">24 Selected</p>
                             <button>Clear All</button>
                         </div>
                     </div>
 
                     <div class="mobile-filter mobile-filter-fix">
                         <div class="zones-right-filter">
-                            <div class="d-flex justify-content-between align-items-center py-2">
-                                <p class="mb-0 pb-0 f-18 w-500">Filters & Sort for Vehicle</p>
-                                <i class="far fa-times-circle" href="javascript:void(0)" onclick="closeFilter()"></i>
+                            <div class="d-flex justify-content-between align-items-center pt-2 pb-3">
+                                <p class="mb-0 pb-0 f-20 w-500">Filters & Sort for Vehicle</p>
+                                <i class="far fa-times-circle f-24" href="javascript:void(0)" onclick="closeFilter()"></i>
                             </div>
                         </div>
                         <div class="mobile-filter-header">
@@ -1723,7 +1822,6 @@
                                         <option value="0">SORT Default</option>
                                         <option value="0">SORT Default</option>
                                         <option value="1">Newest on top</option>
-                                        <option value="2">Oldest on top</option>
                                         <option value="3">Popular on top</option>
                                         <option value="4">Active member on top</option>
                                         <option value="5">Price Heighest on top</option>
@@ -1735,8 +1833,8 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="dropdown-multiple " data-control="checkbox-dropdown">
-                                    <label class="dropdown-label">Select</label>
+                                <div class="dropdown-multiple dropdown-multiple-mobile" data-control="checkbox-dropdown">
+                                    <label class="dropdown-label ">View All</label>
 
                                     <div class="dropdown-list">
                                         <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
@@ -1813,118 +1911,119 @@
                             <!-- checkboxes -->
                             <div id="budget" class="filters-list-tabcontent">
                                 <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                     <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor sit e kkk og ahs jahja!</p>
                                     <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
                                     <span class="checkmark "></span>
                                 </label>
+                                <label
+                                class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                                <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
+                                <input type="checkbox" class="ms-auto filter-checkboxes">
+                                <span class="checkmark "></span>
+                            </label>
+                            <label
+                                class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                                <input type="checkbox" class="ms-auto filter-checkboxes">
+                                <span class="checkmark "></span>
+                            </label>
                                 <label
-                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                                    <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
-                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
+                                <label
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                    <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                                    <span class="checkmark "></span>
+                                </label>
+                                <label
+                                class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                                <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
-                                <label
-                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
+                                <input type="checkbox" class="ms-auto filter-checkboxes">
+                                <span class="checkmark "></span>
+                            </label>
+                            <label
+                                class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                                <input type="checkbox" class="ms-auto filter-checkboxes">
+                                <span class="checkmark "></span>
+                            </label>
+                            
+
+                               
                             </div>
 
                             <div id="Years" class="filters-list-tabcontent">
                                 <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Years
-                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
-                                    <span class="checkmark "></span>
-                                </label>
+                                class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                 <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor sit e kkk og ahs jahja!</p>
+                                <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                <span class="checkmark "></span>
+                            </label>
+                            <label
+                            class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                            <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
+                            <input type="checkbox" class="ms-auto filter-checkboxes">
+                            <span class="checkmark "></span>
+                        </label>
                                 <label
-                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
+                                class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                                <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
-                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
-                                    <span class="checkmark "></span>
-                                </label>
-
-                                <label
-                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark"></span>
-                                </label>
+                                <input type="checkbox" class="ms-auto filter-checkboxes">
+                                <span class="checkmark "></span>
+                            </label>
+                            <label
+                                class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                                <input type="checkbox" class="ms-auto filter-checkboxes">
+                                <span class="checkmark "></span>
+                            </label>
                             </div>
 
                             <div id="Owners" class="filters-list-tabcontent">
                                 <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Owners
-                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
-                                    <span class="checkmark "></span>
-                                </label>
+                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                                    <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
-                                <label
-                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
                                     <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
                                 </label>
                                 <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark "></span>
-                                </label>
+                                class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                 <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor sit e kkk og ahs jahja!</p>
+                                <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
+                                <span class="checkmark "></span>
+                            </label>
+                            <label
+                            class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">
+                            <p class="mb-0 pb-0 ellipsis-multiple">Petrol Lorem ipsum dolor</p>
 
+                            <input type="checkbox" class="ms-auto filter-checkboxes">
+                            <span class="checkmark "></span>
+                        </label>
                                 <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">Petrol
-                                    <input type="checkbox" class="ms-auto filter-checkboxes mb-3">
-                                    <span class="checkmark "></span>
-                                </label>
-
-                                <label
-                                    class="d-flex justify-content-between mb-3  px-3 align-items-center f-16 w-500">Diesel
+                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                                    <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
                                     <input type="checkbox" class="ms-auto filter-checkboxes">
                                     <span class="checkmark "></span>
-                                </label>
-                                <label
-                                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">LGP
-                                    <input type="checkbox" class="ms-auto filter-checkboxes">
-                                    <span class="checkmark"></span>
                                 </label>
                             </div>
                         </div>
                     </div>
 
                     <div class="fix-filter-btns mobile-filter2" id="fix-filter-btns">
-                        <button>22 Checked</button>
-                        <button class="clear">CLEAR</button>
-                        <button class="select">SELECT</button>
+                        <button>22 Selected</button>
+                        <button class="clear">Clear All</button>
+                        <button class="select">Apply</button>
                     </div>
                 </div>
     </main>
@@ -1935,7 +2034,7 @@
             <div class="header-menu ">
                 <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
                     <i class="bi bi-house-door"></i>
-                    <p class="f-12 text-white w-400 pb-0 mb-0 ">Feed</p>
+                    <p class="f-12 text-white w-400 pb-0 mb-0 ">Feeds</p>
                 </a>
             </div>
             <div class="header-menu">

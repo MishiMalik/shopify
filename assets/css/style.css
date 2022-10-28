@@ -17,6 +17,9 @@
   font-size: 27px;
   line-height: 20px; }
 
+.f-24 {
+  font-size: 24px; }
+
 .f-20 {
   font-size: 20px; }
 
@@ -510,7 +513,6 @@ a {
   align-items: center;
   margin: 0px auto; }
   .left-menu-icon i {
-    font-size: 16px;
     color: #232323; }
   .left-menu-icon .bi-house-heart-fill {
     font-size: 20px; }
@@ -608,7 +610,7 @@ a {
   z-index: 90; }
   @media only screen and (max-width: 991px) {
     .right-header {
-      z-index: 0 !important; } }
+      display: none !important; } }
 
 .right-content {
   padding: 6px 10px;
@@ -847,12 +849,16 @@ a {
   padding: 3px 5px;
   border-radius: 6px;
   color: #767676;
-  margin: 5px !important; }
+  margin: 5px !important;
+  max-width: 100px; }
   .fiter-selected-tag .fa-times {
     cursor: pointer;
     font-size: 12px !important; }
   .fiter-selected-tag p {
-    font-size: 15px; }
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .filters-list {
   border-top: 2px solid #DEE0E2; }
@@ -906,15 +912,33 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding: 5px; }
+    .filters-list-tabcontent label p {
+      line-height: 16px;
+      width: 90%;
+      text-align: left; }
     @media only screen and (max-width: 625px) {
       .filters-list-tabcontent label {
-        width: 300px; } }
-    @media only screen and (max-width: 500px) {
+        width: 350px; } }
+    @media only screen and (max-width: 530px) {
       .filters-list-tabcontent label {
         width: 300px; } }
     @media only screen and (max-width: 470px) {
       .filters-list-tabcontent label {
-        width: 60%; } }
+        width: 70%; } }
+    @media only screen and (max-width: 400px) {
+      .filters-list-tabcontent label {
+        margin-right: 0px !important;
+        width: 60%;
+        margin-left: 125px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important; } }
+    @media only screen and (max-width: 330px) {
+      .filters-list-tabcontent label {
+        margin-right: 0px !important;
+        width: 60%;
+        margin-left: 120px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important; } }
     .filters-list-tabcontent label:hover {
       background-color: #DEE0E2;
       align-items: center !important; }
@@ -1137,13 +1161,13 @@ a {
       height: 32px; } }
   @media only screen and (max-width: 339px) {
     .add-post {
-      padding: 0px 6px;
+      padding: 0px 8px;
       font-size: 14px;
       font-weight: 500;
       height: 30px; } }
   @media only screen and (max-width: 333px) {
     .add-post {
-      padding: 0px 4px;
+      padding: 0px 6px;
       font-size: 12px;
       height: 32px; } }
   .add-post i {
@@ -1166,15 +1190,24 @@ a {
   padding: 6px 12px; }
 
 .banner img {
-  height: 130px;
+  height: 160px;
   border-radius: 4px;
-  object-fit: cover;
-  width: 100%; }
+  width: 100%;
+  object-position: center;
+  object-fit: cover; }
+  @media only screen and (max-width: 500px) {
+    .banner img {
+      height: 130px; } }
+
+.carousel-control-next-icon {
+  padding: 10px; }
 
 .blood-img {
   width: 100px;
   height: auto;
-  object-fit: contain; }
+  object-fit: contain;
+  object-position: center;
+  object-fit: cover; }
   @media only screen and (max-width: 1180px) {
     .blood-img {
       width: 80px;
@@ -1296,10 +1329,10 @@ a {
   border-radius: 100%; }
 
 .category-card {
+  padding: 0px 5px 0px 5px;
   padding-bottom: 0px;
   object-fit: contain; }
   .category-card img {
-    padding: 0px 0px 0px 0px;
     object-fit: contain; }
 
 .recent-card {
@@ -1310,25 +1343,25 @@ a {
   border-radius: 3px;
   padding: 2px; }
 
-.feeds-row {
+.Feeds-row {
   background-color: #E0F2FE; }
 
 /* Style the tab */
-.feed {
+.Feed {
   overflow: hidden; }
 
-/* Style the feed content */
-.feedcontent {
+/* Style the Feed content */
+.Feedcontent {
   display: none; }
 
-.feedlinks {
+.Feedlinks {
   background-color: transparent !important;
   border: none !important;
   padding: none !important;
   margin: 0px 0px 0px 0px;
   line-height: 20px;
   border-bottom: 2px solid transparent !important; }
-  .feedlinks:hover {
+  .Feedlinks:hover {
     color: #0093FF;
     border-bottom: 2px solid #0093FF !important; }
 
@@ -2013,6 +2046,38 @@ a {
       top: 11px;
       font-size: 12px; } }
 
+.post-badges {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  width: 100%;
+  display: block;
+  padding: 0px;
+  overflow: hidden;
+  height: 120px;
+  z-index: 10; }
+
+.featured-post {
+  background-image: linear-gradient(to right, #FDF647, #FFBE0C);
+  float: left;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: -72px;
+  top: 10px;
+  position: relative;
+  text-align: center !important;
+  width: 200px;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 700;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  color: #993300;
+  padding-right: 10px; }
+  @media only screen and (max-width: 500px) {
+    .featured-post {
+      left: -75px;
+      font-size: 12px; } }
+
 .follow-text {
   color: #00BCD4; }
 
@@ -2163,6 +2228,12 @@ a {
 
 .mayFollow-card-name {
   min-width: 120px; }
+
+.want-to-follow {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    .want-to-follow {
+      display: block; } }
 
 .loading-logo {
   height: 70px;
@@ -2504,8 +2575,14 @@ a {
   position: relative;
   font-size: 16px;
   color: #333333;
-  width: 100px;
+  width: 110px;
   font-weight: 500; }
+  @media only screen and (min-width: 1440px) {
+    .dropdown-multiple {
+      width: 120px; } }
+  @media only screen and (max-width: 1100px) {
+    .dropdown-multiple {
+      width: 100px; } }
   @media only screen and (max-width: 991px) {
     .dropdown-multiple {
       width: 150px;
@@ -2683,7 +2760,8 @@ a {
   z-index: 1; }
 
 .category-close {
-  font-size: 20px !important; }
+  font-size: 25px !important;
+  margin-top: -5px; }
 
 .directory-card {
   display: flex;
@@ -2968,7 +3046,7 @@ a {
   right: 0 !important;
   top: 0 !important;
   height: 400px !important;
-  padding: 12px 0px !important;
+  padding: 13px 0px !important;
   padding-top: 0px !important;
   overflow-y: scroll !important; }
   @media only screen and (max-width: 991px) {
@@ -2977,7 +3055,7 @@ a {
       overflow-y: scroll !important; } }
   .dropdown-category-multiple.on .dropdown-list .dropdown-option {
     font-size: 16px !important;
-    font-weight: 400 !important; }
+    font-weight: 500 !important; }
 
 .dropdown-category-multiple .dropdown-list {
   position: relative !important;
@@ -3013,3 +3091,6 @@ a {
   border-radius: 10px;
   position: relative;
   z-index: 10000 !important; }
+
+.dropdown-multiple-mobile .dropdown-label {
+  text-align: center !important; }

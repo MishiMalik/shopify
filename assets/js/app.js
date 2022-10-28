@@ -63,13 +63,13 @@ $(function() {
           items:1.8,
         },
         330:{
-          items:2.1
+          items:1.5
         },
         347:{
-          items:2.1,
+          items:2.3,
         },
         500:{
-          items:2.2,
+          items:2.5,
       },
         767:{
             items:4.2,
@@ -144,20 +144,20 @@ $('.categories-carousel').owlCarousel({
         items:3.5,
     },
     340:{
-      items:4.3,
+      items:2.8,
   },
   500:{
-items:5.5
+items:4.7
   },
     767:{
-        items:6.5,
+        items:5.7,
     },
     1200:{
-      items:7.5,
+      items:6.5,
       
     },
     1360:{
-        items:8.5,
+        items:7.5,
       
     }
 }
@@ -182,16 +182,16 @@ var prevScrollpos = window.pageYOffset;
 
 //===============================================================================button go to top
 
-let mybutton = document.getElementById("topBtn");
-let center=document.getElementById("center");
-center.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 || center.scrollTop > 100 ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// let mybutton = document.getElementById("topBtn");
+// let center=document.getElementById("center");
+// center.onscroll = function() {scrollFunction()};
+// function scrollFunction() {
+//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 || center.scrollTop > 100 ) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -205,7 +205,7 @@ function topFunction() {
 // =====================================================================move header smoothly on small screen
 
 window.onscroll = function() {
-  scrollFunction()
+  // scrollFunction()
   var currentScrollPos = window.pageYOffset ;
 
     if (currentScrollPos < prevScrollpos) {
@@ -475,28 +475,21 @@ $('.accordion-collapse').find('.form-check-input').each(function() {
 })
 
 
-
-
-
-
-
-
-
-//============================================================================ my feeds tab
+//============================================================================ my Feeds tab
 function myFeeds(evt, cityName) {
-  var i, feedcontent, feedlinks;
-  feedcontent = document.getElementsByClassName("feedcontent");
-  for (i = 0; i < feedcontent.length; i++) {
-    feedcontent[i].style.display = "none";
+  var i, Feedcontent, Feedlinks;
+  Feedcontent = document.getElementsByClassName("Feedcontent");
+  for (i = 0; i < Feedcontent.length; i++) {
+    Feedcontent[i].style.display = "none";
   }
-  feedlinks = document.getElementsByClassName("feedlinks");
-  for (i = 0; i < feedlinks.length; i++) {
-    feedlinks[i].className = feedlinks[i].className.replace(" activeFeed", "");
+  Feedlinks = document.getElementsByClassName("Feedlinks");
+  for (i = 0; i < Feedlinks.length; i++) {
+    Feedlinks[i].className = Feedlinks[i].className.replace(" activeFeed", "");
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " activeFeed";
 }
- document.getElementById("default-feed").click();
+ document.getElementById("default-Feed").click();
 
 // when click on follow /hide follow btn// show follow icon
  $('.follow-person-icon').on('click', function() {
@@ -504,18 +497,28 @@ function myFeeds(evt, cityName) {
   $(this).parent().next('.image-card-text').find('.follow-icon').removeClass('d-none')
  })
 
-
-
-
 // ==============================================================cremove card you may follow
  $(document).ready(function() {
   $('.close-wants, .may-want-follow').click(function() {
     $(this).closest('.owl-item').remove()
    })
  })
+
 //  ==============================================================reomove member in right menu
 $(document).ready(function() {
   $('.remove-member, .follow-card-btn').click(function() {
     $(this).closest('.follow-card-people').remove()
    })
  })
+
+  // ==========================================================change checked label color
+
+  $( '.dropdown-list' ).on( 'click', 'input[type="checkbox"]', function () {
+    $(this).parent().toggleClass( 'highlight', this.checked );
+});
+$('.dropdown-multiple').on('click',function(){
+  $(this).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill-rotate');
+});
+$( 'input[type="checkbox' ).on( 'click', function () {
+  $(this).parent().toggleClass( 'highlight', this.checked );
+});
