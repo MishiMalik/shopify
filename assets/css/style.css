@@ -102,6 +102,9 @@
 .text-green {
   color: #006600; }
 
+.text-active {
+  color: #003399; }
+
 body {
   padding: 0;
   margin: 0;
