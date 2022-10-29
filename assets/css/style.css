@@ -141,30 +141,6 @@ body {
   .container {
     max-width: 100%; } }
 
-#topBtn {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 80px;
-  /* Place the button at the bottom of the page */
-  right: 26.8%;
-  /* Place the button 30px from the right */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  background-color: transparent;
-  z-index: 1001; }
-  @media only screen and (max-width: 991px) {
-    #topBtn {
-      right: 10px; } }
-  #topBtn img {
-    height: 50px;
-    width: 50px; }
-
 .line-height-14 {
   line-height: 14px;
   cursor: pointer; }
@@ -1192,7 +1168,7 @@ a {
   height: 182px;
   border-radius: 4px;
   width: 100%;
-  object-position: top,bottom;
+  object-position: top, bottom;
   object-fit: cover; }
   @media only screen and (max-width: 991px) {
     .banner img {

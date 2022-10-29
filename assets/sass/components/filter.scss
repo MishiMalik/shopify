@@ -75,13 +75,13 @@
         position: relative;
         z-index: 10000 !important;
     }
-    
+
     &::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         position: relative;
         z-index: 10000 !important;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: $primary;
         outline: 1px solid transparent;
@@ -147,7 +147,8 @@
     padding-top: 0px;
     background-color: white;
     border-top: 1px solid $light-gray2;
-     z-index: 4;
+    z-index: 4;
+
     .select {
         color: white;
         border: 1px solid $primary;
@@ -214,10 +215,12 @@
 .filters-list {
     border-top: 2px solid $light-gray;
 }
-.mobile-filter1{
+
+.mobile-filter1 {
     padding-bottom: 65px;
     height: 100%;
 }
+
 // filters list tabs
 /* Style the tab */
 .filters-list-tabs {
@@ -229,7 +232,7 @@
     max-height: 300px;
     overflow-y: scroll;
     background-color: #0033cc;
-    
+
     //  min-height: 400px;
     //  max-height:900px;
     //  padding-bottom: 64px;
@@ -288,18 +291,18 @@
         // width: 400px;
         margin-left: auto;
         margin-right: auto;
-        
-        p{
-        line-height: 16px;
-        width: 90%;
-        text-align:left ;
+
+        p {
+            line-height: 16px;
+            width: 90%;
+            text-align: left;
         }
-      
+
         @media only screen and (max-width:400px) {
             padding-left: 0px !important;
             padding-right: 0px !important;
         }
-   
+
         padding: 5px;
 
         &:hover {
@@ -450,7 +453,7 @@
 
 
 .highlight {
-   
+
     color: #0033cc;
-  
+
 }

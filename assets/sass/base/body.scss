@@ -49,31 +49,31 @@ body {
 }
 
 
-// gototop
-#topBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 80px;
-    /* Place the button at the bottom of the page */
-    right: 26.8%;
-    /* Place the button 30px from the right */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    background-color: transparent;
-    z-index: 1001;
+// gototop btn========================================================================
+// #topBtn {
+//     display: none;
+//     /* Hidden by default */
+//     position: fixed;
+//     /* Fixed/sticky position */
+//     bottom: 80px;
+//     /* Place the button at the bottom of the page */
+//     right: 26.8%;
+//     /* Place the button 30px from the right */
+//     border: none;
+//     /* Remove borders */
+//     outline: none;
+//     /* Remove outline */
+//     cursor: pointer;
+//     /* Add a mouse pointer on hover */
+//     background-color: transparent;
+//     z-index: 1001;
 
-    @media only screen and (max-width:991px) {
-        right: 10px;
-    }
+//     @media only screen and (max-width:991px) {
+//         right: 10px;
+//     }
 
-    img {
-        height: 50px;
-        width: 50px;
-    }
-}
+//     img {
+//         height: 50px;
+//         width: 50px;
+//     }
+// }

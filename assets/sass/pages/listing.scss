@@ -2,7 +2,8 @@
     height: 25px;
     width: 25px;
     margin-bottom: 3px !important;
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         height: 27px;
         width: 27px;
     }
@@ -167,12 +168,15 @@
     color: $light-dark;
     width: 110px;
     font-weight: 500;
+
     @media only screen and (min-width:1440px) {
         width: 120px;
     }
+
     @media only screen and (max-width:1100px) {
         width: 100px;
     }
+
     @media only screen and (max-width:991px) {
         width: 150px;
         border-bottom: 2px solid $light-gray;
@@ -209,7 +213,8 @@
         text-overflow: ellipsis !important;
         overflow: hidden !important;
         transition: opacity .15s ease-in-out;
-       border-bottom: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+
         &:hover {
             background-color: #EFF0F2;
         }
@@ -231,6 +236,7 @@
         width: 100%;
         position: relative;
         z-index: 3;
+
         @media only screen and (max-width:991px) {
             text-align: left !important;
         }
@@ -285,12 +291,13 @@
     margin-right: 5px;
     // @media only screen and (min-width:1440px) {
     //     width: 145px;
-       
+
     // }
     @media only screen and (max-width:1124px) {
         width: 120px;
-       
+
     }
+
     @media only screen and (max-width:991px) {
         width: 150px;
         border-bottom: 2px solid $light-gray;
@@ -416,7 +423,8 @@
     top: 10px;
     z-index: 1;
 }
-.category-close{
-font-size: 25px !important;
-margin-top: -5px;
+
+.category-close {
+    font-size: 25px !important;
+    margin-top: -5px;
 }
