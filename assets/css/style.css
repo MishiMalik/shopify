@@ -2927,6 +2927,9 @@ a {
           margin-bottom: 0;
           min-width: 60px; } }
 
+.follow-directory {
+  cursor: pointer; }
+
 .follow-directory-icon {
   display: none; }
 
