@@ -2704,6 +2704,15 @@ a {
     .custom-select {
       margin-right: 0px; } }
 
+.custom-select2 {
+  width: 100px;
+  z-index: 1000;
+  font-size: 16px; }
+  .custom-select2 .select-items {
+    top: 30px !important;
+    right: 5px !important;
+    font-size: 16px; }
+
 .custom-select select {
   display: none;
   /*hide original SELECT element: */ }
