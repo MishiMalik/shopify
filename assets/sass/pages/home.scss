@@ -171,12 +171,13 @@
     padding: 6px 12px;
 }
 
-.banner img {
+.banner {
     height: 182px;
     border-radius: 4px;
     width: 100%;
     object-position: top, bottom;
     object-fit: cover;
+    overflow: hidden;
     @media only screen and (min-width:1440px) {
         height: 220px;
     }
@@ -186,6 +187,12 @@
 
     @media only screen and (max-width:767px) {
         height: 130px;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
     }
 }
 
