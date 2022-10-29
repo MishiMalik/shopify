@@ -118,9 +118,6 @@ body {
       max-height: 100% !important;
       padding-top: 99px; } }
 
-.home-body {
-  overflow-y: hidden; }
-
 .mobile-body {
   padding-top: 60px; }
 
@@ -298,11 +295,9 @@ a {
   text-decoration: none !important;
   display: flex;
   flex-shrink: 0 !important; }
-  .logo-div p {
-    color: white; }
-    @media only screen and (max-width: 991px) {
-      .logo-div p {
-        display: none; } }
+  @media only screen and (max-width: 991px) {
+    .logo-div .company-name {
+      display: none; } }
 
 .header-menu {
   position: relative; }
@@ -583,7 +578,8 @@ a {
   padding: 0px !important; }
   @media only screen and (max-width: 991px) {
     .right-menu {
-      display: none; } }
+      display: none;
+      overflow-y: unset; } }
 
 .right-menu::-webkit-scrollbar {
   width: 10px; }
@@ -693,6 +689,16 @@ a {
     .follow-card-btn a button:hover {
       background-color: #0093FF;
       color: white; }
+
+@media only screen and (min-width: 1500px) {
+  .remove-member {
+    display: none; } }
+
+.remove-member-large {
+  display: none; }
+  @media only screen and (min-width: 1500px) {
+    .remove-member-large {
+      display: block; } }
 
 .filter-div {
   position: relative;
@@ -866,13 +872,20 @@ a {
 .filters-list {
   border-top: 2px solid #DEE0E2; }
 
+.mobile-filter1 {
+  padding-bottom: 65px;
+  height: 100%; }
+
 /* Style the tab */
 .filters-list-tabs {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   float: left;
-  width: 200px; }
+  width: 200px;
+  min-height: calc(100% - 100px);
+  max-height: 300px;
+  overflow-y: scroll;
+  background-color: #0033cc; }
   @media only screen and (max-width: 625px) {
     .filters-list-tabs {
       width: 150px; } }
@@ -905,13 +918,14 @@ a {
     color: #0033ff !important; }
 
 .filters-list-contents {
-  width: 100%; }
+  min-height: calc(100% - 100px);
+  max-height: 300px;
+  overflow-y: scroll; }
 
 .filters-list-tabcontent {
   padding: 15px 10px !important;
   width: 100%; }
   .filters-list-tabcontent label {
-    width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px; }
@@ -919,27 +933,8 @@ a {
       line-height: 16px;
       width: 90%;
       text-align: left; }
-    @media only screen and (max-width: 625px) {
-      .filters-list-tabcontent label {
-        width: 350px; } }
-    @media only screen and (max-width: 530px) {
-      .filters-list-tabcontent label {
-        width: 300px; } }
-    @media only screen and (max-width: 470px) {
-      .filters-list-tabcontent label {
-        width: 70%; } }
     @media only screen and (max-width: 400px) {
       .filters-list-tabcontent label {
-        margin-right: 0px !important;
-        width: 60%;
-        margin-left: 125px !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important; } }
-    @media only screen and (max-width: 330px) {
-      .filters-list-tabcontent label {
-        margin-right: 0px !important;
-        width: 60%;
-        margin-left: 120px !important;
         padding-left: 0px !important;
         padding-right: 0px !important; } }
     .filters-list-tabcontent label:hover {
@@ -1193,17 +1188,60 @@ a {
   padding: 6px 12px; }
 
 .banner img {
-  height: 160px;
+  height: 182px;
   border-radius: 4px;
   width: 100%;
-  object-position: center;
+  object-position: top,bottom;
   object-fit: cover; }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 991px) {
+    .banner img {
+      height: 200px; } }
+  @media only screen and (max-width: 767px) {
     .banner img {
       height: 130px; } }
 
 .carousel-control-next-icon {
-  padding: 10px; }
+  background-image: none !important;
+  color: black;
+  background-color: white;
+  padding: 0px;
+  font-weight: 700;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -20px; }
+  @media only screen and (max-width: 767px) {
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      font-size: 18px;
+      margin-right: -10px; } }
+
+.carousel-control-prev-icon {
+  background-image: none !important;
+  color: black;
+  background-color: white;
+  font-weight: 700;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  padding-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px; }
+  @media only screen and (max-width: 767px) {
+    .carousel-control-prev-icon {
+      height: 30px;
+      width: 30px;
+      font-size: 18px;
+      margin-left: -10px; } }
 
 .blood-img {
   width: 100px;
@@ -1342,9 +1380,10 @@ a {
   padding: 2px; }
 
 .recent-card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 3px;
   padding: 2px; }
+  .recent-card:hover p {
+    color: #003399 !important; }
 
 .Feeds-row {
   background-color: #E0F2FE; }
@@ -2617,7 +2656,7 @@ a {
     transition: opacity .15s ease-in-out;
     border-bottom: 1px solid #DEE0E2; }
     .dropdown-multiple .dropdown-option:hover {
-      background-color: #DEE0E2; }
+      background-color: #EFF0F2; }
   .dropdown-multiple .dropdown-label {
     display: block;
     height: 30px;
@@ -2832,7 +2871,7 @@ a {
       color: #0093FF;
       margin-left: 5px; }
     .directory-card .directory-text .tag-line {
-      font-size: 13px;
+      font-size: 14px;
       color: #7A7A7A;
       font-weight: 500;
       margin-top: -7px; }
@@ -2850,7 +2889,7 @@ a {
       margin-left: 5px; }
     .directory-card .directory-text .status p {
       color: #aeadad;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 500; }
       .directory-card .directory-text .status p a {
         color: #16367B;
@@ -2910,6 +2949,9 @@ a {
           margin-top: 10px;
           margin-bottom: 0;
           min-width: 60px; } }
+
+.follow-directory-icon {
+  display: none; }
 
 .categories-icon {
   height: 25px;
@@ -3059,6 +3101,9 @@ a {
   .dropdown-category-multiple.on .dropdown-list .dropdown-option {
     font-size: 16px !important;
     font-weight: 500 !important; }
+    @media only screen and (max-width: 991px) {
+      .dropdown-category-multiple.on .dropdown-list .dropdown-option {
+        font-size: 18px !important; } }
 
 .dropdown-category-multiple .dropdown-list {
   position: relative !important;

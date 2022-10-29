@@ -1,4 +1,10 @@
-  //============================================================open zones tabs
+ //  ==================================================directory follow-icon
+$('.follow-directory').on('click',function(){
+  $(this).css('display','none');
+   $(this).siblings('.follow-directory-icon').css('display','block');
+  // $('.follow-directory-icon').css('display','block');
+})
+ //============================================================open zones tabs
   function zonestabs(evt, cityName) {
     var i,zonestabcontent, zonestablinks;
     zonestabcontent = document.getElementsByClassName("zonestabcontent");
@@ -20,4 +26,4 @@
 
  }
 
-//  ==================================================filters
+

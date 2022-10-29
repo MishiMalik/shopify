@@ -162,22 +162,60 @@ font-size: 14px;
 }
 
 .banner img {
-    height: 160px;
+    height: 182px;
     border-radius: 4px;
    width: 100%;
-   object-position: center;
+   object-position: top,bottom;
    object-fit: cover;
-   @media only screen and (max-width:500px){
+   @media only screen and (max-width:991px){
+    height: 200px;
+   }
+   @media only screen and (max-width:767px){
     height: 130px;
    }
 }
 .carousel-control-next-icon {
-    // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
-    // background-color: blue;
-    padding: 10px;
+    background-image:none !important;
+    color: black;
+    background-color: white;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+     padding-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+    @media only screen and (max-width:767px){
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+        margin-right: -10px;
+       }
 }
 .carousel-control-prev-icon {
-    // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e);
+     background-image: none !important;
+     color: black;
+     background-color: white;
+     font-weight: 700;
+     font-size: 24px;
+     height: 40px;
+     width: 40px;
+     border-radius: 100%;
+      padding-right: 4px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: -20px;
+     @media only screen and (max-width:767px){
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+        margin-left: -10px;
+       }
 }
 .blood-img {
     width: 100px;
@@ -363,9 +401,12 @@ font-size: 14px;
 }
 
 .recent-card:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 3px;
     padding: 2px;
+    p{
+        color: #003399 !important;
+    }
 }
 
 
@@ -1431,7 +1472,7 @@ font-size: 14px;
         font-weight: 500;
 
         &:hover {
-            background-color: $light-gray2 !important;
+            background-color:#EFF0F2 !important;
         }
     }
 }
@@ -1529,7 +1570,7 @@ font-size: 14px;
         //     min-width: 240px;
         // }
         &:hover {
-            background-color: $light-gray2 !important;
+            background-color: #EFF0F2 !important;
         }
 
         .menu-date {

@@ -83,7 +83,7 @@
         }
 
         .tag-line {
-            font-size: 13px;
+            font-size: 14px;
             color: $text-gray;
             font-weight: 500;
             margin-top: -7px;
@@ -112,7 +112,7 @@
         .status {
             p {
                 color: $text-gray-light;
-                font-size: 12px;
+                font-size: 13px;
                 font-weight: 500;
 
                 a {
@@ -206,7 +206,9 @@
 
     }
 }
-
+.follow-directory-icon{
+display: none;
+}
 .categories-icon {
     height: 25px;
     width: 25px;
@@ -386,6 +388,9 @@
     .dropdown-option{
         font-size: 16px !important;
         font-weight: 500 !important;
+        @media only screen and (max-width:991px) {
+            font-size: 18px !important;
+        }
     }
 }
 

@@ -9,6 +9,7 @@
 
   @media only screen and (max-width:991px) {
     display: none;
+    overflow-y:unset;
   }
 }
 
@@ -158,5 +159,16 @@
       }
 
     }
+  }
+}
+.remove-member{
+  @media only screen and (min-width:1500px){
+    display: none;
+  }
+}
+.remove-member-large{
+  display: none;
+  @media only screen and (min-width:1500px){
+    display: block;
   }
 }

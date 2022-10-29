@@ -140,13 +140,13 @@ $('.categories-carousel').owlCarousel({
         items:3.5,
     },
     340:{
-      items:2.8,
+      items:4.5,
   },
   500:{
 items:4.7
   },
     767:{
-        items:5.7,
+        items:6.7,
     },
     1200:{
       items:6.5,
@@ -155,7 +155,11 @@ items:4.7
     1360:{
         items:7.5,
       
-    }
+    },
+    1660:{
+      items:8.5,
+    
+  }
 }
 })
 
@@ -265,6 +269,7 @@ window.onscroll = function() {
     this.areAllChecked = false;
     this.$el = $(el);
     this.$label = this.$el.find('.dropdown-label');
+    this.$label2 = this.$el.find('.header-view-all');
     this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
     this.$inputs = this.$el.find('[type="checkbox"]');
     
@@ -296,7 +301,7 @@ window.onscroll = function() {
     this.$checkAll.html('Check All');
     
     if(checked.length <= 0) {
-      // this.$label.html('View All');
+     this.$label.html(this.$label2.val());
     }
     else if(checked.length === 1) {
       this.$label.html(checked.parent('label').text());
@@ -520,7 +525,4 @@ $( 'input[type="checkbox' ).on( 'click', function () {
 });
 
 
-//=========================================================== aos animation
-AOS.init({
-  duration:3000,
-});
+

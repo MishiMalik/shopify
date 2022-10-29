@@ -214,16 +214,25 @@
 .filters-list {
     border-top: 2px solid $light-gray;
 }
-
+.mobile-filter1{
+    padding-bottom: 65px;
+    height: 100%;
+}
 // filters list tabs
 /* Style the tab */
 .filters-list-tabs {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     float: left;
     width: 200px;
-
+    min-height: calc(100% - 100px);
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: #0033cc;
+    
+    //  min-height: 400px;
+    //  max-height:900px;
+    //  padding-bottom: 64px;
     @media only screen and (max-width:625px) {
         width: 150px;
     }
@@ -263,7 +272,11 @@
 }
 
 .filters-list-contents {
-    width: 100%;
+    // width: 100%;
+    min-height: calc(100% - 100px);
+    max-height: 300px;
+    overflow-y: scroll;
+    // background-color: #0033cc;
 }
 
 .filters-list-tabcontent {
@@ -271,7 +284,7 @@
     width: 100%;
 
     label {
-        width: 400px;
+        // width: 400px;
         margin-left: auto;
         margin-right: auto;
         
@@ -280,31 +293,12 @@
         width: 90%;
         text-align:left ;
         }
-        @media only screen and (max-width:625px) {
-            width: 350px;
-        }
-
-        @media only screen and (max-width:530px) {
-            width: 300px;
-        }
-
-        @media only screen and (max-width:470px) {
-            width: 70%;
-        }
+      
         @media only screen and (max-width:400px) {
-            margin-right: 0px !important;
-            width: 60%;
-            margin-left: 125px !important;
             padding-left: 0px !important;
             padding-right: 0px !important;
         }
-        @media only screen and (max-width:330px) {
-            margin-right: 0px !important;
-            width: 60%;
-            margin-left: 120px !important;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-        }
+   
         padding: 5px;
 
         &:hover {

@@ -35,7 +35,8 @@
                     <a href="index.html" class="d-flex align-items-center logo-div">
                         <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
                             class="img-fluid logo remove-logo">
-                        <p class="mb-0 pb-0 f-25 w-600 ms-2">CompanyName</p>
+                                                <img src="assets/images/logo-name.PNG" alt="" class="img-fluid company-name">
+
 
                     </a>
                     <a href="zones.html">
@@ -138,6 +139,10 @@
                                 <ul class="dropdown-menu log-menu" aria-labelledby="dropdownMenuLink">
                                     <li><a class="dropdown-item d-flex align-items-center" href="#"><i
                                                 class="me-2 bi bi-box-arrow-left text-dark"></i> Log Out</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                        <i class="bi bi-box-arrow-in-right me-2 text-dark"></i>
+                                     Log in</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-person-circle  me-2 text-dark"></i>Join Free</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -206,7 +211,7 @@
                                 <div class="left-menu-icon">
                                     <i class="bi bi-house-heart-fill "></i><br>
                                 </div>
-                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Feeds<br>Screen</p>
+                                <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Home<br>Screen</p>
                                </a>
                             </div>
                             <div>
@@ -441,7 +446,7 @@
                                         <option value="0">SORT Default</option>
                                         <option value="1">Newest on top</option>
                                         <option value="3">Popular on top</option>
-                                        <option value="4">Active member on top</option>
+                                        <option value="4">Active Members on top</option>
                                         <option value="5">Price Heighest on top</option>
                                         <option value="3">Price Lowest on top</option>
                                         <option value="4">Rating Heighest on top</option>
@@ -456,15 +461,15 @@
 
                                 <div class="dropdown-multiple " data-control="checkbox-dropdown">
                                     <label class="dropdown-label">View All</label>
-
+                                    <input type="hidden" value="View All" class="header-view-all">
                                     <div class="dropdown-list">
                                         <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                             Check All
                                         </a> -->
-                                        <label class="dropdown-option">
+                                        <!-- <label class="dropdown-option">
                                             <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
                                             &nbsp; View All
-                                        </label>
+                                        </label> -->
                                         <label class="dropdown-option">
                                             <input type="checkbox" name="dropdown-group" value="Selection 1" />
                                             &nbsp; Featured Posts
@@ -499,8 +504,8 @@
                     <div class="container-fluid pb-2">
 
                         <div class="post row ">
-                             <!-- banner -->
- <div class="col-lg-12 px-1 bg-white ">
+   <!-- banner -->
+   <div class="col-lg-12 px-1">
                                 
     <div id="carouselExampleControls" data-interval="false" class="carousel slide" >
         <div class="carousel-inner">
@@ -521,302 +526,301 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i> </span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 </div>
-                            <div class="col-lg-12 pt-2">
-                                <h2 class="f-20 w-600 text-dark m-0 p-0 text-start mt-2 mb-3">Electronics</h2>
-                                <div>
-                                    <div class="dropdown-multiple  w-100  dropdown-category-multiple pt-2 categories-dropdown"
-                                        data-control="checkbox-dropdown">
-                                        <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
-                                        <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
-                                        <div class="d-flex align-items-center w-100">
-                                            <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                class="img-fluid me-1 categories-icon">
-                                            <label class="dropdown-label  text-start  w-100 ">
-                                                Select
+<div class="col-lg-12 pt-2">
+    <h2 class="f-20 w-600 text-dark m-0 p-0 text-start mt-2 mb-3">Electronics</h2>
+    <div>
+        <div class="dropdown-multiple  w-100  dropdown-category-multiple pt-2 categories-dropdown"
+            data-control="checkbox-dropdown">
+            <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
+            <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
+            <div class="d-flex align-items-center w-100">
+                <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                    class="img-fluid me-1 categories-icon">
+                <label class="dropdown-label  text-start  w-100 ">
+                    Select
 
-                                            </label>
+                </label>
+                <input type="hidden" value="Select" class="header-view-all">
 
-                                        </div>
+            </div>
 
-                                        <div class="dropdown-list dropdown-filter-list ">
-                                            <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                                Check All
-                                            </a> -->
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+            <div class="dropdown-list dropdown-filter-list ">
+                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                    Check All
+                </a> -->
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
 
-                                            </label>
-
-
-
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="dropdown-multiple  w-100  dropdown-category-multiple pt-2 categories-dropdown"
-                                        data-control="checkbox-dropdown">
-                                        <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
-                                        <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
-                                        <div class="d-flex align-items-center w-100">
-                                            <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                class="img-fluid me-1 categories-icon">
-                                            <label class="dropdown-label  text-start  w-100 ">
-                                                Select
-
-                                            </label>
-
-                                        </div>
-
-                                        <div class="dropdown-list dropdown-filter-list ">
-                                            <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                                Check All
-                                            </a> -->
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Gift Boxes
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/gift.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    Sponsored Posts
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
-                                            <label class="dropdown-option justify-content-between py-2">
-                                                <div class="d-flex align-items-end">
-                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                        class="img-fluid check-icon me-3">
-                                                    PRO Members only
-                                                </div>
-                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
-
-                                            </label>
+                </label>
 
 
 
 
 
-                                        </div>
-                                    </div>
-                                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="dropdown-multiple   w-100  dropdown-category-multiple pt-2 categories-dropdown"
+            data-control="checkbox-dropdown">
+            <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
+            <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
+            <div class="d-flex align-items-center w-100">
+                <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                    class="img-fluid me-1 categories-icon">
+                <label class="dropdown-label  text-start  w-100 ">
+                    Select
+
+                </label>
+                <input type="hidden" value="Select" class="header-view-all">
+
+            </div>
+
+            <div class="dropdown-list dropdown-filter-list ">
+                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                    Check All
+                </a> -->
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Gift Boxes
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/gift.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        Sponsored Posts
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
+                <label class="dropdown-option justify-content-between py-2">
+                    <div class="d-flex align-items-end">
+                        <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                            class="img-fluid check-icon me-3">
+                        PRO Members only
+                    </div>
+                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                </label>
 
 
-                                <div class="category-fixed-button">
-                                    <a>
-                                        <button class="category-total-checked">0 Selected</button>
-                                    </a>
-                                    <a>
-                                        <button class="category-clear-all">Clear All</button>
-                                    </a>
-                                    <a>
-                                        <button class="accordian-select-all">Apply</button>
-                                    </a>
-                                </div>
-                            </div>
 
+
+
+            </div>
+        </div>
+    </div>
+    <div class="category-fixed-button">
+        <a>
+            <button class="category-total-checked">0 Selected</button>
+        </a>
+        <a>
+            <button class="category-clear-all">Clear All</button>
+        </a>
+        <a>
+            <button class="accordian-select-all">Apply</button>
+        </a>
+    </div>
+</div>
                         </div>
 
                         <!-- My Feeds -->
@@ -1922,18 +1926,18 @@
                             </div>
                         </div> -->
                         <!-- Interested slider -->
-                        <div class="row post mt-2">
+                        <div class=" ">
 
-                            <div class="col-lg-12 ">
+                            <!-- <div class="col-lg-12 ">
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <h2 class="f-20 w-500 text-dark">You may be interested in</h2>
                                     </div>
 
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="col-lg-12 mt-2">
+                            <!-- <div class="col-lg-12 mt-2">
                                 <div class="owl-carousel owl-theme owl-carousel-slider">
                                     <div class="img-card">
                                         <a>
@@ -1959,98 +1963,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="interested-menu-icon">
-
-                                                        <!--3 dot post view on desktop-screen -->
-                                                        <!-- <div class="dropdown">
-    <button class="menu-post " type="button" id="dropdownMenuButton2"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots"></i>
-    </button>
-    <ul class="dropdown-menu menu-post-drop "  aria-labelledby="dropdownMenuButton2">
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-share me-4"></i>Share this
-                post</a></li>
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-link me-4"></i>Copy Link</a></li>
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-concierge-bell me-4"></i>Alert
-                Similar Posts</a></li>
-        <div class="seprator"></div>
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-user-times me-4"></i>Unfollow
-                Jerry</a></li>
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-eye-slash me-4"></i>Hide Post</a>
-        </li>
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-minus-circle me-4"></i>Show Less
-                Such posts</a></li>
-        <li><a class="dropdown-item" href="#"><i
-                    class="fas fa-flag me-4"></i>Report post</a>
-        </li>
-        <div class="seprator"></div>
-        <li><a class="dropdown-item d-flex " href="#"><i
-                    class="fas fa-lightbulb me-4"></i>Last Active
-                <div class="menu-date ">12 Mar 22</div>
-            </a></li>
-        <li><a class="dropdown-item d-flex" href="#"><i
-                    class="fas fa-calendar-alt me-4"></i>Posting
-                Date <div class="menu-date ">12 Mar 22</div></a></li>
-        <div class="seprator"></div>
-        <li class="more-option"><a class="d-flex f-16 w-700 text-center pt-2 pb-1" href="#">More Options</a></li>
-   
-    </ul>
-</div> -->
-
-                                                        <!-- <div class="dropdown dropdown-lg d-inline-block ms-auto">
-                                                            <a href="#" role="button" id="dropdownMenu1"
-                                                                data-bs-toggle="dropdown" aria-haspopup="true"
-                                                                aria-expanded="false"><i
-                                                                    class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots text-dark"></i></a>
-                                                            <ul class="dropdown-menu dropdown-menu-end menu-post-drop "
-                                                                aria-labelledby="dropdownMenu1">
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-share me-4"></i>Share this
-                                                                        post</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-link me-4"></i>Copy Link</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-concierge-bell me-4"></i>Alert
-                                                                        Similar Posts</a></li>
-                                                                <div class="seprator"></div>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-user-times me-4"></i>Unfollow
-                                                                        Jerry</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-eye-slash me-4"></i>Hide
-                                                                        Post</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-minus-circle me-4"></i>Show
-                                                                        Less
-                                                                        Such posts</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="fas fa-flag me-4"></i>Report post</a>
-                                                                </li>
-                                                                <div class="seprator"></div>
-                                                                <li><a class="dropdown-item d-flex " href="#"><i
-                                                                            class="fas fa-lightbulb me-4"></i>Last
-                                                                        Active
-                                                                        <div class="menu-date ">12 Mar 22</div>
-                                                                    </a></li>
-                                                                <li><a class="dropdown-item d-flex" href="#"><i
-                                                                            class="fas fa-calendar-alt me-4"></i>Posting
-                                                                        Date <div class="menu-date ">12 Mar 22</div></a>
-                                                                </li>
-                                                                <div class="seprator"></div>
-                                                                <li class="more-option"><a
-                                                                        class="d-flex f-16 w-700 text-center pt-2 pb-1"
-                                                                        href="#">More Options</a></li>
-                                                            </ul>
-                                                        </div> -->
-
-                                                        <!--3 dot post view on small-screen -->
 
                                                         <button class="menu-post" type="button" id="dropdownMenuButton1"
                                                             data-bs-toggle="modal" data-bs-target="#dots-menu-post">
@@ -2094,7 +2006,7 @@
 
 
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- banners -->
                         <!-- <div class="row post mt-2">
@@ -2149,7 +2061,7 @@
                        <!-- selctbox 1 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2239,7 +2151,7 @@
                        <!-- selectbox 2 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2281,7 +2193,7 @@
                        <!-- selectbox3 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2323,6 +2235,7 @@
                       <!-- selectbox4-->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2364,7 +2277,7 @@
                        <!-- selectbox5 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2406,7 +2319,7 @@
                         <!-- selectbox6 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2448,7 +2361,7 @@
                         <!-- selectbox7 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2490,7 +2403,7 @@
                        <!-- selectbox8 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
-
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2532,6 +2445,7 @@
                        <!-- selectbox9 -->
                         <div class="dropdown-multiple  w-100 dropdown-filter-multile" data-control="checkbox-dropdown">
                             <label class="dropdown-label me-auto text-start">Select</label>
+                            <input type="hidden" value="Select" class="header-view-all">
                             <div class="dropdown-list dropdown-filter-list">
                                 <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                     Check All
@@ -2587,7 +2501,7 @@
                                 <i class="far fa-times-circle f-24" href="javascript:void(0)" onclick="closeFilter()"></i>
                             </div>
                         </div>
-                        <div class="mobile-filter-header">
+                        <div class="mobile-filter-header py-2">
                             <div>
                                 <div class="custom-select d-flex">
                                     <i class="bi bi-filter-left f-22 w-700"></i>
@@ -2596,7 +2510,7 @@
                                         <option value="0">SORT Default</option>
                                         <option value="1">Newest on top</option>
                                         <option value="3">Popular on top</option>
-                                        <option value="4">Active member on top</option>
+                                        <option value="4">Active Members on top</option>
                                         <option value="5">Price Heighest on top</option>
                                         <option value="3">Price Lowest on top</option>
                                         <option value="4">Rating Heighest on top</option>
@@ -2608,15 +2522,15 @@
                             <div>
                                 <div class="dropdown-multiple dropdown-multiple-mobile" data-control="checkbox-dropdown">
                                     <label class="dropdown-label ">View All</label>
-
+                                    <input type="hidden" value="View All" class="header-view-all">
                                     <div class="dropdown-list">
                                         <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
                                             Check All
                                         </a> -->
-                                        <label class="dropdown-option">
+                                        <!-- <label class="dropdown-option">
                                             <input type="checkbox" name="dropdown-group" value="Selection 1" />
                                             &nbsp; View All
-                                        </label>
+                                        </label> -->
                                         <label class="dropdown-option">
                                             <input type="checkbox" name="dropdown-group" value="Selection 1" />
                                             &nbsp; Featured Posts
@@ -2682,6 +2596,14 @@
                                 Inspection Status</button>
                             <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">Autos
                                 Cars</button>
+                                <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">By No of.
+                                    Owners</button>
+                                <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">By
+                                    Inspection Status</button>
+                                    <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">By No of.
+                                        Owners</button>
+                                    <button class="filters-list-tablinks" onclick="filterTabs(event, 'Owners')">By
+                                        Inspection Status</button>
                         </div>
                         <div class="filters-list-contents">
                             <!-- checkboxes -->
@@ -2731,6 +2653,36 @@
                                 <input type="checkbox" class="ms-auto filter-checkboxes">
                                 <span class="checkmark "></span>
                             </label>
+                            <label
+                            class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                            <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                            <input type="checkbox" class="ms-auto filter-checkboxes">
+                            <span class="checkmark "></span>
+                        </label>
+                        <label
+                        class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                        <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                        <input type="checkbox" class="ms-auto filter-checkboxes">
+                        <span class="checkmark "></span>
+                    </label>
+                    <label
+                    class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                    <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                    <input type="checkbox" class="ms-auto filter-checkboxes">
+                    <span class="checkmark "></span>
+                </label>
+                <label
+                class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+                <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+                <input type="checkbox" class="ms-auto filter-checkboxes">
+                <span class="checkmark "></span>
+            </label>
+            <label
+            class="d-flex justify-content-between mb-3 px-3 align-items-center f-16 w-500">
+            <p class="mb-0 pb-0 ellipsis-multiple">Petrol</p>
+            <input type="checkbox" class="ms-auto filter-checkboxes">
+            <span class="checkmark "></span>
+        </label>
                             
 
                                
