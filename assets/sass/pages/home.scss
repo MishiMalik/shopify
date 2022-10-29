@@ -177,7 +177,9 @@
     width: 100%;
     object-position: top, bottom;
     object-fit: cover;
-
+    @media only screen and (min-width:1440px) {
+        height: 220px;
+    }
     @media only screen and (max-width:991px) {
         height: 200px;
     }
