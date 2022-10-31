@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <title>Document</title>
+    <style>
+        .custom-file-input {
+            color: transparent;
+        }
+
+        .custom-file-input::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+
+        .custom-file-input::before {
+            content: '';
+            color: black;
+            display: inline-block;
+            background: transparent;
+            border: 0px solid #999;
+            border-radius: 0px;
+            padding: 0px 0px;
+            outline: none;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            cursor: pointer;
+
+        }
+
+        .custom-file-input:hover::before {
+            border-color: black;
+        }
+
+        .custom-file-input:active {
+            outline: 0;
+        }
+
+        .custom-file-input:active::before {
+            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+        }
+
+        .select-icon-btn {
+            position: relative;
+            height: 25px;
+            width: 25px;
+        }
+
+        .select-icon-btn .bi-pencil-square {
+            position: absolute;
+            top: 0px;
+            font-size: 25px;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .select-icon-btn .custom-file-input {
+            position: absolute;
+            top: 0px;
+            font-size: 25px;
+            width: 25px;
+            height: 30px;
+            z-index: 20;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-     <!-- image-slider -->
-                            <!-- <div class="col-lg-12 mt-2">
+    <div class="select-icon-btn">
+        <input type="file" class="custom-file-input">
+        <i class="bi bi-pencil-square"></i>
+    </div>
+
+    <!-- image-slider -->
+    <!-- <div class="col-lg-12 mt-2">
 
                                 <div class="owl-carousel owl-theme owl-carousel-slider">
                                     <div class="img-card">
@@ -59,9 +130,9 @@
                             </div> -->
 
 
-                            <!-- load more and show all btns -->
+    <!-- load more and show all btns -->
 
-                            <!-- <div class="col-lg-12 mt-3">
+    <!-- <div class="col-lg-12 mt-3">
                                 <div class="d-flex justify-content-center flex-wrap">
                                     <a href=""><button class="btn-blank mt-2">Load More</button></a>
                                     <a href=""><button class="btn-fill mt-2">All Categories</button></a>
@@ -69,8 +140,8 @@
                             </div> -->
 
 
-                             <!-- Load More -->
-                        <!-- <div class="row post mt-2">
+    <!-- Load More -->
+    <!-- <div class="row post mt-2">
                             <div class="col-lg-12 py-0">
                                 <a href=""><button
                                         class="btn-blank mt-2 mx-auto py-2 px-5 w-500 f-20 d-flex align-items-center"><img
@@ -78,8 +149,8 @@
                                             height="25px" width="25px"> Load More</button></a>
                             </div>
                         </div> -->
-                        <!-- post notice buttons -->
-                        <!-- <div class="row post mt-2">
+    <!-- post notice buttons -->
+    <!-- <div class="row post mt-2">
                             <div class="col-lg-12 py-0 d-flex align-items-center justify-content-center view-btn-div">
                                 <a href=""><button class="view-btn mt-2  py-2 px-4 w-500 mx-2"><img
                                             src="assets/images/icons/post-btn.PNG" alt="" class="img-fluid me-1"
@@ -92,10 +163,10 @@
 
 
 
-                        <!-- go to top -->
-                        
+    <!-- go to top -->
 
-                        <!-- <div class="row post mt-2">
+
+    <!-- <div class="row post mt-2">
                             <div class="col-lg-3 col-md-3 col-sm-3  col-6  my-1 p-0">
                                 <a href="">
                                     <img src="assets/images/Capture.PNG" alt="" class="img-fluid mx-auto add-img">
@@ -118,13 +189,13 @@
                             </div>
                         </div> -->
 
-                    <!-- go to top -->
-                    <!-- <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="assets/images/icons/top.png"
+    <!-- go to top -->
+    <!-- <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="assets/images/icons/top.png"
                             alt="" class="img-fluid"></button>
  -->
 
 
- 
+
     <!-- loading page -->
     <!-- <div class="backdrop-loading " id="loading">
         <div class="container ">
@@ -268,10 +339,10 @@
             </div>
         </div>
     </div>  -->
-<!-- Interested slider -->
-<div class=" ">
+    <!-- Interested slider -->
+    <div class=" ">
 
-    <!-- <div class="col-lg-12 ">
+        <!-- <div class="col-lg-12 ">
         <div class="d-flex justify-content-between">
             <div>
                 <h2 class="f-20 w-500 text-dark">You may be interested in</h2>
@@ -280,7 +351,7 @@
         </div>
     </div> -->
 
-    <!-- <div class="col-lg-12 mt-2">
+        <!-- <div class="col-lg-12 mt-2">
         <div class="owl-carousel owl-theme owl-carousel-slider">
             <div class="img-card">
                 <a>
@@ -350,9 +421,9 @@
 
         </div>
     </div> -->
-</div>
-  <!-- Interested slider -->
-                        <!-- <div class="row post mt-2">
+    </div>
+    <!-- Interested slider -->
+    <!-- <div class="row post mt-2">
 
                             <div class="col-lg-12 ">
                                 <div class="d-flex justify-content-between">
@@ -429,6 +500,7 @@
                                 </div>
                             </div>
                         </div> -->
-                       
+
 </body>
+
 </html>

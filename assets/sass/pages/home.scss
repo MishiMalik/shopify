@@ -103,13 +103,21 @@
     padding: 3px 6px;
     font-size: 16px;
     color: black;
-    height: 35px;
+    height: 36.8px;
     font-weight: 500;
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width:1180px) {
+    @media only screen and (max-width:1100px) {
         padding: 3px 6px;
+        height: 31px;
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width:1015px) {
+        padding: 3px 4px;
+        height: 32px;
+        font-size: 14px;
     }
 
     @media only screen and (max-width:433px) {
@@ -178,9 +186,11 @@
     object-position: top, bottom;
     object-fit: cover;
     overflow: hidden;
+
     @media only screen and (min-width:1440px) {
         height: 220px;
     }
+
     @media only screen and (max-width:991px) {
         height: 200px;
     }
@@ -188,6 +198,7 @@
     @media only screen and (max-width:767px) {
         height: 130px;
     }
+
     img {
         height: 100%;
         width: 100%;
@@ -250,14 +261,14 @@
     object-position: center;
     object-fit: cover;
 
-    @media only screen and (max-width:1180px) {
-        width: 80px;
-        height: auto;
-    }
+    // @media only screen and (max-width:1180px) {
+    //     width: 80px;
+    //     height: auto;
+    // }
 
     @media only screen and (max-width:1100px) {
-        width: 55px;
-        height: auto;
+        width: auto;
+        height: 30px;
     }
 
     @media only screen and (max-width:991px) {
@@ -1507,6 +1518,32 @@
     }
 }
 
+.classify-drop2 {
+    padding: 10px 0px !important;
+    border-radius: 3px !important;
+    background-color: white !important;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+    z-index: 100;
+    border-radius: 4px;
+    border: solid 0px #ced4da;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    position: absolute;
+    top: 40px !important;
+    min-width: 230px;
+    border: 7px solid #DEE0E2 !important;
+
+    .dropdown-item {
+        padding: 8px 10px !important;
+        font-size: 16px;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #EFF0F2 !important;
+        }
+    }
+}
+
 .classified-dropdown {
     display: none !important;
 
@@ -1515,6 +1552,13 @@
     }
 }
 
+.classified-dropdown-desktop {
+    display: block !important;
+
+    @media only screen and (max-width:991px) {
+        display: block !important;
+    }
+}
 
 .classified-drop-small {
     background-color: transparent !important;
@@ -1533,6 +1577,20 @@
 .offer-text-small {
     display: none !important;
     color: $navi-blue !important;
+    line-height: 10px;
+
+    @media only screen and (max-width:991px) {
+        display: block !important;
+    }
+
+    @media only screen and (max-width:340px) {
+        font-size: 14px !important;
+    }
+}
+
+.offer-text-dsktop {
+    display: block !important;
+    color: #0033cc !important;
     line-height: 10px;
 
     @media only screen and (max-width:991px) {
@@ -1712,4 +1770,137 @@
     @media only screen and (max-width:991px) {
         display: block;
     }
+}
+
+.classified-drop-desktop {
+    color: $navi-blue !important;
+
+    :hover {
+        color: $navi-blue !important;
+    }
+}
+
+
+
+.ms-10 {
+    margin-left: 30px;
+
+    @media only screen and (max-width:1100px) {
+        margin-left: 10px;
+    }
+    @media only screen and (max-width:1024px) {
+        margin-left: 2px;
+    }
+   
+}
+
+.me-10 {
+    margin-right: 30px;
+
+    @media only screen and (max-width:1100px) {
+        margin-right: 10px;
+    }
+    @media only screen and (max-width:1024px) {
+        margin-right: 5px;
+    }
+   
+}
+
+.classified-drop-select {
+    width: 90% !important;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.select-option {
+    padding: 30px !important;
+    font-size: 17px !important;
+}
+
+.classify-select-li {
+
+    /* The container must be positioned relative: */
+    .classify-select {
+        position: relative;
+        
+    }
+
+    .classify-select select {
+        display: none;
+        /*hide original SELECT element: */
+    }
+
+    .select-selected {
+        background-color: white;
+        width: 90% !important;
+        margin: 10px auto;
+        text-align: left;
+        padding: 3px 15px !important;
+        border: 1px solid #B2B2B2 !important;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Style the arrow inside the select element: */
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 20px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: black transparent transparent transparent;
+    }
+
+    /* Point the arrow upwards when the select box is open (active): */
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+    }
+
+    /* style the items (options), including the selected item: */
+    .select-items div,
+    .select-selected {
+        color: black;
+        padding: 8px 10px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+    }
+
+    /* Style items (options): */
+    .select-items {
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: 13px;
+        right: 0;
+        z-index: 99;
+        width: 88% !important;
+    }
+
+    /* Hide the items when the select box is closed: */
+    .select-hide {
+        display: none;
+    }
+
+    .select-items div:hover,
+    .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+}
+.select-Box-btn{
+    background-color: transparent;
+    border: 2px solid $navi-blue;
+    font-size: 16px;
+    color: $navi-blue;
+    font-weight: 500;
+    padding: 0px 30px;
+    border-radius: 5px;
+    margin: 10px auto;
 }

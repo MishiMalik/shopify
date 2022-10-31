@@ -112,13 +112,16 @@
         .status {
             p {
                 color: $text-gray-light;
-                font-size: 13px;
-                font-weight: 500;
+                font-size: 14px;
+                font-weight: 400;
 
                 a {
                     color: $primary;
                     font-size: 13px;
                     text-decoration: none !important;
+                }
+                span{
+                    color: $light-gray;
                 }
             }
 
@@ -256,13 +259,12 @@
         margin: 0px 5px;
 
         @media only screen and (max-width:991px) {
-            margin: 0px;
-            min-width: 100px;
+            min-width: 90px;
+            margin-left: 0px !important;
         }
 
         @media only screen and (max-width:340px) {
-            margin: 0px;
-            min-width: 90px;
+            min-width: 85px;
         }
     }
 
@@ -277,13 +279,11 @@
         margin: 0px 5px;
 
         @media only screen and (max-width:991px) {
-            margin: 0px;
-            min-width: 100px;
+            min-width: 90px;
         }
 
         @media only screen and (max-width:340px) {
-            margin: 0px;
-            min-width: 90px;
+            min-width: 85px;
         }
     }
 
@@ -300,13 +300,12 @@
         margin: 0px 5px;
 
         @media only screen and (max-width:991px) {
-            margin: 0px;
-            min-width: 100px;
+            min-width: 90px;
+            margin-right: 0px;
         }
 
         @media only screen and (max-width:340px) {
-            margin: 0px;
-            min-width: 90px;
+            min-width: 85px;
         }
     }
 }
@@ -419,13 +418,15 @@
 }
 
 .dropdown-category-multiple .dropdown-label {
-    font-size: 18px !important;
+    font-size: 19px !important;
     font-weight: 500 !important;
     color: $light-dark;
     z-index: 3;
 
 }
-
+.zones-right-filter-padding{
+    padding: 0px 12px;
+}
 
 //   .category-list{
 //     max-height: 200px !important;
@@ -457,3 +458,6 @@
 .dropdown-multiple-mobile .dropdown-label {
     text-align: center !important;
 }
+// .zones-right-filter{
+//     display: none;
+// }

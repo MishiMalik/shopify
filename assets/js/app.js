@@ -411,6 +411,7 @@ for (i = 0; i < l; i++) {
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
     this.classList.toggle("select-arrow-active");
+    
   });
 }
 
@@ -436,9 +437,16 @@ function closeAllSelect(elmnt) {
   }
 }
 
+
+$('.select-items').on('click', function(e) {
+  e.stopPropagation()
+})
+
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
 
 // ============================================================ open right filter
 
@@ -517,12 +525,37 @@ $(document).ready(function() {
   $( '.dropdown-list' ).on( 'click', 'input[type="checkbox"]', function () {
     $(this).parent().toggleClass( 'highlight', this.checked );
 });
-$('.dropdown-multiple').on('click',function(){
-  $(this).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill-rotate');
-});
+
+// $('#arrow-toggle').on('click',function(){
+//   if($(this).find('.bi').hasClass('bi-caret-down-fill')) {
+//     $(this).find('.bi').removeClass('bi-caret-down-fill')
+//     $(this).find('.bi').addClass('bi-caret-up-fill')
+//   } else {
+//     $(this).find('.bi').addClass('bi-caret-down-fill')
+//     $(this).find('.bi').removeClass('bi-caret-up-fill')
+//   }
+// });
+
 $( 'input[type="checkbox' ).on( 'click', function () {
   $(this).parent().toggleClass( 'highlight', this.checked );
 });
 
+// =================================================================write in input/show location
+$('.location-input').keyup(function(){
+  if($(this).val().length)
+  $('.recent-locations').css('display','block');
+  else
+  $('.recent-locations').css('display','none');
+});
+
+$('.recent-locations').find('li').each(function() {
+  $(this).click(function() {
+    $('.location-selected').html($(this).text().split(',')[0])
+  })
+})
 
 
+$(document).on('click', function() {
+  $('.location-input').val('');
+  $('.recent-locations').css('display','none');
+})

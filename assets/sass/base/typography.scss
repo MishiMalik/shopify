@@ -164,5 +164,9 @@ $active-blue:#003399;
     color: $green;
 }
 .text-active{
-    color: $active-blue;
+    color: $active-blue !important;
+}
+
+.text-pro{
+    color: #0066cc;
 }

@@ -32,7 +32,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center">
-                    <a href="index.html" class="d-flex align-items-center logo-div">
+                    <a href="loading.html" class="d-flex align-items-center logo-div">
                         <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
                             class="img-fluid logo remove-logo">
                         <img src="assets/images/logo-name.PNG" alt="" class="img-fluid company-name">
@@ -42,7 +42,7 @@
                     </a>
                     <div class="d-flex flex-column ms-2">
                         <div class="dropdown classified-dropdown">
-                            <button class="classified-drop-small dropdown-toggle ms-1 dark-text" type="button"
+                            <button class="classified-drop-small dropdown-toggle ms-1 " type="button"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Classifieds
                             </button>
@@ -130,10 +130,12 @@
                         </div> -->
                         <div class="header-menu d-none d-lg-block ">
                             <div class="dropdown">
-                                <a href="" class="text-white dropdown-toggle" href="#" role="button"
-                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="" class="text-white dropdown-toggle d-flex align-items-center" href="#"
+                                    role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid dp  dp-radius">
+                                    <p class="mb-0 pb-0 f-18 w-500 text-white mx-2">Jerry</p>
                                 </a>
+
                                 <ul class="dropdown-menu log-menu" aria-labelledby="dropdownMenuLink">
                                     <li><a class="dropdown-item d-flex align-items-center" href="#"><i
                                                 class="me-2 bi bi-box-arrow-left text-dark"></i> Log Out</a></li>
@@ -157,9 +159,154 @@
         <div class="main-header small-main-header">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div>
-                    <a href="directory.html">
-                        <p class="mb-0 pb-0 f-18 text-primary w-600 ">Directory</p>
-                    </a>
+                    <div class="dropdown ">
+                        <button class="classified-drop dropdown-toggle ms-1 d-flex align-items-center justify-content-center" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-geo-alt"></i> <div class="location-selected"> Edapilly</div>
+                           
+                        </button>
+                        <ul class="dropdown-menu location-drop py-2" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <p class="mb-0 pb-0 select-loaction-heading">Select Location</p>
+                            </li>
+                            <li>
+                                <div class="location-input-div mt-2">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" placeholder="Enter Pincode / Area / Distt / State"
+                                        class=" location-input">
+                                </div>
+
+                            </li>
+                            <li class="p-0">
+                                <div class="current-location mt-3">
+                                        <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                            class="img-fluid">
+                                    <div class="ms-2">
+                                        <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                        <p class="pb-0 mb-0">Vennila cochin</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                              <div class="recent-locations mt-3">
+                                <p class="f-14 text-gray w-500 mb-0 pb-0 pb-1">Recent Locations</p>
+                                   <ul>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,repudiandae.</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                   </ul>
+                              </div>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <!-- <div class="dropdown">
+                        <button class="classified-drop d-block dropdown-toggle ms-1 " type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-geo-alt"></i> Edapilly
+                        </button>
+                        <ul class="dropdown-menu location-drop py-0" aria-labelledby="dropdownMenuButton1">
+                            <li class="location-header">
+                                <i class="fas fa-arrow-left f-22 text-white back-arrow mt-2 me-2"></i>
+                                <p class="mb-0 pb-0 select-loaction-heading">  Select Location</p>
+                            </li>
+                            <li>
+                                <div class="location-input-div mt-2">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" placeholder="Enter Pincode / Area / Distt / State"
+                                        class=" location-input">
+                                </div>
+
+                            </li>
+                            <li class="p-0">
+                                <div class="current-location mt-3">
+                                        <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                            class="img-fluid">
+                                    <div class="ms-2">
+                                        <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                        <p class="pb-0 mb-0">Vennila cochin</p>
+                                    </div>
+                                    
+                                </div>
+                                <p class="f-14 text-gray w-500 mb-0 pb-0 pb-1 mt-3 ps-3">Recent Locations</p>
+                            </li>
+
+                            <li>
+                              <div class="recent-locations ">
+                               
+                                   <ul>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                   </ul>
+                              </div>
+                            </li>
+                        
+                        </ul>
+                    </div> -->
                 </div>
                 <div>
                     <a href="directory.html">
@@ -315,7 +462,8 @@
 
                                         <div>
                                             <div class="d-flex align-items-center flex-wrap">
-                                                <a href="" class="f-16 w-500 blue-text  ms-3">PRO&nbsp;</a>
+                                                <a href="" class="f-16 w-500 text-pro  ms-3">PRO&nbsp;</a>
+
                                                 <a href="" class="f-16 w-500 dark-text ">
                                                     Membership
                                                 </a>
@@ -410,38 +558,117 @@
                 <!-- main area -->
                 <div class="col-lg-6 col-md-12 text-center center-part" id="center">
                     <div class="main-header desktop-light-header" id="light-header">
-                        <div class="d-flex w-50 justify-content-between align-items-center">
-                            <div>
-                                <div class="dropdown">
-                                    <button class="classified-drop dropdown-toggle ms-1 dark-text" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Edapilly
+                        <div class="d-flex w-50 justify-content-start align-items-center">
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="dropdown classified-dropdown classified-dropdown-desktop">
+                                    <button class="classified-drop-small classified-drop-desktop  dropdown-toggle ms-1"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Classifieds
                                     </button>
-                                    <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/icons8-money-bag-50.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/Feedback.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                    <ul class="dropdown-menu classify-drop2" aria-labelledby="dropdownMenuButton1">
+                                        <li class="classify-select-li">
+                                            <div class="custom-select classify-select" style="width:100% !important ;">
+                                                <select class="classified-dropdown-select">                                                    <option value="0">
+                                                        Classifieds</option>
+                                                    <option value="1">Shopping</option>
+                                                    <option value="2">Entertainment</option>
+                                                    <option value="3">Classifieds</option>
+                                                    <option value="4">Multi Zone</option>
+
+                                                </select>
+                                            </div>
+
+                                        </li>
+                                        <li class="classify-select-li mt-4">
+                                            <div class="custom-select classify-select" style="width:100% !important ;">
+                                                <select class="classified-dropdown-select">
+                                                    <option value="0">
+                                                        Offers (Offer Zone)</option>
+                                                    <option value="1">Offers (Offer Zone)</option>
+                                                    <option value="2">Notices (Notice Board)</option>
+
+
+                                                </select>
+                                            </div>
+
+                                        </li>
+                                        <li class="d-flex justify-content-center align-items-center mt-3">
+                                            <button class="select-Box-btn mx-auto">Select</button>
+                                        </li>
+
                                     </ul>
                                 </div>
+                                <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-dsktop mt-0 pt-0">Offers</p>
                             </div>
-                            <div>
-                                <a href="directory.html">
-                                    <p class="mb-0 pb-0 f-18 text-primary w-600 header-link">Directory</p>
-                                </a>
+                            <!-- ----------------------------------- -->
+                            <div class="dropdown ms-10">
+                                <button class="classified-drop dropdown-toggle ms-1 d-flex align-items-center justify-content-center" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-geo-alt"></i> <div class="location-selected"> Edapilly</div>
+                                   
+                                </button>
+                                <ul class="dropdown-menu location-drop py-2" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <p class="mb-0 pb-0 select-loaction-heading">Select Location</p>
+                                    </li>
+                                    <li>
+                                        <div class="location-input-div mt-2">
+                                            <i class="bi bi-search"></i>
+                                            <input type="text" placeholder="Enter Pincode / Area / Distt / State"
+                                                class=" location-input">
+                                        </div>
+
+                                    </li>
+                                    <li class="p-0">
+                                        <div class="current-location mt-3">
+                                                <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                                    class="img-fluid">
+                                            <div class="ms-2">
+                                                <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                                <p class="pb-0 mb-0">Vennila cochin</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                      <div class="recent-locations mt-3">
+                                        <p class="f-14 text-gray w-500 mb-0 pb-0 pb-1">Recent Locations</p>
+                                           <ul>
+                                            <li>
+                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,repudiandae.</p> <span class="ms-1">Thrissur</span>
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                <p class="mb-0 pb-0">Peelameda,</p> 
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                            </li>
+                                           </ul>
+                                      </div>
+                                    </li>
+                                
+                                </ul>
                             </div>
+
+
+                            <!-- ------------------------------------- -->
+
                         </div>
                         <div class="d-flex w-50 justify-content-end align-items-center ">
                             <div>
-
+                                <a href="directory.html">
+                                    <p class="mb-0 pb-0 f-18 text-primary w-600 header-link me-10 pe-2">Directory</p>
+                                </a>
+                            </div>
+                            <div>
                                 <div class="custom-select d-flex">
                                     <i class="bi bi-filter-left f-22 w-700"></i>
                                     <select>
@@ -462,43 +689,7 @@
                             </div>
                             <div>
 
-                                <div class="dropdown-multiple " data-control="checkbox-dropdown">
-                                    <label class="dropdown-label">View All</label>
-                                    <input type="hidden" value="View All" class="header-view-all">
-                                    <div class="dropdown-list">
-                                        <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                            Check All
-                                        </a> -->
-                                        <!-- <label class="dropdown-option">
-                                            <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
-                                            &nbsp; View All
-                                        </label> -->
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
-                                            &nbsp; Featured Posts
-                                        </label>
 
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
-                                            &nbsp; Sponsored Posts
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
-                                            &nbsp; PRO Members
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
-                                            &nbsp; Folowees Posts
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
-                                            &nbsp; Std Posts
-                                        </label>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -546,9 +737,10 @@
                             <div class="col-lg-12 pt-2">
                                 <h2 class="f-20 w-600 text-dark m-0 p-0 text-start mt-2 mb-3">Electronics</h2>
                                 <div>
-                                    <div class="dropdown-multiple  w-100  dropdown-category-multiple pt-2 categories-dropdown"
-                                        data-control="checkbox-dropdown">
-                                        <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
+                                    <div class="dropdown-multiple  w-100  dropdown-category-multiple  pt-2 categories-dropdown"
+                                        id="arrow-toggle" data-control="checkbox-dropdown">
+                                        <!-- <i class="bi bi-caret-up-fill absolute-icon"></i> -->
+                                        <i class="bi bi-caret-down-fill custom-caret f-16 absolute-icon"></i>
                                         <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
                                         <div class="d-flex align-items-center w-100">
                                             <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
@@ -1913,8 +2105,8 @@
                             </div>
 
                         </div>
-                      
-                        
+
+
                     </div>
 
                 </div>
@@ -1931,9 +2123,45 @@
                                 12
                             </div>
                         </div>
+                        <div class="dropdown-multiple " data-control="checkbox-dropdown">
+                            <label class="dropdown-label">View All</label>
+                            <input type="hidden" value="View All" class="header-view-all">
+                            <div class="dropdown-list">
+                                <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                                    Check All
+                                </a> -->
+                                <!-- <label class="dropdown-option">
+                                    <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
+                                    &nbsp; View All
+                                </label> -->
+                                <label class="dropdown-option">
+                                    <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                    &nbsp; Featured Posts
+                                </label>
 
+                                <label class="dropdown-option">
+                                    <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                    &nbsp; Sponsored Posts
+                                </label>
+
+                                <label class="dropdown-option">
+                                    <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                    &nbsp; PRO Members
+                                </label>
+
+                                <label class="dropdown-option">
+                                    <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                    &nbsp; Folowees Posts
+                                </label>
+
+                                <label class="dropdown-option">
+                                    <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                    &nbsp; Std Posts
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="zones-right-filter pt-3 filter-desktop">
+                    <div class="zones-right-filter-padding pt-3 filter-desktop">
 
                         <p class="f-16 mb-0 pb-0 mt-3 text-start w-500 filter-heading" id="b">Brand</p>
                         <!-- selctbox 1 -->
@@ -2373,8 +2601,8 @@
                     </div>
 
                     <!-- mobile filter========================================================== -->
-                    <div class="mobile-filter mobile-filter-fix">
-                        <div class="zones-right-filter">
+                    <div class="mobile-filter mobile-filter-fix ">
+                        <div class="px-2">
                             <div class="d-flex justify-content-between align-items-center pt-2 pb-3">
                                 <p class="mb-0 pb-0 f-20 w-500">Filters & Sort for Vehicle</p>
                                 <i class="far fa-times-circle f-24" href="javascript:void(0)"
@@ -2668,7 +2896,7 @@
     <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
     <div class="backdrop-menu" id="backdrop-filter" href="javascript:void(0)" onclick="closeFilter()"></div>
 
-       <!-- 3 dots modal=========================================================== -->
+    <!-- 3 dots modal=========================================================== -->
     <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
@@ -2736,7 +2964,88 @@
     <script src="assets/js/filter.js"></script>
     <script src="assets/js/app.js"></script>
 
+    <!-- <script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+/* Look for any elements with the class "custom-select": */
+x = document.getElementsByClassName("classify-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /* For each element, create a new DIV that will act as the selected item: */
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /* For each element, create a new DIV that will contain the option list: */
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /* For each option in the original select element,
+    create a new DIV that will act as an option item: */
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /* When an item is clicked, update the original select box,
+        and the selected item: */
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+    /* When the select box is clicked, close any other select boxes,
+    and open/close the current select box: */
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
 
+function closeAllSelect(elmnt) {
+  /* A function that will close all select boxes in the document,
+  except the current select box: */
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+
+/* If the user clicks anywhere outside the select box,
+then close all select boxes: */
+document.addEventListener("click", closeAllSelect);
+  </script> -->
 
 
 </body>

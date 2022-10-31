@@ -32,7 +32,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center">
-                    <a href="index.html" class="d-flex align-items-center logo-div">
+                    <a href="loading.html" class="d-flex align-items-center logo-div">
                         <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
                             class="img-fluid logo remove-logo">
                         <img src="assets/images/logo-name.PNG" alt="" class="img-fluid company-name">
@@ -44,7 +44,7 @@
                     </a>
                     <div class="d-flex flex-column ms-2">
                         <div class="dropdown classified-dropdown">
-                            <button class="classified-drop-small dropdown-toggle ms-1 dark-text" type="button"
+                            <button class="classified-drop-small dropdown-toggle ms-1 " type="button"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Classifieds
                             </button>
@@ -132,9 +132,10 @@
                         </div> -->
                         <div class="header-menu d-none d-lg-block ">
                             <div class="dropdown">
-                                <a href="" class="text-white dropdown-toggle" href="#" role="button"
+                                <a href="" class="text-white dropdown-toggle d-flex align-items-center" href="#" role="button"
                                     id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid dp  dp-radius">
+                                    <p class="mb-0 pb-0 f-18 w-500 text-white mx-2">Jerry</p>
                                 </a>
                                 <ul class="dropdown-menu log-menu" aria-labelledby="dropdownMenuLink">
                                     <li><a class="dropdown-item d-flex align-items-center" href="#"><i
@@ -318,7 +319,8 @@
 
                                         <div>
                                             <div class="d-flex align-items-center flex-wrap">
-                                                <a href="" class="f-16 w-500 blue-text  ms-3">PRO&nbsp;</a>
+                                                <a href="" class="f-16 w-500 text-pro  ms-3">PRO&nbsp;</a>
+
                                                 <a href="" class="f-16 w-500 dark-text ">
                                                     Membership
                                                 </a>
@@ -413,36 +415,77 @@
                 <!-- main area -->
                 <div class="col-lg-6 col-md-12 text-center center-part" id="center">
                     <div class="main-header desktop-light-header" id="light-header">
-                        <div class="d-flex w-50 justify-content-between align-items-center">
-                            <div>
-                                <div class="dropdown">
-                                    <button class="classified-drop dropdown-toggle ms-1 dark-text" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Edapilly
+                        <div class="d-flex w-50 justify-content-start align-items-center">
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="dropdown classified-dropdown classified-dropdown-desktop">
+                                    <button class="classified-drop-small classified-drop-desktop  dropdown-toggle ms-1"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Classifieds
                                     </button>
-                                    <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/icons8-money-bag-50.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/Feedback.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                                    class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                    <ul class="dropdown-menu classify-drop2" aria-labelledby="dropdownMenuButton1">
+                                        <li class="classify-select-li">
+                                            <div class="custom-select classify-select" style="width:100% !important ;"  >
+                                                <select>
+                                                  <option value="0">
+                                                  Classifieds:</option>
+                                                  <option value="1">Shopping</option>
+                                                  <option value="2">Entertainment</option>
+                                                  <option value="3">Classifieds</option>
+                                                  <option value="4">Multi Zone</option>
+                                                  
+                                                </select>
+                                              </div>
+                                           
+                                        </li>
+                                        <li class="classify-select-li mt-4">
+                                            <div class="custom-select classify-select" style="width:100% !important ;" >
+                                                <select >
+                                                  <option value="0">
+                                                    Offers (Offer Zone)</option>
+                                                  <option value="1">Offers (Offer Zone)</option>
+                                                  <option value="2">Notices (Notice Board)</option>
+                                                 
+                                                  
+                                                </select>
+                                              </div>
+                                           
+                                        </li>
+                                        <li class="d-flex justify-content-center align-items-center mt-3">
+                                            <button class="select-Box-btn mx-auto">Select</button>
+                                        </li>
+                                     
                                     </ul>
                                 </div>
+                                <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-dsktop mt-0 pt-0">Offers</p>
                             </div>
-                            <div>
-                                <a href="listing.html">
-                                    <p class="mb-0 pb-0 f-18 text-primary w-600 header-link">Posts</p>
-                                </a>
+                            <div class="dropdown ms-10">
+                                <button class="classified-drop dropdown-toggle ms-1 dark-text" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Edapilly
+                                </button>
+                                <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src="assets/images/icons/icons8-money-bag-50.png" alt=""
+                                                class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                                    <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png"
+                                                alt="" class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                </ul>
                             </div>
+
                         </div>
                         <div class="d-flex w-50 justify-content-end align-items-center ">
+                            <div>
+                                <a href="listing.html">
+                                    <p class="mb-0 pb-0 f-18 text-primary w-600 header-link me-10 pe-2">Posts</p>
+                                </a>
+                            </div>
                             <div>
                                 <div class="custom-select d-flex">
                                     <i class="bi bi-filter-left f-22 w-700"></i>
@@ -464,46 +507,10 @@
                             </div>
                             <div>
 
-                                <div class="dropdown-multiple " data-control="checkbox-dropdown">
-                                    <label class="dropdown-label">View All</label>
-                                    <input type="hidden" value="View All" class="header-view-all">
-                                    <div class="dropdown-list">
-                                        <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                            Check All
-                                        </a> -->
-                                        <!-- <label class="dropdown-option">
-                                            <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
-                                            &nbsp; View All
-                                        </label> -->
 
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
-                                            &nbsp; Featured Posts
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
-                                            &nbsp; Sponsored Posts
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
-                                            &nbsp; PRO Members
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
-                                            &nbsp; Folowees Posts
-                                        </label>
-
-                                        <label class="dropdown-option">
-                                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
-                                            &nbsp; Std Posts
-                                        </label>
-                                    </div>
-                                </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="container-fluid pb-2">
@@ -843,11 +850,11 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <div class="custom-select d-flex custom-select2">
-                                            <select>
-                                                <option value="0">Directory</option>
-                                                <option value="0">Posts</option>
-                                                <option value="0">Directory</option>
+                                        <div class="custom-select d-flex custom-select2" style="width: 100px; text-align:right;">
+                                            <select class="text-end" style="text-align:right !important;">
+                                                <option value="0" class="text-end"  style="text-align:right !important;">Directory</option>
+                                                <option value="0" class="text-end"  style="text-align:right !important;">Posts</option>
+                                                <option value="0" class="text-end"  style="text-align:right !important;">Directory</option>
                                             </select>
                                         </div>
                                     </div>
@@ -881,7 +888,7 @@
                                                 <p class="mb-0 pb-0 f-14 ellipsis w-500 text-gray">&nbsp;Erankulm</p>
                                             </div>
                                             <div class="d-flex align-items-center status ">
-                                                <p class="mb-0 pb-0">Acive : 12 Apr 22&nbsp; &nbsp;|&nbsp; &nbsp; Posts
+                                                <p class="mb-0 pb-0">Active : 12 Apr 22&nbsp; &nbsp; <span>|</span> &nbsp; &nbsp; Posts
                                                     <a href="">125</a>
                                                 </p>
                                             </div>
@@ -934,7 +941,7 @@
                                                 <p class="mb-0 pb-0 f-14 ellipsis w-500 text-gray">&nbsp;Erankulm</p>
                                             </div>
                                             <div class="d-flex align-items-center status ">
-                                                <p class="mb-0 pb-0">Acive : 12 Apr 22&nbsp; &nbsp;|&nbsp; &nbsp; Posts
+                                                <p class="mb-0 pb-0">Active : 12 Apr 22&nbsp; &nbsp; <span>|</span> &nbsp; &nbsp; Posts
                                                     <a href="">125</a>
                                                 </p>
                                             </div>
@@ -964,6 +971,7 @@
                                         </div>
                                     </div>
                                 </div>
+                              
                                 <div class=" directory-card w-100">
                                     <div class="directory-img">
                                         <img src="assets/images/image 224.png" alt="" class="img-fluid">
@@ -987,7 +995,7 @@
                                                 <p class="mb-0 pb-0 f-14 ellipsis w-500 text-gray">&nbsp;Erankulm</p>
                                             </div>
                                             <div class="d-flex align-items-center status ">
-                                                <p class="mb-0 pb-0">Acive : 12 Apr 22&nbsp; &nbsp;|&nbsp; &nbsp; Posts
+                                                <p class="mb-0 pb-0">Active : 12 Apr 22&nbsp; &nbsp; <span>|</span> &nbsp; &nbsp; Posts
                                                     <a href="">125</a>
                                                 </p>
                                             </div>
@@ -1017,6 +1025,7 @@
                                         </div>
                                     </div>
                                 </div>
+                              
                             </div>
 
 
@@ -1041,9 +1050,45 @@
                             12
                         </div>
                     </div>
+                    <div class="dropdown-multiple " data-control="checkbox-dropdown">
+                        <label class="dropdown-label">View All</label>
+                        <input type="hidden" value="View All" class="header-view-all">
+                        <div class="dropdown-list">
+                            <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                                Check All
+                            </a> -->
+                            <!-- <label class="dropdown-option">
+                                <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
+                                &nbsp; View All
+                            </label> -->
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                &nbsp; Featured Posts
+                            </label>
 
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                &nbsp; Sponsored Posts
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                &nbsp; PRO Members
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                &nbsp; Folowees Posts
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                &nbsp; Std Posts
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="zones-right-filter pt-3 filter-desktop">
+                <div class="zones-right-filter-padding pt-3 filter-desktop">
 
                     <p class="f-16 mb-0 pb-0 mt-3 text-start w-500 filter-heading" id="b">Brand</p>
                     <!-- selctbox 1 -->
@@ -1483,8 +1528,8 @@
                 </div>
 
                 <!-- mobile filter========================================================== -->
-                <div class="mobile-filter mobile-filter-fix">
-                    <div class="zones-right-filter">
+                <div class="mobile-filter mobile-filter-fix ">
+                    <div class="px-2">
                         <div class="d-flex justify-content-between align-items-center pt-2 pb-3">
                             <p class="mb-0 pb-0 f-20 w-500">Filters & Sort for Vehicle</p>
                             <i class="far fa-times-circle f-24" href="javascript:void(0)"
