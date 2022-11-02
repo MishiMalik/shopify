@@ -573,6 +573,17 @@ $('.all-distt').on('click', function(e) {
 $('.district-location').on('click',function(){
   $('.locations-items').css('display','none');
   $('.all-india-distt').css('display','block');
+  $('.back-dist').css('display','block');
+  $('.close-location').css('display','none')
+})
+$('.back-dist').on('click', function(e) {
+  e.stopPropagation()
+})
+$('.back-dist').on('click',function(){
+  $('.locations-items').css('display','block');
+  $('.all-india-distt').css('display','none');
+  $('.back-dist').css('display','none');
+  $('.close-location').css('display','block');
 })
 
 // if($('.classified-drop').attr("aria-expanded","true")){
@@ -606,16 +617,3 @@ $(document).on('click', function() {
 
 
 
-// ============================================move header smoothly on small screen of location
-
-$('.location-drop').onscroll = function() {
-  var currentScrollPos = window.pageYOffset ;
-
-    if (currentScrollPos < prevScrollpos) {
-        document.getElementById("locations-header").style.top = "0";
-    } else{
-        document.getElementById("locations-header").style.top = "-60px";
-      
-    }
-    prevScrollpos = currentScrollPos;
-  }

@@ -2988,7 +2988,7 @@ a {
     position: relative; }
     .location-drop .location-input-div .location-input {
       width: 100%;
-      background-color: #F2F2F2;
+      background-color: #f8f8f8;
       border-radius: 3px;
       border: 2px solid #E2E2E2;
       padding: 8px 5px 8px 35px;
@@ -3102,7 +3102,8 @@ a {
 
 .locations-items-heading {
   background-color: #EFF0F2;
-  padding: 5px 12px; }
+  padding: 5px 12px;
+  font-size: 15px !important; }
 
 .district-location {
   border-top: 1px solid #DEE0E2;
@@ -3113,6 +3114,9 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+  @media only screen and (max-width: 991px) {
+    .district-location {
+      padding: 14px 12px; } }
   .district-location p {
     font-weight: 500;
     font-size: 15px;
@@ -3163,12 +3167,15 @@ a {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+      @media only screen and (max-width: 991px) {
+        .find-locations ul li {
+          padding: 14px 12px; } }
       .find-locations ul li:hover {
         color: black;
         cursor: pointer; }
       .find-locations ul li p {
         font-weight: 500;
-        font-size: 15px;
+        font-size: 16px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
@@ -3212,12 +3219,15 @@ a {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+      @media only screen and (max-width: 991px) {
+        .all-india-distt ul li {
+          padding: 14px 12px; } }
       .all-india-distt ul li:hover {
         color: black;
         cursor: pointer; }
       .all-india-distt ul li p {
         font-weight: 500;
-        font-size: 15px;
+        font-size: 16px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
@@ -3241,6 +3251,9 @@ a {
   right: 0;
   z-index: 100;
   background-color: white !important; }
+
+.back-dist {
+  display: none; }
 
 .directory-card {
   display: flex;

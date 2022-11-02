@@ -502,7 +502,7 @@
         position: relative;
         .location-input {
             width: 100%;
-            background-color: #F2F2F2;
+            background-color: #f8f8f8;
             border-radius: 3px;
             border: 2px solid #E2E2E2;
             padding: 8px 5px 8px 35px;
@@ -664,7 +664,7 @@
 .locations-items-heading{
     background-color:  $light-gray2;
     padding: 5px 12px;
-
+   font-size: 15px !important;
 }
 .district-location{
     border-top: 1px solid $light-gray;
@@ -675,6 +675,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis ;
+    @media only screen and (max-width:991px){
+        padding: 14px 12px;
+    }
     p{
         font-weight: 500;
         font-size: 15px;
@@ -730,13 +733,16 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow:ellipsis ;
+            @media only screen and (max-width:991px){
+                padding: 14px 12px;
+            }
             &:hover{
                 color: black;
                 cursor: pointer;
             }
             p{
                 font-weight: 500;
-                font-size: 15px;
+                font-size: 16px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -796,13 +802,16 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow:ellipsis ;
+            @media only screen and (max-width:991px){
+                padding: 14px 12px;
+            }
             &:hover{
                 color: black;
                 cursor: pointer;
             }
             p{
                 font-weight: 500;
-                font-size: 15px;
+                font-size: 16px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -832,4 +841,7 @@
     z-index: 100;
     background-color: white !important;
     
+}
+.back-dist{
+    display: none;
 }
