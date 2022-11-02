@@ -2966,7 +2966,9 @@ a {
       right: 0;
       bottom: 0;
       height: 100%;
-      width: 100%; } }
+      width: 100%;
+      overflow-y: auto;
+      padding-top: 125px !important; } }
   .location-drop li {
     padding: 0px 10px; }
   .location-drop .select-loaction-heading {
@@ -2992,7 +2994,7 @@ a {
       padding: 8px 5px 8px 35px;
       font-size: 15px;
       font-weight: 400;
-      height: 40px; }
+      height: 45px; }
       .location-drop .location-input-div .location-input:focus {
         outline: none;
         box-shadow: none; }
@@ -3001,7 +3003,7 @@ a {
         box-shadow: none; }
     .location-drop .location-input-div .bi-search {
       position: absolute;
-      top: 8px;
+      top: 11px;
       left: 12px;
       font-size: 16px; }
   .location-drop .current-location {
@@ -3040,6 +3042,9 @@ a {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
+        .location-drop .recent-locations ul li:hover {
+          color: black;
+          cursor: pointer !important; }
         .location-drop .recent-locations ul li p {
           font-weight: 500;
           font-size: 15px;
@@ -3061,6 +3066,9 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+  .location-selected:hover {
+    color: black;
+    cursor: pointer; }
   @media only screen and (max-width: 1100px) {
     .location-selected {
       max-width: 120px; } }
@@ -3076,7 +3084,7 @@ a {
   max-height: 60vh; }
   @media only screen and (max-width: 991px) {
     .locations-items {
-      max-height: 82vh; } }
+      max-height: 100%; } }
   .locations-items::-webkit-scrollbar {
     width: 5px;
     position: relative;
@@ -3111,6 +3119,9 @@ a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+    .district-location p:hover {
+      color: black;
+      cursor: pointer; }
   .district-location span {
     font-size: 13px;
     color: #767676;
@@ -3133,6 +3144,9 @@ a {
   min-height: 300px;
   display: none;
   margin-top: -10px !important; }
+  @media only screen and (max-width: 991px) {
+    .find-locations {
+      height: 100%; } }
   .find-locations ul {
     list-style: none;
     padding-left: 0px;
@@ -3149,6 +3163,9 @@ a {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+      .find-locations ul li:hover {
+        color: black;
+        cursor: pointer; }
       .find-locations ul li p {
         font-weight: 500;
         font-size: 15px;
@@ -3161,21 +3178,31 @@ a {
         font-weight: 500; }
 
 .all-india-distt {
-  display: none; }
-
-.all-india-distt {
   transition: all .3s;
-  max-height: 500px;
-  overflow-y: auto;
-  min-height: 300px;
   display: none; }
   .all-india-distt ul {
     list-style: none;
     padding-left: 0px;
-    overflow-y: auto; }
+    overflow-y: auto;
+    max-height: 300px !important;
+    min-height: 300px !important; }
+    .all-india-distt ul::-webkit-scrollbar {
+      width: 5px;
+      position: relative;
+      z-index: 10000 !important; }
+    .all-india-distt ul::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 10000 !important; }
+    .all-india-distt ul::-webkit-scrollbar-thumb {
+      background-color: #16367B;
+      outline: 1px solid transparent;
+      border-radius: 10px;
+      position: relative;
+      z-index: 10000 !important; }
     @media only screen and (max-width: 991px) {
       .all-india-distt ul {
-        padding-bottom: 40px; } }
+        height: 100%; } }
     .all-india-distt ul li {
       border-bottom: 1px solid #DEE0E2;
       padding: 12px 15px;
@@ -3185,6 +3212,9 @@ a {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+      .all-india-distt ul li:hover {
+        color: black;
+        cursor: pointer; }
       .all-india-distt ul li p {
         font-weight: 500;
         font-size: 15px;
@@ -3200,8 +3230,17 @@ a {
   background-color: #16367B;
   display: flex;
   align-items: center;
-  padding: 15px 10px;
-  color: white; }
+  padding: 0px 10px;
+  color: white;
+  height: 60px; }
+
+.locations-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white !important; }
 
 .directory-card {
   display: flex;

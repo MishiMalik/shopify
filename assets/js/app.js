@@ -412,6 +412,7 @@ for (i = 0; i < l; i++) {
     this.nextSibling.classList.toggle("select-hide");
     this.classList.toggle("select-arrow-active");
     
+
   });
 }
 
@@ -546,10 +547,12 @@ $('.location-input').keyup(function(){
   $('.find-locations').css('display','block');
   $('.locations-items').css('display','none');
   $('.all-india-distt').css('display','none');
+
 } else{
   $('.locations-items').css('display','block');
   $('.find-locations').css('display','none');
   $('.all-india-distt').css('display','none');
+ 
 }
 });
 
@@ -569,9 +572,20 @@ $('.all-distt').on('click', function(e) {
 
 $('.district-location').on('click',function(){
   $('.locations-items').css('display','none');
-  $('.all-india-distt').css('display','block')
+  $('.all-india-distt').css('display','block');
 })
 
+// if($('.classified-drop').attr("aria-expanded","true")){
+//   $('.all-india-distt').css('display','none');
+//   $('.find-locations').css('display','none');
+//   // $('.locations-items').css('display','block');
+// }
+// $('.classified-drop').attr("aria-expanded","true");
+// $('.select-hide').on('click',function(){
+//   $('.all-india-distt').css('display','none');
+//   $('.find-locations').css('display','none');
+//   $('.locations-items').css('display','block');
+// })
 // $('.find-locations').on('click',function(){
 //   $('.district-location').stopPropagation()
     
@@ -583,7 +597,25 @@ $('.district-location').on('click',function(){
 
 
 
-// $(document).on('click', function() {
-//   $('.location-input').val('');
-//   $('.recent-locations').css('display','none');
-// })
+$(document).on('click', function() {
+  $('.location-input').val('');
+  $('.find-locations').css('display','none');
+  $('.locations-items').css('display','block');
+  $('.all-india-distt').css('display','none');
+})
+
+
+
+// ============================================move header smoothly on small screen of location
+
+$('.location-drop').onscroll = function() {
+  var currentScrollPos = window.pageYOffset ;
+
+    if (currentScrollPos < prevScrollpos) {
+        document.getElementById("locations-header").style.top = "0";
+    } else{
+        document.getElementById("locations-header").style.top = "-60px";
+      
+    }
+    prevScrollpos = currentScrollPos;
+  }

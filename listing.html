@@ -161,30 +161,31 @@
                 <div>
                     <div class="dropdown ">
                         <button
-                            class="classified-drop dropdown-toggle p-0 d-flex align-items-center justify-content-center"
+                            class=" classified-drop dropdown-toggle p-0 d-flex align-items-center justify-content-center"
                             type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-geo-alt pe-1"></i>
                             <div class="location-selected pe-1">Edapilly</div>
 
                         </button>
                         <ul class="dropdown-menu location-drop py-0" aria-labelledby="dropdownMenuButton1">
-                            <div class="location-main-header">
-                                <i class="bi bi-x-circle me-2 f-22"></i>
-                                <p class="mb-0 pb-0 f-20 text-white w-500">Select Location</p>
-                            </div>
-                            
-                            <li>
-                                <div class="location-input-div mt-2 pb-3">
-                                    <i class="bi bi-search"></i>
-                                    <input type="text" placeholder="Enter Pincode or Area"
-                                        class="location-input">
+                            <div class="locations-header" id="locations-header">
+                                <div class="location-main-header">
+                                    <i class="bi bi-x-circle me-2 f-22"></i>
+                                    <p class="mb-0 pb-0 f-20 text-white w-500">Select Location</p>
+                                </div>                          
+                                <div class="px-2">
+                                    <div class="location-input-div mt-2 pb-2">
+                                        <i class="bi bi-search"></i>
+                                        <input type="text" placeholder="Enter Pincode or Area"
+                                            class="location-input">
+                                    </div>
+    
                                 </div>
-
-                            </li>
+                            </div>
                             <li class="p-0 locations-items">
                                 <div class="current-location ">
                                     <img src="assets/images/icons/current-location-icon.svg" alt=""
-                                        class="img-fluid">
+                                        class="img-fluid mt-1">
                                     <div class="ms-2">
                                         <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
                                         <p class="pb-0 mb-0">Vennila cochin</p>
@@ -193,34 +194,70 @@
                                 <div class="recent-locations mt-3">
                                     <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
                                         Locations</p>
-                                    <ul class="p-0">
+                                    <ul class="p-0 m-0">
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
-                                                consectetur adipisicing elit. Ad,repudiandae.</p> <span
-                                                class="ms-1">Thrissur</span>
+                                            <p class="mb-0 pb-0">Location 1</p>
                                         </li>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                class="ms-1">Thrissur</span>
+                                            <p class="mb-0 pb-0">Location 2</p>
+                                             
                                         </li>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Peelameda,</p>
+                                            <p class="mb-0 pb-0">Location 3</p>
                                         </li>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                class="ms-1">Thrissur</span>
+                                            <p class="mb-0 pb-0">Location 4</p> 
+                                            
                                         </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 5</p>
+                                        </li>
+                                        
+                                       
                                     </ul>
                                 </div>
-                                <div class="all-distt ">
-                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select state &
+                                <div>
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
                                         District</p>
-                                    <div class="lindia-dist">
-                                        <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                    
+                                    <div class="recent-locations p-0 m-0">
+                                           <ul class="p-0 m-0">
+                                            <li>
+                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">Karela</p>
+                                            </li>
+                                           </ul>
+                                    </div>
+                                </div>
+                                <div class="all-distt ">
+                                  
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman Assam</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman Assam</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
                                     </div>
                                     <div class="district-location">
                                         <p class="mb-0 pb-0">Andaman</p>
@@ -241,21 +278,35 @@
                                     <ul>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Location 1,</p> <span class="ms-1">Thrissur</span>
+                                            <p class="mb-0 pb-0">Search 1</p>
                                         </li>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Lorem ipsum dolor sit amet.</p> <span
-                                                class="ms-1">,Thrissur</span>
+                                            <p class="mb-0 pb-0">Search  2</p>
+                                           
                                         </li>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Peelameda,</p>
+                                            <p class="mb-0 pb-0">Search 3</p>
                                         </li>
                                         <li>
                                             <i class="bi bi-geo-alt me-2"> </i>
-                                            <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                class="ms-1">Thrissur</span>
+                                            <p class="mb-0 pb-0">Search 4</p>
+                                          
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0"> Search Lorem amet</p>
+                                           
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 6</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 7</p>
+                                          
                                         </li>
                                     </ul>
                                 </div>
@@ -267,20 +318,43 @@
                                     </p>
                                     <ul class="recent-locations">
                                         <li>
-                                            <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
-                                                consectetur adipisicing elit. Ad,repudiandae.</p> <span
-                                                class="ms-1">Thrissur</span>
+                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
                                         </li>
                                         <li>
-                                            <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                class="ms-1">Thrissur</span>
+                                               
+                                            <p class="mb-0 pb-0">District 1</p> 
                                         </li>
                                         <li>
-                                            <p class="mb-0 pb-0">Peelameda,</p>
+                                            <p class="mb-0 pb-0">District 1</p> 
                                         </li>
                                         <li>
-                                            <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                class="ms-1">Thrissur</span>
+                                            <p class="mb-0 pb-0">District 1</p> 
+                                               
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p> 
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p> 
+                                               
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p> 
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p> 
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p> 
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p> 
                                         </li>
                                     </ul>
                                 </div>
@@ -712,31 +786,68 @@
                                             <ul>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
-                                                        consectetur adipisicing elit. Ad,repudiandae.</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">Location 1</p>
                                                 </li>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">Location 2</p>
+                                                     
                                                 </li>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Peelameda,</p>
+                                                    <p class="mb-0 pb-0">Location 3</p>
                                                 </li>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">Location 4</p> 
+                                                    
                                                 </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 5</p>
+                                                </li>
+                                                
+                                               
                                             </ul>
                                         </div>
-                                        <div class="all-distt ">
-                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select state &
+                                        <div>
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
                                                 District</p>
-                                            <div class="lindia-dist">
-                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                            
+                                            <div class="recent-locations p-0 m-0">
+                                                   <ul class="p-0 m-0">
+                                                    <li>
+                                                        <p class="mb-0 pb-0 f-14 w-500 brand-blue">Karela</p>
+                                                    </li>
+                                                   </ul>
+                                            </div>
+                                        </div>
+                                        <div class="all-distt ">
+                                          
+                                           
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
                                             </div>
                                             <div class="district-location">
                                                 <p class="mb-0 pb-0">Andaman</p>
@@ -757,21 +868,35 @@
                                             <ul>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Location 1,</p> <span class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">Search 1</p>
                                                 </li>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Lorem ipsum dolor sit amet.</p> <span
-                                                        class="ms-1">,Thrissur</span>
+                                                    <p class="mb-0 pb-0">Search  2</p>
+                                                   
                                                 </li>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Peelameda,</p>
+                                                    <p class="mb-0 pb-0">Search 3</p>
                                                 </li>
                                                 <li>
                                                     <i class="bi bi-geo-alt me-2"> </i>
-                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">Search 4</p>
+                                                  
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0"> Search Lorem amet</p>
+                                                   
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 6</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 7</p>
+                                                  
                                                 </li>
                                             </ul>
                                         </div>
@@ -783,20 +908,43 @@
                                             </p>
                                             <ul class="recent-locations">
                                                 <li>
-                                                    <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
-                                                        consectetur adipisicing elit. Ad,repudiandae.</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0 f-14 w-500 brand-blue">Karela</p>
                                                 </li>
                                                 <li>
-                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                       
                                                 </li>
                                                 <li>
-                                                    <p class="mb-0 pb-0">Peelameda,</p>
+                                                    <p class="mb-0 pb-0">District 1</p> 
                                                 </li>
                                                 <li>
-                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
-                                                        class="ms-1">Thrissur</span>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                       
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                       
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p> 
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p> 
                                                 </li>
                                             </ul>
                                         </div>
