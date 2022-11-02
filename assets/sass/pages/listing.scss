@@ -533,6 +533,8 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding: 7px 10px;
+        position: relative;
+        z-index: 10 !important;
         h1{
             font-size: 16px;
             font-weight: 500;
@@ -546,14 +548,16 @@
         }
     }
     .recent-locations{
-        display: none;
+        // display: none;
+        
         transition: all .3s;
-        overflow-y: auto;
-        max-height:300px;
-        @media only screen and (max-width:991px){
-            overflow-y: auto;
-        height: calc(100vh - 200px);
-        }
+        // overflow-y: auto;
+        max-height:500px;
+        // overflow-y: auto;
+        // @media only screen and (max-width:991px){
+        //     overflow-y: auto;
+        // height: calc(100vh - 200px);
+        // }
         ul{
             list-style: none;
             padding-left: 0px;
@@ -563,7 +567,7 @@
             }
             li{
                 border-top: 1px solid $light-gray;
-                padding: 10px 20px 10px 10px;
+                padding: 12px 12px;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -600,11 +604,168 @@
     white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-               min-width: 80px;
-               max-width: 80px;
+            //    min-width: 80px;
+          max-width: 120px;
 
-               @media only screen and (min-width:1550px){
-                min-width: 120px;
-               }
+            //    @media only screen and (min-width:1550px){
+            //     min-width: 120px;
+            //    }
                
+}
+.locations-items{
+    overflow-y: scroll;
+    max-height: 60vh;
+
+    @media only screen and (max-width:991px){
+        max-height: 82vh;
+    }
+
+
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        position: relative;
+        z-index: 10000 !important;
+    }
+    
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 10000 !important;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+        outline: 1px solid transparent;
+        border-radius: 10px;
+        position: relative;
+        z-index: 10000 !important;
+    }
+    
+}
+.locations-items-heading{
+    background-color:  $light-gray2;
+    padding: 5px 12px;
+
+}
+.district-location{
+    border-top: 1px solid $light-gray;
+    padding: 12px 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    span{
+        font-size: 13px;
+        color: $gray;
+        font-weight: 500;
+    }
+}
+.lindia-dist{
+    border-top: 1px solid $light-gray;
+    padding: 14px 14px 6px 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+}
+
+.find-locations{
+    transition: all .3s;
+    max-height:500px;
+    overflow-y: auto;
+    min-height: 300px;
+    display: none;
+    margin-top: -10px !important;
+ 
+    ul{
+        list-style: none;
+        padding-left: 0px;
+        overflow-y: auto;
+        @media only screen and (max-width:991px){
+            padding-bottom: 40px;
+        }
+        li{
+            border-bottom: 1px solid $light-gray;
+            padding: 12px 12px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis ;
+            p{
+                font-weight: 500;
+                font-size: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            span{
+                font-size: 13px;
+                color: $gray;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.all-india-distt{
+display: none;
+}
+.all-india-distt{
+    transition: all .3s;
+    max-height:500px;
+    overflow-y: auto;
+    min-height: 300px;
+    display: none;
+ 
+    ul{
+        list-style: none;
+        padding-left: 0px;
+        overflow-y: auto;
+        @media only screen and (max-width:991px){
+            padding-bottom: 40px;
+        }
+        li{
+            border-bottom: 1px solid $light-gray;
+            padding: 12px 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis ;
+            p{
+                font-weight: 500;
+                font-size: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            span{
+                font-size: 13px;
+                color: $gray;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.location-main-header{
+    background-color:$primary;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    color: white;
 }

@@ -57,12 +57,10 @@
     }
 
     @media only screen and (max-width:550px) {
-        padding: 0px 12px;
+        padding: 0px 6px;
     }
 
-    @media only screen and (max-width:370px) {
-        padding: 0px 5px;
-    }
+    
 
 }
 
@@ -1472,9 +1470,9 @@
 .classified-drop {
     background-color: transparent !important;
     border: none !important;
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: $active-blue !important;
-    font-weight: 600;
+    font-weight: 500;
 
     &:hover {
         color: $primary !important;
@@ -1483,7 +1481,9 @@
     @media only screen and (max-width:991px) {
         display: none;
     }
-
+    @media only screen and (max-width:676px) {
+        font-size: 16px !important;
+    }
 }
 
 .offer-text {
@@ -1563,9 +1563,9 @@
 .classified-drop-small {
     background-color: transparent !important;
     border: none !important;
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: white !important;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     padding: 0px !important;
 
@@ -1806,8 +1806,13 @@
    
 }
 
+
+
+
+
+
 .classified-drop-select {
-    width: 90% !important;
+    width: 100% !important;
 
     &:focus {
         box-shadow: none !important;
@@ -1840,7 +1845,7 @@
         padding: 3px 15px !important;
         border: 1px solid #B2B2B2 !important;
         border-radius: 3px;
-        font-size: 16px;
+        font-size: 18px !important;
         font-weight: 500;
     }
 

@@ -1091,10 +1091,7 @@ a {
       top: 99px; } }
   @media only screen and (max-width: 550px) {
     .main-header {
-      padding: 0px 12px; } }
-  @media only screen and (max-width: 370px) {
-    .main-header {
-      padding: 0px 5px; } }
+      padding: 0px 6px; } }
 
 @media only screen and (max-width: 991px) {
   .desktop-light-header {
@@ -2123,14 +2120,17 @@ a {
 .classified-drop {
   background-color: transparent !important;
   border: none !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   color: #003399 !important;
-  font-weight: 600; }
+  font-weight: 500; }
   .classified-drop:hover {
     color: #16367B !important; }
   @media only screen and (max-width: 991px) {
     .classified-drop {
       display: none; } }
+  @media only screen and (max-width: 676px) {
+    .classified-drop {
+      font-size: 16px !important; } }
 
 .offer-text {
   color: #0093FF; }
@@ -2193,9 +2193,9 @@ a {
 .classified-drop-small {
   background-color: transparent !important;
   border: none !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   color: white !important;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
   padding: 0px !important; }
   @media only screen and (max-width: 340px) {
@@ -2336,7 +2336,7 @@ a {
       margin-right: 5px; } }
 
 .classified-drop-select {
-  width: 90% !important; }
+  width: 100% !important; }
   .classified-drop-select:focus {
     box-shadow: none !important; }
 
@@ -2364,7 +2364,7 @@ a {
     padding: 3px 15px !important;
     border: 1px solid #B2B2B2 !important;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 18px !important;
     font-weight: 500; }
   .classify-select-li .select-selected:after {
     position: absolute;
@@ -3009,7 +3009,9 @@ a {
     display: flex !important;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 7px 10px; }
+    padding: 7px 10px;
+    position: relative;
+    z-index: 10 !important; }
     .location-drop .current-location h1 {
       font-size: 16px;
       font-weight: 500;
@@ -3020,14 +3022,8 @@ a {
       color: black;
       margin-top: -2px; }
   .location-drop .recent-locations {
-    display: none;
     transition: all .3s;
-    overflow-y: auto;
-    max-height: 300px; }
-    @media only screen and (max-width: 991px) {
-      .location-drop .recent-locations {
-        overflow-y: auto;
-        height: calc(100vh - 200px); } }
+    max-height: 500px; }
     .location-drop .recent-locations ul {
       list-style: none;
       padding-left: 0px;
@@ -3037,7 +3033,7 @@ a {
           padding-bottom: 40px; } }
       .location-drop .recent-locations ul li {
         border-top: 1px solid #DEE0E2;
-        padding: 10px 20px 10px 10px;
+        padding: 12px 12px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -3065,11 +3061,139 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 80px;
-  max-width: 80px; }
-  @media only screen and (min-width: 1550px) {
-    .location-selected {
-      min-width: 120px; } }
+  max-width: 120px; }
+
+.locations-items {
+  overflow-y: scroll;
+  max-height: 60vh; }
+  @media only screen and (max-width: 991px) {
+    .locations-items {
+      max-height: 82vh; } }
+  .locations-items::-webkit-scrollbar {
+    width: 5px;
+    position: relative;
+    z-index: 10000 !important; }
+  .locations-items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10000 !important; }
+  .locations-items::-webkit-scrollbar-thumb {
+    background-color: #16367B;
+    outline: 1px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10000 !important; }
+
+.locations-items-heading {
+  background-color: #EFF0F2;
+  padding: 5px 12px; }
+
+.district-location {
+  border-top: 1px solid #DEE0E2;
+  padding: 12px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .district-location p {
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .district-location span {
+    font-size: 13px;
+    color: #767676;
+    font-weight: 500; }
+
+.lindia-dist {
+  border-top: 1px solid #DEE0E2;
+  padding: 14px 14px 6px 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.find-locations {
+  transition: all .3s;
+  max-height: 500px;
+  overflow-y: auto;
+  min-height: 300px;
+  display: none;
+  margin-top: -10px !important; }
+  .find-locations ul {
+    list-style: none;
+    padding-left: 0px;
+    overflow-y: auto; }
+    @media only screen and (max-width: 991px) {
+      .find-locations ul {
+        padding-bottom: 40px; } }
+    .find-locations ul li {
+      border-bottom: 1px solid #DEE0E2;
+      padding: 12px 12px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .find-locations ul li p {
+        font-weight: 500;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .find-locations ul li span {
+        font-size: 13px;
+        color: #767676;
+        font-weight: 500; }
+
+.all-india-distt {
+  display: none; }
+
+.all-india-distt {
+  transition: all .3s;
+  max-height: 500px;
+  overflow-y: auto;
+  min-height: 300px;
+  display: none; }
+  .all-india-distt ul {
+    list-style: none;
+    padding-left: 0px;
+    overflow-y: auto; }
+    @media only screen and (max-width: 991px) {
+      .all-india-distt ul {
+        padding-bottom: 40px; } }
+    .all-india-distt ul li {
+      border-bottom: 1px solid #DEE0E2;
+      padding: 12px 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .all-india-distt ul li p {
+        font-weight: 500;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .all-india-distt ul li span {
+        font-size: 13px;
+        color: #767676;
+        font-weight: 500; }
+
+.location-main-header {
+  background-color: #16367B;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  color: white; }
 
 .directory-card {
   display: flex;

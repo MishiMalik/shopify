@@ -542,20 +542,48 @@ $( 'input[type="checkbox' ).on( 'click', function () {
 
 // =================================================================write in input/show location
 $('.location-input').keyup(function(){
-  if($(this).val().length)
-  $('.recent-locations').css('display','block');
-  else
-  $('.recent-locations').css('display','none');
+  if($(this).val().length){
+  $('.find-locations').css('display','block');
+  $('.locations-items').css('display','none');
+  $('.all-india-distt').css('display','none');
+} else{
+  $('.locations-items').css('display','block');
+  $('.find-locations').css('display','none');
+  $('.all-india-distt').css('display','none');
+}
 });
 
 $('.recent-locations').find('li').each(function() {
   $(this).click(function() {
-    $('.location-selected').html($(this).text().split(',')[0])
+    $('.location-selected').html($(this).text().split(',')[0]);
+    $('.location-input').val('');
+    $('.find-locations').css('display','none');
+    $('.locations-items').css('display','block');
+    $('.all-india-distt').css('display','none');
   })
 })
 
-
-$(document).on('click', function() {
-  $('.location-input').val('');
-  $('.recent-locations').css('display','none');
+$('.all-distt').on('click', function(e) {
+  e.stopPropagation()
 })
+
+$('.district-location').on('click',function(){
+  $('.locations-items').css('display','none');
+  $('.all-india-distt').css('display','block')
+})
+
+// $('.find-locations').on('click',function(){
+//   $('.district-location').stopPropagation()
+    
+// })
+// $('.district-location').on('click', function(e) {
+//   e.stopPropagation()
+// })
+
+
+
+
+// $(document).on('click', function() {
+//   $('.location-input').val('');
+//   $('.recent-locations').css('display','none');
+// })

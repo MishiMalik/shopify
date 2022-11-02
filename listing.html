@@ -160,58 +160,131 @@
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div>
                     <div class="dropdown ">
-                        <button class="classified-drop dropdown-toggle ms-1 d-flex align-items-center justify-content-center" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-geo-alt"></i> <div class="location-selected"> Edapilly</div>
-                           
+                        <button
+                            class="classified-drop dropdown-toggle p-0 d-flex align-items-center justify-content-center"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-geo-alt pe-1"></i>
+                            <div class="location-selected pe-1">Edapilly</div>
+
                         </button>
-                        <ul class="dropdown-menu location-drop py-2" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu location-drop py-0" aria-labelledby="dropdownMenuButton1">
+                            <div class="location-main-header">
+                                <i class="bi bi-x-circle me-2 f-22"></i>
+                                <p class="mb-0 pb-0 f-20 text-white w-500">Select Location</p>
+                            </div>
+                            
                             <li>
-                                <p class="mb-0 pb-0 select-loaction-heading">Select Location</p>
-                            </li>
-                            <li>
-                                <div class="location-input-div mt-2">
+                                <div class="location-input-div mt-2 pb-3">
                                     <i class="bi bi-search"></i>
-                                    <input type="text" placeholder="Enter Pincode / Area / Distt / State"
-                                        class=" location-input">
+                                    <input type="text" placeholder="Enter Pincode or Area"
+                                        class="location-input">
                                 </div>
 
                             </li>
-                            <li class="p-0">
-                                <div class="current-location mt-3">
-                                        <img src="assets/images/icons/current-location-icon.svg" alt=""
-                                            class="img-fluid">
+                            <li class="p-0 locations-items">
+                                <div class="current-location ">
+                                    <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                        class="img-fluid">
                                     <div class="ms-2">
                                         <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
                                         <p class="pb-0 mb-0">Vennila cochin</p>
                                     </div>
                                 </div>
+                                <div class="recent-locations mt-3">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                        Locations</p>
+                                    <ul class="p-0">
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit. Ad,repudiandae.</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Peelameda,</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="all-distt ">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select state &
+                                        District</p>
+                                    <div class="lindia-dist">
+                                        <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman Assam</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                </div>
                             </li>
+                            <li class="recent-locations">
+                                <div class="find-locations">
+                                    <ul>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 1,</p> <span class="ms-1">Thrissur</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Lorem ipsum dolor sit amet.</p> <span
+                                                class="ms-1">,Thrissur</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Peelameda,</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <li>
-                              <div class="recent-locations mt-3">
-                                <p class="f-14 text-gray w-500 mb-0 pb-0 pb-1">Recent Locations</p>
-                                   <ul>
-                                    <li>
-                                        <i class="bi bi-geo-alt me-2"> </i>
-                                        <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,repudiandae.</p> <span class="ms-1">Thrissur</span>
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-geo-alt me-2"> </i>
-                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-geo-alt me-2"> </i>
-                                        <p class="mb-0 pb-0">Peelameda,</p> 
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-geo-alt me-2"> </i>
-                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
-                                    </li>
-                                   </ul>
-                              </div>
                             </li>
-                        
+                            <li class="p-0">
+                                <div class="all-india-distt">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                                    </p>
+                                    <ul class="recent-locations">
+                                        <li>
+                                            <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit. Ad,repudiandae.</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">Peelameda,</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                class="ms-1">Thrissur</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- <div class="dropdown">
@@ -317,8 +390,8 @@
                     <div class="d-flex align-items-center filter-div" id="right-filter" href="javascript:void(0)"
                         onclick="openFilter()">
                         <!-- <i class="bi bi-filter-left f-30 me-1"></i> -->
-                        <img src="assets/images/icons/filter.png" alt="" class="img-fluid me-2">
-                        <h2 class="f-18 w-600 text-dark m-0 p-0 filter-btn">Filters</h2>
+                        <img src="assets/images/icons/filter.png" alt="" class="img-fluid me-1" height="20px" width="20px">
+                        <h2 class="f-16 w-500 text-dark m-0 p-0 filter-btn">Filters</h2>
                     </div>
 
                 </div>
@@ -557,8 +630,8 @@
 
                 <!-- main area -->
                 <div class="col-lg-6 col-md-12 text-center center-part" id="center">
-                    <div class="main-header desktop-light-header" id="light-header">
-                        <div class="d-flex w-50 justify-content-start align-items-center">
+                    <div class="main-header desktop-light-header " id="light-header">
+                        <div class="d-flex justify-content-between align-items-center  w-100">
                             <div class="d-flex flex-column align-items-start">
                                 <div class="dropdown classified-dropdown classified-dropdown-desktop">
                                     <button class="classified-drop-small classified-drop-desktop  dropdown-toggle ms-1"
@@ -569,7 +642,8 @@
                                     <ul class="dropdown-menu classify-drop2" aria-labelledby="dropdownMenuButton1">
                                         <li class="classify-select-li">
                                             <div class="custom-select classify-select" style="width:100% !important ;">
-                                                <select class="classified-dropdown-select">                                                    <option value="0">
+                                                <select class="classified-dropdown-select">
+                                                    <option value="0">
                                                         Classifieds</option>
                                                     <option value="1">Shopping</option>
                                                     <option value="2">Entertainment</option>
@@ -599,75 +673,143 @@
 
                                     </ul>
                                 </div>
-                                <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-dsktop mt-0 pt-0">Offers</p>
+                                <p class="mb-0 pb-0 f-14 w-500 ms-1 offer-text-dsktop mt-0 pt-0">Offers</p>
                             </div>
-                            <!-- ----------------------------------- -->
-                            <div class="dropdown ms-10">
-                                <button class="classified-drop dropdown-toggle ms-1 d-flex align-items-center justify-content-center" type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-geo-alt"></i> <div class="location-selected"> Edapilly</div>
-                                   
+
+                            <div class="dropdown">
+                                <button
+                                    class="classified-drop dropdown-toggle ms-1 d-flex align-items-center justify-content-center"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <div class="location-selected"> Edapilly</div>
                                 </button>
+                            
                                 <ul class="dropdown-menu location-drop py-2" aria-labelledby="dropdownMenuButton1">
                                     <li>
                                         <p class="mb-0 pb-0 select-loaction-heading">Select Location</p>
                                     </li>
                                     <li>
-                                        <div class="location-input-div mt-2">
+                                        <div class="location-input-div mt-2 pb-3">
                                             <i class="bi bi-search"></i>
-                                            <input type="text" placeholder="Enter Pincode / Area / Distt / State"
-                                                class=" location-input">
+                                            <input type="text" placeholder="Enter Pincode or Area"
+                                                class="location-input">
                                         </div>
 
                                     </li>
-                                    <li class="p-0">
-                                        <div class="current-location mt-3">
-                                                <img src="assets/images/icons/current-location-icon.svg" alt=""
-                                                    class="img-fluid">
+                                    <li class="p-0 locations-items">
+                                        <div class="current-location ">
+                                            <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                                class="img-fluid">
                                             <div class="ms-2">
                                                 <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
                                                 <p class="pb-0 mb-0">Vennila cochin</p>
                                             </div>
                                         </div>
+                                        <div class="recent-locations mt-3">
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                                Locations</p>
+                                            <ul>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing elit. Ad,repudiandae.</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Peelameda,</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="all-distt ">
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select state &
+                                                District</p>
+                                            <div class="lindia-dist">
+                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                        </div>
                                     </li>
+                                    <li class="recent-locations">
+                                        <div class="find-locations">
+                                            <ul>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 1,</p> <span class="ms-1">Thrissur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Lorem ipsum dolor sit amet.</p> <span
+                                                        class="ms-1">,Thrissur</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Peelameda,</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <li>
-                                      <div class="recent-locations mt-3">
-                                        <p class="f-14 text-gray w-500 mb-0 pb-0 pb-1">Recent Locations</p>
-                                           <ul>
-                                            <li>
-                                                <i class="bi bi-geo-alt me-2"> </i>
-                                                <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,repudiandae.</p> <span class="ms-1">Thrissur</span>
-                                            </li>
-                                            <li>
-                                                <i class="bi bi-geo-alt me-2"> </i>
-                                                <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
-                                            </li>
-                                            <li>
-                                                <i class="bi bi-geo-alt me-2"> </i>
-                                                <p class="mb-0 pb-0">Peelameda,</p> 
-                                            </li>
-                                            <li>
-                                                <i class="bi bi-geo-alt me-2"> </i>
-                                                <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
-                                            </li>
-                                           </ul>
-                                      </div>
                                     </li>
-                                
+                                    <li class="p-0">
+                                        <div class="all-india-distt">
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                                            </p>
+                                            <ul class="recent-locations">
+                                                <li>
+                                                    <p class="mb-0 pb-0">Peelamedaaaaaa, Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing elit. Ad,repudiandae.</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">Peelameda,</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">Peelameda,</p> <span
+                                                        class="ms-1">Thrissur</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
-
-
-                            <!-- ------------------------------------- -->
-
-                        </div>
-                        <div class="d-flex w-50 justify-content-end align-items-center ">
+ 
                             <div>
                                 <a href="directory.html">
-                                    <p class="mb-0 pb-0 f-18 text-primary w-600 header-link me-10 pe-2">Directory</p>
+                                    <p class="mb-0 pb-0 f-18 text-primary w-500 header-link ">Directory</p>
                                 </a>
                             </div>
+                            
                             <div>
                                 <div class="custom-select d-flex">
                                     <i class="bi bi-filter-left f-22 w-700"></i>
@@ -687,13 +829,15 @@
                                     </select>
                                 </div>
                             </div>
-                            <div>
 
 
-                            </div>
+                            <!-- ------------------------------------- -->
+
+                        </div>
+                        
                         </div>
 
-                    </div>
+                    
 
                     <div class="container-fluid pb-2">
 
