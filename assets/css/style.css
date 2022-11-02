@@ -3060,8 +3060,16 @@ a {
 .location-selected {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 120px; }
+  text-overflow: ellipsis; }
+  @media only screen and (max-width: 1100px) {
+    .location-selected {
+      max-width: 120px; } }
+  @media only screen and (max-width: 991px) {
+    .location-selected {
+      max-width: 100%; } }
+  @media only screen and (max-width: 425px) {
+    .location-selected {
+      max-width: 120px; } }
 
 .locations-items {
   overflow-y: scroll;
