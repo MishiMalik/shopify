@@ -536,17 +536,23 @@
         padding: 7px 10px;
         position: relative;
         z-index: 10 !important;
+        cursor: pointer;
         h1{
             font-size: 16px;
             font-weight: 500;
             color: #044DEB;
+            @media only screen and (max-width:991px){
+                font-size: 17px;
+            }
         }
         p{
             font-size: 13px;
             font-weight: 400;
             color: black;
             margin-top: -2px;
-
+            @media only screen and (max-width:991px){
+                font-size: 15px;
+            }
         }
     }
     .recent-locations{

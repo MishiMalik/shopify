@@ -3013,16 +3013,23 @@ a {
     align-items: flex-start;
     padding: 7px 10px;
     position: relative;
-    z-index: 10 !important; }
+    z-index: 10 !important;
+    cursor: pointer; }
     .location-drop .current-location h1 {
       font-size: 16px;
       font-weight: 500;
       color: #044DEB; }
+      @media only screen and (max-width: 991px) {
+        .location-drop .current-location h1 {
+          font-size: 17px; } }
     .location-drop .current-location p {
       font-size: 13px;
       font-weight: 400;
       color: black;
       margin-top: -2px; }
+      @media only screen and (max-width: 991px) {
+        .location-drop .current-location p {
+          font-size: 15px; } }
   .location-drop .recent-locations {
     transition: all .3s;
     max-height: 500px; }
