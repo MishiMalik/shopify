@@ -2972,7 +2972,7 @@ a {
   .location-drop li {
     padding: 0px 10px; }
   .location-drop .select-loaction-heading {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600; }
   .location-drop .location-header {
     background-color: #16367B;
@@ -2992,9 +2992,9 @@ a {
       border-radius: 3px;
       border: 2px solid #E2E2E2;
       padding: 8px 5px 8px 35px;
-      font-size: 15px;
+      font-size: 17px;
       font-weight: 400;
-      height: 45px; }
+      height: 48px; }
       .location-drop .location-input-div .location-input:focus {
         outline: none;
         box-shadow: none; }
@@ -3003,7 +3003,7 @@ a {
         box-shadow: none; }
     .location-drop .location-input-div .bi-search {
       position: absolute;
-      top: 11px;
+      top: 12px;
       left: 12px;
       font-size: 16px; }
   .location-drop .current-location {
@@ -3051,6 +3051,9 @@ a {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis; }
+          @media only screen and (max-width: 991px) {
+            .location-drop .recent-locations ul li p {
+              font-size: 17px; } }
         .location-drop .recent-locations ul li span {
           font-size: 13px;
           color: #767676;
@@ -3119,13 +3122,16 @@ a {
       padding: 14px 12px; } }
   .district-location p {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
     .district-location p:hover {
       color: black;
       cursor: pointer; }
+    @media only screen and (max-width: 991px) {
+      .district-location p {
+        font-size: 17px; } }
   .district-location span {
     font-size: 13px;
     color: #767676;
@@ -3179,6 +3185,9 @@ a {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
+        @media only screen and (max-width: 991px) {
+          .find-locations ul li p {
+            font-size: 17px; } }
       .find-locations ul li span {
         font-size: 13px;
         color: #767676;
@@ -3231,6 +3240,9 @@ a {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
+        @media only screen and (max-width: 991px) {
+          .all-india-distt ul li p {
+            font-size: 17px; } }
       .all-india-distt ul li span {
         font-size: 13px;
         color: #767676;
@@ -3253,7 +3265,12 @@ a {
   background-color: white !important; }
 
 .back-dist {
-  display: none; }
+  opacity: 0;
+  font-size: 0px; }
+
+.back-dist-text {
+  color: #333333 !important;
+  cursor: pointer; }
 
 .directory-card {
   display: flex;

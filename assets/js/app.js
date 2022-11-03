@@ -573,7 +573,9 @@ $('.all-distt').on('click', function(e) {
 $('.district-location').on('click',function(){
   $('.locations-items').css('display','none');
   $('.all-india-distt').css('display','block');
-  $('.back-dist').css('display','block');
+  $('.back-dist').css('opacity','1');
+  $('.back-dist').css('font-size','20px');
+  $('.back-dist').css('margin-right','10px');
   $('.close-location').css('display','none')
 })
 $('.back-dist').on('click', function(e) {
@@ -582,7 +584,10 @@ $('.back-dist').on('click', function(e) {
 $('.back-dist').on('click',function(){
   $('.locations-items').css('display','block');
   $('.all-india-distt').css('display','none');
-  $('.back-dist').css('display','none');
+  $('.back-dist').css('opacity','0');
+  $('.back-dist').css('margin-right','0px');
+
+  $('.back-dist').css('font-size','0px');
   $('.close-location').css('display','block');
 })
 
