@@ -1064,7 +1064,8 @@ a {
     .search-wrapper {
       padding: 0px 10px 30px 10px;
       min-height: 100vh;
-      max-height: unset; } }
+      max-height: unset;
+      border-radius: 0px !important; } }
   .search-wrapper i {
     font-size: 25px;
     cursor: pointer; }

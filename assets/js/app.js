@@ -639,17 +639,27 @@ $('.close-search-result-div').on('click',function(e){
   e.preventDefault();
   $(this).parent().css('display','none');
 })
+// $('search-input').mouseup(function() {
+//   $('.history-search').css('display','block');
+// });
+$(".search-input").focus(function() {
+  $('.history-search').css('display','block');
+  $('.other-searches').css('display','none');
+});
+// $(".search-input").focusout(function() {
+//   $('.history-search').css('display','none');
+// });
 
 $('.search-input').keyup(function(){
   if($(this).val().length){
-  $('.other-searches').css('display','none');
   $('.mic-icon').css('display','none');
   $('.send-icon').css('display','block');
-  $('.search-results').css('display','block');
+  $('.suggestion-search').css('display','block');
+  $('.history-search').css('display','none');
 } else{
   $('.other-searches').css('display','block');
   $('.mic-icon').css('display','block');
   $('.send-icon').css('display','none');
-  $('.search-results').css('display','none');
+  $('.suggestion-search').css('display','none');
 }
 });
