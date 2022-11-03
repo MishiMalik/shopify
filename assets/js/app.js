@@ -635,9 +635,9 @@ $('.close-search-wrapper').on('click',function(){
 });
 
 $('.close-search-result-div').on('click',function(e){
-  e.stopPropagation();
+  // e.stopPropagation();
+  e.preventDefault();
   $(this).parent().css('display','none');
-  e.stopPropagation();
 })
 
 $('.search-input').keyup(function(){

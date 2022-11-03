@@ -1058,13 +1058,13 @@ a {
   background-color: white;
   padding: 15px 20px 30px 20px;
   border-radius: 6px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   min-height: 500px;
-  max-width: 700px; }
+  max-height: 500px; }
   @media only screen and (max-width: 550px) {
     .search-wrapper {
       padding: 10px 10px 30px 10px;
-      min-height: 100vh; } }
+      min-height: 100vh;
+      max-height: unset; } }
   .search-wrapper i {
     font-size: 25px;
     cursor: pointer; }
@@ -1235,12 +1235,14 @@ a {
 
 .search-modal-dialog {
   max-width: 700px !important;
-  min-height: 450px;
+  min-height: 500px;
+  max-height: 500px !important;
   overflow-y: auto; }
   @media only screen and (max-width: 550px) {
     .search-modal-dialog {
       margin: 0px !important;
-      min-height: 100vh !important; } }
+      min-height: 100vh !important;
+      max-height: unset !important; } }
   .search-modal-dialog::-webkit-scrollbar {
     width: 10px !important;
     position: relative !important;
