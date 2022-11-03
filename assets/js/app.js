@@ -622,3 +622,34 @@ $(document).on('click', function() {
 
 
 
+
+
+// ==========================quich-search
+$('.quick-search').on('click',function(){
+   $('.search-wrapper').css('display','block');
+   $('body').css('overflow-y','hidden');
+});
+
+$('.close-search-wrapper').on('click',function(){
+  $('body').css('overflow-y','auto');
+});
+
+$('.close-search-result-div').on('click',function(e){
+  e.stopPropagation();
+  $(this).parent().css('display','none');
+  e.stopPropagation();
+})
+
+$('.search-input').keyup(function(){
+  if($(this).val().length){
+  $('.other-searches').css('display','none');
+  $('.mic-icon').css('display','none');
+  $('.send-icon').css('display','block');
+  $('.search-results').css('display','block');
+} else{
+  $('.other-searches').css('display','block');
+  $('.mic-icon').css('display','block');
+  $('.send-icon').css('display','none');
+  $('.search-results').css('display','none');
+}
+});

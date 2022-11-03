@@ -111,9 +111,9 @@
                     <div
                         class="d-flex justify-content-lg-end justify-content-md-end align-items-center justify-content-end">
                         <div class="header-menu header-menu2 me-4">
-                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-search f-25 text-white"></i>
-                                <i class="fas fa-search f-25 text-white"></i>
+                            <a  class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-search f-25 text-white quick-search" data-bs-toggle="modal" data-bs-target="#search-modal"></i>
+                                <i class="fas fa-search f-25 text-white quick-search" data-bs-toggle="modal" data-bs-target="#search-modal"></i>
                             </a>
                         </div>
                         <div class="header-menu header-menu2 me-4">
@@ -130,8 +130,8 @@
                         </div> -->
                         <div class="header-menu d-none d-lg-block ">
                             <div class="dropdown">
-                                 <a href="" class="text-white dropdown-toggle d-flex align-items-center" href="#" role="button"
-                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="" class="text-white dropdown-toggle d-flex align-items-center" href="#"
+                                    role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="assets/images/image 224.png" alt="" class="img-fluid dp  dp-radius">
                                     <p class="mb-0 pb-0 f-18 w-500 text-white mx-2">Jerry</p>
                                 </a>
@@ -168,14 +168,16 @@
                             Classifieds
                         </button>
                         <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-dollar-coin-64.png"
-                                        alt="" class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                            <li><a class="dropdown-item" href="#"><img
+                                        src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                        class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
                             <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-money-bag-50.png"
                                         alt="" class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
                             <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt=""
                                         class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-dollar-coin-64.png"
-                                        alt="" class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                            <li><a class="dropdown-item" href="#"><img
+                                        src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                        class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
                         </ul>
                     </div>
                     <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text">Offers</p>
@@ -446,15 +448,21 @@
                         <div class="d-flex">
                             <button class="add-post me-1"><i class="bi bi-plus-circle-fill me-2"></i>Add Posts</button>
                             <div><a href=""><img src="assets/images/BLOOD.png" alt="" class="img-fluid blood-img"></a>
-                                <a href=""><img src="assets/images/NOTICE BOARD.png" alt="" class="img-fluid blood-img"></a></div>
+                                <a href=""><img src="assets/images/NOTICE BOARD.png" alt=""
+                                        class="img-fluid blood-img"></a>
+                            </div>
                         </div>
+
                     </div>
 
                     <div class="container-fluid pb-2">
-                        <div class="row post">
+                       
+                        
 
+                        <div class="row post">
+                            
                             <!-- banner ============================================================-->
-                           <div class="col-lg-12 px-1">
+                            <div class="col-lg-12 px-1">
                                 <div id="carouselExampleControls" data-interval="false" class="carousel slide">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -2120,7 +2128,7 @@
                             </div>
 
                         </div>
-                       
+
 
                     </div>
 
@@ -2797,7 +2805,169 @@
             </div>
         </div>
     </div>
+<!-- Button trigger modal -->
 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable search-modal-dialog">
+      <div class="modal-content">
+       
+        <div class="modal-body search-body">
+            <div class="search-wrapper pt-0">
+                <div class="fixed-search pt-3">
+                    <div class="d-flex justify-content-between align-items-end w-100">
+                        <p class="mb-0 pb-0 quick-label">Quick Search</p>
+                        <i class="bi bi-x-circle  w-700 close-search-wrapper" data-bs-dismiss="modal"></i>
+                    </div>
+                    <div class="search-input-inner">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" class="w-100 search-input" placeholder="Enter Keyword or ID">
+                        <div class="send-icons">
+                            <i class="bi bi-mic-fill mic-icon"></i>
+                            <a href="listing.html">
+                                <img src="assets/images/icons/send.svg" alt="" class=" send-icon">
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+                <ul class="search-results p-0 m-0">
+                  <a href="listing.html" class="w-100">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-history me-3 result-history"></i>
+                        <p class="mb-0 pb-0">Table in Category</p>
+                    </div>
+                    <div class="ms-auto close-search-result-div">
+                        <i class="bi bi-x-circle close-search-result"></i>
+                    </div>
+                  </a>
+                  <a href="listing.html" class=" w-100">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-search me-3 result-history"></i>
+                        <p class="mb-0 pb-0">Table in Category</p>
+                    </div>
+                    <div class="ms-auto">
+                        <i class="bi bi-arrow-up-left go-search-result"></i>
+                    </div>
+                  </a>
+                  <a href="listing.html" class="d-flex align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-search me-3 result-history"></i>
+                        <p class="mb-0 pb-0">Table in Category</p>
+                    </div>
+                    <div class="ms-auto">
+                        <i class="bi bi-arrow-up-left close-search-result"></i>
+                    </div>
+                  </a>
+                  <a href="listing.html" class="d-flex align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-search me-3 result-history"></i>
+                        <p class="mb-0 pb-0">Table in Category</p>
+                    </div>
+                    <div class="ms-auto">
+                        <i class="bi bi-arrow-up-left close-search-result"></i>
+                    </div>
+                  </a>
+                </ul>
+
+                <div class="other-searches">
+
+                    <div class="popular-search">
+                        <p class="w-100 mb-0 pb-0">Popular searches</p>
+                        <a href="listing.html" class="popular-search-tag">
+                            Saree
+                        </a>
+                        <a href="listing.html"  class="popular-search-tag">
+                           Kurti
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Watch
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Cap
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Shoes
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            SmartWatch
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Watch
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Saree
+                        </a>
+                        <a href="listing.html"  class="popular-search-tag">
+                           Kurti
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Watch
+                        </a>
+                       
+                    
+                        <a href="listing.html" class="popular-search-tag">
+                            Cap
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Shoes
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            SmartWatch
+                        </a>
+                        <a href="listing.html" class="popular-search-tag">
+                            Watch
+                        </a>
+                    </div>
+
+                    <div class="recent-searches">
+                        <p class="w-100 mb-0 pb-0">Recent searches</p>
+                        <a href="listing.html">
+                            Saree
+                        </a>
+                        <a href="listing.html">
+                           Kurti
+                        </a>
+                        <a href="listing.html">
+                            Watch
+                        </a>
+                        <a href="listing.html">
+                            Cap
+                        </a>
+                        <a href="listing.html">
+                            Shoes
+                        </a>
+                        <a href="listing.html">
+                            Saree
+                        </a>
+                        <a href="listing.html">
+                           Kurti
+                        </a>
+                        <a href="listing.html">
+                            Watch
+                        </a>
+                        <a href="listing.html">
+                            Cap
+                        </a>
+                        <a href="listing.html">
+                            Shoes
+                        </a>
+                        <a href="listing.html">
+                            SmartWatch
+                        </a>
+                        <a href="listing.html">
+                            Watch
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
     <!-- Script -->
     <script type="text/javascript"
