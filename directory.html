@@ -48,18 +48,38 @@
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Classifieds
                             </button>
-                            <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#"><img
-                                            src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                            class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
-                                <li><a class="dropdown-item" href="#"><img
-                                            src="assets/images/icons/icons8-money-bag-50.png" alt=""
-                                            class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt=""
-                                            class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
-                                <li><a class="dropdown-item" href="#"><img
-                                            src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
-                                            class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                            <ul class="dropdown-menu classify-drop2" aria-labelledby="dropdownMenuButton1">
+                                <li class="classify-select-li">
+                                    <div class="custom-select classify-select" style="width:100% !important ;">
+                                        <select class="classified-dropdown-select">
+                                            <option value="0">
+                                                Classifieds</option>
+                                            <option value="1">Shopping</option>
+                                            <option value="2">Entertainment</option>
+                                            <option value="3">Classifieds</option>
+                                            <option value="4">Multi Zone</option>
+
+                                        </select>
+                                    </div>
+
+                                </li>
+                                <li class="classify-select-li mt-4">
+                                    <div class="custom-select classify-select" style="width:100% !important ;">
+                                        <select class="classified-dropdown-select">
+                                            <option value="0">
+                                                Offers (Offer Zone)</option>
+                                            <option value="1">Offers (Offer Zone)</option>
+                                            <option value="2">Notices (Notice Board)</option>
+
+
+                                        </select>
+                                    </div>
+
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center mt-3">
+                                    <a href="zones.html"><button class="select-Box-btn mx-auto">Select</button></a>
+                                </li>
+
                             </ul>
                         </div>
                         <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-small">Offers</p>
@@ -2316,8 +2336,7 @@
     <!-- backdrop -->
     <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
     <div class="backdrop-menu" id="backdrop-filter" href="javascript:void(0)" onclick="closeFilter()"></div>
-
-<!-- 3 dot menu==================================================== -->
+<!-- 3 dots modal -->
     <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
@@ -2326,38 +2345,39 @@
                     <div class="mobile-post-popup">
                         <ul class=" menu-post-drop">
                             <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
-                                    Member profile</a></li>
+                                    this
+                                    post</a></li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
                                     Link</a></li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
-                                    Posts</a></li>
+                                    Similar Posts</a></li>
                             <div class="seprator"></div>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
                                     Jerry</a></li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
-                                    Member</a>
+                                    Post</a>
                             </li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-minus-circle me-4"></i>Show
                                     Less
-                                    Such Members</a></li>
+                                    Such posts</a></li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
-                                    Member</a>
+                                    post</a>
                             </li>
                             <div class="seprator"></div>
                             <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                        class="fas fa-lightbulb me-4"></i>Last
-                                    Active
-                                    <div class="menu-date">12 Mar 22
+                                        class="fas fa-lightbulb me-4"></i>Last Active
+                                    <div class="menu-date">
+                                        2 days ago
+                                       <span  class="ms-2"> (12 Mar 22)</span>
                                     </div>
                                 </a></li>
                             <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                        class="fas fa-calendar-alt me-4"></i>Joining
-                                    Date <div class="menu-date">12 Mar
-                                        22</div></a></li>
+                                        class="fas fa-calendar-alt me-4"></i>Posting Date <div class="menu-date"> 11 months ago
+                                            <span  class="ms-2"> (12 Mar 22)</span></div></a></li>
                             <!-- <div class="seprator"></div>
                             <li class="text-center mx-auto more-option"><a
-                                    class=" d-flex f-16 w-700 text-dark pt-2 pb-1" href="#">More Options</a></li>
- -->
+                                    class=" d-flex f-16 w-700 text-dark pt-2 pb-1" href="#">More Options</a></li> -->
+
 
                         </ul>
                     </div>

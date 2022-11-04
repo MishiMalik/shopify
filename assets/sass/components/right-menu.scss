@@ -8,8 +8,18 @@
   // padding-bottom: 6px !important;
 
   @media only screen and (max-width:991px) {
-    display: none;
+    display:block;
     overflow-y:unset;
+    position: fixed;
+    right: 0;
+    left: auto;
+    top: 120%;
+    bottom: -100%;
+    width: 100%;
+    z-index: 1000;
+    height: 100vh;
+    transition: all .5s;
+    opacity: -5;
   }
 }
 

@@ -455,7 +455,7 @@ document.addEventListener("click", closeAllSelect);
 
 function openFilter(){
   document.getElementById("right-filter").style.bottom= "0";
-  document.getElementById("right-menu").style.display = "block";
+  document.getElementById("right-menu").style.opacity = "1";
   document.getElementById("right-menu").style.top = "10%";
  
   document.getElementById("backdrop-filter").style.display="block"
@@ -467,7 +467,7 @@ function openFilter(){
 function closeFilter() {
   document.getElementById("right-menu").style.bottom = "-100%";
   document.getElementById("right-menu").style.top = "100%";
-  document.getElementById("right-menu").style.display = "none";
+  document.getElementById("right-menu").style.opacity = "-5";
   document.getElementById("backdrop-filter").style.display="none"
   document.getElementById("fix-filter-btns").style.position="relative"
   document.getElementById("body").style.overflowY="auto";

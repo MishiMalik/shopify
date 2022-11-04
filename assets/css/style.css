@@ -574,8 +574,18 @@ a {
   padding: 0px !important; }
   @media only screen and (max-width: 991px) {
     .right-menu {
-      display: none;
-      overflow-y: unset; } }
+      display: block;
+      overflow-y: unset;
+      position: fixed;
+      right: 0;
+      left: auto;
+      top: 120%;
+      bottom: -100%;
+      width: 100%;
+      z-index: 1000;
+      height: 100vh;
+      transition: all .5s;
+      opacity: -5; } }
 
 .right-menu::-webkit-scrollbar {
   width: 10px; }
@@ -698,7 +708,8 @@ a {
 
 .filter-div {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-right: 16px; }
   .filter-div .filter-number {
     position: absolute;
     top: 5px;
@@ -712,11 +723,12 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 3px;
+    padding-right: 0px !important;
     padding: 3px; }
     @media only screen and (max-width: 991px) {
       .filter-div .filter-number {
-        top: -7px;
-        right: -5px;
+        top: -6px;
+        right: 5px;
         font-size: 8px;
         height: 13px;
         width: 13px; } }
@@ -799,19 +811,6 @@ a {
 
 .zones-right-filter {
   padding: 0px 12px !important; }
-
-@media only screen and (max-width: 991px) {
-  .right-menu {
-    display: none;
-    position: fixed;
-    right: 0;
-    left: auto;
-    top: 100%;
-    bottom: -100%;
-    width: 100%;
-    z-index: 1000;
-    height: 100vh;
-    transition: all .5s; } }
 
 .zones-right-filter-footer {
   position: sticky;
@@ -1328,11 +1327,9 @@ a {
     .main-header {
       padding: 0px 6px; } }
 
-.desktop-light-header {
-  position: relative; }
-  @media only screen and (max-width: 991px) {
-    .desktop-light-header {
-      display: none; } }
+@media only screen and (max-width: 991px) {
+  .desktop-light-header {
+    display: none; } }
 
 .small-main-header {
   display: none; }
@@ -2642,13 +2639,16 @@ a {
 
 .select-Box-btn {
   background-color: transparent;
-  border: 1px solid #0093FF;
+  border: 2px solid #43a6eda1;
   font-size: 16px;
   color: #0093FF;
   font-weight: 500;
   padding: 0px 30px;
   border-radius: 5px;
   margin: 10px auto; }
+  .select-Box-btn:hover {
+    background-color: #0093FF;
+    color: white; }
 
 .loading-logo {
   height: 70px;
@@ -3222,7 +3222,7 @@ a {
       height: 100%;
       width: 100%;
       overflow-y: auto;
-      padding-top: 125px !important; } }
+      padding-top: 133px !important; } }
   .location-drop li {
     padding: 0px 10px; }
   .location-drop .select-loaction-heading {
@@ -3265,7 +3265,7 @@ a {
     display: flex !important;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 7px 10px;
+    padding: 9px 10px 7px 10px;
     position: relative;
     z-index: 10 !important;
     cursor: pointer; }
