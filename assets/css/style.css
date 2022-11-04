@@ -2483,18 +2483,20 @@ a {
       margin-bottom: 0px !important; } }
   @media only screen and (max-width: 400px) {
     .menu-post-drop {
-      padding: 15px 15px !important; } }
+      padding: 12px 7px !important; } }
   .menu-post-drop .seprator {
     margin: 10px 0px !important; }
   .menu-post-drop .dropdown-item {
     padding: 13px 10px !important;
     font-size: 16px;
     font-weight: 400;
-    min-width: 380px; }
+    min-width: 100%; }
     .menu-post-drop .dropdown-item:hover {
       background-color: #EFF0F2 !important; }
     .menu-post-drop .dropdown-item .menu-date {
-      margin-left: auto; }
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto; }
       .menu-post-drop .dropdown-item .menu-date span {
         font-size: 14px !important; }
     .menu-post-drop .dropdown-item i {
