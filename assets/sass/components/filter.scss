@@ -20,10 +20,9 @@ padding-right: 0px !important;
 
         @media only screen and (max-width:991px){
             top: -6px;
-        right: 5px;
+        right: 7px;
         font-size: 8px;
-        height: 13px;
-        width: 13px;
+      
         }
     }
 }
@@ -464,4 +463,7 @@ padding-right: 0px !important;
 
     color: #0033cc;
 
+}
+.border-bottom-none{
+    border-bottom: 0px solid transparent !important;
 }

@@ -728,10 +728,8 @@ a {
     @media only screen and (max-width: 991px) {
       .filter-div .filter-number {
         top: -6px;
-        right: 5px;
-        font-size: 8px;
-        height: 13px;
-        width: 13px; } }
+        right: 7px;
+        font-size: 8px; } }
 
 .dropdown-filter-multile {
   border: 1px solid #DEE0E2;
@@ -1058,6 +1056,9 @@ a {
 
 .highlight {
   color: #0033cc; }
+
+.border-bottom-none {
+  border-bottom: 0px solid transparent !important; }
 
 .search-wrapper {
   display: none;
