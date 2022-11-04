@@ -713,6 +713,13 @@ a {
     align-items: center;
     border-radius: 3px;
     padding: 3px; }
+    @media only screen and (max-width: 991px) {
+      .filter-div .filter-number {
+        top: -7px;
+        right: -5px;
+        font-size: 8px;
+        height: 13px;
+        width: 13px; } }
 
 .dropdown-filter-multile {
   border: 1px solid #DEE0E2;
@@ -795,7 +802,7 @@ a {
 
 @media only screen and (max-width: 991px) {
   .right-menu {
-    display: block;
+    display: none;
     position: fixed;
     right: 0;
     left: auto;
@@ -1058,7 +1065,7 @@ a {
   background-color: white;
   padding: 15px 20px 30px 20px;
   border-radius: 6px;
-  min-height: 500px;
+  min-height: 90vh;
   max-height: 500px; }
   @media only screen and (max-width: 550px) {
     .search-wrapper {
@@ -1083,7 +1090,7 @@ a {
     .search-wrapper .search-input-inner input {
       height: 58px;
       background-color: white;
-      border: 2px solid #0093FF;
+      border: 2px solid #3366cc;
       border-radius: 4px;
       font-size: 20px;
       padding: 3px 55px;
@@ -1111,10 +1118,10 @@ a {
       display: none;
       height: 30px;
       width: auto;
-      fill: #0093FF; }
+      fill: #3366cc; }
       @media only screen and (max-width: 550px) {
         .search-wrapper .search-input-inner .send-icon {
-          height: 20px; } }
+          height: 27px; } }
     .search-wrapper .search-input-inner .send-icons {
       cursor: pointer;
       position: absolute;
@@ -1130,7 +1137,7 @@ a {
         .search-wrapper .search-input-inner .send-icons {
           width: 50px; } }
       .search-wrapper .search-input-inner .send-icons .mic-icon {
-        color: #0093FF; }
+        color: #3366cc; }
   .search-wrapper .search-results {
     display: none; }
     .search-wrapper .search-results a {
@@ -1180,7 +1187,7 @@ a {
       text-align: left; }
     .search-wrapper .other-searches .popular-search-tag {
       background-color: #EFF0F2;
-      color: #7A7A7A;
+      color: #555555;
       width: fit-content;
       display: flex;
       text-align: center;
@@ -1243,8 +1250,8 @@ a {
 
 .search-modal-dialog {
   max-width: 700px !important;
-  min-height: 500px;
-  max-height: 500px !important;
+  min-height: 90vh;
+  max-height: 90vh !important;
   overflow-y: auto; }
   @media only screen and (max-width: 550px) {
     .search-modal-dialog {
@@ -2363,7 +2370,7 @@ a {
       font-size: 16px !important; } }
 
 .offer-text {
-  color: #0093FF; }
+  color: #84C7FD; }
   @media only screen and (max-width: 991px) {
     .offer-text {
       display: none; } }
@@ -2434,7 +2441,7 @@ a {
 
 .offer-text-small {
   display: none !important;
-  color: #0093FF !important;
+  color: #84C7FD !important;
   line-height: 10px; }
   @media only screen and (max-width: 991px) {
     .offer-text-small {
@@ -2445,7 +2452,7 @@ a {
 
 .offer-text-dsktop {
   display: block !important;
-  color: #0033cc !important;
+  color: #0066cc !important;
   line-height: 10px; }
   @media only screen and (max-width: 991px) {
     .offer-text-dsktop {
@@ -2485,11 +2492,13 @@ a {
     padding: 13px 10px !important;
     font-size: 16px;
     font-weight: 400;
-    min-width: 260px; }
+    min-width: 380px; }
     .menu-post-drop .dropdown-item:hover {
       background-color: #EFF0F2 !important; }
     .menu-post-drop .dropdown-item .menu-date {
       margin-left: auto; }
+      .menu-post-drop .dropdown-item .menu-date span {
+        font-size: 14px !important; }
     .menu-post-drop .dropdown-item i {
       font-size: 16px;
       width: 15px; }
@@ -2543,7 +2552,7 @@ a {
       display: block; } }
 
 .classified-drop-desktop {
-  color: #0093FF !important; }
+  color: #003399 !important; }
   .classified-drop-desktop :hover {
     color: #0093FF !important; }
 
@@ -2586,6 +2595,8 @@ a {
   .classify-select-li .classify-select select {
     display: none;
     /*hide original SELECT element: */ }
+    .classify-select-li .classify-select select span {
+      color: #666666; }
   .classify-select-li .select-selected {
     background-color: white;
     width: 90% !important;
@@ -2631,7 +2642,7 @@ a {
 
 .select-Box-btn {
   background-color: transparent;
-  border: 2px solid #0093FF;
+  border: 1px solid #0093FF;
   font-size: 16px;
   color: #0093FF;
   font-weight: 500;
@@ -2783,7 +2794,8 @@ a {
   padding: 0px 12px !important; }
   @media only screen and (max-width: 550px) {
     .zones-right {
-      padding: 0px 0px !important; } }
+      padding: 0px 0px !important;
+      padding-bottom: 20px !important; } }
 
 .zones-right .zones-right-menu:hover {
   background-color: #EFF0F2 !important; }
@@ -3167,13 +3179,25 @@ a {
 
 .absolute-icon {
   position: absolute;
-  right: 20px;
+  right: 22px;
   top: 10px;
-  z-index: 1; }
+  padding-bottom: 0px; }
+
+.absolute-icon-close {
+  position: absolute;
+  right: 22px;
+  top: 5px;
+  border-bottom: 0px !important;
+  display: none; }
 
 .category-close {
   font-size: 25px !important;
-  margin-top: -5px; }
+  margin-top: 0px;
+  display: none; }
+
+.category-close i {
+  font-size: 25px !important;
+  margin-top: 0px; }
 
 .location-drop {
   border-radius: 3px !important;
@@ -3222,9 +3246,9 @@ a {
       border-radius: 3px;
       border: 2px solid #E2E2E2;
       padding: 8px 5px 8px 35px;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 400;
-      height: 48px; }
+      height: 55px; }
       .location-drop .location-input-div .location-input:focus {
         outline: none;
         box-shadow: none; }
@@ -3233,9 +3257,9 @@ a {
         box-shadow: none; }
     .location-drop .location-input-div .bi-search {
       position: absolute;
-      top: 12px;
+      top: 15px;
       left: 12px;
-      font-size: 16px; }
+      font-size: 18px; }
   .location-drop .current-location {
     background-color: #E0F2FE;
     display: flex !important;
@@ -3591,15 +3615,15 @@ a {
       color: #767676;
       margin-left: 5px; }
     .directory-card .directory-text .status p {
-      color: #aeadad;
+      color: #777777;
       font-size: 14px;
       font-weight: 400; }
       .directory-card .directory-text .status p a {
         color: #16367B;
-        font-size: 13px;
+        font-size: 15px;
         text-decoration: none !important; }
       .directory-card .directory-text .status p span {
-        color: #DEE0E2; }
+        color: #777777; }
   .directory-card .directory-icons {
     display: flex;
     justify-content: flex-end;
@@ -3795,13 +3819,14 @@ a {
   right: 0 !important;
   top: 0 !important;
   height: 400px !important;
-  padding: 13px 0px !important;
+  padding: 13px 25px !important;
   padding-top: 0px !important;
   overflow-y: scroll !important; }
   @media only screen and (max-width: 991px) {
     .dropdown-category-multiple.on .dropdown-list {
       height: 100% !important;
-      overflow-y: scroll !important; } }
+      overflow-y: scroll !important;
+      padding: 13px 10px !important; } }
   .dropdown-category-multiple.on .dropdown-list .dropdown-option {
     font-size: 16px !important;
     font-weight: 500 !important; }

@@ -465,7 +465,10 @@
                         onclick="openFilter()">
                         <!-- <i class="bi bi-filter-left f-30 me-1"></i> -->
                         <img src="assets/images/icons/filter.png" alt="" class="img-fluid me-1" height="20px" width="20px">
-                        <h2 class="f-16 w-500 text-dark m-0 p-0 filter-btn">Filters</h2>
+                        <h2 class="f-16 w-500 text-dark m-0 p-0 filter-btn pe-2">Filters</h2>
+                        <div class="filter-number">
+                            12
+                        </div>
                     </div>
 
                 </div>
@@ -742,7 +745,7 @@
 
                                         </li>
                                         <li class="d-flex justify-content-center align-items-center mt-3">
-                                            <button class="select-Box-btn mx-auto">Select</button>
+                                            <a href="zones.html"><button class="select-Box-btn mx-auto">Select</button></a>
                                         </li>
 
                                     </ul>
@@ -1033,7 +1036,10 @@
                                         id="arrow-toggle" data-control="checkbox-dropdown">
                                         <!-- <i class="bi bi-caret-up-fill absolute-icon"></i> -->
                                         <i class="bi bi-caret-down-fill custom-caret f-16 absolute-icon"></i>
-                                        <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
+                                        <div class="absolute-icon-close  category-close">
+                                            <i class=" far fa-times-circle f-16 "></i>
+                                        </div>
+                                        
                                         <div class="d-flex align-items-center w-100">
                                             <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
                                                 class="img-fluid me-1 categories-icon">
@@ -1169,7 +1175,9 @@
                                     <div class="dropdown-multiple   w-100  dropdown-category-multiple pt-2 categories-dropdown"
                                         data-control="checkbox-dropdown">
                                         <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
-                                        <i class="bi bi-x-circle f-16  category-close absolute-icon"></i>
+                                        <div class="absolute-icon-close  category-close">
+                                            <i class=" far fa-times-circle f-16 "></i>
+                                        </div>
                                         <div class="d-flex align-items-center w-100">
                                             <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
                                                 class="img-fluid me-1 categories-icon">
@@ -2404,7 +2412,7 @@
                 </div>
 
                 <!-- right menu-------------------------------------------============================= -->
-                <div class="col-lg-3 text-end bg-white  m-0 right-menu filter-side" id="right-menu">
+                <div class="col-lg-3 text-end bg-white  m-0 right-menu" id="right-menu">
                     <div
                         class="right-header d-flex justify-content-between align-items-center py-auto zones-right my-auto filter-desktop">
                         <div class="d-flex align-items-center filter-div">
@@ -3135,6 +3143,8 @@
                         <button class="select">Apply</button>
                     </div>
                 </div>
+            
+            </div>
     </main>
 
     <!-- footer ===================================================================================-->
@@ -3217,15 +3227,15 @@
                             </li>
                             <div class="seprator"></div>
                             <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                        class="fas fa-lightbulb me-4"></i>Last
-                                    Active
-                                    <div class="menu-date">12 Mar 22
+                                        class="fas fa-lightbulb me-4"></i>Last Active
+                                    <div class="menu-date">
+                                        2 days ago
+                                       <span  class="ms-2"> (12 Mar 22)</span>
                                     </div>
                                 </a></li>
                             <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                        class="fas fa-calendar-alt me-4"></i>Posting
-                                    Date <div class="menu-date">12 Mar
-                                        22</div></a></li>
+                                        class="fas fa-calendar-alt me-4"></i>Posting Date <div class="menu-date"> 11 months ago
+                                            <span  class="ms-2"> (12 Mar 22)</span></div></a></li>
                             <!-- <div class="seprator"></div>
                             <li class="text-center mx-auto more-option"><a
                                     class=" d-flex f-16 w-700 text-dark pt-2 pb-1" href="#">More Options</a></li> -->

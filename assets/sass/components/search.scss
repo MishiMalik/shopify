@@ -1,14 +1,10 @@
 .search-wrapper{
     display: none;
-    // position: absolute;
-    // top: 65px;
     background-color: white;
-    // left: 10px;
-    // right: 10px;
     padding:15px 20px 30px 20px;
     border-radius: 6px;
     // box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-min-height: 500px;
+min-height: 90vh;
 max-height: 500px;
 @media only screen and (max-width:550px){
     padding:0px 10px 30px 10px;
@@ -36,7 +32,7 @@ max-height: 500px;
         input{
             height: 58px;
             background-color: white;
-            border: 2px solid $navi-blue;
+            border: 2px solid #3366cc;
             border-radius: 4px;
             font-size: 20px;
             padding: 3px 55px;
@@ -68,9 +64,9 @@ max-height: 500px;
             display: none;
             height: 30px;
             width: auto;
-            fill:$navi-blue;
+            fill:#3366cc;
             @media only screen and (max-width:550px){
-                height: 20px;
+                height: 27px;
             }
         }
         .send-icons{
@@ -89,7 +85,7 @@ max-height: 500px;
             }
 
             .mic-icon{
-                color: $navi-blue;
+                color:#3366cc;;
             }
         }
     }
@@ -158,7 +154,7 @@ max-height: 500px;
         }
         &-tag{
           background-color: $light-gray2;
-          color: $text-gray;
+          color: #555555;
           width: fit-content;
           display: flex;
           text-align: center;
@@ -237,8 +233,8 @@ max-height: 500px;
 }
 .search-modal-dialog{
     max-width: 700px !important;
-    min-height: 500px;
-    max-height: 500px !important;
+    min-height: 90vh;
+    max-height: 90vh !important;
     overflow-y: auto;
     @media only screen and (max-width:550px){
         margin: 0px !important;

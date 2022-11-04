@@ -1488,7 +1488,7 @@
 }
 
 .offer-text {
-    color: $navi-blue;
+    color: #84C7FD;
 
     @media only screen and (max-width:991px) {
         display: none;
@@ -1577,7 +1577,7 @@
 
 .offer-text-small {
     display: none !important;
-    color: $navi-blue !important;
+    color: #84C7FD !important;
     line-height: 10px;
 
     @media only screen and (max-width:991px) {
@@ -1591,7 +1591,7 @@
 
 .offer-text-dsktop {
     display: block !important;
-    color: #0033cc !important;
+    color: #0066cc !important;
     line-height: 10px;
 
     @media only screen and (max-width:991px) {
@@ -1653,7 +1653,7 @@
         padding: 13px 10px !important;
         font-size: 16px;
         font-weight: 400;
-        min-width: 260px;
+        min-width: 380px;
 
         // @media only screen and (max-height:450px) {
         //     min-width: 240px;
@@ -1664,6 +1664,9 @@
 
         .menu-date {
             margin-left: auto;
+             span{
+                font-size: 14px !important;
+             }
         }
 
         i {
@@ -1774,7 +1777,7 @@
 }
 
 .classified-drop-desktop {
-    color: $navi-blue !important;
+    color: #003399 !important;
 
     :hover {
         color: $navi-blue !important;
@@ -1836,6 +1839,10 @@
     .classify-select select {
         display: none;
         /*hide original SELECT element: */
+
+        span{
+            color: #666666;
+        }
     }
 
     .select-selected {
@@ -1902,7 +1909,7 @@
 }
 .select-Box-btn{
     background-color: transparent;
-    border: 2px solid $navi-blue;
+    border: 1px solid $navi-blue;
     font-size: 16px;
     color: $navi-blue;
     font-weight: 500;

@@ -111,17 +111,18 @@
 
         .status {
             p {
-                color: $text-gray-light;
+                color: #777777;
                 font-size: 14px;
                 font-weight: 400;
 
                 a {
                     color: $primary;
-                    font-size: 13px;
+                    font-size: 15px;
                     text-decoration: none !important;
                 }
                 span{
-                    color: $light-gray;
+                    color: #777777;
+                   
                 }
             }
 
@@ -335,7 +336,6 @@
     transition: all .6s;
     // overflow-y: auto;
     max-height: 700px;
-
     >div {
         border-bottom: 2px solid $light-gray;
         padding-bottom: 6px;
@@ -381,13 +381,14 @@
     right: 0 !important;
     top: 0 !important;
     height: 400px !important;
-    padding: 13px 0px !important;
+    padding: 13px 25px !important;
     padding-top: 0px !important;
     overflow-y: scroll !important;
 
     @media only screen and (max-width:991px) {
         height: 100% !important;
         overflow-y: scroll !important;
+        padding: 13px 10px !important;
     }
 
     .dropdown-option {

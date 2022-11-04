@@ -222,10 +222,10 @@ window.onscroll = function() {
   var width = $(window).width();
   if (width < 991){
     $('.categories-dropdown').click(function() {
-       $('.bi-caret-down-fill').css('display','none');
-       $('.category-close').css('display','block')
+       $('.absolute-icon').css('display','none');
+       $('.absolute-icon-close').css('display','block');
+       $('.absolute-icon-close').css('z-index','10');
       $(this).css('position','fixed');
-      
       $(this).css('left','0');
       $(this).css('right','0');
       $(this).css('z-index','100');
@@ -237,12 +237,14 @@ window.onscroll = function() {
       // $(this).find('.accordion-collapse').addClass('show')
       $('.mobile-footer').css('z-index','0');
       $('#body').css('overflow-y','hidden');
-      $('.absolute-icon').css('z-index','10');
+      
     })
     $('.category-close').click(function(e) {
       e.stopPropagation();
-      $('.bi-x-circle').css('display','none');
-      $('.bi-caret-down-fill').css('display','block');
+      $(this).css('display','none');
+      $('.absolute-icon').css('display','block');
+       $('.absolute-icon-close').css('display','none');
+       $('.absolute-icon-close').css('z-index','-1');
       // $('.listing-accordian').removeClass('listing-accordian-small');
       $('.categories-dropdown').css('position','relative');
       $('.categories-dropdown').removeClass('on');
@@ -255,7 +257,7 @@ window.onscroll = function() {
       // $('body').css('overflow-y','auto');
       $(this).parents('.listing-accordian').find('.accordion-collapse').removeClass('show')
       $('#body').css('overflow-y','scroll');
-      $('.absolute-icon').css('z-index','1');
+     
     })
   };
 
@@ -453,7 +455,9 @@ document.addEventListener("click", closeAllSelect);
 
 function openFilter(){
   document.getElementById("right-filter").style.bottom= "0";
+  document.getElementById("right-menu").style.display = "block";
   document.getElementById("right-menu").style.top = "10%";
+ 
   document.getElementById("backdrop-filter").style.display="block"
   document.getElementById("fix-filter-btns").style.position="fixed"
   document.getElementById("body").style.overflowY="hidden";
@@ -463,6 +467,7 @@ function openFilter(){
 function closeFilter() {
   document.getElementById("right-menu").style.bottom = "-100%";
   document.getElementById("right-menu").style.top = "100%";
+  document.getElementById("right-menu").style.display = "none";
   document.getElementById("backdrop-filter").style.display="none"
   document.getElementById("fix-filter-btns").style.position="relative"
   document.getElementById("body").style.overflowY="auto";
