@@ -60,11 +60,12 @@
         padding: 0px 6px;
     }
 
-    
+
 
 }
 
 .desktop-light-header {
+
     // position: relative;
     @media only screen and (max-width:991px) {
         display: none;
@@ -1482,6 +1483,7 @@
     @media only screen and (max-width:991px) {
         display: none;
     }
+
     @media only screen and (max-width:676px) {
         font-size: 16px !important;
     }
@@ -1663,13 +1665,13 @@
         }
 
         .menu-date {
-          width: 100px;
-          margin-left: auto;
-          margin-right: auto;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
 
-             span{
+            span {
                 font-size: 14px !important;
-             }
+            }
         }
 
         i {
@@ -1795,10 +1797,11 @@
     @media only screen and (max-width:1100px) {
         margin-left: 10px;
     }
+
     @media only screen and (max-width:1024px) {
         margin-left: 2px;
     }
-   
+
 }
 
 .me-10 {
@@ -1807,10 +1810,11 @@
     @media only screen and (max-width:1100px) {
         margin-right: 10px;
     }
+
     @media only screen and (max-width:1024px) {
         margin-right: 5px;
     }
-   
+
 }
 
 
@@ -1836,14 +1840,14 @@
     /* The container must be positioned relative: */
     .classify-select {
         position: relative;
-        
+
     }
 
     .classify-select select {
         display: none;
         /*hide original SELECT element: */
 
-        span{
+        span {
             color: #666666;
         }
     }
@@ -1911,7 +1915,8 @@
     }
 
 }
-.select-Box-btn{
+
+.select-Box-btn {
     background-color: transparent;
     border: 2px solid #43a6eda1;
     font-size: 16px;
@@ -1921,7 +1926,7 @@
     border-radius: 5px;
     margin: 10px auto;
 
-    &:hover{
+    &:hover {
         background-color: $navi-blue;
         color: white;
     }

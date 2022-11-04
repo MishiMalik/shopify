@@ -9,6 +9,7 @@
     right: 0;
     height: 60px;
     transition: top 0.9s ease-in-out;
+
     @media only screen and (max-width:550px) {
         padding: 6px 0px 7px 0px;
     }
@@ -81,9 +82,9 @@
                 color: black;
                 // height: unset;
             }
-            
 
-            
+
+
             cursor: pointer;
         }
 
@@ -143,9 +144,10 @@
         @media only screen and (max-width:991px) {
             display: block;
         }
+
         @media only screen and (max-width:550px) {
-                font-size: 23px !important;
-                height: unset !important;
+            font-size: 23px !important;
+            height: unset !important;
         }
     }
 
@@ -155,7 +157,7 @@
         @media only screen and (max-width:991px) {
             display: none;
         }
-      
+
     }
 
     .bi-search {
@@ -164,10 +166,11 @@
         @media only screen and (max-width:991px) {
             display: block;
         }
+
         @media only screen and (max-width:550px) {
             font-size: 23px !important;
             height: unset !important;
-    }
+        }
     }
 
     .fa-search {
@@ -238,6 +241,6 @@
 }
 
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
     margin-left: 0px !important;
 }

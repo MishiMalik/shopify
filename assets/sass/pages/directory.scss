@@ -120,9 +120,10 @@
                     font-size: 15px;
                     text-decoration: none !important;
                 }
-                span{
+
+                span {
                     color: #777777;
-                   
+
                 }
             }
 
@@ -210,9 +211,11 @@
 
     }
 }
-.follow-directory{
+
+.follow-directory {
     cursor: pointer;
 }
+
 .follow-directory-icon {
     display: none;
 }
@@ -336,6 +339,7 @@
     transition: all .6s;
     // overflow-y: auto;
     max-height: 700px;
+
     >div {
         border-bottom: 2px solid $light-gray;
         padding-bottom: 6px;
@@ -425,7 +429,8 @@
     z-index: 3;
 
 }
-.zones-right-filter-padding{
+
+.zones-right-filter-padding {
     padding: 0px 12px;
 }
 
@@ -459,6 +464,7 @@
 .dropdown-multiple-mobile .dropdown-label {
     text-align: center !important;
 }
+
 // .zones-right-filter{
 //     display: none;
 // }
