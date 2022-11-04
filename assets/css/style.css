@@ -2606,7 +2606,8 @@ a {
     border: 1px solid #B2B2B2 !important;
     border-radius: 3px;
     font-size: 18px !important;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #333333 !important; }
   .classify-select-li .select-selected:after {
     position: absolute;
     content: "";
