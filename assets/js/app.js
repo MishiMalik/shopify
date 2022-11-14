@@ -1,4 +1,15 @@
-
+$('.read-more').on('click',function(){
+  $(this).css('display','none');
+  $(this).siblings('.more-review').css('display','inline');
+  $(this).siblings('.dots').css('display','none');
+  $(this).siblings('.read-less').css('display','inline');
+ })
+ $('.read-less').on('click',function(){
+  $(this).css('display','none');
+  $(this).siblings('.more-review').css('display','none');
+  $(this).siblings('.dots').css('display','inline');
+  $(this).siblings('.read-more').css('display','inline');
+ }) 
 
 //============================================================open left menu tabs
 function leftMenu(evt, cityName) {
@@ -62,7 +73,7 @@ $(function() {
           items:1.5
         },
         347:{
-          items:2.3,
+          items:2.1,
         },
         500:{
           items:2.5,
@@ -79,6 +90,55 @@ $(function() {
         },
         1360:{
             items:3.3,
+          
+        }
+    }
+    });
+
+});
+
+
+//==================================================================================post offer slider
+$(function() {
+
+  $('.owl-member-slider')
+    // .each(function() {
+    //   let carousel = $(this);
+    //   carousel.on('show.bs.dropdown', '[data-bs-toggle=dropdown]', function() {
+    //     let dropdown = bootstrap.Dropdown.getInstance(this);
+    //     $(dropdown._menu).insertAfter(carousel);
+    //   });
+    // })
+    .owlCarousel({
+      loop:true,
+      margin:10,
+      dots:false,
+      responsive:{
+        
+        0:{
+          items:1.8,
+        },
+        330:{
+          items:1.5
+        },
+        347:{
+          items:2.3,
+        },
+        500:{
+          items:2.5,
+      },
+        767:{
+            items:4.2,
+        },
+        992:{
+          items:2.7,
+        },
+        1200:{
+          items:2.3,
+          
+        },
+        1360:{
+            items:2.3,
           
         }
     }
@@ -176,7 +236,7 @@ $('.like').on('click', function() {
   $(this).addClass('fill');
   $(this).removeClass('like');
 })
-var prevScrollpos = window.pageYOffset;
+
 
 
 
@@ -203,7 +263,7 @@ function topFunction() {
 
 
 // =====================================================================move header smoothly on small screen
-
+var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   // scrollFunction()
   var currentScrollPos = window.pageYOffset ;
@@ -546,7 +606,7 @@ $( 'input[type="checkbox' ).on( 'click', function () {
   $(this).parent().toggleClass( 'highlight', this.checked );
 });
 
-// =================================================================write in input/show location
+// =================================================================show location
 $('.location-input').keyup(function(){
   if($(this).val().length){
   $('.find-locations').css('display','block');
@@ -618,18 +678,12 @@ $('.back-dist').on('click',function(){
 
 
 
-$(document).on('click', function() {
-  $('.location-input').val('');
-  $('.find-locations').css('display','none');
-  $('.locations-items').css('display','block');
-  $('.all-india-distt').css('display','none');
-})
 
 
 
 
 
-// ==========================quich-search
+// ==========================================================quich-search
 $('.quick-search').on('click',function(){
    $('.search-wrapper').css('display','block');
    $('body').css('overflow-y','hidden');
@@ -668,3 +722,44 @@ $('.search-input').keyup(function(){
   $('.suggestion-search').css('display','none');
 }
 });
+
+
+// ==================================================show more and less button
+function moreLess() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+// function moreLess() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more-review");
+//   var btnText = document.getElementById("myBtn-review");
+
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
+
+
+// ===============================================================close curent tab
+function close_window() {
+  // if (confirm("Close Window?")) {
+    close();
+  // }
+}

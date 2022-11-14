@@ -119,3 +119,150 @@ a {
         font-size: 16px;
     }
 }
+
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: "";
+        //   width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    >img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// @mixin aspect-ratio-1($width, $height) {
+//     position: relative;
+
+//     &:before {
+//         display: block;
+//         content: "";
+//         //   width: 100%;
+//         padding-top: ($height / $width) * 100%;
+//     }
+
+//     >img {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+.carousel__slide-1 {
+    position: relative;
+    display: block;
+    flex: 1 0 100%;
+    width: 100%;
+    height: width;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    box-sizing: border-box;
+    white-space: normal;
+
+
+    figure {
+        display: flex;
+        margin: 0;
+
+        @media only screen and (max-width: 7479px) {
+            justify-content: center;
+        }
+    }
+
+    div {
+        width: 100%;
+        @include aspect-ratio(4, 5);
+        overflow: hidden;
+
+        @media only screen and (max-width: 7479px) {
+            width: 100%;
+        }
+    }
+
+    img {
+        display: block;
+        flex: 1 1 auto;
+        object-fit: cover;
+    }
+
+    .credit {
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.5);
+        display: block;
+    }
+
+    &.scrollable {
+        overflow-y: scroll;
+    }
+}
+
+.carousel__slide {
+    position: relative;
+    display: block;
+    flex: 1 0 100%;
+    width: 100%;
+    height: width;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    box-sizing: border-box;
+    white-space: normal;
+
+
+    figure {
+        display: flex;
+        margin: 0;
+
+        @media only screen and (max-width: 7479px) {
+            justify-content: center;
+        }
+    }
+
+    div {
+        width: 100%;
+        @include aspect-ratio(4, 4);
+        overflow: hidden;
+
+        @media only screen and (max-width: 7479px) {
+            width: 100%;
+        }
+    }
+
+    img {
+        display: block;
+        flex: 1 1 auto;
+        object-fit: cover;
+    }
+
+    .credit {
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.5);
+        display: block;
+    }
+
+    &.scrollable {
+        overflow-y: scroll;
+    }
+}
+.sm-padding{
+   @media only screen and (max-width:479px){
+    padding: 0px !important;
+   }
+}
+.p-relative{
+    position: relative;
+}

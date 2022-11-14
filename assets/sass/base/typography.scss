@@ -19,7 +19,8 @@ $dark-orange:#993300;
 $text-gray:#7A7A7A;
 $text-gray-light:#aeadad;
 $active-blue:#003399;
-
+$text-dark-gray:#666666;
+$text-dark-gray2:#999999;
 // fonts===========================================================
 .f-40 {
     font-size: 40px;
@@ -169,4 +170,16 @@ $active-blue:#003399;
 
 .text-pro{
     color: #0066cc;
+}
+.text-dark-gray{
+    color: $text-dark-gray;
+}
+.text-dark-gray2{
+    color: $text-dark-gray2;
+}
+.text-gray-light{
+    color: $text-gray-light;;
+}
+.text-red{
+    color: $red !important;
 }

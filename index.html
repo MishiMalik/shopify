@@ -93,7 +93,7 @@
                             <p class="chats-num m-0 p-0">2</p>
                         </div>
                         <div class="header-menu">
-                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                            <a href="post.html"  target="_blank" class="d-flex flex-column align-items-center justify-content-center">
                                 <i class="bi bi-plus-circle"></i>
                                 <p class="f-12  w-400 pb-0 mb-0">Post</p>
                             </a>
@@ -415,8 +415,7 @@
                     </div>
 
                     <div id="my-account" class="tabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
+                        <a href="my-profile.html" class="text-dark f-22">My Account</a>
                     </div>
 
                 </div>
@@ -1074,11 +1073,13 @@
                         <div id="Image" class="Feedcontent">
                             <div class="row post mt-2">
                                 <div class="col-lg-12">
-                                    <div class="image-card">
+                                    <div class="image-card ">
                                         <div class="image-card-img mx-auto">
                                             <span class="f-13 text-gray">Sponsored</span>
-                                            <img src="assets/images/ab1.jpg" alt="" class="img-fluid">
-                                            <div class="listing-badges-image">
+                                            <img src="assets/images/ab1.jpg" alt="" class="img-fluid"
+                                                onclick="window.open('offer-details.html', '_blank');">
+                                            <div class="listing-badges-image "
+                                                onclick="window.open('offer-details.html', '_blank');">
                                                 <span class="featured-img">
                                                     Featured
                                                 </span>
@@ -1089,23 +1090,28 @@
                                                 Follow</button>
                                         </div>
                                         <div class="image-card-text">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">Brand1 New</h2>
-                                                <div class="rating">
-                                                    <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                    <i class="bi bi-star-fill ms-1 f-12"></i>
+                                            <div onclick="window.open('offer-details.html', '_blank');">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h2 class="f-20 w-600 brand-blue my-0 py-0">Brand1 New</h2>
+                                                    <div class="rating">
+                                                        <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                                        <i class="bi bi-star-fill ms-1 f-12"></i>
+                                                    </div>
                                                 </div>
+                                                <p
+                                                    class="mb-0 pb-0 ellipsis f-16 w-500 light-dark mt-1 mb-1 text-left ">
+                                                    Lorem
+                                                    ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+                                                    adipisicing elit. Dicta, libero!</p>
+                                                <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
+                                                        class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
                                             </div>
-                                            <p class="mb-0 pb-0 ellipsis f-16 w-500 light-dark mt-1 mb-1 text-left ">
-                                                Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
+
                                             <div class="seprator"></div>
                                             <div
                                                 class="d-flex justify-content-between align-items-center image-icons-row">
-                                                <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center"
+                                                    onclick="window.open('member-profile.html', '_blank');">
                                                     <div class="image-dp">
                                                         <img src="assets/images/image 224.png" alt=""
                                                             class="img-fluid me-1">
@@ -1140,326 +1146,12 @@
                                                     <button class="selected-btn d-none">
                                                         Selected</button>
 
-                                                    <!--3 dot post view on desktop-screen -->
-                                                    <!-- <div class="dropdown">
-                                                        <button class="menu-post" type="button" id="dropdownMenuButton1"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i
-                                                                class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots"></i>
-                                                        </button>
-                                                        <ul class="dropdown-menu menu-post-drop"
-                                                            aria-labelledby="dropdownMenuButton1">
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-share me-4"></i>Share this
-                                                                    post</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-link me-4"></i>Copy Link</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-concierge-bell me-4"></i>Alert
-                                                                    Similar Posts</a></li>
-                                                            <div class="seprator"></div>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-user-times me-4"></i>Unfollow
-                                                                    Jerry</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-eye-slash me-4"></i>Hide Post</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-minus-circle me-4"></i>Show Less
-                                                                    Such posts</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-flag me-4"></i>Report post</a>
-                                                            </li>
-                                                            <div class="seprator"></div>
-                                                            <li><a class="dropdown-item d-flex close-menu-drop"
-                                                                    href="#"><i class="fas fa-lightbulb me-4 "></i>Last
-                                                                    Active
-                                                                    <div class="menu-date ">12 Mar 22</div>
-                                                                </a></li>
-                                                            <li><a class="dropdown-item d-flex close-menu-drop"
-                                                                    href="#"><i
-                                                                        class="fas fa-calendar-alt me-4"></i>Posting
-                                                                    Date <div class="menu-date ">12 Mar 22</div></a>
-                                                            </li>
-                                                            <div class="seprator"></div>
-                                                            <li class="more-option"><a
-                                                                    class="d-flex f-16 w-700 text-center pt-2 pb-1"
-                                                                    href="#">More Options</a></li>
-
-                                                        </ul>
-                                                    </div> -->
 
                                                     <!--3 dot post view on small-screen -->
 
                                                     <button class="menu-post" type="button" id="dropdownMenuButton1"
                                                         data-bs-toggle="modal" data-bs-target="#dots-menu-post">
                                                         <i class="bi bi-three-dots-vertical f-25 w-500"></i>
-                                                    </button>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="seprator"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row post mt-2">
-                                <div class="col-lg-12">
-                                    <div class="image-card">
-                                        <div class="image-card-img mx-auto">
-                                            <span class="f-13 text-gray">Sponsored</span>
-                                            <img src="assets/images/ab1.jpg" alt="" class="img-fluid">
-                                            <div class="listing-badges-image">
-                                                <span class="featured-img">
-                                                    Featured
-                                                </span>
-                                            </div>
-                                            <!-- follow btn -->
-                                            <button class="follow-btn follow-person-icon"><i
-                                                    class="bi bi-person-plus-fill me-1"></i>
-                                                Follow</button>
-                                        </div>
-                                        <div class="image-card-text">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">Brand1 New</h2>
-                                                <div class="rating">
-                                                    <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                    <i class="bi bi-star-fill ms-1 f-12"></i>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 pb-0 ellipsis f-16 w-500 light-dark mt-1 mb-1 text-left ">
-                                                Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div
-                                                class="d-flex justify-content-between align-items-center image-icons-row">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="image-dp">
-                                                        <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-1">
-                                                    </div>
-                                                    <p
-                                                        class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
-                                                        Jerry
-                                                        Varghese</p>
-                                                    <div class="d-flex align-items-center">
-                                                        <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                            class="follow-icons ms-1">
-                                                        <!-- follow icon -->
-                                                        <i
-                                                            class="bi bi-person-fill f-14 follow-text follow-icon d-none"></i>
-                                                    </div>
-
-                                                </div>
-                                                <div class="d-flex align-items-center image-icons">
-                                                    <!-- <i class="far fa-heart f-22 "></i> -->
-
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="like" width="23"
-                                                        height="23" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" class="feather feather-heart">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <button class="select-btn "><i
-                                                            class="bi bi-check2-square w-600"></i>
-                                                        Select</button>
-                                                    <button class="selected-btn d-none">
-                                                        Selected</button>
-
-                                                    <!--3 dot post view on desktop-screen -->
-                                                    <!-- <div class="dropdown">
-                                                        <button class="menu-post" type="button" id="dropdownMenuButton1"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i
-                                                                class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots"></i>
-                                                        </button>
-                                                        <ul class="dropdown-menu menu-post-drop"
-                                                            aria-labelledby="dropdownMenuButton1">
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-share me-4"></i>Share this
-                                                                    post</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-link me-4"></i>Copy Link</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-concierge-bell me-4"></i>Alert
-                                                                    Similar Posts</a></li>
-                                                            <div class="seprator"></div>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-user-times me-4"></i>Unfollow
-                                                                    Jerry</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-eye-slash me-4"></i>Hide Post</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-minus-circle me-4"></i>Show Less
-                                                                    Such posts</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-flag me-4"></i>Report post</a>
-                                                            </li>
-                                                            <div class="seprator"></div>
-                                                            <li><a class="dropdown-item d-flex close-menu-drop"
-                                                                    href="#"><i class="fas fa-lightbulb me-4 "></i>Last
-                                                                    Active
-                                                                    <div class="menu-date ">12 Mar 22</div>
-                                                                </a></li>
-                                                            <li><a class="dropdown-item d-flex close-menu-drop"
-                                                                    href="#"><i
-                                                                        class="fas fa-calendar-alt me-4"></i>Posting
-                                                                    Date <div class="menu-date ">12 Mar 22</div></a>
-                                                            </li>
-                                                            <div class="seprator"></div>
-                                                            <li class="more-option"><a
-                                                                    class="d-flex f-16 w-700 text-center pt-2 pb-1"
-                                                                    href="#">More Options</a></li>
-
-                                                        </ul>
-                                                    </div> -->
-
-                                                    <!--3 dot post view on small-screen -->
-
-                                                    <button class="menu-post" type="button" id="dropdownMenuButton1"
-                                                        data-bs-toggle="modal" data-bs-target="#dots-menu-post">
-                                                        <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
-                                                    </button>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="seprator"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row post mt-2">
-                                <div class="col-lg-12">
-                                    <div class="image-card">
-                                        <div class="image-card-img mx-auto">
-                                            <span class="f-13 text-gray">Sponsored</span>
-                                            <img src="assets/images/ab1.jpg" alt="" class="img-fluid">
-                                            <div class="listing-badges-image">
-                                                <span class="featured-img">
-                                                    Featured
-                                                </span>
-                                            </div>
-                                            <!-- follow btn -->
-                                            <button class="follow-btn follow-person-icon"><i
-                                                    class="bi bi-person-plus-fill me-1"></i>
-                                                Follow</button>
-                                        </div>
-                                        <div class="image-card-text">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">Brand1 New</h2>
-                                                <div class="rating">
-                                                    <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                    <i class="bi bi-star-fill ms-1 f-12"></i>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 pb-0 ellipsis f-16 w-500 light-dark mt-1 mb-1 text-left ">
-                                                Lorem
-                                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
-                                                adipisicing elit. Dicta, libero!</p>
-                                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i
-                                                    class="bi bi-geo-alt me-1"></i>Area Name, Distt</p>
-                                            <div class="seprator"></div>
-                                            <div
-                                                class="d-flex justify-content-between align-items-center image-icons-row">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="image-dp">
-                                                        <img src="assets/images/image 224.png" alt=""
-                                                            class="img-fluid me-1">
-                                                    </div>
-                                                    <p
-                                                        class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
-                                                        Jerry
-                                                        Varghese</p>
-                                                    <div class="d-flex align-items-center">
-                                                        <img src="assets/images/icons/PRO Membership.png" alt=""
-                                                            class="follow-icons ms-1">
-                                                        <!-- follow icon -->
-                                                        <i
-                                                            class="bi bi-person-fill f-14 follow-text follow-icon d-none"></i>
-                                                    </div>
-
-                                                </div>
-                                                <div class="d-flex align-items-center image-icons">
-                                                    <!-- <i class="far fa-heart f-22 "></i> -->
-
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="like" width="23"
-                                                        height="23" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" class="feather feather-heart">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <button class="select-btn "><i
-                                                            class="bi bi-check2-square w-600"></i>
-                                                        Select</button>
-                                                    <button class="selected-btn d-none">
-                                                        Selected</button>
-
-                                                    <!--3 dot post view on desktop-screen -->
-                                                    <!-- <div class="dropdown">
-                                                        <button class="menu-post" type="button" id="dropdownMenuButton1"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i
-                                                                class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots"></i>
-                                                        </button>
-                                                        <ul class="dropdown-menu menu-post-drop"
-                                                            aria-labelledby="dropdownMenuButton1">
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-share me-4"></i>Share this
-                                                                    post</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-link me-4"></i>Copy Link</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-concierge-bell me-4"></i>Alert
-                                                                    Similar Posts</a></li>
-                                                            <div class="seprator"></div>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-user-times me-4"></i>Unfollow
-                                                                    Jerry</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-eye-slash me-4"></i>Hide Post</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-minus-circle me-4"></i>Show Less
-                                                                    Such posts</a></li>
-                                                            <li><a class="dropdown-item" href="#"><i
-                                                                        class="fas fa-flag me-4"></i>Report post</a>
-                                                            </li>
-                                                            <div class="seprator"></div>
-                                                            <li><a class="dropdown-item d-flex close-menu-drop"
-                                                                    href="#"><i class="fas fa-lightbulb me-4 "></i>Last
-                                                                    Active
-                                                                    <div class="menu-date ">12 Mar 22</div>
-                                                                </a></li>
-                                                            <li><a class="dropdown-item d-flex close-menu-drop"
-                                                                    href="#"><i
-                                                                        class="fas fa-calendar-alt me-4"></i>Posting
-                                                                    Date <div class="menu-date ">12 Mar 22</div></a>
-                                                            </li>
-                                                            <div class="seprator"></div>
-                                                            <li class="more-option"><a
-                                                                    class="d-flex f-16 w-700 text-center pt-2 pb-1"
-                                                                    href="#">More Options</a></li>
-
-                                                        </ul>
-                                                    </div> -->
-
-                                                    <!--3 dot post view on small-screen -->
-
-                                                    <button class="menu-post" type="button" id="dropdownMenuButton1"
-                                                        data-bs-toggle="modal" data-bs-target="#dots-menu-post">
-                                                        <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
                                                     </button>
 
 
@@ -1720,56 +1412,7 @@
                                                     Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
-                                                <!--3 dot post view on desktop-screen -->
-                                                <!-- <div class="dropdown">
-                                                    <button class="menu-post" type="button" id="dropdownMenuButton1"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i
-                                                            class="bi bi-three-dots-vertical f-25 w-500 desktop-menu-dots"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu menu-post-drop"
-                                                        aria-labelledby="dropdownMenuButton1">
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-share me-4"></i>Share this
-                                                                post</a></li>
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-link me-4"></i>Copy Link</a></li>
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-concierge-bell me-4"></i>Alert
-                                                                Similar Posts</a></li>
-                                                        <div class="seprator"></div>
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-user-times me-4"></i>Unfollow
-                                                                Jerry</a></li>
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-eye-slash me-4"></i>Hide Post</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-minus-circle me-4"></i>Show Less
-                                                                Such posts</a></li>
-                                                        <li><a class="dropdown-item" href="#"><i
-                                                                    class="fas fa-flag me-4"></i>Report post</a>
-                                                        </li>
-                                                        <div class="seprator"></div>
-                                                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                                                    class="fas fa-lightbulb me-4 "></i>Last
-                                                                Active
-                                                                <div class="menu-date ">12 Mar 22</div>
-                                                            </a></li>
-                                                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                                                    class="fas fa-calendar-alt me-4"></i>Posting
-                                                                Date <div class="menu-date ">12 Mar 22</div></a>
-                                                        </li>
-                                                        <div class="seprator"></div>
-                                                        <li class="more-option"><a
-                                                                class="d-flex f-16 w-700 text-center pt-2 pb-1"
-                                                                href="#">More Options</a></li>
-
-                                                    </ul>
-                                                </div> -->
-
-                                                <!--3 dot post view on small-screen -->
-
+                                                
                                                 <button class="menu-post" type="button" id="dropdownMenuButton1"
                                                     data-bs-toggle="modal" data-bs-target="#dots-menu-post">
                                                     <i class="bi bi-three-dots-vertical f-25 w-500 "></i>

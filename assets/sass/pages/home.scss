@@ -5,7 +5,8 @@
     left: 0;
     top: 60px;
     padding: 0 !important;
-    z-index: 1;
+    z-index: 1; 
+    overflow-x: hidden;
 
 
     @media only screen and (max-width:991px) {
@@ -48,8 +49,6 @@
     left: 0;
     z-index: 90;
     transition: top 4s ease-in-out;
-
-
 
     @media only screen and (max-width:991px) {
         top: 99px;
@@ -498,12 +497,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        height: 300px;
+        height: auto;
         width: 300px;
         margin-bottom: 10px;
 
         @media only screen and (max-width:330px) {
-            height: 260px;
+            height: auto;
             width: 260px;
         }
 
@@ -628,34 +627,32 @@
 }
 
 .view-btn {
-    padding: 0px 3px;
+    padding: 3px 10px;
     border: 2px solid $dark-orange;
     border-radius: 3px;
-    color: #003399;
+    color: $red;
     background-color: #fff3ec;
     font-weight: 700;
     text-align: center;
     font-size: 20px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    width: 200px;
 
-    @media only screen and (max-width:450px) {
-        width: 155px !important;
-        height: 45px;
-        padding: 0px;
-        margin: 0px 3px !important;
-    }
+    // @media only screen and (max-width:450px) {
+    //     width: 155px !important;
+    //     height: 45px;
+    //     padding: 0px;
+    //     margin: 0px 3px !important;
+    // }
 
-    @media only screen and (max-width:330px) {
-        width: 145px !important;
-        height: 45px;
-        padding: 0px;
-        margin: 0px 3px !important;
-    }
+    // @media only screen and (max-width:330px) {
+    //     width: 145px !important;
+    //     height: 45px;
+    //     padding: 0px;
+    //     margin: 0px 3px !important;
+    // }
 }
 
 .select-btn {
@@ -908,14 +905,14 @@
 }
 
 .ellipsis-multiple {
-    text-overflow: ellipsis;
-    overflow: hidden;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
     // Addition lines for 2 line or multiline ellipsis
     display: -webkit-box !important;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    white-space: normal;
-    text-align: left;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    white-space: normal !important;
+    text-align: left !important;
 }
 
 .rating-2 {
@@ -979,143 +976,7 @@
 
 }
 
-@mixin aspect-ratio($width, $height) {
-    position: relative;
 
-    &:before {
-        display: block;
-        content: "";
-        //   width: 100%;
-        padding-top: ($height / $width) * 100%;
-    }
-
-    >img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@mixin aspect-ratio-1($width, $height) {
-    position: relative;
-
-    &:before {
-        display: block;
-        content: "";
-        //   width: 100%;
-        padding-top: ($height / $width) * 100%;
-    }
-
-    >img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.carousel__slide-1 {
-    position: relative;
-    display: block;
-    flex: 1 0 100%;
-    width: 100%;
-    height: width;
-    overflow: hidden;
-    transition: all 200ms ease-out;
-    box-sizing: border-box;
-    white-space: normal;
-
-
-    figure {
-        display: flex;
-        margin: 0;
-
-        @media only screen and (max-width: 7479px) {
-            justify-content: center;
-        }
-    }
-
-    div {
-        width: 100%;
-        @include aspect-ratio(4, 5);
-        overflow: hidden;
-
-        @media only screen and (max-width: 7479px) {
-            width: 100%;
-        }
-    }
-
-    img {
-        display: block;
-        flex: 1 1 auto;
-        object-fit: cover;
-    }
-
-    .credit {
-        margin-top: 1rem;
-        color: rgba(0, 0, 0, 0.5);
-        display: block;
-    }
-
-    &.scrollable {
-        overflow-y: scroll;
-    }
-}
-
-.carousel__slide {
-    position: relative;
-    display: block;
-    flex: 1 0 100%;
-    width: 100%;
-    height: width;
-    overflow: hidden;
-    transition: all 200ms ease-out;
-    box-sizing: border-box;
-    white-space: normal;
-
-
-    figure {
-        display: flex;
-        margin: 0;
-
-        @media only screen and (max-width: 7479px) {
-            justify-content: center;
-        }
-    }
-
-    div {
-        width: 100%;
-        @include aspect-ratio(4, 4);
-        overflow: hidden;
-
-        @media only screen and (max-width: 7479px) {
-            width: 100%;
-        }
-    }
-
-    img {
-        display: block;
-        flex: 1 1 auto;
-        object-fit: cover;
-    }
-
-    .credit {
-        margin-top: 1rem;
-        color: rgba(0, 0, 0, 0.5);
-        display: block;
-    }
-
-    &.scrollable {
-        overflow-y: scroll;
-    }
-}
 
 .grid-card {
     padding: 2px;
@@ -1860,9 +1721,10 @@
         padding: 3px 15px !important;
         border: 1px solid #B2B2B2 !important;
         border-radius: 3px;
-        font-size: 18px !important;
+        font-size: 16px !important;
         font-weight: 500;
         color: $light-dark !important;
+        color: $light-dark;
     }
 
     /* Style the arrow inside the select element: */

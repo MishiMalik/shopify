@@ -14,7 +14,18 @@
         padding: 6px 0px 7px 0px;
     }
 }
-
+.header-new-tab{
+    @media only screen and (max-width:991px) {
+       height: 54px;
+       padding-top: 4px;
+    }
+}
+.new-member-header-sm{
+    display: none !important;
+    @media only screen and (max-width:991px) {
+        display:flex !important;
+     }
+}
 // .nav-up {
 //     top: -40px; // same as header height. use variables in LESS/SASS
 //   }

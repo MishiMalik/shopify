@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/grid-gallery/css/grid-gallery.min.css">
+    <link rel="stylesheet" href="assets/grid-gallery/css/grid-gallery.css">
+    <title>Zones</title>
+</head>
+
+<body id="body " class="pb-0">
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container ">
+            <div class="row header-new-tab">
+                <div class="col-lg-6 mx-auto mt-2 my-auto">
+                    <div class="d-flex align-items-center w-100 justify-content-between ">
+
+                        <div class="d-flex  align-items-center justify-content-between">
+                            <i class="bi bi-x-circle text-white f-22 w-500 me-2" onclick="close_window();"></i>
+                            <h1 class="text-white f-20 m-0 p-0">Jerry s' Profile</h1>
+                        </div>
+                     
+                    </div>
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="main-header small-main-header" id="light-header">
+            <div class="text-start d-flex align-items-center w-100">
+                <div>
+                    <h1 class="form-light-heading m-0 p-0">Cover Photo and Video are <a href=""
+                            class="ps-1">PRO Features</a></h1>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <div class="container h-100 ">
+            <div class="row h-100 main-row">
+
+                <!-- main area========================================= -->
+                <div class="col-lg-6 col-md-8  col-md-12 text-center center-part mx-auto" id="center">
+                    <div class="main-header desktop-light-header " id="light-header">
+                        <div class="text-start d-flex align-items-center w-100">
+                            <div>
+                                <h1 class="form-light-heading m-0 p-0">Cover Photo and Video are <a href=""
+                                        class="ps-1">PRO Features</a></h1>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container-fluid ">
+                        <div class=" px-0 py-0">
+
+                            <div class="post row sm-padding pb-50">
+
+                                <div class="d-flex flex-column align-items-start text-center sm-padding wallpaper-div">
+                                    <div class="member-profile-wallpaper sm-padding p-relative">
+                                        <img class="edit-img profile-large img-fluid "
+                                            src="assets/images/placeholder-image3.jpg" id="wallpaper-output" />
+                                        <p class="mb-0"><input type="file" accept="image/*" name="image" id="file1"
+                                                onchange="loadwallpaper(event)" style="display: none;"></p>
+                                       <div class="remove-img">
+                                        <i class="bi bi-x-circle"></i>
+                                       </div> 
+                                    </div>
+                                    <button class="upload-btn" type="file"><label for="file1" style="cursor: pointer;"
+                                            class="upload-img-btn ">Upload</label></button>
+                                    <p class="mb-0 pb-0 text-start text-light-gray mt-2 f-16 size-text">475 x 240px jpg(300kb max)
+                                    </p>
+                                </div>
+
+
+                                <div class="member-profile-video  w-100 d-flex flex-column">
+                                    <div class="video-thumbnail ms-auto p-relative">
+                                        <img class="edit-img profile-large img-fluid video-thumbnail-img"
+                                            src="assets/images/Video Dummy.jpg" id="video-output" />
+                                        <p class="mb-0"><input type="file" accept="image/*" name="image" id="file2"
+                                                onchange="loadvideo(event)" style="display: none;"></p>
+                                        <p class="mb-0 pb-0 text-center text-light-gray mt-2 f-16 size-text">MP4, 2 minute / 24
+                                            max
+                                        </p>
+                                        <button class="upload-vieo-btn " type="file"><label for="file2"
+                                                style="cursor: pointer;" class="upload-img-btn ">Upload
+                                                </label>
+                                        </button>
+                                        <div class="remove-img2">
+                                            <i class="bi bi-x-circle"></i>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="row post mt-2">
+                                <div class="d-flex pb-2 align-items-start">
+                                    <div class="member-profile-dp-div p-relative">
+                                        <img class="edit-img member-profile-dp img-fluid  mx-auto"
+                                        src="assets/images/Profile pic dummy.jpg" id="dp-output" />
+                                        <p class="mb-0"><input type="file" accept="image/*" name="image" id="file3"
+                                            onchange="loaddp(event)" style="display: none;"></p>
+                                    <button class="upload-vieo-btn mt-3" type="file"><label for="file3"
+                                                style="cursor: pointer;" class="upload-img-btn ">Upload
+                                              </label>
+                                        </button>
+                                        <div class="remove-img3">
+                                            <i class="bi bi-x-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div class="member-profile-detail">
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-2">
+                                                <input type="text" placeholder="First Name" class="form-input form-input-border w-100">
+                                            </div>
+                                            <div class="col-lg-6 mb-2">
+                                                <input type="text" placeholder="First Name" class="form-input form-input-border w-100">
+                                            </div>
+                                            <div class="col-lg-12 mb-2">
+                                                <input type="text" placeholder="First Name" class="form-input form-input-border w-100">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center pro-heading mt-2">
+                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                class="img-fluid me-2">
+                                            <h1 class="mb-0 pb-0">Pro Member</h1>
+                                        </div>
+
+                                        <!-- <div class="d-flex align-items-center  ps-1 mt-2">
+                                            <button class="follow-btn-member">
+                                                <i class="bi bi-person-plus-fill me-1"></i>Follow
+                                            </button>
+                                            <div class="rating-member ms-3">
+                                                <p class="mb-0 pb-0 mb-0 pb-0 f-18">4.5</p>
+                                                <i class="bi bi-star-fill ms-1 f-17"></i>
+                                            </div>
+                                            <p class="mb-0 pb-0 f-16 w-500 ms-1 text-dark-gray">(25k)</p>
+                                        </div> -->
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row post mt-2 text-start">
+                                <div class="d-flex align-items-end">
+                                    <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Intro</h1>
+                                </div>
+                                 <textarea name="" id=""   rows="5" class="form-textarea mt-3 mx-auto" placeholder="Introduce Yourself/Bussiness/Organization"></textarea>
+                              
+
+                            </div>
+                            <div class="row post mt-2">
+                                <div class="d-flex align-items-end">
+                                    <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Info</h1>
+                                </div>
+
+                                <div class="specifications-row mt-3">
+                                    <div class="specifications-row--header">
+                                        Type :
+                                    </div>
+                                    <div class="specifications-row--value w-75">
+                                        <div class="custom-select d-flex custom-selct-form form-border-no">
+                                            <select>
+                                                <option value="0">Individual Donar</option>
+                                                <option value="0">Individual Donar</option>
+                                                <option value="1">Blood Bank</option>
+                                               
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="specifications-row">
+                                    <div class="specifications-row--header">
+                                        Gender :
+                                    </div>
+                                    <div class="specifications-row--value w-75">
+                                        <input type="text" class="form-input w-100" placeholder="Enter">
+                                    </div>
+                                </div>
+                                <div class="specifications-row ">
+                                    <div class="specifications-row--header">
+                                        Lives in:
+                                    </div>
+                                    <div class="specifications-row--value w-75">
+                                        <input type="text" class="form-input w-100" placeholder="Enter">
+                                    </div>
+                                </div>
+                                <div class="specifications-row">
+                                    <div class="specifications-row--header">
+                                        Profession :
+                                    </div>
+                                    <div class="specifications-row--value w-75">
+                                        <input type="text" class="form-input w-100" placeholder="Enter">
+                                    </div>
+                                </div>
+                                <div class="specifications-row member-border-bottom">
+                                    <div class="specifications-row--header">
+                                        Education :
+                                    </div>
+                                    <div class="specifications-row--value w-75">
+                                        <input type="text" class="form-input w-100" placeholder="Enter">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row post mt-2">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div class="d-flex align-items-center flex-wrap">
+                                        <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header me-2">
+                                            Donate Blood:</h1>
+                                        <h2 class="save-life  p-0 m-0 ">Save Lives</h2>
+                                    </div>
+
+                                    <!-- <div>
+                                        <a href="" class="f-20 text-active w-500 me-2 decorated-btn no-white-space">
+                                            Donate Blood
+                                        </a>
+                                    </div> -->
+                                </div>
+                                <div class="seprator"></div>
+                              
+                                <div class="specifications-row--value w-100">
+                                    <div class="custom-select d-flex custom-selct-form">
+                                        <select>
+                                            <option value="0">Individual Donar</option>
+                                            <option value="0">Individual Donar</option>
+                                            <option value="1">Blood Bank</option>
+                                           
+                                        </select>
+                                    </div>
+                                    <!-- <select name="cars" id="cars" class="form-select w-100 m-0 ">
+                                      <option value="volvo">Individual Donar</option>
+                                      <option value="saab">Blood Bank</option>
+                                    </select> -->
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center flex-wrap py-3">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid me-2"
+                                                height="18px" width="18px">
+                                            <p class="mb-0 pb-0 f-18 text-dark-gray  no-white-space w-500 me-2">Blood Donar:</p>
+                                            <div class="custom-select d-flex custom-selct-form">
+                                                <select>
+                                                    <option value="0">NO</option>
+                                                    <option value="0">NO</option>
+                                                    <option value="1">Yes</option>
+                                                   
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 ps-1">
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 pb-0 f-18 text-dark-gray no-white-space w-500 me-2">Blood Group:</p>
+                                            <div class="dropdown-multiple form-checkboxes-dropdown " data-control="checkbox-dropdown" >
+                                                <label class="dropdown-label text-start">Select</label>
+                                                <input type="hidden" value="Select" class="header-view-all">
+                                                <div class="dropdown-list">
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 1" />
+                                                        &nbsp; A+
+                                                    </label>
+                    
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 2" />
+                                                        &nbsp; A-
+                                                    </label>
+                    
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 3" />
+                                                        &nbsp; B+
+                                                    </label>
+                    
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 4" />
+                                                        &nbsp; B-
+                                                    </label>
+                    
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 5" />
+                                                        &nbsp; O+
+                                                    </label>
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 5" />
+                                                        &nbsp; O-
+                                                    </label>
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 5" />
+                                                        &nbsp; AB+
+                                                    </label>
+                                                    <label class="dropdown-option">
+                                                        <input type="checkbox"  name="dropdown-group" value="Selection 5" />
+                                                        &nbsp; AB-
+                                                    </label>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="seprator"></div>
+
+
+                            </div>
+                            <div class="row post mt-2">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="text-start">
+                                        <h1 class="f-24 w-600 p-0 m-0 brand-blue section-header text-start">Location</h1>
+                                        <div class="dropdown mt-3 text-dark ps-0 ms-0 text-start">
+                                            <button
+                                                class="classified-drop text-dark dropdown-toggle ps-0 ms-0  d-flex align-items-center justify-content-center"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#location">
+                                                <i class="bi bi-geo-alt pe-1 text-dark"></i>
+                                                <div class="location-selected pe-1 text-dark">Select Location</div>
+                                            </button>
+            
+                                            <ul class="dropdown-menu location-drop py-2" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center"><i
+                                                            class="fas fa-arrow-left back-dist back-dist-text"></i>Select Location
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <div class="location-input-div mt-2 pb-3">
+                                                        <i class="bi bi-search"></i>
+                                                        <input type="text" placeholder="Enter Pincode or Area"
+                                                            class="location-input">
+                                                    </div>
+            
+                                                </li>
+                                                <li class="p-0 locations-items">
+                                                    <div class="current-location ">
+                                                        <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                                            class="img-fluid">
+                                                        <div class="ms-2">
+                                                            <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                                            <p class="pb-0 mb-0">Vennila cochin</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="recent-locations mt-3 ">
+                                                        <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                                            Locations</p>
+                                                        <ul>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 2</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 3</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 4</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 5</p>
+                                                            </li>
+            
+            
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
+                                                            District</p>
+            
+                                                        <div class="recent-locations p-0 m-0">
+                                                            <ul class="p-0 m-0">
+                                                                <li>
+                                                                    <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="all-distt ">
+            
+            
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman Assam</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman Assam</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman Assam</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="recent-locations">
+                                                    <div class="find-locations">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 2</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 3</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 4</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0"> Search Lorem amet</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 6</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 7</p>
+            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+            
+                                                </li>
+                                                <li class="p-0">
+                                                    <div class="all-india-distt">
+                                                        <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                                                        </p>
+                                                        <ul class="recent-locations">
+                                                            <li>
+                                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All Kerala</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+            
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                    <div>
+                                        <div class="mapouter">
+                                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%"
+                                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                                    src="https://maps.google.com/maps?width=120&amp;height=120&amp;hl=en&amp;q=kerala,india&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                                    href="https://piratebay-proxys.com/">Piratebay</a></div>
+                                            <style>
+                                                .mapouter {
+                                                    position: relative;
+                                                    text-align: right;
+                                                    width: 100px;
+                                                    height: 100px;
+                                                }
+
+                                                .gmap_canvas {
+                                                    overflow: hidden;
+                                                    background: none !important;
+                                                    width: 100px;
+                                                    height: 100px;
+                                                }
+
+                                                .gmap_iframe {
+                                                    height: 100px !important;
+                                                }
+                                            </style>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row post mt-2 text-start ">
+                                <div class="d-flex align-items-end">
+                                    <h1 class="f-24 w-600  p-0 m-0 brand-blue section-header">Tags of Interests
+                                    </h1>
+                                    <p class="mb-0 pb-0 f-16 text-gray-light ms-2">(Max 12 tags)</p>
+                                </div>
+
+                                <div class="input-group mb-2 mt-3">
+                                    <input type="text" class="form-control form-enter-input" placeholder="Type Keyword One by One" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <span class="input-group-text form-enter" id="basic-addon2">Enter</span>
+                                </div>
+
+                                <div class="d-flex justify-content-left align-items-center flex-wrap mt-3">
+                                    <div class="member-tag">
+                                        <a href="">#Car <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#Furniture  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#tagName  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#tagName  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#tagName  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#tagName  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#tagName  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                    <div class="member-tag">
+                                        <a href="">#tagName  <i class="bi bi-x-circle ms-2 text-dark f-20"></i></a>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="row post  mt-2 ">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <button class="btn-blank-form"data-bs-toggle="modal" data-bs-target="#previewModal">
+                                                    PREVIEW
+                                                 </button>
+                                        </div>
+                                        <div>
+                                            <a href="">
+                                                <button class="form-fix-btns">
+                                                    SAVE
+                                                 </button>
+                                            </a>
+                                        </div>
+                                        </div>
+                                   
+                            </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+    </main>
+
+    <!-- backdrop -->
+    <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
+
+    <!-- 3 dits popup -->
+    <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
+                                    this
+                                    post</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
+                                    Link</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
+                                    Similar Posts</a></li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
+                                    Jerry</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
+                                    Post</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-minus-circle me-4"></i>Show
+                                    Less
+                                    Such posts</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
+                                    post</a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-lightbulb me-4"></i>Last
+                                    Active
+                                    <div class="menu-date">12 Mar 22
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-calendar-alt me-4"></i>Posting
+                                    Date <div class="menu-date">12 Mar
+                                        22</div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <!--Loaction Modal -->
+  <div class="modal fade" id="location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-0">
+        
+        <div class="modal-body p-0">
+            <div class="dropdown text-dark ps-0 ms-0 text-start w-100">
+
+                <ul class="dropdown-menu location-drop py-2 show on pop-location" >
+                    <li>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center"><i
+                                class="fas fa-arrow-left back-dist back-dist-text"></i>Select Location
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="location-input-div mt-2 pb-3">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="Enter Pincode or Area"
+                                class="location-input">
+                        </div>
+
+                    </li>
+                    <li class="p-0 locations-items">
+                        <div class="current-location ">
+                            <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                class="img-fluid">
+                            <div class="ms-2">
+                                <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                <p class="pb-0 mb-0">Vennila cochin</p>
+                            </div>
+                        </div>
+                        <div class="recent-locations mt-3">
+                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                Locations</p>
+                            <ul>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 1</p>
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 2</p>
+
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 3</p>
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 4</p>
+
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 5</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
+                                District</p>
+
+                            <div class="recent-locations p-0 m-0">
+                                <ul class="p-0 m-0">
+                                    <li>
+                                        <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="all-distt ">
+
+
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                            <div class="district-location">
+                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                <i class="bi bi-chevron-right ms-auto"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recent-locations pop-recent-locations">
+                        <div class="find-locations">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 1</p>
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 2</p>
+
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 3</p>
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 4</p>
+
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close"> Search Lorem amet</p>
+
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 6</p>
+                                </li>
+                                <li>
+                                    <i class="bi bi-geo-alt me-2"> </i>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 7</p>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="p-0">
+                        <div class="all-india-distt">
+                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                            </p>
+                            <ul class="recent-locations pop-recent-locations">
+                                <li>
+                                    <p class="mb-0 pb-0 f-14 w-500 brand-blue">All Kerala</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1</p>
+                                </li>
+                                <li>
+                                    <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close" >District 1</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <!-- preview  Modal-->
+<!-- Modal -->
+<div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable preview-dialog">
+      <div class="modal-content">
+        <div class="modal-header preview-modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Profile Preview</h5>
+          <button type="button" class="preview-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></button>
+        </div>
+        <div class="modal-body">
+            <div  class=" px-0 py-0">
+
+                <div class="post row sm-padding mt-0">
+                   <div class="member-profile-wallpaper sm-padding">
+                    <img src="assets/images/categories.png" alt="" class="img-fluid">
+                   </div>
+                   <div class="member-profile-video  w-100">
+                    <button class="video-thumbnail ms-auto " data-bs-toggle="modal" data-bs-target="#videopopbtn ">
+                        <img src="assets/images/video-thumbnail.jpg" alt=""   class="video-thumbnail-img img-fluid">
+                        <img src="assets/images/play-button-file-youtube-play-buttom-icon-svg-wikimedia-commons-27.png" alt="" class="img-fluid youtube-icon">
+                    </button>
+                   </div>
+                   
+                   <div class="d-flex pb-2">
+                    <div class="">
+                        <img src="assets/images/pdc-3.png" alt="" class="img-fluid  member-profile-dp">
+                        <div class="member-profile-online my-2">Online</div>
+                    </div>
+                    <div class="member-profile-detail">
+                            <div class="text-start ">
+                                <h2 class="m-0 p-0 f-20 w-600">Jerry Varghese</h2>
+                                <p class="mb-0 pb-0 f-16 w-500 light-dark">Trainer,Manufacturer
+                                </p>
+                            </div>
+                            
+
+                            <div class="d-flex align-items-center pro-heading mt-2">
+                                <img src="assets/images/icons/PRO Membership.png" alt="" class="img-fluid me-2">
+                                <h1 class="mb-0 pb-0">Pro Members</h1>
+                            </div>
+
+                            <div class="d-flex align-items-center  ps-1 mt-2">
+                                <button class="follow-btn-member">
+                                    <i class="bi bi-person-plus-fill me-1"></i>Follow
+                                </button>
+                                <div class="rating-member ms-3">
+                                    <p class="mb-0 pb-0 mb-0 pb-0 f-18">4.5</p>
+                                    <i class="bi bi-star-fill ms-1 f-17"></i>
+                                </div>
+                                <p class="mb-0 pb-0 f-16 w-500 ms-1 text-dark-gray">(25k)</p>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-end">
+                                
+                                <div class="member-texts">
+                                    <div class="seprator my-2"></div>
+                                    <div class="d-flex ">
+
+                                        <i class="bi bi-caret-right-fill me-2"></i>
+                                        <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">Last
+                                            Active:</p>
+                                        <p class="mb-0 pb-0 f-16 light-dark w-500">3 days</p>
+                                        <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-caret-right-fill me-2"></i>
+                                        <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">
+                                            Joined:</p>
+                                        <p class="mb-0 pb-0 f-16 light-dark w-500">2 years, 3 months
+                                        </p>
+                                        <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                   </div>
+                   <!-- <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov" controls class="ms-auto"></video> -->
+                   <!-- <div class=" ">
+                    <video controls class="">
+                        <source src="assets/video/charity.mp4" type="video/mp4" class="w-100">
+                      Your browser does not support the video tag.
+                      </video>
+                   </div> -->
+                </div>
+
+                <div class="row post mt-2 text-start">
+                    <div class="d-flex align-items-end">
+                        <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Intro</h1>
+                    </div>
+                 
+                    <p class="f-18 w-400 text-dark mt-3 description">
+                        Cave paintings from more than one hundred thousand years ago remain to this day as
+                        indelible proof that communication.Cave paintings from more than one hundred thousand years ago remain erisque enim ligula
+                        venenatis dolor. Maecenas
+                        nisl est, ultrices<span id="dots">...</span><span id="more"> nec congue eget, auctor
+                            vitae massa. Fusce luctus vestibulum
+                            augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                            at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                            tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+                            pulvinar nibh tempor porta.</span><button onclick="moreLess()" id="myBtn"
+                            class="more-less-btn decorated-btn">Read more</button>
+                    </p>
+
+                </div>
+                <div class="row post mt-2">
+                    <div class="d-flex align-items-end">
+                        <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Info</h1>
+                    </div>
+                    
+                    <div class="specifications-row mt-3">
+                        <div class="specifications-row--header">
+                           Type
+                        </div>
+                        <div class="specifications-row--value">
+                           Individual
+                        </div>
+                    </div>
+                    <div class="specifications-row">
+                        <div class="specifications-row--header">
+                            Gender
+                        </div>
+                        <div class="specifications-row--value">
+Male
+                        </div>
+                    </div>
+                    <div class="specifications-row">
+                        <div class="specifications-row--header">
+                            Lives in:
+                        </div>
+                        <div class="specifications-row--value">
+                           Banglor
+                        </div>
+                    </div>
+                    <div class="specifications-row">
+                        <div class="specifications-row--header">
+                            Profession
+                        </div>
+                        <div class="specifications-row--value">
+                            Engineer
+                        </div>
+                    </div>
+                    <div class="specifications-row member-border-bottom">
+                        <div class="specifications-row--header">
+                            Education
+                        </div>
+                        <div class="specifications-row--value">
+                            MA English
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row post mt-2">
+                    <div class="d-flex justify-content-between mb-2">
+                        <div class="d-flex align-items-center flex-wrap">
+                            <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header me-2">Blood Donation:</h1>
+                            <h2 class="save-life  p-0 m-0 ">Save Lives</h2>
+                        </div>
+
+                        <div>
+                            <a href="" class="f-20 text-active w-500 me-2 decorated-btn no-white-space">
+                               Donate Blood
+                            </a>
+                        </div>
+                    </div>
+                    <div class="seprator"></div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap py-3">
+                        <div class="d-flex align-items-center ">
+                            <div class="d-flex align-items-center ">
+                                <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid me-2" height="18px" width="18px">
+                                <p class="mb-0 pb-0 f-18 text-dark-gray w-500">Blood Donar:</p>
+                                <p class="mb-0 pb-0 f-18 w-500 text-red ms-2">Yes</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center ms-4 ps-1">
+                            <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 f-18 text-dark-gray w-500">Blood Group:</p>
+                                <p class="mb-0 pb-0 f-18 w-500 text-red ms-2">B+</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seprator"></div>
+
+
+                </div>
+
+                <div class="row post mt-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Location</h1>
+                            <div class="d-flex align-items-center mt-2 location-text location-text-member mt-3">
+                                <i class="bi bi-geo-alt f-22  text-green pe-2"></i>
+                                <p class="mb-0  f-22">Edapily,</p>
+                                <p class="mb-0 pb-0 f-20 ellipsis text-gray">&nbsp;Erankulm,</p>
+
+                            </div>
+                            <p class="mb-0 pb-0 f-16 ellipsis text-gray text-start ps-4">&nbsp;&nbsp;Kerala.
+                                68076</p>
+
+
+                        </div>
+                        <div>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                        src="https://maps.google.com/maps?width=120&amp;height=120&amp;hl=en&amp;q=kerala,india&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                        href="https://piratebay-proxys.com/">Piratebay</a></div>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+
+                                    .gmap_iframe {
+                                        height: 100px !important;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row post mt-2 text-start mb-2">
+                    <div class="d-flex align-items-end">
+                        <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Tags of Interests</h1>
+                    </div>
+                    <div class="d-flex justify-content-left align-items-center flex-wrap mt-3">
+                        <div class="member-tag">
+                            <a href="">#Car</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#Furniture</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#tagName</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#tagName</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#tagName</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#tagName</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#tagName</a>
+                        </div>
+                        <div class="member-tag">
+                            <a href="">#tagName</a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+    <!-- Script -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+     <script src="assets/js/forms.js"></script>
+    <script>
+        var loadwallpaper = function (event) {
+            var image = document.getElementById('wallpaper-output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        $('.remove-img').click(function() {
+            $('#wallpaper-output').attr('src',"assets/images/placeholder-image3.jpg")
+        });
+
+        var loadvideo = function (event) {
+            var image = document.getElementById('video-output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        $('.remove-img2').click(function() {
+            $('#video-output').attr('src',"assets/images/Video Dummy.jpg")
+        });
+        var loaddp = function (event) {
+            var image = document.getElementById('dp-output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        $('.remove-img3').click(function() {
+            $('#dp-output').attr('src',"assets/images/Profile pic dummy.jpg")
+        });
+        
+    </script>
+</body>
+
+</html>

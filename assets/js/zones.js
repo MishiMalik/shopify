@@ -25,5 +25,7 @@ $('.follow-directory').on('click',function(){
   document.getElementById("defaultOpenzones2").click();
 
  }
-
+function opentab(){
+  document.getElementsByClassName("reviews-tab").click();
+}
 
