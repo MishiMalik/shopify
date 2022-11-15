@@ -1,3 +1,21 @@
+ // ====================================click on follow appear following
+$(".follow-btn-member").on('click',function(){
+  $(this).css('display','none');
+  $('.following-btn-member').css('display','block');
+})
+$('.unfollow-member').on('click',function(){
+  $('.follow-btn-member').css('display','block');
+  $('.following-btn-member').css('display','none');
+})
+// ====================================click on alert appear alert on
+$(".alert-btn").on('click',function(){
+  $(this).css('display','none');
+  $('.alert-on-btn').css('display','block');
+})
+$('.alert-of').on('click',function(){
+  $('.alert-btn').css('display','block');
+  $('.alert-on-btn').css('display','none');
+})
  //  ==================================================directory follow-icon
 $('.follow-directory').on('click',function(){
   $(this).css('display','none');

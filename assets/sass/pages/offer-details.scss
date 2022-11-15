@@ -679,3 +679,138 @@ p{
    margin-bottom: 25px !important;
   }
 }
+
+// =========================================follow btn
+.following-btn-member{
+  background-color: #F2F2F2;
+  border: 2px solid #cccccc !important;
+  color: $light-dark;
+  padding: 4px 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  display: none;
+  .bi-bell{
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width:360px){
+    font-size: 14px;
+    .bi-bell{
+      font-size: 16px;
+    }
+  }
+  
+}
+.alert-on-btn{
+  background-color: #F2F2F2;
+  border: 2px solid #cccccc !important;
+  color: $light-dark;
+  padding: 4px 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  display: none;
+  .bi-bell{
+    font-size: 18px;
+  }
+  @media only screen and (max-width:360px){
+    font-size: 14px;
+    .bi-bell{
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+// write review ===================================
+.star-rating s:hover,
+.star-rating s.active {
+    color: #FFD400;
+}
+.star-rating-rtl s:hover,
+.star-rating-rtl s.active {
+    color: #FFD400;
+}
+
+.star-rating s,
+.star-rating-rtl s {
+    color: black;
+    font-size: 50px;
+    cursor: default;
+    text-decoration: none;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.star-rating {
+    padding: 2px;
+}
+.star-text{
+  margin-left:20px;
+}
+.star1{
+  position: relative;
+  &-text{
+    position: absolute;
+   top: 35px !important;
+   left: 10px;
+  }
+}
+.star2{
+  position: relative;
+  &-text{
+    position: absolute;
+   top: 42px !important;
+   left: 7px;
+  }
+}
+.star3{
+  position: relative;
+  &-text{
+    position: absolute;
+   top: 42px !important;
+   left: -5px;
+  }
+}
+.star4{
+  position: relative;
+  &-text{
+    position: absolute;
+   top: 42px !important;
+   left: 7px;
+  }
+}
+.star5{
+  position: relative;
+  &-text{
+    position: absolute;
+   top: 42px !important;
+   left: -3px;
+  }
+}
+.star-rating-rtl {
+    background: #555;
+    display: inline-block;
+    border: 2px solid #444;
+}
+.star-rating-rtl s {
+    color: yellow;
+}
+.star-rating s:hover:before,
+.star-rating s.rated:before,
+.star-rating s.active:before {
+    content: "\2605";
+}
+.star-rating s:before {
+    content: "\2606";
+}
+.star-rating-rtl s:hover:after,
+.star-rating-rtl s.rated:after,
+.star-rating-rtl s.active:after {
+    content: "\2605";
+}
+
+.star-rating-rtl s:after {
+    content: "\2606";
+}

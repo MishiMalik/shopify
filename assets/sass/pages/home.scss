@@ -1515,7 +1515,7 @@
     .dropdown-item {
         padding: 13px 10px !important;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         min-width: 100%;
 
         // @media only screen and (max-height:450px) {
@@ -1524,7 +1524,9 @@
         &:hover {
             background-color: #EFF0F2 !important;
         }
-
+        .bi-check-lg{
+            font-size: 24px;
+          }
         .menu-date {
             width: 100px;
             margin-left: auto;
@@ -1536,7 +1538,7 @@
         }
 
         i {
-            font-size: 16px;
+            font-size: 18px;
             width: 15px;
 
             @media only screen and (max-width:400px) {
