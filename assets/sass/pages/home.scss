@@ -323,7 +323,11 @@
         padding: 15px 0px;
     }
 }
-
+.sm-margin-0{
+    @media only screen and (max-width:479px){
+        margin-top: 0px !important;
+       }
+}
 .category-tag {
     background-color: $light-gray2;
     border-radius: 20px;

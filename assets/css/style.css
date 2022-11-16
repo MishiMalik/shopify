@@ -354,6 +354,9 @@ a {
 .p-relative {
   position: relative; }
 
+.bi-x-circle {
+  cursor: pointer !important; }
+
 .header {
   background-color: #16367B;
   padding: 6px 0px 5px 0px;
@@ -1652,6 +1655,10 @@ a {
   @media only screen and (max-width: 550px) {
     .post {
       padding: 15px 0px; } }
+
+@media only screen and (max-width: 479px) {
+  .sm-margin-0 {
+    margin-top: 0px !important; } }
 
 .category-tag {
   background-color: #EFF0F2;
@@ -4450,10 +4457,13 @@ a {
   cursor: pointer; }
 
 .close-write-review {
+  position: absolute;
+  top: 7px;
   font-size: 25px !important;
   color: black !important;
   background-color: transparent !important;
-  border: none !important; }
+  border: none !important;
+  z-index: 1000 !important; }
 
 @media only screen and (max-width: 400px) {
   .writReview-body {
@@ -4490,12 +4500,18 @@ a {
         width: 100%; } }
 
 @media only screen and (max-width: 430px) {
+  .rating-tab-heading2 {
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 430px) {
   .rating-tab-heading .f-18 {
+    margin-top: 3px;
     font-size: 17px !important; } }
 
 @media only screen and (max-width: 430px) {
   .rating-tab-heading p {
-    font-size: 15px !important; } }
+    font-size: 15px !important;
+    margin-top: 3px; } }
 
 @media only screen and (max-width: 430px) {
   .mbsm-4 {
@@ -4551,6 +4567,10 @@ a {
   text-decoration: none;
   line-height: 50px;
   margin-left: 10px; }
+  @media only screen and (max-width: 450px) {
+    .star-rating s,
+    .star-rating-rtl s {
+      margin-left: 3px; } }
 
 .star-rating {
   padding: 2px; }
@@ -4592,6 +4612,9 @@ a {
     position: absolute;
     top: 42px !important;
     left: -3px; }
+    @media only screen and (max-width: 450px) {
+      .star5-text {
+        margin-left: -5px; } }
 
 .star-rating-rtl {
   background: #555;

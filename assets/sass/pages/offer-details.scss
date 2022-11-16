@@ -615,10 +615,13 @@ width: 140px ;
   cursor: pointer;
 }
 .close-write-review{
+  position: absolute;
+  top: 7px;
   font-size: 25px !important;
   color: black !important;
   background-color: transparent !important;
   border: none !important;
+  z-index: 1000 !important;
 }
 .writReview-body{
   @media only screen and (max-width:400px){
@@ -661,15 +664,23 @@ width: 140px ;
   }
 
 }
+.rating-tab-heading2{
+  @media only screen and (max-width:430px){
+   margin-top: 20px;
+  }
+}
 .rating-tab-heading{
+
    .f-18{
     @media only screen and (max-width:430px){
+      margin-top: 3px;
       font-size: 17px !important;
     }
 }
 p{
   @media only screen and (max-width:430px){
     font-size: 15px !important;
+    margin-top: 3px;
   }
 }
 
@@ -742,6 +753,10 @@ p{
     text-decoration: none;
     line-height: 50px;
     margin-left: 10px;
+
+    @media only screen and (max-width:450px){
+      margin-left: 3px;
+    }
 }
 .star-rating {
     padding: 2px;
@@ -787,6 +802,9 @@ p{
     position: absolute;
    top: 42px !important;
    left: -3px;
+   @media only screen and (max-width:450px){
+    margin-left: -5px;
+  }
   }
 }
 .star-rating-rtl {
