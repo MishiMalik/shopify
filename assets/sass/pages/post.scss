@@ -147,3 +147,16 @@
         font-size: 13px;
     }
 }
+.published{
+    font-size: 16px;
+    color: white;
+    border: 1px solid $active-blue !important;
+    border-radius: 3px;
+    padding: 4px 10px;
+    background-color: $active-blue !important;
+
+    &:hover{
+        background-color: transparent !important;
+        color: $active-blue !important;
+    }
+}

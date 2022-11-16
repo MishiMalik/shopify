@@ -5256,3 +5256,14 @@ a {
   @media only screen and (max-width: 479px) {
     .sub-text {
       font-size: 13px; } }
+
+.published {
+  font-size: 16px;
+  color: white;
+  border: 1px solid #003399 !important;
+  border-radius: 3px;
+  padding: 4px 10px;
+  background-color: #003399 !important; }
+  .published:hover {
+    background-color: transparent !important;
+    color: #003399 !important; }
