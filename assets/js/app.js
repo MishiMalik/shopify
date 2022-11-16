@@ -1,3 +1,4 @@
+// ==========================================================read more / read less
 $('.read-more').on('click',function(){
   $(this).css('display','none');
   $(this).siblings('.more-review').css('display','inline');
@@ -52,12 +53,9 @@ $(function() {
     .each(function() {
       let carousel = $(this);
       carousel.on('show.bs.dropdown', '[data-bs-toggle=dropdown]', function() {
-        // universal solution
         let dropdown = bootstrap.Dropdown.getInstance(this);
         $(dropdown._menu).insertAfter(carousel);
 
-                // alternative for this particular layout
-        // $(this).next('.dropdown-menu').insertAfter(carousel);
       });
     })
     .owlCarousel({
@@ -102,13 +100,6 @@ $(function() {
 $(function() {
 
   $('.owl-member-slider')
-    // .each(function() {
-    //   let carousel = $(this);
-    //   carousel.on('show.bs.dropdown', '[data-bs-toggle=dropdown]', function() {
-    //     let dropdown = bootstrap.Dropdown.getInstance(this);
-    //     $(dropdown._menu).insertAfter(carousel);
-    //   });
-    // })
     .owlCarousel({
       loop:true,
       margin:10,
@@ -224,20 +215,18 @@ items:4.7
 })
 
 
-// ==========================================================================select//selected toggle
+// ==========================================================================select//selected toggle buttoms
 $('.select-btn').click(function() {
   $(this).addClass('d-none');
   $(this).siblings('.selected-btn').removeClass('d-none')
 })
 
 
-// ==========================================================================heart fill/blank toggle
+// ==========================================================================heart fill/blank toggle icon
 $('.like').on('click', function() {
   $(this).addClass('fill');
   $(this).removeClass('like');
 })
-
-
 
 
 //===============================================================================button go to top
@@ -278,7 +267,7 @@ window.onscroll = function() {
   }
 
 
-// ============================================================================categories-dropdown appear like popup
+// ============================================================================categories-dropdown appear like popup on mobile
   var width = $(window).width();
   if (width < 991){
     $('.categories-dropdown').click(function() {
@@ -288,13 +277,11 @@ window.onscroll = function() {
       $(this).css('position','fixed');
       $(this).css('left','0');
       $(this).css('right','0');
-      $(this).css('z-index','100');
+      $(this).css('z-index','10000');
       $('.header').css('z-index','0');
       $('.categories-dropdown').addClass('on');
       $(this).css('top','0');
       $(this).css('bottom','0');
-      // $('body').css('overflow-y','hidden');
-      // $(this).find('.accordion-collapse').addClass('show')
       $('.mobile-footer').css('z-index','0');
       $('#body').css('overflow-y','hidden');
       
@@ -305,16 +292,12 @@ window.onscroll = function() {
       $('.absolute-icon').css('display','block');
        $('.absolute-icon-close').css('display','none');
        $('.absolute-icon-close').css('z-index','-1');
-      // $('.listing-accordian').removeClass('listing-accordian-small');
       $('.categories-dropdown').css('position','relative');
       $('.categories-dropdown').removeClass('on');
        $('.categories-dropdown').css('top','100%');
-      // $('.categories-dropdown').css('bottom','-100%');
       $('.categories-dropdown').css('z-index','1');
-      // $('.listing-accordian-small').css('position','relative');
       $('.header').css('z-index','100');
       $('.mobile-footer').css('z-index','10');
-      // $('body').css('overflow-y','auto');
       $(this).parents('.listing-accordian').find('.accordion-collapse').removeClass('show')
       $('#body').css('overflow-y','scroll');
      
@@ -592,15 +575,6 @@ $(document).ready(function() {
     $(this).parent().toggleClass( 'highlight', this.checked );
 });
 
-// $('#arrow-toggle').on('click',function(){
-//   if($(this).find('.bi').hasClass('bi-caret-down-fill')) {
-//     $(this).find('.bi').removeClass('bi-caret-down-fill')
-//     $(this).find('.bi').addClass('bi-caret-up-fill')
-//   } else {
-//     $(this).find('.bi').addClass('bi-caret-down-fill')
-//     $(this).find('.bi').removeClass('bi-caret-up-fill')
-//   }
-// });
 
 $( 'input[type="checkbox' ).on( 'click', function () {
   $(this).parent().toggleClass( 'highlight', this.checked );
@@ -655,32 +629,6 @@ $('.back-dist').on('click',function(){
   $('.back-dist').css('font-size','0px');
   $('.close-location').css('display','block');
 })
-
-// if($('.classified-drop').attr("aria-expanded","true")){
-//   $('.all-india-distt').css('display','none');
-//   $('.find-locations').css('display','none');
-//   // $('.locations-items').css('display','block');
-// }
-// $('.classified-drop').attr("aria-expanded","true");
-// $('.select-hide').on('click',function(){
-//   $('.all-india-distt').css('display','none');
-//   $('.find-locations').css('display','none');
-//   $('.locations-items').css('display','block');
-// })
-// $('.find-locations').on('click',function(){
-//   $('.district-location').stopPropagation()
-    
-// })
-// $('.district-location').on('click', function(e) {
-//   e.stopPropagation()
-// })
-
-
-
-
-
-
-
 
 
 // ==========================================================quich-search
@@ -740,22 +688,6 @@ function moreLess() {
     moreText.style.display = "inline";
   }
 }
-// function moreLess() {
-//   var dots = document.getElementById("dots");
-//   var moreText = document.getElementById("more-review");
-//   var btnText = document.getElementById("myBtn-review");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more";
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less";
-//     moreText.style.display = "inline";
-//   }
-// }
-
 
 // ===============================================================close curent tab
 function close_window() {
