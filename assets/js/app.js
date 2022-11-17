@@ -1,3 +1,29 @@
+// ======================================================notification on/off
+$('.noti-off-div').on('click',function(){
+  $('.noti-off').css('display','block');
+  $('.noti-on').css('display','none');
+  $('.btn-off-alert').css('display','inline');
+  $('.btn-on-alert').css('display','none');
+})
+$('.noti-on-div').on('click',function(){
+  $('.noti-off').css('display','none');
+  $('.noti-on').css('display','block');
+  $('.btn-off-alert').css('display','none');
+  $('.btn-on-alert').css('display','inline');
+})
+
+$('.alert-noti-off-div').on('click',function(){
+  $('.alert-noti-off').css('display','block');
+  $('.alert-noti-on').css('display','none');
+  $('.btn-off-alert2').css('display','inline');
+  $('.btn-on-alert2').css('display','none');
+})
+$('.alert-noti-on-div').on('click',function(){
+  $('.alert-noti-off').css('display','none');
+  $('.alert-noti-on').css('display','block');
+  $('.btn-off-alert2').css('display','none');
+  $('.btn-on-alert2').css('display','inline');
+})
 // ==========================================================read more / read less
 $('.read-more').on('click',function(){
   $(this).css('display','none');

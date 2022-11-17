@@ -1,13 +1,14 @@
-.form-post-notice{
+.form-post-notice {
     font-size: 18px;
     color: white;
     font-weight: 500;
     text-decoration: underline !important;
-    &:hover{
+
+    &:hover {
         color: #84C7FD;
     }
 
-    @media only screen and (max-width:479px){
+    @media only screen and (max-width:479px) {
         font-size: 16px;
     }
 }
@@ -17,18 +18,21 @@
     border-bottom: 4px solid #003399 !important;
     color: #16367B !important;
     display: none;
- }
- .formtablinks{
+}
+
+.formtablinks {
     color: $brand-blue !important;
     font-weight: 500 !important;
     text-decoration: underline !important;
     border: none !important;
 
- }
- .needed{
+}
+
+.needed {
     color: $red;
- }
- .blank-form-btn{
+}
+
+.blank-form-btn {
     font-size: 16px;
     font-weight: 500;
     background-color: white !important;
@@ -38,98 +42,117 @@
     height: 40px;
     margin-right: 15px;
     border-radius: 3px;
-    &:hover{
+
+    &:hover {
         background-color: $primary !important;
         color: white !important;
     }
- }
- .form-border-no{
+}
+
+.form-border-no {
     border: none !important;
- }
- .square-img-div{
+}
+
+.square-img-div {
     height: 100%;
     width: 140px;
     object-fit: cover;
     border-radius: 7px !important;
     display: flex;
     flex-shrink: 0;
-     margin: 0px 6px;
+    margin: 0px 6px;
 
-    @media only screen and (max-width:1310px){
+    @media only screen and (max-width:1310px) {
         width: 100px;
     }
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         width: 140px;
     }
-    @media only screen and (max-width:767px){
+
+    @media only screen and (max-width:767px) {
         width: 100px;
     }
-    @media only screen and (max-width:479px){
+
+    @media only screen and (max-width:479px) {
         width: 70px;
         margin: 0px 3px !important;
     }
 }
-.square-img{
+
+.square-img {
     height: 140px;
     width: 140px;
     object-fit: cover;
     border-radius: 7px !important;
     overflow: hidden;
-    @media only screen and (max-width:1310px){
+
+    @media only screen and (max-width:1310px) {
         width: 100px;
         height: 100px;
     }
-    @media only screen and (max-width:991px){
+
+    @media only screen and (max-width:991px) {
         width: 140px;
         height: 140px;
     }
-    @media only screen and (max-width:767px){
+
+    @media only screen and (max-width:767px) {
         width: 100px;
         height: 100px;
     }
-    @media only screen and (max-width:479px){
+
+    @media only screen and (max-width:479px) {
         width: 70px;
         height: 70px;
     }
 }
-.upload-img-btn{
+
+.upload-img-btn {
     position: relative !important;
     font-size: 16px;
     color: white !important;
     font-weight: 500;
-    background-color: $brand-blue ;
+    background-color: $brand-blue;
     border: none !important;
     // height: 30px;
     width: 70px;
     border-radius: 3px;
-    
+
 }
-.heading-1{
+
+.heading-1 {
     font-size: 20px;
     font-weight: 600;
     color: $light-dark;
-    a{
+
+    a {
         color: $brand-blue !important;
     }
-    @media only screen and (max-width:479px){
+
+    @media only screen and (max-width:479px) {
         font-size: 16px;
     }
 }
-.upload-video{
+
+.upload-video {
     border: 1px solid $brand-blue;
     width: 100%;
-   padding: 5px 5px;
-   border-radius: 3px;
+    padding: 5px 5px;
+    border-radius: 3px;
 }
-.video-thumbnail-img{
+
+.video-thumbnail-img {
     height: 60px;
     width: auto;
-    img{
+
+    img {
         height: 60px;
         width: 100%;
     }
 }
-.play-video{
+
+.play-video {
     font-size: 16px;
     font-weight: 500;
     color: $brand-blue;
@@ -137,17 +160,21 @@
     border: none;
     text-decoration: underline !important;
 }
-.publish-icon{
+
+.publish-icon {
     height: 150px;
     width: auto;
 }
-.sub-text{
+
+.sub-text {
     color: $text-dark-gray;
-    @media only screen and (max-width:479px){
+
+    @media only screen and (max-width:479px) {
         font-size: 13px;
     }
 }
-.published{
+
+.published {
     font-size: 16px;
     color: white;
     border: 1px solid $active-blue !important;
@@ -155,7 +182,7 @@
     padding: 4px 10px;
     background-color: $active-blue !important;
 
-    &:hover{
+    &:hover {
         background-color: transparent !important;
         color: $active-blue !important;
     }

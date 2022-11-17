@@ -1,63 +1,71 @@
-.form-light-heading{
+.form-light-heading {
     font-size: 20px;
     font-weight: 500;
     color: $light-dark;
-    @media only screen and (max-width:500px){
+
+    @media only screen and (max-width:500px) {
         font-size: 16px;
     }
-    a{
+
+    a {
         font-size: 20px;
         font-weight: 500;
         color: $active-blue;
         text-decoration: underline !important;
-        @media only screen and (max-width:500px){
+
+        @media only screen and (max-width:500px) {
             font-size: 16px;
         }
     }
 }
-.wallpaper-div{
+
+.wallpaper-div {
     position: relative;
 }
-.upload-btn{
+
+.upload-btn {
     border: none !important;
     position: absolute;
     bottom: 40px;
     left: 20px;
     background-color: $brand-blue;
-    border:$brand-blue;
+    border: $brand-blue;
     // padding: 5px 7px;
     border-radius: 3px;
 
-    
-    
-    label{
+
+
+    label {
         color: white;
-    font-weight: 400;
-   font-size: 14px;
+        font-weight: 400;
+        font-size: 14px;
 
     }
 }
-.upload-vieo-btn{
+
+.upload-vieo-btn {
     border: none !important;
     // position: absolute;
     // bottom: 40px;
     // left: 20px;
     background-color: $brand-blue;
-    border:$brand-blue;
+    border: $brand-blue;
     // padding: 5px 7px;
     border-radius: 3px;
 
-    label{
+    label {
         color: white;
-    font-weight: 400;
-   font-size: 14px;
+        font-weight: 400;
+        font-size: 14px;
 
     }
 }
-.pb-50{
+
+.pb-50 {
     padding-bottom: 90px !important;
 }
-.form-input{
+
+.form-input {
     background-color: white;
     // border: 1px solid $text-gray-light;
     padding: 7px 10px;
@@ -67,15 +75,17 @@
     border: none !important;
     outline: none !important;
 
-    &::placeholder{
+    &::placeholder {
         font-weight: 500 !important;
         color: $text-gray-light;
     }
 }
-.form-input-border{
+
+.form-input-border {
     border: 1px solid $text-gray-light !important;
 }
-.form-simple-input{
+
+.form-simple-input {
     background-color: white;
     border: 1px solid $text-gray-light !important;
     padding: 7px 10px;
@@ -84,13 +94,14 @@
     color: $light-dark;
     outline: none !important;
     width: 100% !important;
-    &::placeholder{
+
+    &::placeholder {
         font-weight: 500 !important;
         color: $text-gray-light;
     }
 }
 
-.form-textarea{
+.form-textarea {
     background-color: white;
     border: 1px solid $text-gray-light;
     padding: 7px 10px;
@@ -100,7 +111,7 @@
     width: 97%;
 }
 
-.form-checkboxes-dropdown{
+.form-checkboxes-dropdown {
     background-color: white;
     border: 1px solid $text-gray-light;
     padding: 7px 0px;
@@ -110,7 +121,8 @@
     width: 100% !important;
     min-width: 100px;
 }
-.form-enter-input{
+
+.form-enter-input {
     background-color: white !important;
     border: 1px solid $text-gray-light !important;
     padding: 10px 10px !important;
@@ -119,41 +131,47 @@
     color: $light-dark !important;
     min-width: 70px !important;
 
-    @media only screen and (max-width:767px){
+    @media only screen and (max-width:767px) {
         min-width: 50px !important;
         font-size: 14px !important;
     }
-    &:focus{
+
+    &:focus {
         outline: none !important;
         box-shadow: none !important;
     }
 }
-.form-enter{
- background-color: #5B5B5B;
- font-size: 20px;
- font-weight: 500;
- color: white;
- padding: 10px 30px;
- text-transform: uppercase;
- border: 1px solid $text-gray-light !important;
- cursor: pointer;
- @media only screen and (max-width:767px){
-    min-width: 50px !important;
-    font-size: 16px !important;
-    padding: 10px 20px;
+
+.form-enter {
+    background-color: #5B5B5B;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: 1px solid $text-gray-light !important;
+    cursor: pointer;
+
+    @media only screen and (max-width:767px) {
+        min-width: 50px !important;
+        font-size: 16px !important;
+        padding: 10px 20px;
+    }
 }
-}
-.pop-location{
+
+.pop-location {
     position: relative;
     transition: none !important;
     top: 0 !important;
     width: 100% !important;
 }
-.pop-recent-locations{
+
+.pop-recent-locations {
     max-height: 56vh !important;
 }
-.size-text{
-    @media only screen and (max-width:500px){
+
+.size-text {
+    @media only screen and (max-width:500px) {
         font-size: 12px;
         white-space: nowrap;
     }
@@ -170,11 +188,11 @@
 //     appearance: none !important;
 //     padding-right: 1rem !important;
 
-    
+
 // }
 
 
-.custom-selct-form{
+.custom-selct-form {
     background-color: white;
     border: 1px solid $text-gray-light;
     border-radius: 3px;
@@ -182,44 +200,50 @@
     color: $light-dark;
     width: 100% !important;
     min-width: 70px;
-   height: 45px;
-    @media only screen and (max-width:479px){
+    height: 45px;
+
+    @media only screen and (max-width:479px) {
         min-width: 100px;
     }
-    .select-selected{
-   width: 100% !important;
-   display: flex;
-   align-items: center;
-   &::after{
-    top: 18px !important;
-    right: 15px !important;
-   }
+
+    .select-selected {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+
+        &::after {
+            top: 18px !important;
+            right: 15px !important;
+        }
     }
-    .select-items{
- width: 100%;
- z-index:100;
- right: 0 !important;
- left: 0 !important;
+
+    .select-items {
+        width: 100%;
+        z-index: 100;
+        right: 0 !important;
+        left: 0 !important;
     }
 }
-.form-fix-btns{
-    width: 100px !important; 
+
+.form-fix-btns {
+    width: 100px !important;
     background-color: $primary;
     color: white;
     font-size: 16px;
     font-weight: 500;
     border: 2px solid $primary;
-    width: 150px !important; 
+    width: 150px !important;
     height: 40px;
     margin-left: 15px;
     border-radius: 3px;
 
-    &:hover{
+    &:hover {
         background-color: white;
         color: $primary;
     }
 }
-.btn-blank-form{
+
+.btn-blank-form {
     font-size: 16px;
     font-weight: 500;
     background-color: white !important;
@@ -229,40 +253,45 @@
     height: 40px;
     margin-right: 15px;
     border-radius: 3px;
-    &:hover{
+
+    &:hover {
         background-color: $primary !important;
         color: white !important;
     }
 
-    @media only screen and (max-width:479px){
+    @media only screen and (max-width:479px) {
         font-size: 15px;
         width: 130px !important;
         margin-right: 7px !important;
     }
 }
+
 // ========================preview
-.preview-dialog{
+.preview-dialog {
     max-width: 48% !important;
-   
-    .modal-header{
+
+    .modal-header {
         background-color: $primary;
         color: white;
     }
 
-    @media only screen and (max-width:767px){
-         max-width: 100% !important;
-         margin: 0px !important;
+    @media only screen and (max-width:767px) {
+        max-width: 100% !important;
+        margin: 0px !important;
     }
 }
-.modal-dialog-scrollable{
-    @media only screen and (max-width:767px){
-       height: 100% !important;
-   }
+
+.modal-dialog-scrollable {
+    @media only screen and (max-width:767px) {
+        height: 100% !important;
+    }
 }
-.preview-dialog .modal-body{
-    padding:0px 3px !important;
+
+.preview-dialog .modal-body {
+    padding: 0px 3px !important;
     overflow-x: hidden !important;
 }
+
 .preview-dialog .modal-body::-webkit-scrollbar {
     width: 10px;
     position: relative;
@@ -283,38 +312,42 @@
     z-index: 10000 !important;
 }
 
-.preview-close{
+.preview-close {
     background-color: transparent;
     color: white;
     border: none;
     font-size: 25px;
 }
-.preview-modal-header{
-    padding: 5px  15px!important;
 
-    
+.preview-modal-header {
+    padding: 5px 15px !important;
+
+
 }
-.select-from-gallery{
+
+.select-from-gallery {
     font-size: 18px;
     color: $red;
     font-weight: 500;
     background-color: transparent;
     border: none;
     text-decoration: underline !important;
-    i{
+
+    i {
         color: $light-dark;
         margin-right: 5px;
     }
-    label{
+
+    label {
         text-decoration: underline !important;
     }
 
-    @media only screen and (max-width:479px){
+    @media only screen and (max-width:479px) {
         font-size: 13px;
     }
 }
 
-.remove-img{
+.remove-img {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -327,14 +360,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    i{
+
+    i {
         color: black;
     }
 }
-.remove-img2{
+
+.remove-img2 {
     position: absolute;
     top: -5px;
-    right:-5px;
+    right: -5px;
     font-size: 22px;
     cursor: pointer;
     background-color: white;
@@ -344,14 +379,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    i{
+
+    i {
         color: black;
     }
 }
-.remove-img3{
+
+.remove-img3 {
     position: absolute;
     top: 23px;
-    right:-5px;
+    right: -5px;
     font-size: 22px;
     cursor: pointer;
     background-color: white;
@@ -361,7 +398,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    i{
+
+    i {
         color: black;
     }
 }

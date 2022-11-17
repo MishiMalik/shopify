@@ -21,6 +21,7 @@ $text-gray-light:#aeadad;
 $active-blue:#003399;
 $text-dark-gray:#666666;
 $text-dark-gray2:#999999;
+
 // fonts===========================================================
 .f-40 {
     font-size: 40px;
@@ -47,9 +48,11 @@ $text-dark-gray2:#999999;
     font-size: 27px;
     line-height: 20px;
 }
-.f-24{
+
+.f-24 {
     font-size: 24px;
 }
+
 .f-20 {
     font-size: 20px;
 
@@ -164,22 +167,28 @@ $text-dark-gray2:#999999;
 .text-green {
     color: $green;
 }
-.text-active{
+
+.text-active {
     color: $active-blue !important;
 }
 
-.text-pro{
+.text-pro {
     color: #0066cc;
 }
-.text-dark-gray{
+
+.text-dark-gray {
     color: $text-dark-gray;
 }
-.text-dark-gray2{
+
+.text-dark-gray2 {
     color: $text-dark-gray2;
 }
-.text-gray-light{
-    color: $text-gray-light;;
+
+.text-gray-light {
+    color: $text-gray-light;
+    ;
 }
-.text-red{
+
+.text-red {
     color: $red !important;
 }

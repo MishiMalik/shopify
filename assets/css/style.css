@@ -357,6 +357,9 @@ a {
 .bi-x-circle {
   cursor: pointer !important; }
 
+.hover {
+  cursor: pointer !important; }
+
 .header {
   background-color: #16367B;
   padding: 6px 0px 5px 0px;
@@ -2524,11 +2527,14 @@ a {
     .menu-post-drop .dropdown-item .bi-check-lg {
       font-size: 24px; }
     .menu-post-drop .dropdown-item .menu-date {
-      width: 100px;
+      width: 230px;
       margin-left: auto;
       margin-right: auto; }
       .menu-post-drop .dropdown-item .menu-date span {
         font-size: 14px !important; }
+      @media only screen and (max-width: 400px) {
+        .menu-post-drop .dropdown-item .menu-date {
+          width: 90px !important; } }
     .menu-post-drop .dropdown-item i {
       font-size: 18px;
       width: 15px; }
@@ -3726,6 +3732,9 @@ a {
   width: 25px;
   object-fit: contain; }
 
+.bi-three-dots-vertical {
+  color: #6e6d6d !important; }
+
 .category-close {
   display: none; }
 
@@ -3943,7 +3952,9 @@ a {
         width: 50px !important;
         background-color: white;
         border-radius: 100%;
-        opacity: 1; }
+        opacity: 1;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border: 3px solid white; }
         @media only screen and (max-width: 479px) {
           .member-details-slider .pop-video-btn button img {
             height: 40px !important;
@@ -4079,10 +4090,10 @@ a {
 .specifications-row {
   display: flex;
   align-items: center;
-  border-top: 1px solid #aeadad;
+  border-top: 1px solid #DEE0E2;
   padding: 0px !important; }
   .specifications-row--header {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -4101,7 +4112,7 @@ a {
     align-items: center; }
     @media only screen and (max-width: 768px) {
       .specifications-row--header {
-        font-size: 16px !important;
+        font-size: 15px !important;
         width: 120px !important;
         display: flex;
         flex-shrink: 0 !important;
@@ -4124,10 +4135,13 @@ a {
         font-size: 16px; } }
 
 .member-border-bottom {
-  border-bottom: 1px solid #aeadad !important; }
+  border-bottom: 1px solid #DEE0E2 !important; }
 
 .more {
   display: none; }
+
+.text-white-icon {
+  color: white !important; }
 
 .more-review {
   display: none; }
@@ -4142,7 +4156,7 @@ a {
   color: #0033cc !important; }
 
 .member-tag {
-  background-color: #DEE0E2;
+  background-color: #EFF0F2;
   padding: 7px;
   color: #333333;
   font-size: 16px;
@@ -4344,15 +4358,16 @@ a {
   position: relative; }
 
 @media only screen and (max-width: 400px) {
-  .location-text-member .f-22 {
-    font-size: 16px; }
   .location-text-member .f-20 {
+    font-size: 16px; }
+  .location-text-member .f-18 {
     font-size: 15px; }
   .location-text-member .f-16 {
     font-size: 14px; } }
 
 .section-header {
-  font-size: 22px !important; }
+  font-size: 20px !important;
+  font-weight: 500 !important; }
   @media only screen and (max-width: 500px) {
     .section-header {
       font-size: 18px !important; } }
@@ -4528,10 +4543,14 @@ a {
   display: none; }
   .following-btn-member .bi-bell {
     font-size: 18px; }
+  .following-btn-member .bi-bell-slash {
+    font-size: 18px; }
   @media only screen and (max-width: 360px) {
     .following-btn-member {
       font-size: 14px; }
       .following-btn-member .bi-bell {
+        font-size: 16px; }
+      .following-btn-member .bi-bell-slash {
         font-size: 16px; } }
 
 .alert-on-btn {
@@ -4545,10 +4564,14 @@ a {
   display: none; }
   .alert-on-btn .bi-bell {
     font-size: 18px; }
+  .alert-on-btn .bi-bell-slash {
+    font-size: 18px; }
   @media only screen and (max-width: 360px) {
     .alert-on-btn {
       font-size: 14px; }
       .alert-on-btn .bi-bell {
+        font-size: 16px; }
+      .alert-on-btn .bi-bell-slash {
         font-size: 16px; } }
 
 .star-rating s:hover,
@@ -4639,6 +4662,31 @@ a {
 
 .star-rating-rtl s:after {
   content: "\2606"; }
+
+.noti-on {
+  display: block;
+  line-height: 18px; }
+
+.noti-off {
+  display: none;
+  line-height: 18px; }
+
+.alert-noti-on {
+  display: block;
+  line-height: 18px; }
+
+.alert-noti-off {
+  display: none;
+  line-height: 18px; }
+
+.modal-backdrop {
+  opacity: 0.9 !important; }
+
+.btn-off-alert {
+  display: none; }
+
+.btn-off-alert2 {
+  display: none; }
 
 .member-profile-wallpaper {
   height: 240px;

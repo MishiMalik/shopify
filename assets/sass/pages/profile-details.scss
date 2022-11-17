@@ -1,63 +1,72 @@
-.member-profile-wallpaper{
+.member-profile-wallpaper {
     height: 240px;
     width: 100%;
     overflow: hidden;
-    img{
+
+    img {
         // height: 100% !important;
         // width: 100% !important;
         height: 240px;
         width: 100%;
-       object-fit: cover !important;
-    
+        object-fit: cover !important;
+
     }
 
-    @media only screen and (max-width:479px){
+    @media only screen and (max-width:479px) {
         height: 240px;
     }
 }
-.member-profile-video{
+
+.member-profile-video {
     display: flex;
     justify-content: flex-end;
-   .video-thumbnail{
-    height: 100px !important;
-    width: 200px;
-    margin-right: 20px;
-   margin-top: -80px;
-   background-color: transparent;
-   border: none;
-   padding: 0px;
-   border: 2px solid white;
-   position: relative;
-   @media only screen and (max-width:400px){
-    margin-right: 0px;
-    height: 80px !important;
-    width: 150px;
-    margin-top: -50px;
-   }
-   .video-thumbnail-img{
+
+    .video-thumbnail {
         height: 100px !important;
-    width: 200px;
-    object-fit: cover;
-    @media only screen and (max-width:400px){
-        margin-right: 10px;
-        height: 80px !important;
-    width: 150px;
-       }
+        width: 200px;
+        margin-right: 20px;
+        margin-top: -80px;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        border: 2px solid white;
+        position: relative;
+
+        @media only screen and (max-width:400px) {
+            margin-right: 0px;
+            height: 80px !important;
+            width: 150px;
+            margin-top: -50px;
+        }
+
+        .video-thumbnail-img {
+            height: 100px !important;
+            width: 200px;
+            object-fit: cover;
+
+            @media only screen and (max-width:400px) {
+                margin-right: 10px;
+                height: 80px !important;
+                width: 150px;
+            }
+        }
     }
-   }
-   .youtube-icon{
-    position: absolute;
-    top: 38px;
-    right: 80px;
-   height: 35px !important;
-   width: 35px !important;
-   object-fit: cover;
-   @media only screen and (max-width:400px){
-    top: 20px;
-    right: 55px;
-   }
-   }
+
+    .youtube-icon {
+        position: absolute;
+        top: 38px;
+        right: 80px;
+        height: 35px !important;
+        width: 35px !important;
+        object-fit: cover;
+
+        @media only screen and (max-width:400px) {
+            top: 20px;
+            right: 55px;
+        }
+    }
 }
+
 // video {
 //     width: 230px !important;
 //     height:130px !important;
@@ -92,24 +101,26 @@
 //     // object-fit: fill;
 //     // }
 // }
-.pop-video-width{
+.pop-video-width {
     width: 600px !important;
-    height:100%;
+    height: 100%;
     margin-left: -50px;
 
-    @media only screen and (max-width:767px){
+    @media only screen and (max-width:767px) {
         width: 100% !important;
         height: 100%;
         margin-left: 0px;
     }
 }
-.member-profile-dp-div{
+
+.member-profile-dp-div {
     display: flex;
     flex-shrink: 0 !important;
     flex-direction: column;
     justify-content: center;
 }
-.member-profile-dp{
+
+.member-profile-dp {
     margin-top: 30px;
     height: 130px;
     width: 130px;
@@ -118,33 +129,39 @@
     display: flex;
     flex-shrink: 0 !important;
     object-fit: cover;
-    img{
+
+    img {
         height: 130px;
         width: 130px;
         object-fit: cover;
         border-radius: 17px;
         display: flex;
         flex-shrink: 0 !important;
-        @media only screen and (max-width:479px){
+
+        @media only screen and (max-width:479px) {
             height: 70px !important;
             width: 70px;
-           }
+        }
     }
-    @media only screen and (max-width:479px){
+
+    @media only screen and (max-width:479px) {
         height: 70px !important;
         width: 70px;
-       }
+    }
 }
-.member-profile-online{
+
+.member-profile-online {
     font-size: 14px;
     font-weight: 500;
     color: #00BF00;
     position: relative;
     text-align: center;
-    @media only screen and (max-width:479px){
-       padding-left: 10px;
-          }
-    &::before{
+
+    @media only screen and (max-width:479px) {
+        padding-left: 10px;
+    }
+
+    &::before {
         content: "";
         position: absolute;
         height: 16px;
@@ -153,100 +170,117 @@
         background-color: #00BF00;
         left: 20px;
         top: 1px;
-        @media only screen and (max-width:479px){
-         left: 0;
-           }
+
+        @media only screen and (max-width:479px) {
+            left: 0;
+        }
     }
 }
-.member-profile-detail{
+
+.member-profile-detail {
     margin-top: 30px;
     padding-left: 20px;
-    @media only screen and (max-width:479px){
+
+    @media only screen and (max-width:479px) {
         padding-left: 10px
-        
-           }
-          
+    }
+
 }
-.member-texts{
-    .f-16{
-        @media only screen and (max-width:420px){
-           font-size: 14px;
+
+.member-texts {
+    .f-16 {
+        @media only screen and (max-width:420px) {
+            font-size: 14px;
         }
-        @media only screen and (max-width:380px){
+
+        @media only screen and (max-width:380px) {
             font-size: 12px;
             // margin-left: -20px;
-         }
-       }
-    @media only screen and (max-width:420px){
-     margin-left: -20px ;
+        }
     }
-    @media only screen and (max-width:360px){
-     margin-left: -65px ;
+
+    @media only screen and (max-width:420px) {
+        margin-left: -20px;
     }
- }
-.pro-heading{
-    img{
+
+    @media only screen and (max-width:360px) {
+        margin-left: -65px;
+    }
+}
+
+.pro-heading {
+    img {
         height: 17px;
         width: 17px;
         object-fit: cover;
     }
-    h1{
-    font-size: 18px;
-    color: #0066cc;
-    @media only screen and (max-width:360px){
-        font-size: 16px;
-       }
+
+    h1 {
+        font-size: 18px;
+        color: #0066cc;
+
+        @media only screen and (max-width:360px) {
+            font-size: 16px;
+        }
     }
 }
-.save-life{
+
+.save-life {
     font-size: 18px;
     font-weight: 500;
     color: $red;
-    @media only screen and (max-width:479px){
-     font-size: 14px;
-        
-           }
+
+    @media only screen and (max-width:479px) {
+        font-size: 14px;
+
+    }
 }
-.no-white-space{
+
+.no-white-space {
     white-space: nowrap;
 }
 
-.member-profile-fix-btns{
+.member-profile-fix-btns {
     display: flex;
     justify-content: center;
-    button{
+
+    button {
         font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.9;
-  letter-spacing: normal;
-  text-align: left;
-  color: #039;
-  height: 30px;
-  background-color:#E5F5FF ;
-  border: solid 2px #78ade9;
-  padding: 3px 10px;
-  min-width: 110px;
-  margin: 3px 10px;
-  border-radius: 3px;
-  @media only screen and (max-width:479px){
-    font-size: 16px;
-    min-width: 100px;
-    margin: 3px 5px;
-  } 
-  @media only screen and (max-width:374px){
-    font-size: 15px;
-    min-width: 80px;
-    margin: 3px 3px;
-  }
-  &:hover{
-    color: white;
-    background-color: #1E67C8;
-  }
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        text-align: left;
+        color: #039;
+        height: 30px;
+        background-color: #E5F5FF;
+        border: solid 2px #78ade9;
+        padding: 3px 10px;
+        min-width: 110px;
+        margin: 3px 10px;
+        border-radius: 3px;
+
+        @media only screen and (max-width:479px) {
+            font-size: 16px;
+            min-width: 100px;
+            margin: 3px 5px;
+        }
+
+        @media only screen and (max-width:374px) {
+            font-size: 15px;
+            min-width: 80px;
+            margin: 3px 3px;
+        }
+
+        &:hover {
+            color: white;
+            background-color: #1E67C8;
+        }
     }
 }
-.gallery-dropdown-list{
+
+.gallery-dropdown-list {
     position: absolute !important;
     left: 0px !important;
 }

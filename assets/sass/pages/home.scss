@@ -5,7 +5,7 @@
     left: 0;
     top: 60px;
     padding: 0 !important;
-    z-index: 1; 
+    z-index: 1;
     overflow-x: hidden;
 
 
@@ -323,11 +323,13 @@
         padding: 15px 0px;
     }
 }
-.sm-margin-0{
-    @media only screen and (max-width:479px){
+
+.sm-margin-0 {
+    @media only screen and (max-width:479px) {
         margin-top: 0px !important;
-       }
+    }
 }
+
 .category-tag {
     background-color: $light-gray2;
     border-radius: 20px;
@@ -1528,16 +1530,22 @@
         &:hover {
             background-color: #EFF0F2 !important;
         }
-        .bi-check-lg{
+
+        .bi-check-lg {
             font-size: 24px;
-          }
+        }
+
         .menu-date {
-            width: 100px;
+            width: 230px;
             margin-left: auto;
             margin-right: auto;
 
             span {
                 font-size: 14px !important;
+            }
+
+            @media only screen and (max-width:400px){
+                width: 90px !important;
             }
         }
 

@@ -258,14 +258,20 @@ a {
         overflow-y: scroll;
     }
 }
-.sm-padding{
-   @media only screen and (max-width:479px){
-    padding: 0px !important;
-   }
+
+.sm-padding {
+    @media only screen and (max-width:479px) {
+        padding: 0px !important;
+    }
 }
-.p-relative{
+
+.p-relative {
     position: relative;
 }
-.bi-x-circle{
+
+.bi-x-circle {
     cursor: pointer !important;
+}
+.hover{
+    cursor:  pointer !important ;
 }
