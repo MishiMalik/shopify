@@ -15,8 +15,8 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
-        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- owl carousel -->
@@ -49,7 +49,7 @@
                         </div>
                         <div class="d-flex align-items-center ">
                             <img src="assets/images/icons/white-forward.svg" alt="" height="25px" width="30px">
-                            <i class="bi bi-heart-fill f-25 text-white mx-3"></i>
+                            <i class="bi bi-heart f-25 text-white mx-3"></i>
                             <button class="menu-post " type="button" id="dropdownMenuButton1" data-bs-toggle="modal"
                                 data-bs-target="#dots-menu-post">
                                 <i class=" bi bi-three-dots-vertical  text-white-icon f-25 mt-2"></i>
@@ -63,15 +63,14 @@
                     <div class="d-flex justify-content-around align-items-end">
                         <div class="header-menu ">
                             <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-house-door "></i>
-                                <p class="f-12  w-400 pb-0 mb-0 ">Feeds</p>
+                                <i class="bi bi-house-door-fill active-header"></i>
+                                <p class="f-12  w-400 pb-0 mb-0 active-header">Feeds</p>
                             </a>
                         </div>
                         <div class="header-menu">
                             <a href="zones.html" class="d-flex flex-column align-items-center justify-content-center">
-                                <!-- <i class="bi bi-border-all"></i> -->
-                                <i class="fas fa-th-large "></i>
-                                <p class="f-12  w-400 pb-0 mb-0 active-header">Zones</p>
+                                <i class="bi bi-border-all"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Zones</p>
                             </a>
                         </div>
                         <div class="header-menu">
@@ -154,12 +153,13 @@
             </div>
         </div>
         <div class="main-header small-main-header">
-            <div class="">
+            <div class="zonestab-div">
                 <div class="zonestab d-flex justify-content-between ">
                     <button class="zonestablinks  activezone" id="defaultOpenzones"
                         onclick="zonestabs(event, 'details')">Details</button>
                     <button class="zonestablinks mx-3" onclick="zonestabs(event, 'gallery')">Gallery</button>
-                    <button class="zonestablinks reviews-tab" onclick="zonestabs(event, 'reviews')">Reviews</button>
+                    <button class="zonestablinks reviews-tab" onclick="zonestabs(event, 'reviews')">Reviews <span
+                            class="text-dark-gray f-14">(25K)</span></button>
                 </div>
             </div>
         </div>
@@ -405,17 +405,18 @@
                                         onclick="zonestabs(event, 'details')">Details</button>
                                     <button class="zonestablinks mx-3"
                                         onclick="zonestabs(event, 'gallery')">Gallery</button>
-                                    <button class="zonestablinks" onclick="zonestabs(event, 'reviews')">Reviews</button>
+                                    <button class="zonestablinks" onclick="zonestabs(event, 'reviews')">Reviews <span
+                                            class="text-dark-gray f-14">(25K)</span></button>
                                 </div>
                             </div>
                             <div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="directory-icons-icon">
-                                        <img src="assets/images/icons/white-forward - Copy.svg" alt="" height="23px"
-                                            style="cursor: pointer;">
+                                        <img src="assets/images/icons/white-forward - Copy.svg" alt="" height="20px"
+                                            width="25px" style="cursor: pointer;">
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="like directory-icons-icon ms-3 me-2"
-                                        width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#333333"
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="like2 directory-icons-icon ms-3 me-2"
+                                        width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#0000"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                         class="feather feather-heart">
                                         <path
@@ -425,7 +426,7 @@
 
                                     <button class="menu-post " type="button" id="dropdownMenuButton1"
                                         data-bs-toggle="modal" data-bs-target="#dots-menu-post">
-                                        <i class=" bi bi-three-dots-vertical   f-25 mt-2"></i>
+                                        <i class=" bi bi-three-dots-vertical light-header-dots  f-25 mt-2"></i>
                                     </button>
                                 </div>
                             </div>
@@ -442,9 +443,8 @@
                                         <div class="carousel-indicators member-profile-slider--dots">
                                             <div class="pop-video-btn">
                                                 <button>
-                                                    <img src="assets/images/vid.png" alt=""
-                                                        class="img-fluid" data-bs-toggle="modal"
-                                                        data-bs-target="#videopopbtn ">
+                                                    <img src="assets/images/vid.png" alt="" class="img-fluid"
+                                                        data-bs-toggle="modal" data-bs-target="#videopopbtn ">
                                                 </button>
                                             </div>
                                             <button type="button" data-bs-target="#carouselExampleIndicators"
@@ -588,7 +588,7 @@
 
                             </div>
 
-                            <div class="row post mt-2  Feeds-row py-2 hover" >
+                            <div class="row post mt-2  Feeds-row py-2 hover">
                                 <div class="col-lg-12">
                                     <div class="d-flex justify-content-between">
                                         <div class=" directory-card w-100 align-items-start no-border py-0">
@@ -618,14 +618,17 @@
                                                             </button>
                                                             <button class="following-btn-member" data-bs-toggle="modal"
                                                                 data-bs-target="#followModal">
-                                                                Following <i class="bi bi-bell text-dark btn-on-alert"></i>
-                                                                 <i class="bi bi-bell-slash text-dark btn-off-alert"></i>
-                                                                 <i   class="bi bi-chevron-down ms-1"></i>
+                                                                Following <i
+                                                                    class="bi bi-bell text-dark btn-on-alert"></i>
+                                                                <i
+                                                                    class="bi bi-bell-slash-fill text-dark btn-off-alert"></i>
+                                                                <i class="bi bi-chevron-down ms-1"></i>
                                                             </button>
                                                         </div>
                                                     </div>
 
-                                                    <div class="d-flex justify-content-between align-items-end" onclick="window.open('member-profile.html', '_blank');">
+                                                    <div class="d-flex justify-content-between align-items-end"
+                                                        onclick="window.open('member-profile.html', '_blank');">
                                                         <div class="member-texts ms-0">
                                                             <div class="d-flex mt-3">
                                                                 <p class="mb-0 pb-0 f-16 text-dark-gray w-400  me-1">
@@ -650,7 +653,7 @@
 
                                                         <div>
                                                             <a href="member-profile.html" target="_blank"
-                                                                class="f-20 text-active w-500 me-2 decorated-btn">
+                                                                class="f-20 brand-blue w-500 me-2 decorated-btn">
                                                                 Profile
                                                             </a>
                                                         </div>
@@ -824,7 +827,7 @@
                                 <div class="d-flex align-items-end">
                                     <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Description</h1>
                                 </div>
-                                <p class="f-18 w-400 text-dark mt-3 description">
+                                <p class="f-18 w-400 text-dark mt-3 mt-sm description">
                                     Cave paintings from more than one hundred thousand years ago remain to this day as
                                     indelible proof that communication.</p>
                                 <p class="f-18 w-400 text-dark mb-0 pb-2 mt-2 description">
@@ -840,21 +843,20 @@
                                     3. day as indelible proof
                                 </p>
                                 <p class="f-18 w-400 text-dark mt-3 description">
-                                        Cave paintings from more than one hundred thousand years ago remain erisque enim
-                                        ligula
-                                        venenatis dolor. Maecenas
-                                        nisl est, ultrices<span class="dots">...</span><button
-                                                        class="more-less-btn decorated-btn read-more">Read
-                                                        More</button><span class="more-review"> nec congue eget, auctor
-                                                        vitae massa. Fusce luctus vestibulum
-                                                        augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
-                                                        ipsum dignissim ac. In
-                                                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
-                                                        vitae dui eget
-                                                        tellus gravida venenatis. Integer fringilla congue eros non
-                                                        fermentum. Sed dapibus
-                                                        pulvinar nibh tempor porta.</span><button
-                                                        class="more-less-btn decorated-btn read-less">Read Less</button>
+                                    Cave paintings from more than one hundred thousand years ago remain erisque enim
+
+                                    nisl est, ultrices<span class="dots">...</span><button
+                                        class="more-less-btn decorated-btn read-more">Read
+                                        More</button><span class="more-review"> nec congue eget, auctor
+                                        vitae massa. Fusce
+                                        augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                                        ipsum dignissim ac. In
+                                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+                                        vitae dui eget
+                                        tellus gravida venenatis. Integer fringilla congue eros non
+                                        fermentum. Sed dapibus
+                                        pulvinar nibh tempor porta.</span><button
+                                        class="more-less-btn decorated-btn read-less">Read Less</button>
                                 </p>
 
 
@@ -914,8 +916,8 @@
                                             <button class="alert-on-btn" data-bs-toggle="modal"
                                                 data-bs-target="#alertModal">
                                                 Alert On <i class="bi bi-bell btn-on-alert2"></i>
-                                                <i class="bi bi-bell-slash text-dark btn-off-alert2"></i>
-                                                 <i class="bi bi-chevron-down ms-1"></i>
+                                                <i class="bi bi-bell-slash-fill text-dark btn-off-alert2"></i>
+                                                <i class="bi bi-chevron-down ms-1"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -923,7 +925,7 @@
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <div>
                                             <div class="d-flex ">
-                                                <p class="mb-0 pb-0 f-20 light-dark w-500 ">Last Category:</p>
+                                                <p class="mb-0 pb-0 f-18 light-dark w-500 ">Last Category:</p>
 
                                             </div>
                                             <div class="d-flex">
@@ -933,7 +935,7 @@
                                         </div>
 
                                         <div>
-                                            <a href="" class="f-20 text-active w-500 me-2 decorated-btn">
+                                            <a href="" class="f-20 active-blue w-500 me-2 decorated-btn">
                                                 Report
                                             </a>
                                         </div>
@@ -1114,11 +1116,27 @@
                                 </div>
                             </div>
 
-                            <div class="row post  member-offer-fixed-btns ">
+                            <div class="row post  member-offer-fixed-btns member-offer-fixed-btns-sm">
                                 <div>
                                     <a href="">
                                         <button class="message-btn">
-                                            <i class="bi bi-chat-left-text-fill me-1"></i> Message
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="20px"
+                                                width="20px" fill="#1E67C8" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                x="0px" y="0px" viewBox="0 0 1000 1000"
+                                                enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon
+                                                </metadata>
+                                                <g>
+                                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                                        stroke="#1E67C8">
+                                                        <path stroke="#1E67C8"
+                                                            d="M4622,5017.4c-1004.1-103.5-1826.2-415.8-2590.8-986.9c-241.5-180.1-762.7-701.4-942.8-942.8C569,2390.1,250.9,1614,124.4,726.8c-32.6-226.1-32.6-981.1,0-1207.3c126.5-889.2,446.5-1672.9,965.8-2360.9c180.1-239.5,546.1-619,795.3-824c986.9-812.5,2286.2-1214.9,3541.3-1098c1502.4,141.8,2832.3,939,3673.6,2203.7c272.1,410.1,525.1,986.9,647.7,1475.6C9903.3-469,9941.6,219,9853.5,813c-40.2,274-151.4,712.9-243.4,967.7c-172.5,479.1-517.4,1082.7-829.8,1452.6c-69,82.4-122.7,161-118.8,172.5c11.5,30.7-350.7,396.7-381.3,383.3c-13.4-3.8-78.6,36.4-145.7,93.9c-412,346.8-950.5,661.1-1460.2,848.9c-247.2,92-710.9,207-988.8,249.1C5474.8,5011.6,4796.4,5034.6,4622,5017.4z M5637.6,4367.8c597.9-92,1186.2-318.1,1684.4-642c207-136.1,490.6-354.5,490.6-379.4c0-7.7-170.6-184-377.5-390.9L7055.7,2576H4735.1c-2659.8,0-2451,13.4-2634.9-170.6c-182.1-182-170.6-57.5-170.6-1987.2c0-1638.4,0-1674.8,38.3-1778.3c49.8-128.4,162.9-249.1,293.2-310.4c80.5-36.4,130.3-46,262.5-46h162.9l-182.1-184c-99.7-99.6-316.2-312.4-481-469.5l-300.9-285.5l-95.8,120.7c-258.7,323.9-515.5,781.8-663,1188.1C524.9-158.5,651.4,1203.9,1302.9,2313.5c233.8,394.8,626.6,850.8,981.2,1138.3c642,519.3,1466,860.4,2280.4,942.8C4802.1,4419.5,5405.8,4404.2,5637.6,4367.8z M8406.7,2719.7c440.8-580.6,701.4-1186.2,827.9-1925.9c55.6-321.9,59.4-954.3,9.6-1283.9c-115-737.8-377.5-1374-816.4-1964.2c-182.1-245.3-609.4-672.6-854.7-854.7c-588.3-436.9-1234.1-703.3-1964.2-816.4c-308.5-47.9-946.6-46-1236,1.9c-827.8,136.1-1536.9,456.1-2134.8,962l-115,99.7l185.9,159c101.6,88.2,408.2,377.5,678.4,645.8l490.6,488.7l1157.5-720.5l1155.5-720.5l5.7,745.5l3.8,747.4h916h914.1l97.7,46c120.7,55.6,230,162.9,283.6,277.9c40.2,88.2,40.2,101.6,46,1780.2c1.9,1080.8-1.9,1718.9-15.3,1763c-26.8,107.3-122.7,245.3-208.9,304.7l-76.7,53.7l224.2,224.2C8240,2993.8,8197.8,2995.7,8406.7,2719.7z M5992.2,1535.5C5754.6,1301.7,5055.1,611.8,4438,2.4l-1123-1105.7H2928h-385.2v1533v1533H4484h1939.3L5992.2,1535.5z M7448.6,429.8v-1533H6317.9H5187.3v-500.2c0-283.6-7.6-496.3-17.2-492.5c-9.6,3.8-293.2,178.2-632.4,389l-615.1,383.3L5564.8,318.6L7209,1962.8h118.8h120.7V429.8z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <!-- <i class="fa-regular fa-message-slash"></i> -->
+                                            Message
                                         </button>
                                     </a>
                                 </div>
@@ -1148,22 +1166,22 @@
                                 <h1 class="f-24 w-600 text-dark  m-0 text-start section-header mt-4 pt-2 mb-4">Photo
                                     Gallery
                                 </h1>
-                                <div class="mb-3">
+                                <div class="mb-3 px-0">
                                     <div class="gallery-card mx-auto ">
                                         <img src="assets/images/ab1.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-3 px-0">
                                     <div class="gallery-card mx-auto ">
                                         <img src="assets/grid-gallery/gall/1.jpg" alt="" class="img-fluid h-100">
                                     </div>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-3 px-0">
                                     <div class="gallery-card mx-auto ">
                                         <img src="assets/grid-gallery/gall/10.jpg" alt="" class="img-fluid h-100">
                                     </div>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-3 px-0">
                                     <div class="gallery-card mx-auto ">
                                         <img src="assets/grid-gallery/gall/2.jpg" alt="" class="img-fluid h-100">
                                     </div>
@@ -1272,7 +1290,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row post  member-offer-fixed-btns ">
+                            <div class="row post  member-offer-fixed-btns member-offer-fixed-btns-sm">
                                 <div>
                                     <a href="">
                                         <button class="message-btn">
@@ -1298,20 +1316,13 @@
                         <div id="reviews" class="zonestabcontent px-0 py-0">
                             <div class="row post pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <div class="d-flex flex-wrap justify-content-between w-50">
-                                        <div class="d-flex align-items-center mb-2 rating-tab-heading">
-                                            <h1 class="f-18 w-500 light-dark mb-0 pb-0">Reviews:&nbsp;</h1>
-                                            <p class="mb-0 pb-0  w-500">(25K)</p>
+                                    <div class="d-flex align-items-center mb-2  rating-tab-heading rating-tab-heading2">
+                                        <h1 class="f-18 w-500 light-dark mb-0 pb-0">Rating:&nbsp;</h1>
+                                        <div class="rating">
+                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                            <i class="bi bi-star-fill ms-1 f-12"></i>
                                         </div>
-                                        <div
-                                            class="d-flex align-items-center mb-2  rating-tab-heading rating-tab-heading2">
-                                            <h1 class="f-18 w-500 light-dark mb-0 pb-0">Rating:&nbsp;</h1>
-                                            <div class="rating">
-                                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
-                                                <i class="bi bi-star-fill ms-1 f-12"></i>
-                                            </div>
-                                            <p class="mb-0 pb-0 f-14  w-500 text-gray-light">&nbsp;(123k)</p>
-                                        </div>
+                                        <p class="mb-0 pb-0 f-14  w-500 text-gray-light">&nbsp;(123k)</p>
                                     </div>
                                     <div class="w-50 d-flex justify-content-end ">
                                         <div class="custom-select d-flex no-border">
@@ -1366,20 +1377,20 @@
                                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                                 <i class="bi bi-star-fill ms-1 f-12"></i>
                                                             </div>
-                                                            <p class="mb-0 pb-0 f-18 w-600 text-active">Value For Money
+                                                            <p class="mb-0 pb-0 f-18 w-600 brand-blue">Value For Money
                                                             </p>
                                                         </div>
 
                                                     </div>
 
                                                 </div>
-                                                <p class="f-18 w-400 text-dark mt-3 description mb-0 pb-0">
+                                                <p class="f-18 w-400 text-dark mt-3 description mb-0 pb-0 mt-sm">
                                                     Cave paintings from more than one hundred thousand years ago remain
-                                                    erisque enim ligula
+
                                                     venenatis dolor.<span class="dots">...</span><button
-                                                        class="more-less-btn decorated-btn read-more">Read
+                                                        class="more-less-btn  read-more">Read
                                                         More</button><span class="more-review"> nec congue eget, auctor
-                                                        vitae massa. Fusce luctus vestibulum
+                                                        vitae massa. Fusce
                                                         augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
                                                         ipsum dignissim ac. In
                                                         at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
@@ -1387,7 +1398,7 @@
                                                         tellus gravida venenatis. Integer fringilla congue eros non
                                                         fermentum. Sed dapibus
                                                         pulvinar nibh tempor porta.</span><button
-                                                        class="more-less-btn decorated-btn read-less">Read Less</button>
+                                                        class="more-less-btn  read-less">Read Less</button>
                                                 </p>
                                             </div>
 
@@ -1435,7 +1446,7 @@
                                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                                 <i class="bi bi-star-fill ms-1 f-12"></i>
                                                             </div>
-                                                            <p class="mb-0 pb-0 f-18 w-600 text-active">Value For Money
+                                                            <p class="mb-0 pb-0 f-18 w-600 brand-blue">Value For Money
                                                             </p>
                                                         </div>
 
@@ -1444,11 +1455,10 @@
                                                 </div>
                                                 <p class="f-18 w-400 text-dark mt-3 description mb-0 pb-0">
                                                     Cave paintings from more than one hundred thousand years ago remain
-                                                    erisque enim ligula
                                                     venenatis dolor.<span class="dots">...</span><button
-                                                        class="more-less-btn decorated-btn read-more">Read
+                                                        class="more-less-btn  read-more">Read
                                                         More</button><span class="more-review"> nec congue eget, auctor
-                                                        vitae massa. Fusce luctus vestibulum
+                                                        vitae massa. Fusce
                                                         augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
                                                         ipsum dignissim ac. In
                                                         at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
@@ -1456,7 +1466,7 @@
                                                         tellus gravida venenatis. Integer fringilla congue eros non
                                                         fermentum. Sed dapibus
                                                         pulvinar nibh tempor porta.</span><button
-                                                        class="more-less-btn decorated-btn read-less">Read Less</button>
+                                                        class="more-less-btn  read-less">Read Less</button>
                                                 </p>
                                             </div>
 
@@ -1504,28 +1514,27 @@
                                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
                                                                 <i class="bi bi-star-fill ms-1 f-12"></i>
                                                             </div>
-                                                            <p class="mb-0 pb-0 f-18 w-600 text-active">Value For Money
+                                                            <p class="mb-0 pb-0 f-18 w-600 brand-blue">Value For Money
                                                             </p>
                                                         </div>
 
                                                     </div>
 
                                                 </div>
-                                                <p class="f-18 w-400 text-dark mt-3 description mb-0 pb-0">
+                                                <p class="f-18 w-400 text-dark mt-3 description mb-0 pb-0 mt-sm">
                                                     Cave paintings from more than one hundred thousand years ago remain
-                                                    erisque enim ligula
+
                                                     venenatis dolor.<span class="dots">...</span><button
-                                                        class="more-less-btn decorated-btn read-more">Read
+                                                        class="more-less-btn  read-more">Read
                                                         More</button><span class="more-review"> nec congue eget, auctor
-                                                        vitae massa. Fusce luctus vestibulum
-                                                        augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                                                        vitae massa. Nunc sagittis dictum nisi, sed ullamcorper
                                                         ipsum dignissim ac. In
                                                         at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
                                                         vitae dui eget
                                                         tellus gravida venenatis. Integer fringilla congue eros non
                                                         fermentum. Sed dapibus
                                                         pulvinar nibh tempor porta.</span><button
-                                                        class="more-less-btn decorated-btn read-less">Read Less</button>
+                                                        class="more-less-btn  read-less">Read Less</button>
                                                 </p>
                                             </div>
 
@@ -1536,7 +1545,7 @@
 
 
 
-                            <div class="row post  member-offer-fixed-btns ">
+                            <div class="row post  member-offer-fixed-btns member-offer-fixed-btns-sm">
                                 <div class="d-flex align-items-center w-100">
                                     <div class="write-review-dp me-2 ms-2">
                                         <img src="assets/images/image 224.png" alt="" class="img-fluid">
@@ -1768,45 +1777,45 @@
 
     <!-- 3 dits popup -->
     <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
-        <div class="modal-content post-view-content">
-            <div class="modal-body p-0">
-                <div class="mobile-post-popup">
-                    <ul class=" menu-post-drop">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
-                                this
-                                Post</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
-                                Link</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
-                                Similar Posts</a></li>
-                        <div class="seprator"></div>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
-                                Jerry</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
-                                Post</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
-                                Post</a>
-                        </li>
-                        <div class="seprator"></div>
-                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                    class="fas fa-lightbulb me-4"></i>Last
-                                Active
-                                <div class="menu-date">12 Mar 22
-                                </div>
-                            </a></li>
-                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                    class="fas fa-calendar-alt me-4"></i>Posting
-                                Date <div class="menu-date">12 Mar
-                                    22</div></a></li>
-                    </ul>
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
+                                    this
+                                    Post</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
+                                    Link</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
+                                    Similar Posts</a></li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
+                                    Jerry</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
+                                    Post</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
+                                    Post</a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-lightbulb me-4"></i>Last
+                                    Active
+                                    <div class="menu-date">12 Mar 22
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-calendar-alt me-4"></i>Posting
+                                    Date <div class="menu-date">12 Mar
+                                        22</div></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- write review Modal -->
     <div class="modal fade" id="writeReview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1827,14 +1836,14 @@
                                 Hello Jerry,
                             </p>
                             <p class="mb-0 pb-0 f-16 w-400 light-dark">
-                                Write a Review Based on our <a href="" class="underline-text"> Our Guidelines</a>.
+                                Write a Review Based on our <a href="" class="underline-text">Guidelines</a>.
                             </p>
                         </div>
                     </div>
                     <div class="write-review-popup-input w-100 ">
                         <input type="text" placeholder="Overall Experience (eg: Excellent services)" class="my-3">
 
-                        <textarea name="" id="" width="100%" rows="5" class=""
+                        <textarea name="" id="" width="100%" rows="7" class=""
                             placeholder="Write a Decent Review Based on your Experience"></textarea>
                     </div>
 
@@ -1851,11 +1860,11 @@
                     </div>
                     <div class="star-rating d-flex flex-column align-items-center">
                         <s class="star1">
-                            <p class="mb-0 pb-0 f-14 w-600 light-dark star1-text">Bad</p><s class="star2">
-                                <p class="mb-0 pb-0 f-14 w-600 light-dark star2-text">Poor</p><s class="star3">
-                                    <p class="mb-0 pb-0 f-14 w-600 light-dark star3-text">Average</p><s class="star4">
-                                        <p class="mb-0 pb-0 f-14 w-600 light-dark star4-text">Good</p><s class="star5">
-                                            <p class="mb-0 pb-0 f-14 w-600 light-dark star5-text">Excellent</p>
+                            <p class="mb-0 pb-0 f-14 w-500 light-dark star1-text">Bad</p><s class="star2">
+                                <p class="mb-0 pb-0 f-14 w-500 light-dark star2-text">Poor</p><s class="star3">
+                                    <p class="mb-0 pb-0 f-14 w-500 light-dark star3-text">Average</p><s class="star4">
+                                        <p class="mb-0 pb-0 f-14 w-500 light-dark star4-text">Good</p><s class="star5">
+                                            <p class="mb-0 pb-0 f-14 w-500 light-dark star5-text">Excellent</p>
                                         </s>
                                     </s>
                                 </s>
@@ -1863,65 +1872,14 @@
                         </s>
 
                     </div>
-                    <!-- <div class="stars my-3 mx-auto">
-                        <div class="review-star">
 
-                            <svg width="22" height="22" class="fill-star" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p class="f-16 text-dark w-500">Bad</p>
-                        </div>
-                        <div class="review-star">
-                            <svg width="22" height="22" class="fill-star" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p class="f-16 text-dark w-500">Poor</p>
-                        </div>
-                        <div class="review-star">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p class="f-16 text-dark w-500">Average</p>
-                        </div>
-                        <div class="review-star">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p class="f-16 text-dark w-500">Good</p>
-                        </div>
-                        <div class="review-star">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11 1.00003L14.09 7.26003L21 8.27003L16 13.14L17.18 20.02L11 16.77L4.82 20.02L6 13.14L1 8.27003L7.91 7.26003L11 1.00003Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg>
-                            <p class="f-16 text-dark w-500">Excellent</p>
-                        </div>
-                    </div> -->
                     <div class="review-buttons mb-2 mt-5">
                         <button class="text-center">
                             SUBMIT
                         </button>
                     </div>
-                    <p class="f-16 w-400 text-center">Your Review will be published soon after approval</p>
+                    <p class="f-14 w-400 text-center instruction-text">Your Review will be published soon after approval
+                    </p>
                 </div>
 
             </div>
@@ -1929,7 +1887,8 @@
     </div>
 
     <!-- Button trigger modal -->
-    <div class="modal fade videoModal" id="videopopbtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade videoModal" id="videopopbtn" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content video-pop-content py-0">
                 <button type="button" class="close-video-pop text-start pt-2 ps-3" data-bs-dismiss="modal"><i
@@ -1952,20 +1911,22 @@
                 <div class="modal-body p-0">
                     <div class="mobile-post-popup">
                         <ul class=" menu-post-drop">
-                            <li class="noti-on-div hover" data-bs-dismiss="modal" ><a class="dropdown-item  d-flex align-items-center justify-content-between">
+                            <li class="noti-on-div hover" data-bs-dismiss="modal"><a
+                                    class="dropdown-item  d-flex align-items-center justify-content-between">
                                     <div> <i class="bi bi-bell-fill me-4 text-dark "></i>Notification ON</div>
                                     <div><i class="bi bi-check-lg me-4 text-dark noti-on"></i></div>
                                 </a>
                             </li>
-                            <li class="noti-off-div hover" data-bs-dismiss="modal" ><a class="dropdown-item d-flex align-items-center justify-content-between " >
-                                <div> <i class="bi bi-bell-slash-fill me-4 text-dark "></i>Notification OFF</div>
-                                <div><i class="bi bi-check-lg me-4 text-dark noti-off"></i></div>
-                                  </a>
+                            <li class="noti-off-div hover" data-bs-dismiss="modal"><a
+                                    class="dropdown-item d-flex align-items-center justify-content-between ">
+                                    <div> <i class="bi bi-bell-slash-fill me-4 text-dark "></i>Notification OFF</div>
+                                    <div><i class="bi bi-check-lg me-4 text-dark noti-off"></i></div>
+                                </a>
                             </li>
                             <div class="seprator"></div>
                             <li type="button" data-bs-dismiss="modal" class="unfollow-member"><a
                                     class="dropdown-item"><i class="bi bi-person-x me-4"></i>Unfollow Jerry
-                                    varghese</a></li>
+                                    Varghese</a></li>
 
                         </ul>
                     </div>
@@ -1981,11 +1942,13 @@
                 <div class="modal-body p-0">
                     <div class="mobile-post-popup">
                         <ul class=" menu-post-drop">
-                            <li data-bs-dismiss="modal"  class="alert-noti-on-div"><a class="dropdown-item  d-flex align-items-center justify-content-between hover" >
+                            <li data-bs-dismiss="modal" class="alert-noti-on-div"><a
+                                    class="dropdown-item  d-flex align-items-center justify-content-between hover">
                                     <div> <i class="bi bi-bell-fill me-4"></i>Notification ON</div>
                                     <div><i class="bi bi-check-lg me-4 alert-noti-on"></i></div>
                                 </a></li>
-                                <li data-bs-dismiss="modal"  class="alert-noti-off-div"><a class="dropdown-item  d-flex align-items-center justify-content-between hover" >
+                            <li data-bs-dismiss="modal" class="alert-noti-off-div"><a
+                                    class="dropdown-item  d-flex align-items-center justify-content-between hover">
                                     <div> <i class="bi bi-bell-slash-fill me-4 "></i>Notification OFF</div>
                                     <div><i class="bi bi-check-lg me-4 alert-noti-off"></i></div>
                                 </a></li>

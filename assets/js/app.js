@@ -100,7 +100,7 @@ $(function() {
           items:2.1,
         },
         500:{
-          items:2.5,
+          items:2.4,
       },
         767:{
             items:4.2,

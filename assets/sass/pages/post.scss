@@ -1,3 +1,16 @@
+.post2 {
+    background-color: white;
+    padding: 20px 8px 25px 8px;
+
+    @media only screen and (max-width:768px) {
+        margin-top: 7px !important;
+    }
+
+    @media only screen and (max-width:550px) {
+        padding: 25px 0px;
+    }
+}
+
 .form-post-notice {
     font-size: 18px;
     color: white;
@@ -25,7 +38,11 @@
     font-weight: 500 !important;
     text-decoration: underline !important;
     border: none !important;
+    font-size: 16px !important;
 
+    @media only screen and (max-width: 350px) {
+        font-size: 16px !important;
+    }
 }
 
 .needed {
@@ -36,15 +53,15 @@
     font-size: 16px;
     font-weight: 500;
     background-color: white !important;
-    color: $primary;
-    border: 2px solid $primary;
+    color: #0033cc;
+    border: 2px solid #0033cc;
     width: 200px !important;
     height: 40px;
     margin-right: 15px;
     border-radius: 3px;
 
     &:hover {
-        background-color: $primary !important;
+        background-color: #0033cc !important;
         color: white !important;
     }
 }
@@ -55,7 +72,7 @@
 
 .square-img-div {
     height: 100%;
-    width: 140px;
+    width: 170px;
     object-fit: cover;
     border-radius: 7px !important;
     display: flex;
@@ -63,61 +80,48 @@
     margin: 0px 6px;
 
     @media only screen and (max-width:1310px) {
-        width: 100px;
-    }
-
-    @media only screen and (max-width:991px) {
         width: 140px;
     }
 
-    @media only screen and (max-width:767px) {
-        width: 100px;
-    }
 
     @media only screen and (max-width:479px) {
-        width: 70px;
         margin: 0px 3px !important;
     }
 }
 
+.border-radius-7 {
+    border-radius: 7px;
+}
+
 .square-img {
-    height: 140px;
-    width: 140px;
+    height: 170px;
+    width: 170px;
     object-fit: cover;
     border-radius: 7px !important;
     overflow: hidden;
 
     @media only screen and (max-width:1310px) {
-        width: 100px;
-        height: 100px;
-    }
-
-    @media only screen and (max-width:991px) {
         width: 140px;
         height: 140px;
     }
 
-    @media only screen and (max-width:767px) {
-        width: 100px;
-        height: 100px;
-    }
 
-    @media only screen and (max-width:479px) {
-        width: 70px;
-        height: 70px;
-    }
 }
 
 .upload-img-btn {
     position: relative !important;
     font-size: 16px;
-    color: white !important;
+    color: $brand-blue !important;
     font-weight: 500;
-    background-color: $brand-blue;
+    background-color: transparent;
     border: none !important;
     // height: 30px;
     width: 70px;
     border-radius: 3px;
+
+    label {
+        text-decoration: underline !important;
+    }
 
 }
 
@@ -186,4 +190,16 @@
         background-color: transparent !important;
         color: $active-blue !important;
     }
+}
+
+.textarea1 {
+    resize: none !important;
+}
+
+.gm-style .default-card {
+    display: none !important;
+    opacity: 0 !important;
+}
+.activeform{
+    display: none;
 }

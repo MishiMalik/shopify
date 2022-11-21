@@ -45,7 +45,7 @@
 
                         <div class="d-flex  align-items-center justify-content-between">
                             <i class="bi bi-x-circle text-white f-22 w-500 me-2" onclick="close_window();"></i>
-                            <h1 class="page-name text-white">Jerry s' Profile</h1>
+                            <h1 class="page-name text-white">Jerry's Profile</h1>
                         </div>
                         <div class="d-flex align-items-center ">
                             <img src="assets/images/icons/white-forward.svg" alt="" height="25px" width="30px">
@@ -63,15 +63,14 @@
                     <div class="d-flex justify-content-around align-items-end">
                         <div class="header-menu ">
                             <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-house-door "></i>
-                                <p class="f-12  w-400 pb-0 mb-0 ">Feeds</p>
+                                <i class="bi bi-house-door-fill active-header"></i>
+                                <p class="f-12  w-400 pb-0 mb-0 active-header">Feeds</p>
                             </a>
                         </div>
                         <div class="header-menu">
-                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
-                                <!-- <i class="bi bi-border-all"></i> -->
-                                <i class="fas fa-th-large "></i>
-                                <p class="f-12  w-400 pb-0 mb-0 active-header">Zones</p>
+                            <a href="zones.html" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-border-all"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Zones</p>
                             </a>
                         </div>
                         <div class="header-menu">
@@ -396,7 +395,7 @@
                     <div class="main-header desktop-light-header " id="light-header">
                         <div class="d-flex justify-content-between align-items-end w-100">
                             <div>
-                                <h1 class="page-name ">Jerry s' Profile</h1>
+                                <h1 class="page-name ">Jerry's Profile</h1>
                             </div>
                             <div class="">
                                 <div class="zonestab d-flex justify-content-between ">
@@ -410,11 +409,11 @@
                             <div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="directory-icons-icon">
-                                        <img src="assets/images/icons/white-forward - Copy.svg" alt="" height="23px"
-                                            style="cursor: pointer;">
+                                        <img src="assets/images/icons/white-forward - Copy.svg" alt="" height="20px"
+                                            width="25px" style="cursor: pointer;">
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="like directory-icons-icon ms-3 me-2"
-                                        width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#333333"
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="like2 directory-icons-icon ms-3 me-2"
+                                        width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#0000"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                         class="feather feather-heart">
                                         <path
@@ -424,7 +423,7 @@
 
                                     <button class="menu-post " type="button" id="dropdownMenuButton1"
                                         data-bs-toggle="modal" data-bs-target="#dots-menu-post">
-                                        <i class=" bi bi-three-dots-vertical   f-25 mt-2"></i>
+                                        <i class=" bi bi-three-dots-vertical light-header-dots  f-25 mt-2"></i>
                                     </button>
                                 </div>
                             </div>
@@ -448,30 +447,36 @@
                                     </button>
                                 </div>
 
-                                <div class="d-flex pb-2">
-                                    <div class="">
+                                <div class="d-flex pb-2 member-details-div">
+                                    <div class="member-profile-dp-div">
                                         <img src="assets/images/pdc-3.png" alt="" class="img-fluid  member-profile-dp">
                                         <div class="member-profile-online my-2">Online</div>
                                     </div>
                                     <div class="member-profile-detail">
                                         <div class="text-start ">
-                                            <h2 class="m-0 p-0 f-20 w-600">Jerry Varghese</h2>
-                                            <p class="mb-0 pb-0 f-16 w-500 light-dark">Trainer,Manufacturer
+                                            <h2 class="m-0 p-0 f-22 w-600">Jerry Varghese</h2>
+                                            <p class="mb-0 pb-0 f-16 w-500 text-dark-gray">Trainer,Manufacturer
                                             </p>
                                         </div>
-
 
                                         <div class="d-flex align-items-center pro-heading mt-2">
                                             <img src="assets/images/icons/PRO Membership.png" alt=""
                                                 class="img-fluid me-2">
-                                            <h1 class="mb-0 pb-0">Pro Members</h1>
+                                            <h1 class="mb-0 pb-0">Pro Member</h1>
                                         </div>
 
-                                        <div class="d-flex align-items-center  ps-1 mt-2">
+                                        <div class="d-flex align-items-center   mt-2">
                                             <button class="follow-btn-member">
                                                 <i class="bi bi-person-plus-fill me-1"></i>Follow
                                             </button>
-                                            <div class="rating-member ms-3">
+                                            <button class="following-btn-member following-btn-member2"
+                                                data-bs-toggle="modal" data-bs-target="#followModal">
+                                                <i class="bi bi-person-fill following-person me-1"></i>Following <i
+                                                    class="bi bi-bell text-dark btn-on-alert"></i>
+                                                <i class="bi bi-bell-slash-fill text-dark btn-off-alert"></i>
+                                                <i class="bi bi-chevron-down f-12"></i>
+                                            </button>
+                                            <div class="rating-member ms-3 rating-member-profile">
                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-18">4.5</p>
                                                 <i class="bi bi-star-fill ms-1 f-17"></i>
                                             </div>
@@ -481,23 +486,23 @@
                                         <div class="d-flex justify-content-between align-items-end">
 
                                             <div class="member-texts">
-                                                <div class="seprator my-2"></div>
+                                                <div class="seprator my-3"></div>
                                                 <div class="d-flex ">
 
                                                     <i class="bi bi-caret-right-fill me-2"></i>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">Last
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  me-1">Last
                                                         Active:</p>
-                                                    <p class="mb-0 pb-0 f-16 light-dark w-500">3 days</p>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
+                                                    <p class="mb-0 pb-0 f-16 light-dark w-600">3 days ago</p>
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
                                                     </p>
                                                 </div>
                                                 <div class="d-flex">
                                                     <i class="bi bi-caret-right-fill me-2"></i>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  me-1">
                                                         Joined:</p>
-                                                    <p class="mb-0 pb-0 f-16 light-dark w-500">2 years, 3 months
+                                                    <p class="mb-0 pb-0 f-16 light-dark w-600">2 years, 3 months ago
                                                     </p>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
                                                     </p>
                                                 </div>
                                             </div>
@@ -520,19 +525,20 @@
                                 </div>
 
                                 <p class="f-18 w-400 text-dark mt-3 description">
-                                    Cave paintings from more than one hundred thousand years ago remain to this day as
-                                    indelible proof that communication.Cave paintings from more than one hundred
-                                    thousand years ago remain erisque enim ligula
-                                    venenatis dolor. Maecenas
-                                    nisl est, ultrices<span id="dots">...</span><span id="more"> nec congue eget, auctor
-                                        vitae massa. Fusce luctus vestibulum
-                                        augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
-                                        In
-                                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                                        tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
-                                        dapibus
-                                        pulvinar nibh tempor porta.</span><button onclick="moreLess()" id="myBtn"
-                                        class="more-less-btn decorated-btn">Read more</button>
+                                    Cave paintings from more than one hundred thousand years ago remain erisque enim
+
+                                    nisl est, ultrices<span class="dots">...</span><button
+                                        class="more-less-btn decorated-btn read-more">Read
+                                        More</button><span class="more-review"> nec congue eget, auctor
+                                        vitae massa. Fusce
+                                        augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                                        ipsum dignissim ac. In
+                                        at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+                                        vitae dui eget
+                                        tellus gravida venenatis. Integer fringilla congue eros non
+                                        fermentum. Sed dapibus
+                                        pulvinar nibh tempor porta.</span><button
+                                        class="more-less-btn decorated-btn read-less">Read Less</button>
                                 </p>
 
                             </div>
@@ -605,7 +611,7 @@
                                             <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid me-2"
                                                 height="18px" width="18px">
                                             <p class="mb-0 pb-0 f-18 text-dark-gray w-500">Blood Donar:</p>
-                                            <p class="mb-0 pb-0 f-18 w-500 text-red ms-2">Yes</p>
+                                            <p class="mb-0 pb-0 f-18 w-500 light-dark ms-2">Yes</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center ms-4 ps-1">
@@ -817,7 +823,7 @@
                                 <div>
                                     <div class="member-profile-fix-btns">
                                         <button>
-                                            <i class="bi bi-chat-left-text-fill me-2"></i> CHAT
+                                            <i class="bi bi-envelope-dash me-2"></i>CHAT
                                         </button>
 
                                     </div>
@@ -825,7 +831,7 @@
                                 <div>
                                     <div class="member-profile-fix-btns">
                                         <button>
-                                            <i class="bi bi-telephone-fill me-2"></i> TALK
+                                            <i class="bi bi-telephone-minus me-2"></i>TALK
                                         </button>
                                     </div>
 
@@ -843,31 +849,37 @@
                         <div id="gallery" class="zonestabcontent py-0 px-0">
                             <!-- =====================================gallery grid======================== -->
                             <div class="post row  ">
-                                <div class="d-flex pb-2 align-items-start mt-3">
-                                    <div class="">
+                                <div class="d-flex pb-2 member-details-div align-items-start">
+                                    <div class="member-profile-dp-div ">
                                         <img src="assets/images/pdc-3.png" alt=""
-                                            class="img-fluid  member-profile-dp mt-0">
-                                        <div class="member-profile-online my-2">Online</div>
+                                            class="mt-0 img-fluid  member-profile-dp">
+                                        <div class="member-profile-online my-2 ">Online</div>
                                     </div>
                                     <div class="member-profile-detail mt-0">
                                         <div class="text-start ">
-                                            <h2 class="m-0 p-0 f-20 w-600">Jerry Varghese</h2>
-                                            <p class="mb-0 pb-0 f-16 w-500 light-dark">Trainer,Manufacturer
+                                            <h2 class="m-0 p-0 f-22 w-600">Jerry Varghese</h2>
+                                            <p class="mb-0 pb-0 f-16 w-500 text-dark-gray">Trainer,Manufacturer
                                             </p>
                                         </div>
-
 
                                         <div class="d-flex align-items-center pro-heading mt-2">
                                             <img src="assets/images/icons/PRO Membership.png" alt=""
                                                 class="img-fluid me-2">
-                                            <h1 class="mb-0 pb-0">Pro Members</h1>
+                                            <h1 class="mb-0 pb-0">Pro Member</h1>
                                         </div>
 
-                                        <div class="d-flex align-items-center  ps-1 mt-2">
+                                        <div class="d-flex align-items-center   mt-2">
                                             <button class="follow-btn-member">
                                                 <i class="bi bi-person-plus-fill me-1"></i>Follow
                                             </button>
-                                            <div class="rating-member ms-3">
+                                            <button class="following-btn-member following-btn-member2"
+                                                data-bs-toggle="modal" data-bs-target="#followModal">
+                                                <i class="bi bi-person-fill following-person me-1"></i>Following <i
+                                                    class="bi bi-bell text-dark btn-on-alert"></i>
+                                                <i class="bi bi-bell-slash-fill text-dark btn-off-alert"></i>
+                                                <i class="bi bi-chevron-down f-12"></i>
+                                            </button>
+                                            <div class="rating-member ms-3 rating-member-profile">
                                                 <p class="mb-0 pb-0 mb-0 pb-0 f-18">4.5</p>
                                                 <i class="bi bi-star-fill ms-1 f-17"></i>
                                             </div>
@@ -877,23 +889,23 @@
                                         <div class="d-flex justify-content-between align-items-end">
 
                                             <div class="member-texts">
-                                                <div class="seprator my-2"></div>
+                                                <div class="seprator my-3"></div>
                                                 <div class="d-flex ">
 
                                                     <i class="bi bi-caret-right-fill me-2"></i>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">Last
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  me-1">Last
                                                         Active:</p>
-                                                    <p class="mb-0 pb-0 f-16 light-dark w-500">3 days</p>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
+                                                    <p class="mb-0 pb-0 f-16 light-dark w-600">3 days ago</p>
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
                                                     </p>
                                                 </div>
                                                 <div class="d-flex">
                                                     <i class="bi bi-caret-right-fill me-2"></i>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  me-1">
                                                         Joined:</p>
-                                                    <p class="mb-0 pb-0 f-16 light-dark w-500">2 years, 3 months
+                                                    <p class="mb-0 pb-0 f-16 light-dark w-600">2 years, 3 months ago
                                                     </p>
-                                                    <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
+                                                    <p class="mb-0 pb-0 f-15 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
                                                     </p>
                                                 </div>
                                             </div>
@@ -901,7 +913,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
 
                             <!-- My Feeds / 3 view Image, list, Grid========================================= -->
@@ -909,47 +920,15 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div>
-                                            <div class="dropdown-multiple " data-control="checkbox-dropdown">
-                                                <label class="dropdown-label text-start">View All</label>
-                                                <input type="hidden" value="View All" class="header-view-all">
-                                                <div class="dropdown-list gallery-dropdown-list">
-                                                    <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
-                                                Check All
-                                            </a> -->
-                                                    <!-- <label class="dropdown-option">
-                                                <input type="checkbox" checked name="dropdown-group" value="Selection 1" />
-                                                &nbsp; View All
-                                            </label> -->
-                                                    <label class="dropdown-option">
-                                                        <input type="checkbox" checked name="dropdown-group"
-                                                            value="Selection 1" />
-                                                        &nbsp; Featured Posts
-                                                    </label>
+                                            <div class="custom-select d-flex custom-selct-form form-border-no p-0 m-0"
+                                                style="width:100px !important; background-color: transparent;">
+                                                <select>
+                                                    <option value="0">Group 1</option>
+                                                    <option value="0">Group 2 </option>
+                                                    <option value="0">Group 3</option>
+                                                    <option value="1">Group 4</option>
 
-                                                    <label class="dropdown-option">
-                                                        <input type="checkbox" checked name="dropdown-group"
-                                                            value="Selection 2" />
-                                                        &nbsp; Sponsored Posts
-                                                    </label>
-
-                                                    <label class="dropdown-option">
-                                                        <input type="checkbox" checked name="dropdown-group"
-                                                            value="Selection 3" />
-                                                        &nbsp; PRO Members
-                                                    </label>
-
-                                                    <label class="dropdown-option">
-                                                        <input type="checkbox" checked name="dropdown-group"
-                                                            value="Selection 4" />
-                                                        &nbsp; Folowees Posts
-                                                    </label>
-
-                                                    <label class="dropdown-option">
-                                                        <input type="checkbox" checked name="dropdown-group"
-                                                            value="Selection 5" />
-                                                        &nbsp; Std Posts
-                                                    </label>
-                                                </div>
+                                                </select>
                                             </div>
                                         </div>
                                         <div>
@@ -1702,45 +1681,45 @@
 
     <!-- 3 dits popup -->
     <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
-        <div class="modal-content post-view-content">
-            <div class="modal-body p-0">
-                <div class="mobile-post-popup">
-                    <ul class=" menu-post-drop">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
-                                this
-                                Post</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
-                                Link</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
-                                Similar Posts</a></li>
-                        <div class="seprator"></div>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
-                                Jerry</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
-                                Post</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
-                                Post</a>
-                        </li>
-                        <div class="seprator"></div>
-                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                    class="fas fa-lightbulb me-4"></i>Last
-                                Active
-                                <div class="menu-date">12 Mar 22
-                                </div>
-                            </a></li>
-                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                    class="fas fa-calendar-alt me-4"></i>Posting
-                                Date <div class="menu-date">12 Mar
-                                    22</div></a></li>
-                    </ul>
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
+                                    Member Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
+                                    Link</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
+                                </a></li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
+                                    Jerry</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
+                                    Member</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
+                                    Member</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-x-fill me-4"></i>Block
+                                    Member</a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-lightbulb me-4"></i>Last
+                                    Active
+                                </a></li>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-calendar-alt me-4"></i>
+                                    Joined Date
+                                </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <!-- write Review -->
@@ -1847,7 +1826,36 @@
             </div>
         </div>
     </div>
+    <!-- follow pop -->
+    <div class="modal fade" id="followModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li class="noti-on-div hover" data-bs-dismiss="modal"><a
+                                    class="dropdown-item  d-flex align-items-center justify-content-between">
+                                    <div> <i class="bi bi-bell-fill me-4 text-dark "></i>Notification ON</div>
+                                    <div><i class="bi bi-check-lg me-4 text-dark noti-on"></i></div>
+                                </a>
+                            </li>
+                            <li class="noti-off-div hover" data-bs-dismiss="modal"><a
+                                    class="dropdown-item d-flex align-items-center justify-content-between ">
+                                    <div> <i class="bi bi-bell-slash-fill me-4 text-dark "></i>Notification OFF</div>
+                                    <div><i class="bi bi-check-lg me-4 text-dark noti-off"></i></div>
+                                </a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li type="button" data-bs-dismiss="modal" class="unfollow-member"><a
+                                    class="dropdown-item"><i class="bi bi-person-x me-4"></i>Unfollow Jerry
+                                    Varghese</a></li>
 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Script -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>

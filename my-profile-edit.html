@@ -40,7 +40,7 @@
 
                         <div class="d-flex  align-items-center justify-content-between">
                             <i class="bi bi-x-circle text-white f-22 w-500 me-2" onclick="close_window();"></i>
-                            <h1 class="text-white f-20 m-0 p-0">Jerry s' Profile</h1>
+                            <h1 class="text-white f-20 m-0 p-0">Profile Edit</h1>
                         </div>
 
                     </div>
@@ -85,7 +85,7 @@
                                 <div class="d-flex flex-column align-items-start text-center sm-padding wallpaper-div">
                                     <div class="member-profile-wallpaper sm-padding p-relative">
                                         <img class="edit-img profile-large img-fluid "
-                                            src="assets/images/placeholder-image3.jpg" id="wallpaper-output" />
+                                            src="assets/images/Cover Photo Dummy.jpg" id="wallpaper-output" />
                                         <p class="mb-0"><input type="file" accept="image/*" name="image" id="file1"
                                                 onchange="loadwallpaper(event)" style="display: none;"></p>
                                         <div class="remove-img">
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
                                     <button class="upload-btn" type="file"><label for="file1" style="cursor: pointer;"
-                                            class="upload-img-btn ">Upload</label></button>
+                                            class="">Upload</label></button>
                                     <p class="mb-0 pb-0 text-start text-light-gray mt-2 f-16 size-text">475 x 240px
                                         jpg(300kb max)
                                     </p>
@@ -107,11 +107,11 @@
                                         <p class="mb-0"><input type="file" accept="image/*" name="image" id="file2"
                                                 onchange="loadvideo(event)" style="display: none;"></p>
                                         <p class="mb-0 pb-0 text-center text-light-gray mt-2 f-16 size-text">MP4, 2
-                                            minute / 24
+                                            minute / 24Mb
                                             max
                                         </p>
-                                        <button class="upload-vieo-btn " type="file"><label for="file2"
-                                                style="cursor: pointer;" class="upload-img-btn ">Upload
+                                        <button class="upload-vieo-btn" type="file"><label for="file2"
+                                                style="cursor: pointer;" class="">Upload
                                             </label>
                                         </button>
                                         <div class="remove-img2">
@@ -146,11 +146,11 @@
                                                     class="form-input form-input-border w-100">
                                             </div>
                                             <div class="col-lg-6 mb-2">
-                                                <input type="text" placeholder="First Name"
+                                                <input type="text" placeholder="Last Name"
                                                     class="form-input form-input-border w-100">
                                             </div>
                                             <div class="col-lg-12 mb-2">
-                                                <input type="text" placeholder="First Name"
+                                                <input type="text" placeholder="Tag Line"
                                                     class="form-input form-input-border w-100">
                                             </div>
                                         </div>
@@ -197,9 +197,10 @@
                                     <div class="specifications-row--value w-75">
                                         <div class="custom-select d-flex custom-selct-form form-border-no">
                                             <select>
-                                                <option value="0">Individual Donar</option>
-                                                <option value="0">Individual Donar</option>
-                                                <option value="1">Blood Bank</option>
+                                                <option value="0">Individual </option>
+                                                <option value="0">Individual </option>
+                                                <option value="0">Bussiness</option>
+                                                <option value="1">Organization</option>
 
                                             </select>
                                         </div>
@@ -265,10 +266,6 @@
 
                                         </select>
                                     </div>
-                                    <!-- <select name="cars" id="cars" class="form-select w-100 m-0 ">
-                                      <option value="volvo">Individual Donar</option>
-                                      <option value="saab">Blood Bank</option>
-                                    </select> -->
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center flex-wrap py-3">
                                     <div class="d-flex align-items-center ">
@@ -679,45 +676,45 @@
 
     <!-- 3 dits popup -->
     <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
-        <div class="modal-content post-view-content">
-            <div class="modal-body p-0">
-                <div class="mobile-post-popup">
-                    <ul class=" menu-post-drop">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
-                                this
-                                Post</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
-                                Link</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
-                                Similar Posts</a></li>
-                        <div class="seprator"></div>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
-                                Jerry</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
-                                Post</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
-                                Post</a>
-                        </li>
-                        <div class="seprator"></div>
-                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                    class="fas fa-lightbulb me-4"></i>Last
-                                Active
-                                <div class="menu-date">12 Mar 22
-                                </div>
-                            </a></li>
-                        <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
-                                    class="fas fa-calendar-alt me-4"></i>Posting
-                                Date <div class="menu-date">12 Mar
-                                    22</div></a></li>
-                    </ul>
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
+                                    this
+                                    Post</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
+                                    Link</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
+                                    Similar Posts</a></li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
+                                    Jerry</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
+                                    Post</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
+                                    Post</a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-lightbulb me-4"></i>Last
+                                    Active
+                                    <div class="menu-date">12 Mar 22
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-calendar-alt me-4"></i>Posting
+                                    Date <div class="menu-date">12 Mar
+                                        22</div></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <!--Loaction Modal -->
@@ -729,7 +726,7 @@
                 <div class="modal-body p-0">
                     <div class="dropdown text-dark ps-0 ms-0 text-start w-100">
 
-                        <ul class="dropdown-menu location-drop py-2 show on pop-location">
+                        <ul class="dropdown-menu location-drop py-2 show on pop-location pop-location2">
                             <li>
                                 <div class="d-flex justify-content-between">
                                     <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center"><i
@@ -789,58 +786,7 @@
 
                                     </ul>
                                 </div>
-                                <div>
-                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
-                                        District</p>
 
-                                    <div class="recent-locations p-0 m-0">
-                                        <ul class="p-0 m-0">
-                                            <li>
-                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="all-distt ">
-
-
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman Assam</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman Assam</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                    <div class="district-location">
-                                        <p class="mb-0 pb-0">Andaman Assam</p>
-                                        <i class="bi bi-chevron-right ms-auto"></i>
-                                    </div>
-                                </div>
                             </li>
                             <li class="recent-locations pop-recent-locations">
                                 <div class="find-locations">
@@ -958,10 +904,9 @@
                     <button type="button" class="preview-close" data-bs-dismiss="modal" aria-label="Close"><i
                             class="bi bi-x-circle"></i></button>
                 </div>
-                <div class="modal-body">
-                    <div class=" px-0 py-0">
-
-                        <div class="post row sm-padding mt-0 sm-margin-0">
+                <div class="modal-body preview-body">
+                    <div class=" px-2 py-0">
+                        <div class="post row sm-padding">
                             <div class="member-profile-wallpaper sm-padding">
                                 <img src="assets/images/categories.png" alt="" class="img-fluid">
                             </div>
@@ -975,29 +920,36 @@
                                 </button>
                             </div>
 
-                            <div class="d-flex pb-2">
-                                <div class="">
+                            <div class="d-flex pb-2 member-details-div">
+                                <div class="member-profile-dp-div">
                                     <img src="assets/images/pdc-3.png" alt="" class="img-fluid  member-profile-dp">
                                     <div class="member-profile-online my-2">Online</div>
                                 </div>
                                 <div class="member-profile-detail">
                                     <div class="text-start ">
-                                        <h2 class="m-0 p-0 f-20 w-600">Jerry Varghese</h2>
-                                        <p class="mb-0 pb-0 f-16 w-500 light-dark">Trainer,Manufacturer
+                                        <h2 class="m-0 p-0 f-22 w-600">Jerry Varghese</h2>
+                                        <p class="mb-0 pb-0 f-16 w-500 text-dark-gray">Trainer,Manufacturer
                                         </p>
                                     </div>
 
-
                                     <div class="d-flex align-items-center pro-heading mt-2">
-                                        <img src="assets/images/icons/PRO Membership.png" alt="" class="img-fluid me-2">
-                                        <h1 class="mb-0 pb-0">Pro Members</h1>
+                                        <img src="assets/images/icons/PRO Membership.png" alt=""
+                                            class="img-fluid me-2">
+                                        <h1 class="mb-0 pb-0">Pro Member</h1>
                                     </div>
 
-                                    <div class="d-flex align-items-center  ps-1 mt-2">
+                                    <div class="d-flex align-items-center   mt-2">
                                         <button class="follow-btn-member">
                                             <i class="bi bi-person-plus-fill me-1"></i>Follow
                                         </button>
-                                        <div class="rating-member ms-3">
+                                        <button class="following-btn-member following-btn-member2"
+                                            data-bs-toggle="modal" data-bs-target="#followModal">
+                                            <i class="bi bi-person-fill following-person me-1"></i>Following <i
+                                                class="bi bi-bell text-dark btn-on-alert"></i>
+                                            <i class="bi bi-bell-slash-fill text-dark btn-off-alert"></i>
+                                            <i class="bi bi-chevron-down f-12"></i>
+                                        </button>
+                                        <div class="rating-member ms-3 rating-member-profile">
                                             <p class="mb-0 pb-0 mb-0 pb-0 f-18">4.5</p>
                                             <i class="bi bi-star-fill ms-1 f-17"></i>
                                         </div>
@@ -1007,23 +959,23 @@
                                     <div class="d-flex justify-content-between align-items-end">
 
                                         <div class="member-texts">
-                                            <div class="seprator my-2"></div>
+                                            <div class="seprator my-3"></div>
                                             <div class="d-flex ">
 
                                                 <i class="bi bi-caret-right-fill me-2"></i>
-                                                <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">Last
+                                                <p class="mb-0 pb-0 f-15 text-dark-gray w-500  me-1">Last
                                                     Active:</p>
-                                                <p class="mb-0 pb-0 f-16 light-dark w-500">3 days</p>
-                                                <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
+                                                <p class="mb-0 pb-0 f-16 light-dark w-600">3 days ago</p>
+                                                <p class="mb-0 pb-0 f-15 text-dark-gray w-500  ">&nbsp;(15 Aug 2022)
                                                 </p>
                                             </div>
                                             <div class="d-flex">
                                                 <i class="bi bi-caret-right-fill me-2"></i>
-                                                <p class="mb-0 pb-0 f-16 text-dark-gray w-500  me-1">
+                                                <p class="mb-0 pb-0 f-15 text-dark-gray w-500  me-1">
                                                     Joined:</p>
-                                                <p class="mb-0 pb-0 f-16 light-dark w-500">2 years, 3 months
+                                                <p class="mb-0 pb-0 f-16 light-dark w-600">2 years, 3 months ago
                                                 </p>
-                                                <p class="mb-0 pb-0 f-16 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
+                                                <p class="mb-0 pb-0 f-15 text-dark-gray w-500  ">&nbsp;(12 Mar 2022)
                                                 </p>
                                             </div>
                                         </div>
@@ -1031,32 +983,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov" controls class="ms-auto"></video> -->
-                            <!-- <div class=" ">
-                    <video controls class="">
-                        <source src="assets/video/charity.mp4" type="video/mp4" class="w-100">
-                      Your browser does not support the video tag.
-                      </video>
-                   </div> -->
+                            
                         </div>
-
                         <div class="row post mt-2 text-start">
                             <div class="d-flex align-items-end">
                                 <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Intro</h1>
                             </div>
 
                             <p class="f-18 w-400 text-dark mt-3 description">
-                                Cave paintings from more than one hundred thousand years ago remain to this day as
-                                indelible proof that communication.Cave paintings from more than one hundred thousand
-                                years ago remain erisque enim ligula
-                                venenatis dolor. Maecenas
-                                nisl est, ultrices<span id="dots">...</span><span id="more"> nec congue eget, auctor
-                                    vitae massa. Fusce luctus vestibulum
-                                    augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
-                                    at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                                    tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
-                                    pulvinar nibh tempor porta.</span><button onclick="moreLess()" id="myBtn"
-                                    class="more-less-btn decorated-btn">Read more</button>
+                                Cave paintings from more than one hundred thousand years ago remain erisque enim
+
+                                nisl est, ultrices<span class="dots">...</span><button
+                                    class="more-less-btn decorated-btn read-more">Read
+                                    More</button><span class="more-review"> nec congue eget, auctor
+                                    vitae massa. Fusce
+                                    augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                                    ipsum dignissim ac. In
+                                    at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+                                    vitae dui eget
+                                    tellus gravida venenatis. Integer fringilla congue eros non
+                                    fermentum. Sed dapibus
+                                    pulvinar nibh tempor porta.</span><button
+                                    class="more-less-btn decorated-btn read-less">Read Less</button>
                             </p>
 
                         </div>
@@ -1129,7 +1077,7 @@
                                         <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid me-2"
                                             height="18px" width="18px">
                                         <p class="mb-0 pb-0 f-18 text-dark-gray w-500">Blood Donar:</p>
-                                        <p class="mb-0 pb-0 f-18 w-500 text-red ms-2">Yes</p>
+                                        <p class="mb-0 pb-0 f-18 w-500 light-dark ms-2">Yes</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center ms-4 ps-1">
@@ -1144,12 +1092,12 @@
 
 
                         </div>
-
                         <div class="row post mt-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
                                     <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Location</h1>
-                                    <div class="d-flex align-items-center mt-2 location-text location-text-member mt-3">
+                                    <div
+                                        class="d-flex align-items-center mt-2 location-text location-text-member mt-3">
                                         <i class="bi bi-geo-alt f-22  text-green pe-2"></i>
                                         <p class="mb-0  f-22">Edapily,</p>
                                         <p class="mb-0 pb-0 f-20 ellipsis text-gray">&nbsp;Erankulm,</p>
@@ -1190,7 +1138,6 @@
                             </div>
 
                         </div>
-
                         <div class="row post mt-2 text-start mb-2">
                             <div class="d-flex align-items-end">
                                 <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Tags of Interests
@@ -1249,7 +1196,7 @@
             image.src = URL.createObjectURL(event.target.files[0]);
         };
         $('.remove-img').click(function () {
-            $('#wallpaper-output').attr('src', "assets/images/placeholder-image3.jpg")
+            $('#wallpaper-output').attr('src', "assets/images/Cover Photo Dummy.jpg")
         });
 
         var loadvideo = function (event) {

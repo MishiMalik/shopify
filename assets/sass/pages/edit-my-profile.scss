@@ -28,7 +28,7 @@
     position: absolute;
     bottom: 40px;
     left: 20px;
-    background-color: $brand-blue;
+    background-color: transparent;
     border: $brand-blue;
     // padding: 5px 7px;
     border-radius: 3px;
@@ -36,10 +36,10 @@
 
 
     label {
-        color: white;
-        font-weight: 400;
-        font-size: 14px;
-
+        color: $brand-blue;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
     }
 }
 
@@ -48,16 +48,16 @@
     // position: absolute;
     // bottom: 40px;
     // left: 20px;
-    background-color: $brand-blue;
+    background-color: transparent;
     border: $brand-blue;
     // padding: 5px 7px;
     border-radius: 3px;
 
     label {
-        color: white;
-        font-weight: 400;
-        font-size: 14px;
-
+        color: $brand-blue;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
     }
 }
 
@@ -143,10 +143,10 @@
 }
 
 .form-enter {
-    background-color: #5B5B5B;
+    background-color: #E5E5E5;
     font-size: 20px;
-    font-weight: 500;
-    color: white;
+    font-weight: 400;
+    color: #240101;
     padding: 10px 30px;
     text-transform: uppercase;
     border: 1px solid $text-gray-light !important;

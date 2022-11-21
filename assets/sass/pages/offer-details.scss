@@ -1,7 +1,7 @@
 .page-name {
   font-size: 17px !important;
   color: $active-blue;
-  font-weight: 600;
+  font-weight: 500;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -9,13 +9,23 @@
   padding-bottom: 3px;
 
   @media only screen and (max-width:991px) {
-    font-size: 22px !important;
+    font-size: 20px !important;
     color: white !important;
     margin-bottom: 0px;
     padding-top: 3px;
   }
 
 
+}
+
+.page-name-small {
+  @media only screen and (max-width:991px) {
+    font-size: 20px !important;
+    color: white !important;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    font-weight: 500;
+  }
 }
 
 .member-details-slider {
@@ -40,6 +50,7 @@
         opacity: 1;
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border: 3px solid white;
+
         @media only screen and (max-width:479px) {
           height: 40px !important;
           width: 40px !important;
@@ -120,7 +131,7 @@
 
 .member-texts p {
   @media only screen and (max-width:400px) {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
 }
 
@@ -270,7 +281,8 @@
 .more {
   display: none;
 }
-.text-white-icon{
+
+.text-white-icon {
   color: white !important;
 }
 
@@ -286,17 +298,23 @@
   background-color: transparent !important;
   border: none !important;
   font-size: 16px !important;
-  color: $brand-blue !important;
+  color: #000000 !important;
+  text-decoration: underline;
+  font-weight: 500 !important;
 }
 
 .member-tag {
-  background-color:#EFF0F2;
+  background-color: #EFF0F2;
   padding: 7px;
-  color: $light-dark;
+
   font-size: 16px;
   font-weight: 500;
   border-radius: 7px;
   margin: 5px;
+
+  a {
+    color: #0033ff !important;
+  }
 
   @media only screen and (max-width:500px) {
     font-size: 14px !important;
@@ -475,17 +493,33 @@
       @media only screen and (max-width:490px) {
         width: fit-content !important;
         padding: 2px 5px !important;
+        min-width: 110px;
       }
 
-      @media only screen and (max-width:360px) {
-        font-size: 14px;
+      @media only screen and (max-width:390px) {
+        font-size: 15px;
+        min-width: 100px;
+      }
+
+      @media only screen and (max-width:345px) {
+        min-width: 85px;
+      }
+
+      @media only screen and (max-width:326px) {
+        padding: 2px 4px !important;
+
+        min-width: 80px;
       }
 
       &:hover {
         color: white;
         background-color: #1E67C8;
 
+        svg {
+          fill: white;
+        }
       }
+
     }
 
     .member-select {
@@ -504,11 +538,23 @@
 
       @media only screen and (max-width:490px) {
         width: fit-content !important;
-        padding: 2px 5px !important;
+        padding: 2px 10px !important;
+        min-width: 120px;
       }
 
-      @media only screen and (max-width:360px) {
-        font-size: 14px !important;
+      @media only screen and (max-width:390px) {
+        font-size: 15px !important;
+        min-width: 100px;
+      }
+
+      @media only screen and (max-width:345px) {
+        min-width: 85px;
+      }
+
+      @media only screen and (max-width:326px) {
+        padding: 2px 6px !important;
+
+        min-width: 80px;
       }
     }
 
@@ -532,10 +578,20 @@
       @media only screen and (max-width:490px) {
         width: fit-content !important;
         padding: 2px 5px !important;
+        min-width: 120px;
       }
 
-      @media only screen and (max-width:360px) {
-        font-size: 14px !important;
+      @media only screen and (max-width:390px) {
+        font-size: 15px !important;
+        min-width: 100px;
+      }
+
+      @media only screen and (max-width:345px) {
+        min-width: 80px;
+      }
+
+      @media only screen and (max-width:326px) {
+        min-width: 77px;
       }
 
       &:hover {
@@ -569,7 +625,8 @@
 
 .section-header {
   font-size: 20px !important;
-   font-weight: 500 !important;
+  font-weight: 500 !important;
+
   @media only screen and (max-width:500px) {
     font-size: 18px !important;
   }
@@ -580,6 +637,13 @@
 
   @media only screen and (max-width:500px) {
     font-size: 16px !important;
+    line-height: 20px;
+  }
+}
+
+.mt-sm {
+  @media only screen and (max-width:500px) {
+    margin-top: 10px !important;
   }
 }
 
@@ -645,7 +709,7 @@
     color: $light-dark;
 
     &::placeholder {
-      color: $text-gray-light !important;
+      color: #333333 !important;
       font-weight: 400;
     }
 
@@ -663,7 +727,7 @@
     color: $light-dark;
 
     &::placeholder {
-      color: $text-gray-light !important;
+      color: #333333 !important;
       font-weight: 400;
     }
 
@@ -680,6 +744,12 @@
 
   @media only screen and (max-width:400px) {
     width: 100%;
+  }
+}
+
+.instruction-text {
+  @media only screen and (max-width:400px) {
+    font-size: 13px;
   }
 }
 
@@ -736,22 +806,31 @@
   width: 100%;
   height: 300px;
   object-fit: cover;
+
+  @media only screen and (max-width:769px) {
+    height: auto;
+    padding: 0px !important;
+  }
 }
 
 // ==================gallery
 .gallery-card {
   height: auto;
-  width: 400px;
+  width: 500px;
   margin-bottom: 10px;
 
-  @media only screen and (max-width:430px) {
+  @media only screen and (max-width:1124px) {
+    width: 450px;
+  }
+
+  @media only screen and (max-width:500px) {
     height: auto;
     width: 100%;
   }
 
   img {
     height: 100%;
-    width: 400px;
+    width: 500px;
     object-fit: cover;
     object-position: center;
     border: 4px solid $light-gray;
@@ -759,18 +838,18 @@
     background-color: aliceblue;
     margin: 0px auto;
 
-    @media only screen and (max-width:430px) {
+    @media only screen and (max-width:1124px) {
+      width: 450px;
+    }
+
+    @media only screen and (max-width:50px) {
       width: 100%;
     }
   }
 
 }
 
-.rating-tab-heading2 {
-  @media only screen and (max-width:430px) {
-    margin-top: 20px;
-  }
-}
+
 
 .rating-tab-heading {
 
@@ -797,6 +876,7 @@
 }
 
 // =========================================follow btn
+
 .following-btn-member {
   background-color: #F2F2F2;
   border: 2px solid #cccccc !important;
@@ -810,7 +890,8 @@
   .bi-bell {
     font-size: 18px;
   }
-  .bi-bell-slash{
+
+  .bi-bell-slash {
     font-size: 18px;
   }
 
@@ -820,11 +901,48 @@
     .bi-bell {
       font-size: 16px;
     }
-    .bi-bell-slash{
+
+    .bi-bell-slash {
       font-size: 16px;
     }
   }
 
+}
+
+.following-btn-member2 {
+  background-color: transparent !important;
+  border: 0px solid transparent !important;
+  color: $light-dark !important;
+  padding: 0px 0px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  display: none;
+
+  .bi-bell {
+    font-size: 18px;
+  }
+
+  .bi-bell-slash {
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width:360px) {
+    font-size: 14px;
+
+    .bi-bell {
+      font-size: 16px;
+    }
+
+    .bi-bell-slash {
+      font-size: 16px;
+    }
+  }
+
+}
+
+.following-person {
+  color: #45BFFA;
 }
 
 .alert-on-btn {
@@ -840,21 +958,35 @@
   .bi-bell {
     font-size: 18px;
   }
-  .bi-bell-slash{
+
+  .bi-bell-slash {
     font-size: 18px;
   }
+
   @media only screen and (max-width:360px) {
     font-size: 14px;
 
     .bi-bell {
       font-size: 16px;
     }
-    .bi-bell-slash{
+
+    .bi-bell-slash {
       font-size: 16px;
     }
   }
 }
 
+.like2 {
+  stroke: #000000 !important;
+
+  &:hover {
+    fill: #000000 !important;
+  }
+}
+
+.light-header-dots {
+  color: #000000 !important;
+}
 
 
 // write review ===================================
@@ -973,30 +1105,59 @@
 .star-rating-rtl s:after {
   content: "\2606";
 }
+
 // ===============notification on/off
-.noti-on{
+.noti-on {
   display: block;
   line-height: 18px;
 }
-.noti-off{
+
+.noti-off {
   display: none;
   line-height: 18px;
 }
-.alert-noti-on{
+
+.alert-noti-on {
   display: block;
   line-height: 18px;
 }
-.alert-noti-off{
+
+.alert-noti-off {
   display: none;
   line-height: 18px;
 }
- .modal-backdrop
-{
-    opacity:0.9 !important;
+
+.modal-backdrop {
+  opacity: 0.9 !important;
 }
-.btn-off-alert{
+
+.btn-off-alert {
   display: none;
 }
-.btn-off-alert2{
+
+.btn-off-alert2 {
   display: none;
+}
+
+.zonestab-div {
+  @media only screen and (max-width:769px) {
+    width: 100% !important;
+  }
+
+  .zonestab {
+    justify-content: space-evenly !important;
+  }
+}
+
+.member-offer-fixed-btns-sm {
+  @media only screen and (max-width:769px) {
+    justify-content: space-evenly !important;
+  }
+
+}
+
+.pop-location2 {
+  @media only screen and (max-width:991px) {
+    padding-top: 10px !important;
+  }
 }

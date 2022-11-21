@@ -9,6 +9,7 @@
         height: 240px;
         width: 100%;
         object-fit: cover !important;
+        background-position: top !important;
 
     }
 
@@ -117,43 +118,51 @@
     display: flex;
     flex-shrink: 0 !important;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0 !important;
 }
 
 .member-profile-dp {
     margin-top: 30px;
-    height: 130px;
-    width: 130px;
-    border-radius: 17px;
+    height: 160px;
+    width: 160px;
+    border-radius: 7px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-shrink: 0 !important;
     object-fit: cover;
 
     img {
-        height: 130px;
-        width: 130px;
+        height: 160px;
+        width: 160px;
         object-fit: cover;
         border-radius: 17px;
         display: flex;
         flex-shrink: 0 !important;
+        object-fit: cover;
 
         @media only screen and (max-width:479px) {
-            height: 70px !important;
-            width: 70px;
+            height: 100px !important;
+            width: 100px;
         }
     }
 
-    @media only screen and (max-width:479px) {
-        height: 70px !important;
-        width: 70px;
+    @media only screen and (max-width:540px) {
+        height: 110px !important;
+        width: 110px;
+    }
+
+    @media only screen and (max-width:340px) {
+        height: 96px !important;
+        width: 96px;
     }
 }
 
 .member-profile-online {
     font-size: 14px;
     font-weight: 500;
-    color: #00BF00;
+    color: #009900;
     position: relative;
     text-align: center;
 
@@ -167,12 +176,12 @@
         height: 16px;
         width: 16px;
         border-radius: 100%;
-        background-color: #00BF00;
-        left: 20px;
+        background-color: #009900;
+        left: -20px;
         top: 1px;
 
         @media only screen and (max-width:479px) {
-            left: 0;
+            left: -10px;
         }
     }
 }
@@ -185,26 +194,84 @@
         padding-left: 10px
     }
 
+    .f-22 {
+        @media only screen and (max-width:479px) {
+            font-size: 18px !important;
+        }
+    }
+
+    .f-16 {
+        @media only screen and (max-width:479px) {
+            font-size: 14px !important;
+        }
+    }
 }
 
 .member-texts {
     .f-16 {
+        @media only screen and (max-width:1150px) {
+            font-size: 12px !important;
+        }
+
+        @media only screen and (max-width:991px) {
+            font-size: 16px !important;
+        }
+
         @media only screen and (max-width:420px) {
-            font-size: 14px;
+            font-size: 14px !important;
         }
 
         @media only screen and (max-width:380px) {
-            font-size: 12px;
+            font-size: 14px !important;
             // margin-left: -20px;
         }
     }
 
-    @media only screen and (max-width:420px) {
-        margin-left: -20px;
+    .f-15 {
+        @media only screen and (max-width:1150px) {
+            font-size: 11px !important;
+        }
+
+        @media only screen and (max-width:991px) {
+            font-size: 15px !important;
+        }
+
+        @media only screen and (max-width:420px) {
+            font-size: 13px !important;
+        }
+
+        @media only screen and (max-width:380px) {
+            font-size: 13px !important;
+            // margin-left: -20px;
+        }
     }
 
-    @media only screen and (max-width:360px) {
-        margin-left: -65px;
+    @media only screen and (max-width:500px) {
+        margin-left: -40px;
+    }
+
+    @media only screen and (max-width:390px) {
+        margin-left: -90px;
+    }
+
+    @media only screen and (max-width:350px) {
+        margin-left: -110px;
+    }
+
+    .seprator {
+        @media only screen and (max-width:430px) {
+            margin-top: 35px !important;
+        }
+
+        @media only screen and (max-width:340px) {
+            margin-top: 25px !important;
+        }
+    }
+}
+
+.member-details-div {
+    @media only screen and (max-width:400px) {
+        width: 100%;
     }
 }
 
@@ -280,7 +347,75 @@
     }
 }
 
+.edit-profile-btn button {
+    @media only screen and (max-width:479px) {
+        font-size: 17px !important;
+        min-width: 100px !important;
+        margin: 5px 7px !important;
+    }
+
+
+}
+
 .gallery-dropdown-list {
     position: absolute !important;
     left: 0px !important;
+}
+
+.rating-member-profile {
+    @media only screen and (max-width:500px) {
+        padding: 0px 3px !important;
+        margin-left: 4px !important;
+    }
+
+    .f-18 {
+        @media only screen and (max-width:500px) {
+            font-size: 14px;
+        }
+    }
+
+    .f-17 {
+        @media only screen and (max-width:500px) {
+            font-size: 12px;
+        }
+    }
+
+    .f-16 {
+        @media only screen and (max-width:500px) {
+            font-size: 13px !important;
+        }
+    }
+
+}
+
+.following-btn-member2 {
+    background-color: transparent !important;
+    border: 0px solid transparent !important;
+    color: $light-dark !important;
+    padding: 0px 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+
+    .bi-bell {
+        font-size: 18px;
+    }
+
+    .bi-bell-slash {
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width:360px) {
+        font-size: 13px;
+
+        .bi-bell {
+            font-size: 14px;
+        }
+
+        .bi-bell-slash {
+            font-size: 14px;
+        }
+    }
+
 }

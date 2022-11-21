@@ -304,10 +304,13 @@ function formtabs(evt, cityName) {
     zonestablinks[i].className = zonestablinks[i].className.replace(" activeform", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " activeform";
-  if (evt.currentTarget.classList.contains('blank-form-btn')) {
-    document.getElementById('media-btn').className += ' activeform'
+  if(evt.currentTarget) {
+    evt.currentTarget.className += " activeform";
+    if (evt.currentTarget.classList.contains('blank-form-btn')) {
+      document.getElementById('media-btn').className += ' activeform'
+    }
   }
+  
 }
 if ($(window).width() < 991) {
   $("#defaultOpenform").click();
