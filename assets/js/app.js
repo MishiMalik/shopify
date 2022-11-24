@@ -1,3 +1,76 @@
+
+ $(function () {
+  $("div.star-rating > s, div.star-rating-rtl > s").on("click", function (e) {
+
+      // remove all active classes first, needed if user clicks multiple times
+      $(this).closest('div').find('.active').removeClass('active');
+
+      $(e.target).parentsUntil("div").addClass('active'); // all elements up from the clicked one excluding self
+      $(e.target).addClass('active');  // the element user has clicked on
+
+
+      var numStars;
+      if(e.target.tagName == 'P') {
+        numStars = $(e.target).parentsUntil("div").length;
+      } else {
+        numStars = $(e.target).parentsUntil("div").length + 1;
+      }
+      $('.show-result').text(numStars + " .0");
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+  //length in characters
+var maxLength = 140;
+var ellipsestext = "...";
+var moretext = "Read more";
+var lesstext = "Read less";
+$(".showReadMore").each(function(){
+  //get the text of paragraph or div
+  var myStr = $(this).text();
+  
+ // check if it exceeds the maxLength limit
+  if($.trim(myStr).length > maxLength){
+      //get only limited string firts to show text on page load
+      var newStr = myStr.substring(0, maxLength);
+
+      //get remaining string         
+var removedStr = myStr.substr(maxLength, $.trim(myStr).length - maxLength);
+      // now append the newStr + "..."+ hidden remaining string
+      var Newhtml = newStr + '<span class="moreellipses">' + ellipsestext+ '</span><span class="morecontent"><span>' + removedStr + '</span>&nbsp;&nbsp;<a href="javascript:void(0)" class="ReadMore">' + moretext + '</a></span>';
+
+      $(this).html(Newhtml);
+      
+  }
+});
+
+//function to show/hide remaining text on ReadMore button click
+$(".ReadMore").click(function(){
+ 
+  if($(this).hasClass("less")) {
+      $(this).removeClass("less");
+      $(this).html(moretext);
+  }
+   else {
+      $(this).addClass("less");
+      $(this).html(lesstext);
+  }
+  
+  $(this).parent().prev().toggle();
+  $(this).prev().toggle();
+  return false;
+});
+})
 // ======================================================notification on/off
 $('.noti-off-div').on('click',function(){
   $('.noti-off').css('display','block');
@@ -97,7 +170,7 @@ $(function() {
           items:1.5
         },
         347:{
-          items:2.1,
+          items:2.2,
         },
         500:{
           items:2.4,
@@ -573,7 +646,9 @@ function myFeeds(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " activeFeed";
 }
- document.getElementById("default-Feed").click();
+ if(document.getElementById("default-Feed")){
+  document.getElementById("default-Feed").click();
+ }
 
 // when click on follow /hide follow btn// show follow icon
  $('.follow-person-icon').on('click', function() {
@@ -721,3 +796,11 @@ function close_window() {
     close();
   // }
 }
+
+setInterval(() => {
+  if($('#videopopbtn').is(':visible')) {
+    $('#videopopbtn').find('video').prop('muted', false)
+  } else {
+    $('#videopopbtn').find('video').prop('muted', true)
+  }
+}, 1000)

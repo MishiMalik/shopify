@@ -4033,7 +4033,7 @@ a {
 
 @media only screen and (max-width: 400px) {
   .member-texts p {
-    font-size: 15px !important; } }
+    font-size: 17px !important; } }
 
 @media only screen and (max-width: 400px) {
   .member-review-name-tagline {
@@ -4541,12 +4541,12 @@ a {
 
 .gallery-video {
   width: 100%;
-  height: 300px;
-  object-fit: cover; }
+  height: 370px;
+  object-fit: fill; }
   @media only screen and (max-width: 769px) {
     .gallery-video {
-      height: auto;
-      padding: 0px !important; } }
+      padding: 0px !important;
+      height: 200px; } }
 
 .gallery-card {
   height: auto;
@@ -4632,7 +4632,8 @@ a {
         font-size: 16px; } }
 
 .following-person {
-  color: #45BFFA; }
+  color: #45BFFA;
+  font-size: 15px; }
 
 .alert-on-btn {
   background-color: #F2F2F2;
@@ -4792,6 +4793,16 @@ a {
   .pop-location2 {
     padding-top: 10px !important; } }
 
+.hide-caption {
+  height: 30px;
+  background-color: red;
+  margin-top: -10px;
+  z-index: 1000; }
+
+.edit-pofile-btn {
+  font-size: 18px !important;
+  height: 30px !important; }
+
 .member-profile-wallpaper {
   height: 240px;
   width: 100%;
@@ -4921,9 +4932,11 @@ a {
   @media only screen and (max-width: 479px) {
     .member-profile-detail {
       padding-left: 10px; } }
-  @media only screen and (max-width: 479px) {
-    .member-profile-detail .f-22 {
-      font-size: 18px !important; } }
+  .member-profile-detail .f-22 {
+    font-size: 24px !important; }
+    @media only screen and (max-width: 479px) {
+      .member-profile-detail .f-22 {
+        font-size: 19px !important; } }
   @media only screen and (max-width: 479px) {
     .member-profile-detail .f-16 {
       font-size: 14px !important; } }
@@ -5034,8 +5047,8 @@ a {
     @media only screen and (max-width: 374px) {
       .member-profile-fix-btns button {
         font-size: 15px;
-        min-width: 80px;
-        margin: 3px 3px; } }
+        min-width: 76px;
+        margin: 3px 7px; } }
     .member-profile-fix-btns button:hover {
       color: white;
       background-color: #1E67C8; }
@@ -5552,3 +5565,30 @@ a {
 
 .activeform {
   display: none; }
+
+.morecontent span {
+  display: none; }
+
+.ReadMore {
+  display: visible;
+  color: black !important;
+  text-decoration: underline !important;
+  font-size: 18px;
+  font-weight: 500 !important; }
+  @media only screen and (max-width: 479px) {
+    .ReadMore {
+      font-size: 16px !important; } }
+
+.showReadMore {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333 !important; }
+  @media only screen and (max-width: 479px) {
+    .showReadMore {
+      font-size: 16px !important; } }
+
+.custome-gallery-group .select-selected::after {
+  top: 10px !important; }
+
+.wall-paper-upload {
+  background-color: white; }

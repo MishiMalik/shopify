@@ -294,6 +294,7 @@ if (width < 991) {
 
 // =======================================================================tabs
 function formtabs(evt, cityName) {
+  console.log("Clicked")
   var i, zonestabcontent, zonestablinks;
   zonestabcontent = document.getElementsByClassName("zonestabcontent");
   for (i = 0; i < zonestabcontent.length; i++) {
@@ -313,10 +314,12 @@ function formtabs(evt, cityName) {
   
 }
 if ($(window).width() < 991) {
-  $("#defaultOpenform").click();
+  // $("#defaultOpenform").click();
+  document.getElementById('media').style.display = "block";
 }
 else {
-  $("#defaultOpenform2").click();
+  // $("#defaultOpenform2").click();
+  document.getElementById('details').style.display = "block";
 
 }
 

@@ -131,7 +131,7 @@
 
 .member-texts p {
   @media only screen and (max-width:400px) {
-    font-size: 15px !important;
+    font-size: 17px !important;
   }
 }
 
@@ -804,12 +804,12 @@
 
 .gallery-video {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 370px;
+  object-fit: fill;
 
   @media only screen and (max-width:769px) {
-    height: auto;
     padding: 0px !important;
+    height: 200px;
   }
 }
 
@@ -943,6 +943,7 @@
 
 .following-person {
   color: #45BFFA;
+  font-size: 15px;
 }
 
 .alert-on-btn {
@@ -1160,4 +1161,14 @@
   @media only screen and (max-width:991px) {
     padding-top: 10px !important;
   }
+}
+.hide-caption{
+  height: 30px;
+  background-color: red;
+  margin-top: -10px;
+  z-index: 1000;
+}
+.edit-pofile-btn{
+  font-size: 18px !important;
+  height: 30px !important;
 }
