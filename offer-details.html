@@ -1903,13 +1903,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <script src="assets/grid-gallery/js/grid-gallery.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/zones.js"></script>
     <script src="assets/js/app.js"></script>
 
-
+    <script text="text/javascript">
+        jQuery(document).ready(function(){
+        jQuery('.carousel').swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+        if(direction == 'left'){
+        jQuery(this).carousel('next'); 
+        }
+        if(direction == 'right'){
+        jQuery(this).carousel('prev'); 
+        }
+        },
+        allowPageScroll:"vertical"
+        });
+        });
+        </script>
     <script>
+        
         // $(function () {
         //     $("div.star-rating > s, div.star-rating-rtl > s").on("click", function (e) {
 
