@@ -10,11 +10,14 @@
         width: 100%;
         object-fit: cover !important;
         background-position: top !important;
+        @media only screen and (max-width:479px) {
+            height: 200px;
+        }
 
     }
 
     @media only screen and (max-width:479px) {
-        height: 240px;
+        height: 200px;
     }
 }
 
@@ -26,7 +29,7 @@
         height: 100px !important;
         width: 200px;
         margin-right: 20px;
-        margin-top: -80px;
+        margin-top: -50px;
         background-color: transparent;
         border: none;
         padding: 0px;
@@ -37,7 +40,7 @@
             margin-right: 0px;
             height: 80px !important;
             width: 150px;
-            margin-top: -50px;
+            margin-top: -40px;
         }
 
         .video-thumbnail-img {
@@ -191,7 +194,8 @@
     padding-left: 20px;
 
     @media only screen and (max-width:479px) {
-        padding-left: 10px
+        padding-left: 10px;
+        margin-right: -10px;
     }
 
     .f-22 {
@@ -366,7 +370,7 @@
 .rating-member-profile {
     @media only screen and (max-width:500px) {
         padding: 0px 3px !important;
-        margin-left: 4px !important;
+        margin-left: 7px !important;
     }
 
     .f-18 {

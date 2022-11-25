@@ -2537,7 +2537,8 @@ a {
         font-size: 14px !important; }
       @media only screen and (max-width: 400px) {
         .menu-post-drop .dropdown-item .menu-date {
-          width: 90px !important; } }
+          width: 125px !important;
+          font-size: 14px; } }
     .menu-post-drop .dropdown-item i {
       font-size: 18px;
       width: 15px; }
@@ -4543,7 +4544,7 @@ a {
   width: 100%;
   height: 370px;
   object-fit: fill; }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 479px) {
     .gallery-video {
       padding: 0px !important;
       height: 200px; } }
@@ -4633,7 +4634,7 @@ a {
 
 .following-person {
   color: #45BFFA;
-  font-size: 15px; }
+  font-size: 16px; }
 
 .alert-on-btn {
   background-color: #F2F2F2;
@@ -4828,9 +4829,12 @@ a {
     width: 100%;
     object-fit: cover !important;
     background-position: top !important; }
+    @media only screen and (max-width: 479px) {
+      .member-profile-wallpaper img {
+        height: 200px; } }
   @media only screen and (max-width: 479px) {
     .member-profile-wallpaper {
-      height: 240px; } }
+      height: 200px; } }
 
 .member-profile-video {
   display: flex;
@@ -4839,7 +4843,7 @@ a {
     height: 100px !important;
     width: 200px;
     margin-right: 20px;
-    margin-top: -80px;
+    margin-top: -50px;
     background-color: transparent;
     border: none;
     padding: 0px;
@@ -4850,7 +4854,7 @@ a {
         margin-right: 0px;
         height: 80px !important;
         width: 150px;
-        margin-top: -50px; } }
+        margin-top: -40px; } }
     .member-profile-video .video-thumbnail .video-thumbnail-img {
       height: 100px !important;
       width: 200px;
@@ -4947,7 +4951,8 @@ a {
   padding-left: 20px; }
   @media only screen and (max-width: 479px) {
     .member-profile-detail {
-      padding-left: 10px; } }
+      padding-left: 10px;
+      margin-right: -10px; } }
   .member-profile-detail .f-22 {
     font-size: 24px !important; }
     @media only screen and (max-width: 479px) {
@@ -5082,7 +5087,7 @@ a {
 @media only screen and (max-width: 500px) {
   .rating-member-profile {
     padding: 0px 3px !important;
-    margin-left: 4px !important; } }
+    margin-left: 7px !important; } }
 
 @media only screen and (max-width: 500px) {
   .rating-member-profile .f-18 {
@@ -5590,7 +5595,8 @@ a {
   color: black !important;
   text-decoration: underline !important;
   font-size: 18px;
-  font-weight: 500 !important; }
+  font-weight: 500 !important;
+  white-space: nowrap; }
   @media only screen and (max-width: 479px) {
     .ReadMore {
       font-size: 16px !important; } }
@@ -5598,13 +5604,20 @@ a {
 .showReadMore {
   font-size: 18px;
   font-weight: 500;
-  color: #333333 !important; }
+  color: #333333 !important;
+  text-align: justify !important; }
   @media only screen and (max-width: 479px) {
     .showReadMore {
       font-size: 16px !important; } }
+
+.custome-gallery-group {
+  border: 2px solid #DEE0E2 !important; }
 
 .custome-gallery-group .select-selected::after {
   top: 10px !important; }
 
 .wall-paper-upload {
   background-color: white; }
+
+.std-member {
+  color: #333333 !important; }

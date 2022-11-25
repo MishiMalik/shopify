@@ -807,7 +807,7 @@
   height: 370px;
   object-fit: fill;
 
-  @media only screen and (max-width:769px) {
+  @media only screen and (max-width:479px) {
     padding: 0px !important;
     height: 200px;
   }
@@ -943,7 +943,7 @@
 
 .following-person {
   color: #45BFFA;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .alert-on-btn {

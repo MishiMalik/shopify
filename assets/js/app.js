@@ -31,7 +31,7 @@
 
 $(document).ready(function(){
   //length in characters
-var maxLength = 140;
+var maxLength = 340;
 var ellipsestext = "...";
 var moretext = "Read more";
 var lesstext = "Read less";
