@@ -4800,8 +4800,24 @@ a {
   z-index: 1000; }
 
 .edit-pofile-btn {
-  font-size: 18px !important;
-  height: 30px !important; }
+  width: 100% !important;
+  background-color: #16367B !important;
+  font-size: 22px !important;
+  color: white !important;
+  font-weight: 500 !important;
+  min-width: 100% !important;
+  height: 40px !important;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 679px) {
+    .edit-pofile-btn {
+      font-size: 18px !important; } }
+
+.w-95 {
+  width: 99% !important; }
+  @media only screen and (max-width: 679px) {
+    .w-95 {
+      width: 95%;
+      margin-right: -12px; } }
 
 .member-profile-wallpaper {
   height: 240px;
