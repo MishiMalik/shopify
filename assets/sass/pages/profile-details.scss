@@ -348,6 +348,14 @@
         &:hover {
             color: white;
             background-color: #1E67C8;
+            svg{
+                fill: white;
+                stroke: white;
+            }
+        }
+        svg{
+            fill: #039;
+            stroke: #039;
         }
     }
 }

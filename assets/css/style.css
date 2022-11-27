@@ -5073,6 +5073,12 @@ a {
     .member-profile-fix-btns button:hover {
       color: white;
       background-color: #1E67C8; }
+      .member-profile-fix-btns button:hover svg {
+        fill: white;
+        stroke: white; }
+    .member-profile-fix-btns button svg {
+      fill: #039;
+      stroke: #039; }
 
 @media only screen and (max-width: 479px) {
   .edit-profile-btn button {
