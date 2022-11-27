@@ -1,4 +1,6 @@
 
+
+// =====================write review stars
  $(function () {
   $("div.star-rating > s, div.star-rating-rtl > s").on("click", function (e) {
 
@@ -326,8 +328,14 @@ $('.like').on('click', function() {
   $(this).addClass('fill');
   $(this).removeClass('like');
 })
-
-
+$('.like2').on('click', function() {
+  $(this).addClass('fill2');
+  $(this).removeClass('like2');
+})
+$('.like-white').on('click', function() {
+  $(this).addClass('fill-white');
+  $(this).removeClass('like-white');
+})
 //===============================================================================button go to top
 
 // let mybutton = document.getElementById("topBtn");

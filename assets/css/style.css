@@ -2247,6 +2247,28 @@ a {
   .fill:hover {
     cursor: not-allowed; }
 
+.fill2 {
+  stroke: black;
+  fill: #767676 !important; }
+  .fill2:hover {
+    cursor: not-allowed; }
+
+.like-white {
+  height: 26px !important;
+  width: 26px !important;
+  cursor: pointer;
+  stroke: white !important; }
+  .like-white:hover {
+    stroke: white;
+    fill: #84C7FD !important; }
+
+.fill-white {
+  height: 26px !important;
+  width: 26px !important;
+  cursor: pointer;
+  stroke: white !important;
+  fill: #84C7FD; }
+
 .listing-badges-list {
   position: absolute;
   top: 20px;
@@ -5384,7 +5406,8 @@ a {
     text-decoration: underline !important; }
   @media only screen and (max-width: 479px) {
     .select-from-gallery {
-      font-size: 13px; } }
+      font-size: 14px;
+      margin-right: -5px !important; } }
 
 .remove-img {
   position: absolute;
@@ -5611,7 +5634,8 @@ a {
   font-size: 18px;
   font-weight: 500;
   color: #333333 !important;
-  text-align: justify !important; }
+  text-align: justify !important;
+  line-height: 30px; }
   @media only screen and (max-width: 479px) {
     .showReadMore {
       font-size: 16px !important; } }

@@ -1,4 +1,6 @@
 
+;
+
 // ==========================================================select with checkboxes
 (function ($) {
   var CheckboxDropdown = function (el) {
@@ -322,4 +324,3 @@ else {
   document.getElementById('details').style.display = "block";
 
 }
-

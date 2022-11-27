@@ -1180,7 +1180,33 @@
     }
 }
 
+.fill2 {
 
+    stroke: black;
+    fill: $gray !important;
+
+    &:hover {
+        cursor: not-allowed;
+    }
+}
+.like-white{
+    height: 26px !important;
+    width: 26px !important;
+    cursor: pointer;
+    stroke: white !important;
+
+    &:hover {
+        stroke: white;
+        fill: #84C7FD !important;
+    }
+}
+.fill-white{
+    height: 26px !important;
+    width: 26px !important;
+    cursor: pointer;
+    stroke: white !important;
+    fill: #84C7FD;
+}
 // featured badges
 .listing-badges-list {
     position: absolute;
