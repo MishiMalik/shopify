@@ -311,7 +311,6 @@
 .no-white-space {
     white-space: nowrap;
 }
-
 .member-profile-fix-btns {
     display: flex;
     justify-content: center;
@@ -331,6 +330,7 @@
         min-width: 110px;
         margin: 3px 10px;
         border-radius: 3px;
+        
 
         @media only screen and (max-width:479px) {
             font-size: 16px;
