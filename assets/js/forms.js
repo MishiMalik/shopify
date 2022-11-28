@@ -317,7 +317,7 @@ function formtabs(evt, cityName) {
 }
 if ($(window).width() < 991) {
   // $("#defaultOpenform").click();
-  document.getElementById('media').style.display = "block";
+  document.getElementById('details').style.display = "block";
 }
 else {
   // $("#defaultOpenform2").click();
