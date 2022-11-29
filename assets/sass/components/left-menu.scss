@@ -102,7 +102,9 @@
   padding-bottom: 20px !important;
 
 }
-
+.tabcontent-header{
+  display: none;
+}
 //   left menu icons
 .icons-div {
   padding: 20px 0px;
@@ -186,4 +188,18 @@
   width: 20px;
   border-radius: 100%;
   object-fit: contain;
+}
+.approved-reviews{
+  background-color: #EF1223;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-shrink: 0 !important;
+  justify-content:center;
+  align-items: center;
+  margin-top: -3px;
 }

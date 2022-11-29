@@ -112,6 +112,20 @@ $('.read-more').on('click',function(){
   $(this).siblings('.dots').css('display','inline');
   $(this).siblings('.read-more').css('display','inline');
  }) 
+//============================================================open left menu tabs header
+function leftMenuHeader(evt, cityName) {
+  var i,tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent-header");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
 
 //============================================================open left menu tabs
 function leftMenu(evt, cityName) {

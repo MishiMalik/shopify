@@ -93,7 +93,8 @@
                             <p class="chats-num m-0 p-0">2</p>
                         </div>
                         <div class="header-menu">
-                            <a href="post.html"  target="_blank" class="d-flex flex-column align-items-center justify-content-center">
+                            <a href="post.html" target="_blank"
+                                class="d-flex flex-column align-items-center justify-content-center">
                                 <i class="bi bi-plus-circle"></i>
                                 <p class="f-12  w-400 pb-0 mb-0">Post</p>
                             </a>
@@ -199,7 +200,7 @@
             <div class="row h-100 main-row">
                 <!-- left menu -->
                 <div class="col-lg-3  bg-white left-menu" id="left-menu">
-                    <div class="small-blue-header">
+                    <div class="small-blue-header tabcontent-header" id="header-menu">
                         <div class="d-flex align-items-center">
                             <img src="assets/images/image 224.png" alt="" class="dp dp-radius">
                             <p class="f-20 w-400 text-white ms-2 my-0 py-0">Jerry Varghese</p>
@@ -208,10 +209,21 @@
                             <a class="f-18 w-500  ms-2 my-0 py-0 underline text-varient">Log Out</a>
                         </div>
                     </div>
+                    <div class="small-blue-header tabcontent-header" id="header-account">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/image 224.png" alt="" class="dp dp-radius">
+                            <p class="f-20 w-400 text-white ms-2 my-0 py-0">Hello</p>
+                        </div>
+                        <div>
+                            <a class="f-18 w-500  ms-2 my-0 py-0 underline text-varient">Sign In</a>
+                            <a class="f-18 w-500  ms-1 my-0 py-0  text-varient">|</a>
+                            <a class="f-18 w-500  ms-1 my-0 py-0 underline text-varient">Join Free</a>
+                        </div>
+                    </div>
                     <div class="tab">
-                        <button class="tablinks" id="defaultOpen1" onclick="leftMenu(event, 'menu')"><i
+                        <button class="tablinks" id="defaultOpen1" onclick="leftMenu(event, 'menu');leftMenuHeader(event,'header-menu')"><i
                                 class="fas fa-bars me-1"></i></i> Menu</button>
-                        <button class="tablinks" onclick="leftMenu(event, 'my-account')"> <i
+                        <button class="tablinks" onclick="leftMenu(event, 'my-account');leftMenuHeader(event,'header-account')"> <i
                                 class="far fa-user me-1"></i> My Account</button>
                     </div>
 
@@ -268,7 +280,8 @@
                                         <div class="left-icon">
                                             <img src="assets/images/icons/plus.jpg" alt="" class="img-fluid ">
                                         </div>
-                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">Add New Post</a>
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">Add New
+                                            Post</a>
                                     </div>
                                 </li>
                                 <li>
@@ -414,8 +427,168 @@
 
                     </div>
 
-                    <div id="my-account" class="tabcontent pt-4">
-                        <a href="my-profile.html" class="text-dark f-16 text-center w-500 " target="_blank">My Profile</a>
+                    <div id="my-account" class="tabcontent ">
+                        <div class="d-flex align-items-center justify-content-around icons-div">
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="bi bi-house-heart-fill "></i><br>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">
+                                        Home<br>Screen</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="bi bi-person-fill f-20"></i>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Tell
+                                        a<br>friend</p>
+
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="fas fa-link"></i><br>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">
+                                        Copy<br>link</p>
+
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon ">
+                                        <img src="assets/images/icons/arrow.png" alt="" class="img-fluid mb-1"
+                                            height="15px" width="17px">
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2 text-dark">Share
+                                    </p>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <h1 class="f-18 blue-text w-500">Profile</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">My Profile</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">My Contacts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">My Posts</a>
+                                    </div>
+                                </li>
+                                
+
+                            </ul>
+                        </div>
+                        <div class="mt-3 pt-3">
+                            <h1 class="f-18 blue-text w-500">Posts</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                       
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">Saved Folder</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Hidden Folder</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="mt-3 pt-3">
+                            <h1 class="f-18 blue-text w-500">Feeds</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                       
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">Alert Box</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Members | Follow</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Recent History</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="mt-3 pt-3">
+                            <h1 class="f-18 blue-text w-500">Reviews</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 d-flex">Reviews to Approve <span class="ms-2 approved-reviews">1</span></a>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">My Reviews</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-3 pt-3">
+                            <h1 class="f-18 blue-text w-500">Security</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                       
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">Blocked Members</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Security and Privacy</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Change Password</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                      
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Feedbacks / Report</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -1412,7 +1585,7 @@
                                                     Select</button>
                                                 <button class="selected-btn d-none">
                                                     Selected</button>
-                                                
+
                                                 <button class="menu-post" type="button" id="dropdownMenuButton1"
                                                     data-bs-toggle="modal" data-bs-target="#dots-menu-post">
                                                     <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
@@ -2387,7 +2560,8 @@
                 <p class="chats-num m-0 p-0">2</p>
             </div>
             <div class="header-menu">
-                <a href="post.html" target="_blank" class="d-flex flex-column align-items-center justify-content-center">
+                <a href="post.html" target="_blank"
+                    class="d-flex flex-column align-items-center justify-content-center">
                     <i class="bi bi-plus-circle"></i>
                     <p class="f-12 text-white w-400 pb-0 mb-0">Post</p>
                 </a>

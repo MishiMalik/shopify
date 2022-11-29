@@ -989,7 +989,22 @@
                                 <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header pt-2">Intro</h1>
                             </div>
 
-                            <p class="showReadMore mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita commodi, id deleniti, eligendi obcaecati qui molestiae, sint nulla quam similique ipsum perferendis voluptatum distinctio eos sit. Minus tempore corrupti consequatur ratione nulla esse reiciendis harum, nemo possimus iste. Eligendi, beatae quibusdam voluptatum quos consequuntur accusantium iure necessitatibus eos dolor itaque voluptatem autem rem ea incidunt blanditiis laboriosam sunt enim animi sequi fuga asperiores ratione aliquid earum quod! Libero est repudiandae doloremque nostrum facilis eveniet neque, dolore dolores rerum. Numquam rerum omnis earum officia debitis eligendi iusto facilis fuga eum? Temporibus aliquam perspiciatis sequi dolore nisi, architecto sunt vel expedita voluptas! Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p class="showReadMore mt-3">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                                commodi, id deleniti, eligendi obcaecati qui molestiae, sint nulla quam similique ipsum
+                                perferendis voluptatum distinctio eos sit. Minus tempore corrupti consequatur ratione
+                                nulla esse reiciendis harum, nemo possimus iste. Eligendi, beatae quibusdam voluptatum
+                                quos consequuntur accusantium iure necessitatibus eos dolor itaque voluptatem autem rem
+                                ea incidunt blanditiis laboriosam sunt enim animi sequi fuga asperiores ratione aliquid
+                                earum quod! Libero est repudiandae doloremque nostrum facilis eveniet neque, dolore
+                                dolores rerum. Numquam rerum omnis earum officia debitis eligendi iusto facilis fuga
+                                eum? Temporibus aliquam perspiciatis sequi dolore nisi, architecto sunt vel expedita
+                                voluptas! Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                                release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 
                         </div>
@@ -1221,49 +1236,49 @@
             $('#dp-output').attr('src', "assets/images/Profile pic dummy.jpg")
         });
 
-//  description text
-$(document).ready(function(){
-  //length in characters
-var maxLength = 340;
-var ellipsestext = "...";
-var moretext = "Read more";
-var lesstext = "Read less";
-$(".showReadMore").each(function(){
-  //get the text of paragraph or div
-  var myStr = $(this).text();
-  
- // check if it exceeds the maxLength limit
-  if($.trim(myStr).length > maxLength){
-      //get only limited string firts to show text on page load
-      var newStr = myStr.substring(0, maxLength);
+        //  description text
+        $(document).ready(function () {
+            //length in characters
+            var maxLength = 340;
+            var ellipsestext = "...";
+            var moretext = "Read more";
+            var lesstext = "Read less";
+            $(".showReadMore").each(function () {
+                //get the text of paragraph or div
+                var myStr = $(this).text();
 
-      //get remaining string         
-var removedStr = myStr.substr(maxLength, $.trim(myStr).length - maxLength);
-      // now append the newStr + "..."+ hidden remaining string
-      var Newhtml = newStr + '<span class="moreellipses">' + ellipsestext+ '</span><span class="morecontent"><span>' + removedStr + '</span>&nbsp;&nbsp;<a href="javascript:void(0)" class="ReadMore">' + moretext + '</a></span>';
+                // check if it exceeds the maxLength limit
+                if ($.trim(myStr).length > maxLength) {
+                    //get only limited string firts to show text on page load
+                    var newStr = myStr.substring(0, maxLength);
 
-      $(this).html(Newhtml);
-      
-  }
-});
+                    //get remaining string         
+                    var removedStr = myStr.substr(maxLength, $.trim(myStr).length - maxLength);
+                    // now append the newStr + "..."+ hidden remaining string
+                    var Newhtml = newStr + '<span class="moreellipses">' + ellipsestext + '</span><span class="morecontent"><span>' + removedStr + '</span>&nbsp;&nbsp;<a href="javascript:void(0)" class="ReadMore">' + moretext + '</a></span>';
 
-//function to show/hide remaining text on ReadMore button click
-$(".ReadMore").click(function(){
- 
-  if($(this).hasClass("less")) {
-      $(this).removeClass("less");
-      $(this).html(moretext);
-  }
-   else {
-      $(this).addClass("less");
-      $(this).html(lesstext);
-  }
-  
-  $(this).parent().prev().toggle();
-  $(this).prev().toggle();
-  return false;
-});
-})
+                    $(this).html(Newhtml);
+
+                }
+            });
+
+            //function to show/hide remaining text on ReadMore button click
+            $(".ReadMore").click(function () {
+
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                }
+                else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        })
     </script>
 </body>
 

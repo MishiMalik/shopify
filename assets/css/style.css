@@ -60,7 +60,7 @@
   font-weight: 700; }
 
 .blue-text {
-  color: #257CD3; }
+  color: #3366cc; }
 
 .dark-text {
   color: #484848 !important; }
@@ -624,6 +624,9 @@ a {
   border: none;
   padding-bottom: 20px !important; }
 
+.tabcontent-header {
+  display: none; }
+
 .icons-div {
   padding: 20px 0px;
   border-bottom: 2px solid #DEE0E2; }
@@ -686,6 +689,20 @@ a {
   width: 20px;
   border-radius: 100%;
   object-fit: contain; }
+
+.approved-reviews {
+  background-color: #EF1223;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-shrink: 0 !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3px; }
 
 .mobile-footer {
   position: fixed;

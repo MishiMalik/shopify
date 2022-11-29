@@ -1,100 +1,103 @@
-
-;
-
-// ==========================================================select with checkboxes
-(function ($) {
-  var CheckboxDropdown = function (el) {
-    var _this = this;
-    this.isOpen = false;
-    this.areAllChecked = false;
-    this.$el = $(el);
-    this.$label = this.$el.find('.dropdown-label');
-    this.$label2 = this.$el.find('.header-view-all');
-    this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
-    this.$inputs = this.$el.find('[type="checkbox"]');
-
-    this.onCheckBox();
-
-    this.$label.on('click', function (e) {
-      e.preventDefault();
-      _this.toggleOpen();
-    });
-
-    this.$checkAll.on('click', function (e) {
-      e.preventDefault();
-      _this.onCheckAll();
-    });
-
-    this.$inputs.on('change', function (e) {
-      _this.onCheckBox();
-    });
+  //====================================================post form thumbnails  
+  var loaddp = function (event) {
+      var image = document.getElementById('dp-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
   };
-
-  CheckboxDropdown.prototype.onCheckBox = function () {
-    this.updateStatus();
+  $('.remove-img2').click(function () {
+      $('#dp-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg1 = function (event) {
+      var image = document.getElementById('loadimg1-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
   };
-
-  CheckboxDropdown.prototype.updateStatus = function () {
-    var checked = this.$el.find(':checked');
-
-    this.areAllChecked = false;
-    this.$checkAll.html('Check All');
-
-    if (checked.length <= 0) {
-      this.$label.html(this.$label2.val());
-    }
-    else if (checked.length === 1) {
-      this.$label.html(checked.parent('label').text());
-    }
-    else if (checked.length === this.$inputs.length) {
-      this.$label.html('All Selected');
-      this.areAllChecked = true;
-      this.$checkAll.html('Uncheck All');
-    }
-    else {
-      this.$label.html(checked.length + ' Selected');
-    }
+  $('.remove-img2').click(function () {
+      $('#loadimg1-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg2 = function (event) {
+      var image = document.getElementById('loadimg2-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
   };
-
-  CheckboxDropdown.prototype.onCheckAll = function (checkAll) {
-    if (!this.areAllChecked || checkAll) {
-      this.areAllChecked = true;
-      this.$checkAll.html('Uncheck All');
-      this.$inputs.prop('checked', true);
-    }
-    else {
-      this.areAllChecked = false;
-      this.$checkAll.html('Check All');
-      this.$inputs.prop('checked', false);
-    }
-
-    this.updateStatus();
+  $('.remove-img2').click(function () {
+      $('#loadimg2-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg3 = function (event) {
+      var image = document.getElementById('loadimg3-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
   };
+  $('.remove-img2').click(function () {
+      $('#loadimg3-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg4 = function (event) {
+      var image = document.getElementById('loadimg4-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
+  };
+  $('.remove-img2').click(function () {
+      $('#loadimg4-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg5 = function (event) {
+      var image = document.getElementById('loadimg5-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
+  };
+  $('.remove-img2').click(function () {
+      $('#loadimg5-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg6 = function (event) {
+      var image = document.getElementById('loadimg6-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
+  };
+  $('.remove-img2').click(function () {
+      $('#loadimg6-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  var loadimg7 = function (event) {
+      var image = document.getElementById('loadimg7-output');
+      image.src = URL.createObjectURL(event.target.files[0]);
+  };
+  $('.remove-img2').click(function () {
+      $('#loadimg7-output').attr('src', "assets/images/Thumbnail Dummy.jpg")
+  });
+  //  description text
+  $(document).ready(function () {
+      //length in characters
+      var maxLength = 340;
+      var ellipsestext = "...";
+      var moretext = "Read more";
+      var lesstext = "Read less";
+      $(".showReadMore").each(function () {
+          //get the text of paragraph or div
+          var myStr = $(this).text();
 
-  CheckboxDropdown.prototype.toggleOpen = function (forceOpen) {
-    var _this = this;
+          // check if it exceeds the maxLength limit
+          if ($.trim(myStr).length > maxLength) {
+              //get only limited string firts to show text on page load
+              var newStr = myStr.substring(0, maxLength);
 
-    if (!this.isOpen || forceOpen) {
-      this.isOpen = true;
-      this.$el.addClass('on');
-      $(document).on('click', function (e) {
-        if (!$(e.target).closest('[data-control]').length) {
-          _this.toggleOpen();
-        }
+              //get remaining string         
+              var removedStr = myStr.substr(maxLength, $.trim(myStr).length - maxLength);
+              // now append the newStr + "..."+ hidden remaining string
+              var Newhtml = newStr + '<span class="moreellipses">' + ellipsestext + '</span><span class="morecontent"><span>' + removedStr + '</span>&nbsp;&nbsp;<a href="javascript:void(0)" class="ReadMore">' + moretext + '</a></span>';
+
+              $(this).html(Newhtml);
+
+          }
       });
-    }
-    else {
-      this.isOpen = false;
-      this.$el.removeClass('on');
-      $(document).off('click');
-    }
-  };
 
-  var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
-  for (var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
-    new CheckboxDropdown(checkboxesDropdowns[i]);
-  }
-})(jQuery);
+      //function to show/hide remaining text on ReadMore button click
+      $(".ReadMore").click(function () {
+
+          if ($(this).hasClass("less")) {
+              $(this).removeClass("less");
+              $(this).html(moretext);
+          }
+          else {
+              $(this).addClass("less");
+              $(this).html(lesstext);
+          }
+
+          $(this).parent().prev().toggle();
+          $(this).prev().toggle();
+          return false;
+      });
+  })
 
 
 
@@ -324,3 +327,97 @@ else {
   document.getElementById('details').style.display = "block";
 
 }
+// ==========================================================select with checkboxes
+(function ($) {
+  var CheckboxDropdown = function (el) {
+    var _this = this;
+    this.isOpen = false;
+    this.areAllChecked = false;
+    this.$el = $(el);
+    this.$label = this.$el.find('.dropdown-label');
+    this.$label2 = this.$el.find('.header-view-all');
+    this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
+    this.$inputs = this.$el.find('[type="checkbox"]');
+
+    this.onCheckBox();
+
+    this.$label.on('click', function (e) {
+      e.preventDefault();
+      _this.toggleOpen();
+    });
+
+    this.$checkAll.on('click', function (e) {
+      e.preventDefault();
+      _this.onCheckAll();
+    });
+
+    this.$inputs.on('change', function (e) {
+      _this.onCheckBox();
+    });
+  };
+
+  CheckboxDropdown.prototype.onCheckBox = function () {
+    this.updateStatus();
+  };
+
+  CheckboxDropdown.prototype.updateStatus = function () {
+    var checked = this.$el.find(':checked');
+
+    this.areAllChecked = false;
+    this.$checkAll.html('Check All');
+
+    if (checked.length <= 0) {
+      this.$label.html(this.$label2.val());
+    }
+    else if (checked.length === 1) {
+      this.$label.html(checked.parent('label').text());
+    }
+    else if (checked.length === this.$inputs.length) {
+      this.$label.html('All Selected');
+      this.areAllChecked = true;
+      this.$checkAll.html('Uncheck All');
+    }
+    else {
+      this.$label.html(checked.length + ' Selected');
+    }
+  };
+
+  CheckboxDropdown.prototype.onCheckAll = function (checkAll) {
+    if (!this.areAllChecked || checkAll) {
+      this.areAllChecked = true;
+      this.$checkAll.html('Uncheck All');
+      this.$inputs.prop('checked', true);
+    }
+    else {
+      this.areAllChecked = false;
+      this.$checkAll.html('Check All');
+      this.$inputs.prop('checked', false);
+    }
+
+    this.updateStatus();
+  };
+
+  CheckboxDropdown.prototype.toggleOpen = function (forceOpen) {
+    var _this = this;
+
+    if (!this.isOpen || forceOpen) {
+      this.isOpen = true;
+      this.$el.addClass('on');
+      $(document).on('click', function (e) {
+        if (!$(e.target).closest('[data-control]').length) {
+          _this.toggleOpen();
+        }
+      });
+    }
+    else {
+      this.isOpen = false;
+      this.$el.removeClass('on');
+      $(document).off('click');
+    }
+  };
+
+  var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
+  for (var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
+    new CheckboxDropdown(checkboxesDropdowns[i]);
+  }
+})(jQuery);

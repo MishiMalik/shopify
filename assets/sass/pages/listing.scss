@@ -189,7 +189,7 @@
         background: #fff;
         position: absolute;
         top: 40px;
-         right: 3px;
+        right: 3px;
         font-size: 16px;
         box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
         transform-origin: 50% 0;
@@ -442,6 +442,7 @@
     // z-index: 1;
     padding-bottom: 0px;
 }
+
 .absolute-icon-close {
     position: absolute;
     right: 22px;
@@ -450,13 +451,14 @@
     border-bottom: 0px !important;
     display: none;
 }
+
 .category-close {
     font-size: 25px !important;
     margin-top: 0px;
     display: none;
 }
 
-.category-close i{
+.category-close i {
     font-size: 25px !important;
     margin-top: 0px;
 }
@@ -464,7 +466,7 @@
 
 // location drop
 .location-drop {
-    
+
     border-radius: 3px !important;
     background-color: white !important;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
@@ -477,35 +479,38 @@
     top: 40px !important;
     width: 320px;
     border: 4px solid #DEE0E2 !important;
-   @media only screen and (max-width:991px){
-    position: fixed !important;
-    top: 0px !important;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    overflow-y: auto;
-    padding-top: 133px !important;
-}
+
+    @media only screen and (max-width:991px) {
+        position: fixed !important;
+        top: 0px !important;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        padding-top: 133px !important;
+    }
 
 
 
-    li{
-        padding: 0px 10px ;
+    li {
+        padding: 0px 10px;
     }
 
     .select-loaction-heading {
         font-size: 16px;
         font-weight: 600;
     }
-    .location-header{
+
+    .location-header {
         background-color: $primary;
-         height: 60px;
-         display: flex;
-         justify-content: flex-start;
-         align-items: center;
-         .select-loaction-heading {
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .select-loaction-heading {
             font-size: 20px;
             font-weight: 600;
             color: white;
@@ -514,6 +519,7 @@
 
     .location-input-div {
         position: relative;
+
         .location-input {
             width: 100%;
             background-color: #f8f8f8;
@@ -522,7 +528,8 @@
             padding: 8px 5px 8px 35px;
             font-size: 18px;
             font-weight: 400;
-             height: 55px;
+            height: 55px;
+
             &:focus {
                 outline: none;
                 box-shadow: none;
@@ -542,52 +549,61 @@
         }
 
     }
-    .current-location{
+
+    .current-location {
         background-color: #E0F2FE;
         display: flex !important;
         justify-content: flex-start;
         align-items: flex-start;
-        padding:9px 10px 7px 10px;
+        padding: 9px 10px 7px 10px;
         position: relative;
         z-index: 10 !important;
         cursor: pointer;
-        h1{
+
+        h1 {
             font-size: 16px;
             font-weight: 500;
             color: #044DEB;
-            @media only screen and (max-width:991px){
+
+            @media only screen and (max-width:991px) {
                 font-size: 17px;
             }
         }
-        p{
+
+        p {
             font-size: 13px;
             font-weight: 400;
             color: black;
             margin-top: -2px;
-            @media only screen and (max-width:991px){
+
+            @media only screen and (max-width:991px) {
                 font-size: 15px;
             }
         }
     }
-    .recent-locations{
+
+    .recent-locations {
         // display: none;
-        
+
         transition: all .3s;
         // overflow-y: auto;
-        max-height:500px;
+        max-height: 500px;
+
         // overflow-y: auto;
         // @media only screen and (max-width:991px){
         //     overflow-y: auto;
         // height: calc(100vh - 200px);
         // }
-        ul{
+        ul {
             list-style: none;
             padding-left: 0px;
             overflow-y: auto;
-            @media only screen and (max-width:991px){
+
+            @media only screen and (max-width:991px) {
                 padding-bottom: 40px;
             }
-            li{
+
+            li {
                 border-top: 1px solid $light-gray;
                 padding: 12px 12px;
                 display: flex;
@@ -595,22 +611,26 @@
                 align-items: center;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow:ellipsis ;
-                &:hover{
+                text-overflow: ellipsis;
+
+                &:hover {
                     color: black;
                     cursor: pointer !important;
                 }
-                p{
+
+                p {
                     font-weight: 500;
                     font-size: 15px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    @media only screen and (max-width:991px){
+
+                    @media only screen and (max-width:991px) {
                         font-size: 17px;
                     }
                 }
-                span{
+
+                span {
                     font-size: 13px;
                     color: $gray;
                     font-weight: 500;
@@ -618,7 +638,7 @@
             }
         }
     }
-   
+
     .dropdown-item {
         padding: 8px 10px !important;
         font-size: 16px;
@@ -629,35 +649,40 @@
         }
     }
 }
-.location-selected{
-    white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                &:hover{
-                    color: black;
-                    cursor: pointer;
-                }
-           
-            @media only screen and (max-width:1100px){
-                max-width: 120px;
-            }
-            @media only screen and (max-width:991px){
-                max-width: 100%;
-            }
-            @media only screen and (max-width:425px){
-                max-width: 120px;
-            }
 
-            //    @media only screen and (min-width:1550px){
-            //     min-width: 120px;
-            //    }
-               
+.location-selected {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width:1100px) {
+        max-width: 120px;
+    }
+
+    @media only screen and (max-width:991px) {
+        max-width: 100%;
+    }
+
+    @media only screen and (max-width:425px) {
+        max-width: 120px;
+    }
+
+    //    @media only screen and (min-width:1550px){
+    //     min-width: 120px;
+    //    }
+
 }
-.locations-items{
+
+.locations-items {
     overflow-y: scroll;
     max-height: 60vh;
 
-    @media only screen and (max-width:991px){
+    @media only screen and (max-width:991px) {
         max-height: 100%;
     }
 
@@ -668,13 +693,13 @@
         position: relative;
         z-index: 10000 !important;
     }
-    
+
     &::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         position: relative;
         z-index: 10000 !important;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: $primary;
         outline: 1px solid transparent;
@@ -682,14 +707,16 @@
         position: relative;
         z-index: 10000 !important;
     }
-    
+
 }
-.locations-items-heading{
-    background-color:  $light-gray2;
+
+.locations-items-heading {
+    background-color: $light-gray2;
     padding: 5px 12px;
-   font-size: 15px !important;
+    font-size: 15px !important;
 }
-.district-location{
+
+.district-location {
     border-top: 1px solid $light-gray;
     padding: 12px 12px;
     display: flex;
@@ -697,31 +724,37 @@
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow:ellipsis ;
-    @media only screen and (max-width:991px){
+    text-overflow: ellipsis;
+
+    @media only screen and (max-width:991px) {
         padding: 14px 12px;
     }
-    p{
+
+    p {
         font-weight: 500;
         font-size: 16px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        &:hover{
+
+        &:hover {
             color: black;
             cursor: pointer;
         }
-        @media only screen and (max-width:991px){
+
+        @media only screen and (max-width:991px) {
             font-size: 17px;
         }
     }
-    span{
+
+    span {
         font-size: 13px;
         color: $gray;
         font-weight: 500;
     }
 }
-.lindia-dist{
+
+.lindia-dist {
     border-top: 1px solid $light-gray;
     padding: 14px 14px 6px 14px;
     display: flex;
@@ -729,28 +762,32 @@
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow:ellipsis ;
-    
+    text-overflow: ellipsis;
+
 }
 
-.find-locations{
+.find-locations {
     transition: all .3s;
-    max-height:500px;
+    max-height: 500px;
     overflow-y: auto;
     min-height: 300px;
     display: none;
     margin-top: -10px !important;
-    @media only screen and (max-width:991px){
-       height: 100%;
+
+    @media only screen and (max-width:991px) {
+        height: 100%;
     }
-    ul{
+
+    ul {
         list-style: none;
         padding-left: 0px;
         overflow-y: auto;
-        @media only screen and (max-width:991px){
+
+        @media only screen and (max-width:991px) {
             padding-bottom: 40px;
         }
-        li{
+
+        li {
             border-bottom: 1px solid $light-gray;
             padding: 12px 12px;
             display: flex;
@@ -758,25 +795,30 @@
             align-items: center;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow:ellipsis ;
-            @media only screen and (max-width:991px){
+            text-overflow: ellipsis;
+
+            @media only screen and (max-width:991px) {
                 padding: 14px 12px;
             }
-            &:hover{
+
+            &:hover {
                 color: black;
                 cursor: pointer;
             }
-            p{
+
+            p {
                 font-weight: 500;
                 font-size: 16px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                @media only screen and (max-width:991px){
+
+                @media only screen and (max-width:991px) {
                     font-size: 17px;
                 }
             }
-            span{
+
+            span {
                 font-size: 13px;
                 color: $gray;
                 font-weight: 500;
@@ -788,29 +830,30 @@
 // .all-india-distt{
 // display: none;
 // }
-.all-india-distt{
+.all-india-distt {
     transition: all .3s;
-    
+
     display: none;
-    
-    ul{
+
+    ul {
         list-style: none;
         padding-left: 0px;
         overflow-y: auto;
         // max-height:300px !important;
         min-height: 300px !important;
+
         &::-webkit-scrollbar {
             width: 5px;
             position: relative;
             z-index: 10000 !important;
         }
-        
+
         &::-webkit-scrollbar-track {
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
             position: relative;
             z-index: 10000 !important;
         }
-        
+
         &::-webkit-scrollbar-thumb {
             background-color: $primary;
             outline: 1px solid transparent;
@@ -818,11 +861,12 @@
             position: relative;
             z-index: 10000 !important;
         }
-        
-        @media only screen and (max-width:991px){
-           height:100% !important;
+
+        @media only screen and (max-width:991px) {
+            height: 100% !important;
         }
-        li{
+
+        li {
             border-bottom: 1px solid $light-gray;
             padding: 12px 15px;
             display: flex;
@@ -830,25 +874,30 @@
             align-items: center;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow:ellipsis ;
-            @media only screen and (max-width:991px){
+            text-overflow: ellipsis;
+
+            @media only screen and (max-width:991px) {
                 padding: 14px 12px;
             }
-            &:hover{
+
+            &:hover {
                 color: black;
                 cursor: pointer;
             }
-            p{
+
+            p {
                 font-weight: 500;
                 font-size: 16px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                @media only screen and (max-width:991px){
+
+                @media only screen and (max-width:991px) {
                     font-size: 17px;
                 }
             }
-            span{
+
+            span {
                 font-size: 13px;
                 color: $gray;
                 font-weight: 500;
@@ -856,8 +905,9 @@
         }
     }
 }
-.location-main-header{
-    background-color:$primary;
+
+.location-main-header {
+    background-color: $primary;
     display: flex;
     align-items: center;
     padding: 0px 10px;
@@ -865,23 +915,25 @@
     height: 60px;
 }
 
-.locations-header{
+.locations-header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
     background-color: white !important;
-    
+
 }
+
 // .back-dist{
 //     display: none !important;
 // }
-.back-dist{
+.back-dist {
     opacity: 0;
     font-size: 0px;
 }
-.back-dist-text{
+
+.back-dist-text {
     color: #333333 !important;
     cursor: pointer;
 }

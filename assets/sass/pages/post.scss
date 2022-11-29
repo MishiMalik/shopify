@@ -200,13 +200,15 @@
     display: none !important;
     opacity: 0 !important;
 }
-.activeform{
+
+.activeform {
     display: none;
 }
-  
+
 .morecontent span {
     display: none;
 }
+
 .ReadMore {
     display: visible;
     color: black !important;
@@ -214,29 +216,36 @@
     font-size: 18px;
     font-weight: 500 !important;
     white-space: nowrap;
+
     @media only screen and (max-width:479px) {
         font-size: 16px !important;
     }
 }
-.showReadMore{
+
+.showReadMore {
     font-size: 18px;
     font-weight: 500;
     color: $light-dark !important;
     text-align: justify !important;
     line-height: 30px;
+
     @media only screen and (max-width:479px) {
         font-size: 16px !important;
     }
 }
-.custome-gallery-group{
-    border:2px solid $light-gray !important;
+
+.custome-gallery-group {
+    border: 2px solid $light-gray !important;
 }
-.custome-gallery-group .select-selected::after{
-top: 10px !important;
+
+.custome-gallery-group .select-selected::after {
+    top: 10px !important;
 }
-.wall-paper-upload{
+
+.wall-paper-upload {
     background-color: white;
 }
-.std-member{
+
+.std-member {
     color: $light-dark !important;
 }

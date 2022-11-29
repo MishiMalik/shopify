@@ -1189,7 +1189,8 @@
         cursor: not-allowed;
     }
 }
-.like-white{
+
+.like-white {
     height: 26px !important;
     width: 26px !important;
     cursor: pointer;
@@ -1200,13 +1201,15 @@
         fill: #84C7FD !important;
     }
 }
-.fill-white{
+
+.fill-white {
     height: 26px !important;
     width: 26px !important;
     cursor: pointer;
     stroke: white !important;
     fill: #84C7FD;
 }
+
 // featured badges
 .listing-badges-list {
     position: absolute;
@@ -1570,7 +1573,7 @@
                 font-size: 14px !important;
             }
 
-            @media only screen and (max-width:400px){
+            @media only screen and (max-width:400px) {
                 width: 125px !important;
                 font-size: 14px;
             }
