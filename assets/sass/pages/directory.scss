@@ -294,6 +294,18 @@
             min-width: 85px;
         }
     }
+    .category-clear-all2 {
+        border: 1px solid $gray;
+        color: $light-dark;
+        border-radius: 3px;
+        padding: 4px 0px;
+        min-width: 90px;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0px 5px;
+
+       
+    }
 
     .accordian-select-all {
         color: white;
@@ -315,6 +327,19 @@
         @media only screen and (max-width:340px) {
             min-width: 85px;
         }
+    }
+    .accordian-select-all2 {
+        color: white;
+        border: 1px solid $primary;
+        background-color: $primary;
+        padding: 4px 5px;
+        border-radius: 3px;
+        text-decoration: none !important;
+        font-size: 16px;
+        font-weight: 600;
+        min-width: 130px;
+        margin: 0px 5px;
+
     }
 }
 
