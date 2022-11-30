@@ -807,6 +807,7 @@ $('.search-input').keyup(function(){
   $('.mic-icon').css('display','block');
   $('.send-icon').css('display','none');
   $('.suggestion-search').css('display','none');
+  $('.history-search').css('display','block');
 }
 });
 
