@@ -1,4 +1,20 @@
 
+$('.search-btn').on("click", function() {
+  $('#notice-input').focus();
+});
+$("#notice-input").focusout(function() {
+  $(document).mouseup(function(e) 
+{
+    var container = $(".search-results");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+      $('.search-results').css('display','none');
+    }
+});
+
+});
 
 // =====================write review stars
  $(function () {
@@ -818,7 +834,7 @@ function close_window() {
     close();
   // }
 }
-
+// ==============================================================video mute/unmute
 setInterval(() => {
   if($('#videopopbtn').is(':visible')) {
     $('#videopopbtn').find('video').prop('muted', false)

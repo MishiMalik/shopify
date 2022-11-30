@@ -276,3 +276,27 @@ a {
 .hover {
     cursor: pointer !important;
 }
+.border-bottom-0{
+    border-bottom: none !important;
+    width: fit-content !important; 
+    .dropdown-label{
+        @media only screen and (max-width:479px) {
+            font-size: 14px !important;
+            padding-right: 17px !important;
+            padding-bottom: 3px !important;
+            padding-top: 8px !important;
+            &::after{
+                top: 10px !important;
+            }
+        } 
+    }
+   
+    .select-selected{
+        @media only screen and (max-width:479px) {
+            font-size: 14px !important;
+        padding: 7px 4px 4px 4px;  
+        width: fit-content !important; 
+    padding-right: 13px;
+     }
+    }
+}

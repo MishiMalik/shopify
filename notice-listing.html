@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Listing - Classifieds</title>
+</head>
+
+<body id="body">
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center">
+                    <a href="loading.html" class="d-flex align-items-center logo-div">
+                        <img src="assets/images/loggo-removebg-preview-removebg-preview.png" alt=""
+                            class="img-fluid logo remove-logo">
+                        <img src="assets/images/logo-name.PNG" alt="" class="img-fluid company-name">
+                    </a>
+                    <a href="zones.html">
+                        <i class="fas fa-arrow-left f-22 text-white back-arrow"></i>
+                    </a>
+                    <div class="d-flex flex-column ms-2">
+                        <div class="dropdown classified-dropdown">
+                            <button class="classified-drop-small dropdown-toggle ms-1 " type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Classifieds
+                            </button>
+                            <ul class="dropdown-menu classify-drop2" aria-labelledby="dropdownMenuButton1">
+                                <li class="classify-select-li">
+                                    <div class="custom-select classify-select border-bottom-none"
+                                        style="width:100% !important ;">
+                                        <select class="classified-dropdown-select">
+                                            <option value="0">
+                                                Classifieds</option>
+                                            <option value="1">Shopping</option>
+                                            <option value="2">Entertainment</option>
+                                            <option value="3">Classifieds</option>
+                                            <option value="4">Multi Zone</option>
+
+                                        </select>
+                                    </div>
+
+                                </li>
+                                <li class="classify-select-li mt-4">
+                                    <div class="custom-select classify-select border-bottom-none"
+                                        style="width:100% !important ;">
+                                        <select class="classified-dropdown-select">
+                                            <option value="0">
+                                                Offers (Offer Zone)</option>
+                                            <option value="1">Offers (Offer Zone)</option>
+                                            <option value="2">Notices (Notice Board)</option>
+
+
+                                        </select>
+                                    </div>
+
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center mt-3">
+                                    <a href="zones.html"><button class="select-Box-btn mx-auto">Select</button></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <p class="mb-0 pb-0 f-16 w-500 ms-1 offer-text-small">Offers</p>
+                    </div>
+                </div>
+                <div class="col-lg-6  my-auto center-header">
+                    <div class="d-flex justify-content-around align-items-end">
+                        <div class="header-menu ">
+                            <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-house-door "></i>
+                                <p class="f-12  w-400 pb-0 mb-0 ">Feeds</p>
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <a href="zones.html" class="d-flex flex-column align-items-center justify-content-center">
+                                <!-- <i class="bi bi-border-all"></i> -->
+                                <i class="fas fa-th-large "></i>
+                                <p class="f-12  w-400 pb-0 mb-0 active-header">Zones</p>
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-chat-dots"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Chats</p>
+                            </a>
+                            <p class="chats-num m-0 p-0">2</p>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-heart"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Saved</p>
+                            </a>
+                            <p class="chats-num m-0 p-0">2</p>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-plus-circle"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Post</p>
+                            </a>
+                        </div>
+                        <div class="header-menu">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-check2-square"></i>
+                                <p class="f-12  w-400 pb-0 mb-0">Selected</p>
+                            </a>
+                            <p class="chats-num m-0 p-0 chats-num2">10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-auto col-6">
+                    <div
+                        class="d-flex justify-content-lg-end justify-content-md-end align-items-center justify-content-end">
+                        <div class="header-menu header-menu2 me-4">
+                            <a  class="d-flex flex-column align-items-center justify-content-center search-btn">
+                                <i class="bi bi-search f-25 text-white"></i>
+                                <i class="fas fa-search f-25 text-white"></i>
+                            </a>
+                        </div>
+                        <div class="header-menu header-menu2 me-4">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-bell f-25 text-white"></i>
+                                <i class="fas fa-bell f-25 text-white"></i>
+                            </a>
+                            <p class="chats-num m-0 p-0 chats-num">2</p>
+                        </div>
+                        <!-- <div class="header-menu d-none d-lg-block">
+                            <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                                <p class="f-18 w-400 m-0 p-0 text-white">Log Out</p>
+                            </a>
+                        </div> -->
+                        <div class="header-menu d-none d-lg-block ">
+                            <div class="dropdown">
+                                <a href="" class="text-white dropdown-toggle d-flex align-items-center" href="#"
+                                    role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/image 224.png" alt="" class="img-fluid dp  dp-radius">
+                                    <p class="mb-0 pb-0 f-18 w-500 text-white mx-2">Jerry</p>
+                                </a>
+
+                                <ul class="dropdown-menu log-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class="me-2 bi bi-box-arrow-left text-dark"></i> Log Out</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <i class="bi bi-box-arrow-in-right me-2 text-dark"></i>
+                                            Log in</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                                class="bi bi-person-circle  me-2 text-dark"></i>Join Free</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-menu header-menu2 d-block d-lg-none" onclick="openNave()">
+                            <a class="d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-list f-25 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header small-main-header">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <div>
+                    <div class="dropdown ">
+                        <button
+                            class=" classified-drop dropdown-toggle p-0 d-flex align-items-center justify-content-center"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-geo-alt pe-1"></i>
+                            <div class="location-selected pe-1">Edapilly</div>
+
+                        </button>
+                        <ul class="dropdown-menu location-drop py-0" aria-labelledby="dropdownMenuButton1">
+                            <div class="locations-header" id="locations-header">
+                                <div class="location-main-header">
+                                    <i class="bi bi-x-circle me-2 f-22 close-location"></i>
+                                    <p class="mb-0 pb-0 f-20 text-white w-500 d-flex align-items-center"><i
+                                            class="fas fa-arrow-left back-dist "></i>Select Location</p>
+                                </div>
+                                <div class="px-2">
+                                    <div class="location-input-div mt-2 pb-2">
+                                        <i class="bi bi-search"></i>
+                                        <input type="text" placeholder="Enter Pincode or Area" class="location-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <li class="p-0 locations-items">
+                                <div class="current-location ">
+                                    <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                        class="img-fluid mt-1">
+                                    <div class="ms-2">
+                                        <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                        <p class="pb-0 mb-0">Vennila cochin</p>
+                                    </div>
+                                </div>
+                                <div class="recent-locations mt-3">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                        Locations</p>
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 1</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 2</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 3</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 4</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Location 5</p>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
+                                        District</p>
+
+                                    <div class="recent-locations p-0 m-0">
+                                        <ul class="p-0 m-0">
+                                            <li>
+                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="all-distt ">
+
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman Assam</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman Assam</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                    <div class="district-location">
+                                        <p class="mb-0 pb-0">Andaman Assam</p>
+                                        <i class="bi bi-chevron-right ms-auto"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="recent-locations">
+                                <div class="find-locations">
+                                    <ul>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 1</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 2</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 3</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 4</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0"> Search Lorem amet</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 6</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0">Search 7</p>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="p-0">
+                                <div class="all-india-distt">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                                    </p>
+                                    <ul class="recent-locations">
+                                        <li>
+                                            <p class="mb-0 pb-0 f-14 w-500 brand-blue">All Kerala</p>
+                                        </li>
+                                        <li>
+
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0">District 1</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="dropdown">
+                        <button class="classified-drop d-block dropdown-toggle ms-1 " type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-geo-alt"></i> Edapilly
+                        </button>
+                        <ul class="dropdown-menu location-drop py-0" aria-labelledby="dropdownMenuButton1">
+                            <li class="location-header">
+                                <i class="fas fa-arrow-left f-22 text-white back-arrow mt-2 me-2"></i>
+                                <p class="mb-0 pb-0 select-loaction-heading">  Select Location</p>
+                            </li>
+                            <li>
+                                <div class="location-input-div mt-2">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" placeholder="Enter Pincode / Area / Distt / State"
+                                        class=" location-input">
+                                </div>
+
+                            </li>
+                            <li class="p-0">
+                                <div class="current-location mt-3">
+                                        <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                            class="img-fluid">
+                                    <div class="ms-2">
+                                        <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                        <p class="pb-0 mb-0">Vennila cochin</p>
+                                    </div>
+                                    
+                                </div>
+                                <p class="f-14 text-gray w-500 mb-0 pb-0 pb-1 mt-3 ps-3">Recent Locations</p>
+                            </li>
+
+                            <li>
+                              <div class="recent-locations ">
+                               
+                                   <ul>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> 
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-geo-alt me-2"> </i>
+                                        <p class="mb-0 pb-0">Peelameda,</p> <span class="ms-1">Thrissur</span>
+                                    </li>
+                                   </ul>
+                              </div>
+                            </li>
+                        
+                        </ul>
+                    </div> -->
+                </div>
+                <div>
+                    <div class="custom-select d-flex border-bottom-0">
+                        <i class="bi bi-filter-left f-22 w-700"></i>
+                        <select>
+                            <option value="0">SORT Default</option>
+                            <option value="0">SORT Default</option>
+                            <option value="1">Newest on top</option>
+                            <option value="3">Popular on top</option>
+                            <option value="4">Active Members on top</option>
+                            <option value="5">Price Heighest on top</option>
+                            <option value="3">Price Lowest on top</option>
+                            <option value="4">Rating Heighest on top</option>
+                            <option value="5">Events Newest on top</option>
+                            <option value="3">Events Latest on top</option>
+
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="dropdown-multiple  border-bottom-0" data-control="checkbox-dropdown" style="width:fit-content ;">
+                    <label class="dropdown-label pe-4">View All</label>
+                    <input type="hidden" value="View All" class="header-view-all">
+                    <div class="dropdown-list">
+                      
+                        <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                            &nbsp; Featured Posts
+                        </label>
+
+                        <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                            &nbsp; Sponsored Posts
+                        </label>
+
+                        <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                            &nbsp; PRO Members
+                        </label>
+
+                        <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                            &nbsp; Folowees Posts
+                        </label>
+
+                        <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                            &nbsp; Std Posts
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <div class="container h-100 ">
+            <div class="row h-100 main-row">
+                <!-- left menu -->
+                <div class="col-lg-3  bg-white left-menu" id="left-menu">
+                    <div class="small-blue-header">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/image 224.png" alt="" class="dp dp-radius">
+                            <p class="f-20 w-400 text-white ms-2 my-0 py-0">Jerry Varghese</p>
+                        </div>
+                        <div>
+                            <a class="f-18 w-500  ms-2 my-0 py-0 underline text-varient">Log Out</a>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks" id="defaultOpen1" onclick="leftMenu(event, 'menu')"><i
+                                class="fas fa-bars me-1"></i></i> Menu</button>
+                        <button class="tablinks" onclick="leftMenu(event, 'my-account')"> <i
+                                class="far fa-user me-1"></i> My Account</button>
+                    </div>
+
+                    <div id="menu" class="tabcontent">
+                        <div class="d-flex align-items-center justify-content-around icons-div">
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="bi bi-house-heart-fill "></i><br>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">
+                                        Home<br>Screen</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="bi bi-person-fill f-20"></i>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">Tell
+                                        a<br>friend</p>
+
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon">
+                                        <i class="fas fa-link"></i><br>
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 text-dark">
+                                        Copy<br>link</p>
+
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <div class="left-menu-icon ">
+                                        <img src="assets/images/icons/arrow.png" alt="" class="img-fluid mb-1"
+                                            height="15px" width="17px">
+                                    </div>
+                                    <p class="mb-0 pb-0 f-12 text-center w-500 line-height-14 mt-2 mb-2 text-dark">Share
+                                    </p>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <h1 class="f-18 blue-text w-500">Quick Links</h1>
+                            <ul class="m-0 p-0 left-list">
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/plus.jpg" alt="" class="img-fluid ">
+                                        </div>
+                                        <a href="post.html" target="_blank" class="f-16 w-500 dark-text ms-3 ">Add New
+                                            Post</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-end">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Blood Donation</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 pt-2">
+                            <h1 class="f-18 blue-text w-500">Posts</h1>
+                            <ul class="m-0 p-0 left-list">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-check2-square me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Selected <span
+                                                class="stats f-12">123</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-bag-heart me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">My Interests </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-chat-square-heart me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Recieved Interests<span
+                                                class="stats f-12">13</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-chat-left-text me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Messages </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 pt-2">
+                            <h1 class="f-18 blue-text w-500">Affilliate</h1>
+                            <ul class="m-0 p-0 left-list">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/PRO Membership.png" alt="" class="img-fluid">
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <a href="" class="f-16 w-500 text-pro  ms-3">PRO&nbsp;</a>
+
+                                                <a href="" class="f-16 w-500 dark-text ">
+                                                    Membership
+                                                </a>
+                                                <p class="stats f-12 text-center my-0 py-0 "><span
+                                                        class="text-gray">Expiry:</span> 16 Mar 22</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Featured.png" alt="" class="img-fluid ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Featured Posts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/SPonsored.jpg" alt="" class="img-fluid ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Sponsored Ads</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Banner.png" alt="" class="img-fluid ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Banner Ads</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-icon">
+                                            <img src="assets/images/icons/Partner.png" alt="" class="img-fluid  ">
+                                        </div>
+
+                                        <a href="" class="f-16 w-500 dark-text ms-3">Be Our Partner<span
+                                                class="text-danger f-12"></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 py-0 pt-2 pb-3  icons-div">
+                            <h1 class="f-18 blue-text w-500">General</h1>
+                            <ul class="m-0 p-0 left-list">
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-coin  me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Payment History </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-gear me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Settings </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-chat-square-text  me-3  left-list-icon"></i>
+                                        <a href="" class="f-16 w-500 dark-text">Feedback </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex flex-wrap align-items-center justify-content-center mt-3">
+                            <a href="" class="dark-text f-16 w-500 me-2">About Us |</a>
+                            <a href="" class="dark-text f-16 w-500 me-2">Terms & Conditions |</a>
+                            <a href="" class="dark-text f-16 w-500 me-2">Privacy |</a>
+                            <a href="" class="dark-text f-16 w-500 me-2">Need Help |</a>
+                            <a href="" class="dark-text f-16 w-500">Contact Us </a>
+                        </div>
+
+
+                    </div>
+
+                    <div id="my-account" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                </div>
+
+                <!-- main area -->
+                <div class="col-lg-6 col-md-12 text-center center-part" id="center">
+                    <div class="main-header desktop-light-header " id="light-header">
+                        <div class="d-flex justify-content-between align-items-center  w-100">
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="dropdown classified-dropdown classified-dropdown-desktop">
+                                    <button class="classified-drop-small classified-drop-desktop  dropdown-toggle ms-1"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Classifieds
+                                    </button>
+                                    <ul class="dropdown-menu classify-drop2" aria-labelledby="dropdownMenuButton1">
+                                        <li class="classify-select-li">
+                                            <div class="custom-select classify-select" style="width:100% !important ;">
+                                                <select class="classified-dropdown-select">
+                                                    <option value="0">
+                                                        Classifieds</option>
+                                                    <option value="1">Shopping</option>
+                                                    <option value="2">Entertainment</option>
+                                                    <option value="3">Classifieds</option>
+                                                    <option value="4">Multi Zone</option>
+
+                                                </select>
+                                            </div>
+
+                                        </li>
+                                        <li class="classify-select-li mt-4">
+                                            <div class="custom-select classify-select" style="width:100% !important ;">
+                                                <select class="classified-dropdown-select">
+                                                    <option value="0">
+                                                        Offers (Offer Zone)</option>
+                                                    <option value="1">Offers (Offer Zone)</option>
+                                                    <option value="2">Notices (Notice Board)</option>
+
+
+                                                </select>
+                                            </div>
+
+                                        </li>
+                                        <li class="d-flex justify-content-center align-items-center mt-3">
+                                            <a href="zones.html"><button
+                                                    class="select-Box-btn mx-auto">Select</button></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <p class="mb-0 pb-0 f-14 w-500 ms-1 offer-text-dsktop mt-0 pt-0">Offers</p>
+                            </div>
+
+                            <div class="dropdown">
+                                <button
+                                    class="classified-drop dropdown-toggle ms-1 d-flex align-items-center justify-content-center"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-geo-alt pe-1"></i>
+                                    <div class="location-selected pe-1"> Edapilly</div>
+                                </button>
+
+                                <ul class="dropdown-menu location-drop py-2" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center"><i
+                                                class="fas fa-arrow-left back-dist back-dist-text"></i>Select Location
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="location-input-div mt-2 pb-3">
+                                            <i class="bi bi-search"></i>
+                                            <input type="text" placeholder="Enter Pincode or Area"
+                                                class="location-input">
+                                        </div>
+
+                                    </li>
+                                    <li class="p-0 locations-items">
+                                        <div class="current-location ">
+                                            <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                                class="img-fluid">
+                                            <div class="ms-2">
+                                                <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                                <p class="pb-0 mb-0">Vennila cochin</p>
+                                            </div>
+                                        </div>
+                                        <div class="recent-locations mt-3">
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                                Locations</p>
+                                            <ul>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 1</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 2</p>
+
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 3</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 4</p>
+
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Location 5</p>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select State &
+                                                District</p>
+
+                                            <div class="recent-locations p-0 m-0">
+                                                <ul class="p-0 m-0">
+                                                    <li>
+                                                        <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="all-distt ">
+
+
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                            <div class="district-location">
+                                                <p class="mb-0 pb-0">Andaman Assam</p>
+                                                <i class="bi bi-chevron-right ms-auto"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="recent-locations">
+                                        <div class="find-locations">
+                                            <ul>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 1</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 2</p>
+
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 3</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 4</p>
+
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0"> Search Lorem amet</p>
+
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 6</p>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-geo-alt me-2"> </i>
+                                                    <p class="mb-0 pb-0">Search 7</p>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="p-0">
+                                        <div class="all-india-distt">
+                                            <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                                            </p>
+                                            <ul class="recent-locations">
+                                                <li>
+                                                    <p class="mb-0 pb-0 f-14 w-500 brand-blue">All Kerala</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                                <li>
+                                                    <p class="mb-0 pb-0">District 1</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="custom-select d-flex">
+                                    <i class="bi bi-filter-left f-22 w-700"></i>
+                                    <select>
+                                        <option value="0">SORT Default</option>
+                                        <option value="0">SORT Default</option>
+                                        <option value="1">Newest on top</option>
+                                        <option value="3">Popular on top</option>
+                                        <option value="4">Active Members on top</option>
+                                        <option value="5">Price Heighest on top</option>
+                                        <option value="3">Price Lowest on top</option>
+                                        <option value="4">Rating Heighest on top</option>
+                                        <option value="5">Events Newest on top</option>
+                                        <option value="3">Events Latest on top</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-multiple  " data-control="checkbox-dropdown" style="width:fit-content ;">
+                                <label class="dropdown-label pe-4">View All</label>
+                                <input type="hidden" value="View All" class="header-view-all">
+                                <div class="dropdown-list">
+                                  
+                                    <label class="dropdown-option">
+                                        <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                                        &nbsp; Featured Posts
+                                    </label>
+    
+                                    <label class="dropdown-option">
+                                        <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                                        &nbsp; Sponsored Posts
+                                    </label>
+    
+                                    <label class="dropdown-option">
+                                        <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                                        &nbsp; PRO Members
+                                    </label>
+    
+                                    <label class="dropdown-option">
+                                        <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                                        &nbsp; Folowees Posts
+                                    </label>
+    
+                                    <label class="dropdown-option">
+                                        <input type="checkbox" name="dropdown-group" value="Selection 5" />
+                                        &nbsp; Std Posts
+                                    </label>
+                                </div>
+                            </div>
+
+                            
+
+
+                            <!-- ------------------------------------- -->
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="container-fluid pb-2" >
+                        <div class="row" >
+                            <div class="col-lg-12">
+                                <div class="search-wrapper search-wrapper2 pt-0 d-block  w-100">
+                                    <div class="fixed-search2 ">
+
+                                        <div class="search-input-inner">
+                                            <i class="bi bi-search search-icon"></i>
+                                            <input type="text" class="w-100 search-input"
+                                                placeholder="Enter Keyword or ID" id="notice-input" >
+                                            <div class="send-icons">
+                                                <i class="bi bi-mic-fill mic-icon"></i>
+                                                <a href="notice-listing.html">
+                                                    <img src="assets/images/icons/send.svg" alt="" class=" send-icon">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <ul class="search-results p-0 m-0 history-search">
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+            
+                                    </ul>
+                                    <ul class="search-results p-0 m-0 suggestion-search">
+                                        <a href="notice-listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+                                        <a href="listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+                                        <a href="listing.html" class="w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-clock-history me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto close-search-result-div">
+                                                <i class="bi bi-x-circle close-search-result"></i>
+                                            </div>
+                                        </a>
+            
+            
+            
+            
+                                        <a href="listing.html" class=" w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-search me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <i class="bi bi-arrow-up-left go-search-result"></i>
+                                            </div>
+                                        </a>
+                                        <a href="listing.html" class="d-flex align-items-center w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-search me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <i class="bi bi-arrow-up-left close-search-result"></i>
+                                            </div>
+                                        </a>
+                                        <a href="listing.html" class="d-flex align-items-center w-100">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-search me-3 result-history"></i>
+                                                <p class="mb-0 pb-0">Table in Category</p>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <i class="bi bi-arrow-up-left close-search-result"></i>
+                                            </div>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post row pt-0 mt-2">
+
+                            <!-- ==========================================================categories dropdown -->
+                            <div class="col-lg-12 ">
+
+                                <h2 class="f-20 w-600 text-dark m-0 p-0 text-start  pt-2 mb-3">Electronics</h2>
+                                <div>
+                                    <div class="dropdown-multiple  w-100  dropdown-category-multiple  pt-2 categories-dropdown"
+                                        id="arrow-toggle" data-control="checkbox-dropdown">
+                                        <!-- <i class="bi bi-caret-up-fill absolute-icon"></i> -->
+                                        <i class="bi bi-caret-down-fill custom-caret f-16 absolute-icon"></i>
+                                        <div class="absolute-icon-close  category-close">
+                                            <i class=" far fa-times-circle f-16 "></i>
+                                        </div>
+
+                                        <div class="d-flex align-items-center w-100">
+                                            <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                class="img-fluid me-1 categories-icon">
+                                            <label class="dropdown-label  text-start  w-100 ">
+                                                Select
+
+                                            </label>
+                                            <input type="hidden" value="Select" class="header-view-all">
+
+                                        </div>
+
+                                        <div class="dropdown-list dropdown-filter-list ">
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown-multiple   w-100  dropdown-category-multiple pt-2 categories-dropdown"
+                                        data-control="checkbox-dropdown">
+                                        <i class="bi bi-caret-down-fill f-16 absolute-icon"></i>
+                                        <div class="absolute-icon-close  category-close">
+                                            <i class=" far fa-times-circle f-16 "></i>
+                                        </div>
+                                        <div class="d-flex align-items-center w-100">
+                                            <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                class="img-fluid me-1 categories-icon">
+                                            <label class="dropdown-label  text-start  w-100 ">
+                                                Select
+
+                                            </label>
+                                            <input type="hidden" value="Select" class="header-view-all">
+
+                                        </div>
+
+                                        <div class="dropdown-list dropdown-filter-list ">
+                                            <!-- <a href="#" data-toggle="check-all" class="dropdown-option">
+                    Check All
+                </a> -->
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-buildings-66.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Gift Boxes
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/gift.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    Sponsored Posts
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+                                            <label class="dropdown-option justify-content-between py-2">
+                                                <div class="d-flex align-items-end">
+                                                    <img src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                        class="img-fluid check-icon me-3">
+                                                    PRO Members only
+                                                </div>
+                                                <input type="checkbox" name="dropdown-group" value="Selection 1" />
+
+                                            </label>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-fixed-button">
+                                    <a>
+                                        <button class="category-clear-all">Clear All</button>
+                                    </a>
+                                    <a>
+                                        <button class="accordian-select-all">Apply</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- My Feeds ===================================================================-->
+                        <div class="row post mt-2 Feeds-row py-2">
+                            <div class="col-lg-12 ">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h2 class="f-20 w-500 text-active mb-0 pb-0">Cars</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="row  mt-4">
+                                <div class="col-lg-12 notice-card-col ">
+                                    <div class="post notice-post">
+                                        <div class="notice-card ">
+                                            <img src="assets/images/pin.png" alt="" class="img-fluid pin">
+                                            <div class="notice-card-text">
+                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                                                <p class="mb-0 pb-0  f-16 w-500 light-dark ellipsis-multiple">
+                                                    Lorem
+                                                    ipsum dolor sit amet, consectetur ipsum dolor sit amet.
+                                                    adipisicing elit. Dicta, libero!</p>
+                                                <p class="text-gray f-14 w-400 ellipsis pb-0 mt-3"><i
+                                                        class="bi bi-geo-alt text-green me-1 "></i>Area Name, Distt</p>
+
+                                                
+                                            </div>
+                                            <div class="notice-card-img mx-auto">
+                                                <img src="assets/images/s1.jpg" alt="" class="img-fluid">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="seprator  mt-0"></div>
+                                        <div class="d-flex justify-content-between align-items-center image-icons-row">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="image-dp ms-1">
+                                                    <img src="assets/images/image 224.png" alt=""
+                                                        class="img-fluid me-1">
+                                                </div>
+                                                <p
+                                                    class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
+                                                    Jerry
+                                                    Varghese</p>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                    <!-- follow icon -->
+                                                    <i class="bi bi-person-fill f-14 follow-text follow-icon ps-2"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex align-items-center image-icons">
+                                                <!-- <i class="far fa-heart f-22 "></i> -->
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="like" width="23"
+                                                    height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-heart">
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                    </path>
+                                                </svg>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
+
+                                                <button class="menu-post" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="modal" data-bs-target="#dots-menu-post">
+                                                    <i class="bi bi-three-dots-vertical f-25 w-500"></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="seprator"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row  mt-4">
+                                <div class="col-lg-12 notice-card-col ">
+                                    <div class="post notice-post">
+                                        <div class="notice-card ">
+                                            <img src="assets/images/pin.png" alt="" class="img-fluid pin">
+                                            <div class="notice-card-text">
+                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                                                <p class="mb-0 pb-0  f-16 w-500 light-dark ellipsis-multiple">
+                                                    Lorem
+                                                    ipsum dolor sit amet, consectetur ipsum dolor sit amet.
+                                                    adipisicing elit. Dicta, libero!</p>
+                                                <p class="text-gray f-14 w-400 ellipsis pb-0 mt-3"><i
+                                                        class="bi bi-geo-alt text-green me-1 "></i>Area Name, Distt</p>
+
+                                                
+                                            </div>
+                                            <div class="notice-card-img mx-auto">
+                                                <img src="assets/images/s1.jpg" alt="" class="img-fluid">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="seprator  mt-0"></div>
+                                        <div class="d-flex justify-content-between align-items-center image-icons-row">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="image-dp ms-1">
+                                                    <img src="assets/images/image 224.png" alt=""
+                                                        class="img-fluid me-1">
+                                                </div>
+                                                <p
+                                                    class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
+                                                    Jerry
+                                                    Varghese</p>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                    <!-- follow icon -->
+                                                    <i class="bi bi-person-fill f-14 follow-text follow-icon ps-2"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex align-items-center image-icons">
+                                                <!-- <i class="far fa-heart f-22 "></i> -->
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="like" width="23"
+                                                    height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-heart">
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                    </path>
+                                                </svg>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
+
+                                                <button class="menu-post" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="modal" data-bs-target="#dots-menu-post">
+                                                    <i class="bi bi-three-dots-vertical f-25 w-500"></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="seprator"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row  mt-4">
+                                <div class="col-lg-12 notice-card-col ">
+                                    <div class="post notice-post">
+                                        <div class="notice-card ">
+                                            <img src="assets/images/pin.png" alt="" class="img-fluid pin">
+                                            <div class="notice-card-text">
+                                                <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                                                <p class="mb-0 pb-0  f-16 w-500 light-dark ellipsis-multiple">
+                                                    Lorem
+                                                    ipsum dolor sit amet, consectetur ipsum dolor sit amet.
+                                                    adipisicing elit. Dicta, libero!</p>
+                                                <p class="text-gray f-14 w-400 ellipsis pb-0 mt-3"><i
+                                                        class="bi bi-geo-alt text-green me-1 "></i>Area Name, Distt</p>
+
+                                                
+                                            </div>
+                                            <div class="notice-card-img mx-auto">
+                                                <img src="assets/images/s1.jpg" alt="" class="img-fluid">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="seprator  mt-0"></div>
+                                        <div class="d-flex justify-content-between align-items-center image-icons-row">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="image-dp ms-1">
+                                                    <img src="assets/images/image 224.png" alt=""
+                                                        class="img-fluid me-1">
+                                                </div>
+                                                <p
+                                                    class="mb-0 pb-0 img-name f-18 w-500 light-dark mt-1 image-name ellipsis">
+                                                    Jerry
+                                                    Varghese</p>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                        class="follow-icons ms-1">
+                                                    <!-- follow icon -->
+                                                    <i class="bi bi-person-fill f-14 follow-text follow-icon ps-2"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex align-items-center image-icons">
+                                                <!-- <i class="far fa-heart f-22 "></i> -->
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="like" width="23"
+                                                    height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-heart">
+                                                    <path
+                                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                    </path>
+                                                </svg>
+                                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                                    Select</button>
+                                                <button class="selected-btn d-none">
+                                                    Selected</button>
+
+                                                <button class="menu-post" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="modal" data-bs-target="#dots-menu-post">
+                                                    <i class="bi bi-three-dots-vertical f-25 w-500"></i>
+                                                </button>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="seprator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+
+                        
+
+                    </div>
+
+                </div>
+
+                <!-- right menu ======================================================-->
+                <div class="col-lg-3 text-end bg-white  m-0 right-menu ">
+                    <div class="right-header  py-auto zones-right my-auto ">
+                        You May be Interested In
+
+                    </div>
+                    <div class="grid-card mt-3 right-side-card mx-auto">
+
+                        <div class="grid-card-img mx-auto right-side-card-img">
+                            <div class="listing-badges ">
+                                <span class="featured">
+                                    Featured
+                                </span>
+                            </div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/post.jpg" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="rating-2 rating-3">
+                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                <i class="bi bi-star-fill ms-1 f-12"></i>
+                            </div>
+                        </div>
+                        <div class="grid-card-text">
+                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                            <p class="mb-0 pb-0  f-18 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
+                                Lorem
+                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+                                adipisicing elit. Dicta, libero!</p>
+                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i class="bi bi-geo-alt me-1"></i>Area
+                                Name, Distt</p>
+                            <div class="seprator"></div>
+                            <div class="d-flex align-items-center ">
+                                <div class="d-flex">
+                                    <div class="image-dp">
+                                        <img src="assets/images/image 224.png" alt="" class="img-fluid me-1">
+                                    </div>
+                                    <p class="mb-0 pb-0   w-500 light-dark mt-1 grid-name  ellipsis">
+                                        Jerry
+                                        Varghese</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/icons/PRO Membership.png" alt="" class="follow-icons ms-1">
+                                    <i class="bi bi-person-fill f-14 follow-text "></i>
+                                </div>
+                            </div>
+                            <div class="seprator "></div>
+                            <div class="d-flex align-items-center justify-content-end grid-icons ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2" width="23" height="23"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
+
+                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                    Select</button>
+                                <button class="selected-btn d-none">
+                                    Selected</button>
+
+                                <button class="menu-post" type="button" id="dropdownMenuButton1" data-bs-toggle="modal"
+                                    data-bs-target="#dots-menu-post">
+                                    <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card mt-3 right-side-card mx-auto">
+
+                        <div class="grid-card-img mx-auto right-side-card-img">
+                            <div class="listing-badges ">
+                                <span class="featured">
+                                    Featured
+                                </span>
+                            </div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/post.jpg" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="rating-2 rating-3">
+                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                <i class="bi bi-star-fill ms-1 f-12"></i>
+                            </div>
+                        </div>
+                        <div class="grid-card-text">
+                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                            <p class="mb-0 pb-0  f-18 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
+                                Lorem
+                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+                                adipisicing elit. Dicta, libero!</p>
+                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i class="bi bi-geo-alt me-1"></i>Area
+                                Name, Distt</p>
+                            <div class="seprator"></div>
+                            <div class="d-flex align-items-center ">
+                                <div class="d-flex">
+                                    <div class="image-dp">
+                                        <img src="assets/images/image 224.png" alt="" class="img-fluid me-1">
+                                    </div>
+                                    <p class="mb-0 pb-0   w-500 light-dark mt-1 grid-name  ellipsis">
+                                        Jerry
+                                        Varghese</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/icons/PRO Membership.png" alt="" class="follow-icons ms-1">
+                                    <i class="bi bi-person-fill f-14 follow-text "></i>
+                                </div>
+                            </div>
+                            <div class="seprator "></div>
+                            <div class="d-flex align-items-center justify-content-end grid-icons ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2" width="23" height="23"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
+
+                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                    Select</button>
+                                <button class="selected-btn d-none">
+                                    Selected</button>
+
+                                <button class="menu-post" type="button" id="dropdownMenuButton1" data-bs-toggle="modal"
+                                    data-bs-target="#dots-menu-post">
+                                    <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card mt-3 right-side-card mx-auto">
+
+                        <div class="grid-card-img mx-auto right-side-card-img">
+                            <div class="listing-badges ">
+                                <span class="featured">
+                                    Featured
+                                </span>
+                            </div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/post.jpg" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="rating-2 rating-3">
+                                <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                <i class="bi bi-star-fill ms-1 f-12"></i>
+                            </div>
+                        </div>
+                        <div class="grid-card-text">
+                            <h2 class="f-20 w-600 brand-blue my-0 py-0">50,000 RS</h2>
+                            <p class="mb-0 pb-0  f-18 w-500 light-dark mt-1 mb-1 ellipsis-multiple">
+                                Lorem
+                                ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+                                adipisicing elit. Dicta, libero!</p>
+                            <p class="text-gray f-14 w-400 ellipsis pb-0 mb-1"><i class="bi bi-geo-alt me-1"></i>Area
+                                Name, Distt</p>
+                            <div class="seprator"></div>
+                            <div class="d-flex align-items-center ">
+                                <div class="d-flex">
+                                    <div class="image-dp">
+                                        <img src="assets/images/image 224.png" alt="" class="img-fluid me-1">
+                                    </div>
+                                    <p class="mb-0 pb-0   w-500 light-dark mt-1 grid-name  ellipsis">
+                                        Jerry
+                                        Varghese</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/icons/PRO Membership.png" alt="" class="follow-icons ms-1">
+                                    <i class="bi bi-person-fill f-14 follow-text "></i>
+                                </div>
+                            </div>
+                            <div class="seprator "></div>
+                            <div class="d-flex align-items-center justify-content-end grid-icons ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="like me-2" width="23" height="23"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
+
+                                <button class="select-btn "><i class="bi bi-check2-square w-600"></i>
+                                    Select</button>
+                                <button class="selected-btn d-none">
+                                    Selected</button>
+
+                                <button class="menu-post" type="button" id="dropdownMenuButton1" data-bs-toggle="modal"
+                                    data-bs-target="#dots-menu-post">
+                                    <i class="bi bi-three-dots-vertical f-25 w-500 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+
+    <!-- footer ===================================================================================-->
+    <footer class="d-block d-lg-none mobile-footer d-flex align-items-center w-100 small-footer">
+        <div class="d-flex justify-content-around align-items-center w-100 ">
+            <div class="header-menu ">
+                <a href="index.html" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-house-door"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0 ">Home</p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="zones.html" class="d-flex flex-column align-items-center justify-content-center">
+                    <!-- <i class="bi bi-border-all"></i> -->
+                    <i class="fas fa-th-large active-menu"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0 active-menu">Zones</p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-chat-dots"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Chats</p>
+                </a>
+                <p class="chats-num  chats-num3 m-0 p-0">2</p>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-heart"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Saved</p>
+                </a>
+                <p class="chats-num m-0 p-0">2</p>
+            </div>
+            <div class="header-menu">
+                <a href="post.html" target="_blank"
+                    class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-plus-circle"></i>
+
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Post</p>
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="" class="d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-check2-square"></i>
+                    <p class="f-12 text-white w-400 pb-0 mb-0">Selected</p>
+                </a>
+                <p class="chats-num m-0 p-0 chats-num2">10</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- backdrop ===============================================================-->
+    <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
+    <div class="backdrop-menu" id="backdrop-filter" href="javascript:void(0)" onclick="closeFilter()"></div>
+
+    <!-- 3 dots modal=========================================================== -->
+    <div class="modal fade" id="dots-menu-post" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+            <div class="modal-content post-view-content">
+                <div class="modal-body p-0">
+                    <div class="mobile-post-popup">
+                        <ul class=" menu-post-drop">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-share me-4"></i>Share
+                                    this
+                                    post</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-link me-4"></i>Copy
+                                    Link</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-concierge-bell me-4"></i>Alert
+                                    Similar Posts</a></li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-times me-4"></i>Unfollow
+                                    Jerry</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-eye-slash me-4"></i>Hide
+                                    Post</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-minus-circle me-4"></i>Show
+                                    Less
+                                    Such posts</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-flag me-4"></i>Report
+                                    post</a>
+                            </li>
+                            <div class="seprator"></div>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-lightbulb me-4"></i>Last Active
+                                    <div class="menu-date ps-2">
+                                        2 days ago
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item d-flex close-menu-drop" href="#"><i
+                                        class="fas fa-calendar-alt me-4"></i>Posting Date <div class="menu-date"> 11
+                                        months ago
+                                    </div></a></li>
+                            <!-- <div class="seprator"></div>
+                            <li class="text-center mx-auto more-option"><a
+                                    class=" d-flex f-16 w-700 text-dark pt-2 pb-1" href="#">More Options</a></li> -->
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="assets/multiselect-dropdown-main/multiselect-dropdown.js"></script> -->
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
