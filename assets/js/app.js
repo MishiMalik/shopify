@@ -14,7 +14,7 @@ $("#notice-input").focusout(function() {
       $('#notice-input').focusout();
     }
     if(inputSearch.is(e.target)){
-      $('.search-results').css('display','block');
+      $('.history-search').css('display','block');
     }
 });
 
