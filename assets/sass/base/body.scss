@@ -15,10 +15,13 @@ body {
         min-height: 100% !important;
         max-height: 100% !important;
         padding-top: 99px;
-
     }
 }
-
+.dark-header-body{
+    @media only screen and (max-width: 991px) {
+        padding-top: 53px !important;
+    }
+}
 
 .mobile-body {
     padding-top: 60px;

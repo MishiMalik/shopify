@@ -139,6 +139,10 @@ body {
       max-height: 100% !important;
       padding-top: 99px; } }
 
+@media only screen and (max-width: 991px) {
+  .dark-header-body {
+    padding-top: 53px !important; } }
+
 .mobile-body {
   padding-top: 60px; }
 
