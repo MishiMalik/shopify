@@ -3,14 +3,18 @@ $('.search-btn').on("click", function() {
   $('#notice-input').focus();
 });
 $("#notice-input").focusout(function() {
-  $(document).mouseup(function(e) 
+  $(document).click(function(e) 
 {
     var container = $(".search-results");
-
+    var inputSearch=$("#notice-input")
     // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    if (!container.is(e.target)) 
     {
       $('.search-results').css('display','none');
+      $('#notice-input').focusout();
+    }
+    if(inputSearch.is(e.target)){
+      $('.search-results').css('display','block');
     }
 });
 

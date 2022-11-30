@@ -1419,7 +1419,7 @@ a {
     margin-top: 10px;
     width: 100%; }
     .search-wrapper2 .search-input-inner input {
-      height: 58px;
+      height: 50px;
       background-color: white;
       border: 2px solid #3366cc;
       border-radius: 4px;
@@ -1435,7 +1435,7 @@ a {
           font-size: 18px; } }
     .search-wrapper2 .search-input-inner .search-icon {
       position: absolute;
-      top: 14px;
+      top: 10px;
       left: 15px;
       font-size: 23px;
       color: #333333; }
@@ -5312,8 +5312,8 @@ a {
     width: 136px; }
     @media only screen and (max-width: 380px) {
       .notice-card .notice-card-img {
-        height: 110px;
-        width: 110px; } }
+        height: 120px;
+        width: 120px; } }
     .notice-card .notice-card-img img {
       height: 136px;
       width: 136px;
@@ -5324,8 +5324,8 @@ a {
       border: 1px solid #DEE0E2; }
       @media only screen and (max-width: 380px) {
         .notice-card .notice-card-img img {
-          height: 110px;
-          width: 110px; } }
+          height: 120px;
+          width: 120px; } }
 
 .notice-card-text {
   padding: 0px 10px;
@@ -5345,7 +5345,8 @@ a {
   @media only screen and (max-width: 550px) {
     .notice-card-text .f-20 {
       font-size: 18px;
-      line-height: 18px; } }
+      line-height: 18px;
+      margin-bottom: 10px !important; } }
   @media only screen and (max-width: 360px) {
     .notice-card-text .f-20 {
       font-size: 18px;
@@ -5354,7 +5355,7 @@ a {
     line-height: 23px; }
     @media only screen and (max-width: 360px) {
       .notice-card-text .f-16 {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 20px; } }
 
 .notice-image-dp img {
@@ -5396,6 +5397,10 @@ a {
       margin-left: 0px; }
     .notice-image-iocns .bi-three-dots-vertical {
       margin-left: 0px; } }
+
+@media only screen and (max-width: 450px) {
+  .notice-row {
+    margin-top: 13px !important; } }
 
 .form-light-heading {
   font-size: 20px;
