@@ -169,3 +169,22 @@
        margin-top: 13px !important;
     }
 }
+.notice-label{
+    border: 2px solid #C0A57C;
+    background-color: #FFFDEC;
+    padding: 7px 10px;
+    p{
+        font-size: 18px;
+        color: #360303;
+        font-weight: 500;
+        @media only screen and (max-width:450px) {
+            font-size: 15px;
+         }
+         @media only screen and (max-width:352px) {
+            font-size: 14px;
+         }
+         @media only screen and (max-width:332px) {
+            font-size: 13px;
+         }
+    }
+}

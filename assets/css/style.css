@@ -4548,6 +4548,9 @@ a {
       @media only screen and (max-width: 345px) {
         .member-offer-fixed-btns div .sent-mssg {
           min-width: 80px; } }
+      @media only screen and (max-width: 335px) {
+        .member-offer-fixed-btns div .sent-mssg {
+          font-size: 14px !important; } }
       @media only screen and (max-width: 326px) {
         .member-offer-fixed-btns div .sent-mssg {
           min-width: 77px; } }
@@ -5405,6 +5408,24 @@ a {
 @media only screen and (max-width: 450px) {
   .notice-row {
     margin-top: 13px !important; } }
+
+.notice-label {
+  border: 2px solid #C0A57C;
+  background-color: #FFFDEC;
+  padding: 7px 10px; }
+  .notice-label p {
+    font-size: 18px;
+    color: #360303;
+    font-weight: 500; }
+    @media only screen and (max-width: 450px) {
+      .notice-label p {
+        font-size: 15px; } }
+    @media only screen and (max-width: 352px) {
+      .notice-label p {
+        font-size: 14px; } }
+    @media only screen and (max-width: 332px) {
+      .notice-label p {
+        font-size: 13px; } }
 
 .form-light-heading {
   font-size: 20px;

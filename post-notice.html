@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/grid-gallery/css/grid-gallery.min.css">
+    <link rel="stylesheet" href="assets/grid-gallery/css/grid-gallery.css">
+    <title>Post Notice -Classifieds</title>
+</head>
+
+<body id="body" class="pb-0">
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container ">
+            <div class="row header-new-tab">
+                <div class="col-lg-6 mx-auto mt-2 my-auto">
+                    <div class="d-flex align-items-center w-100 justify-content-between ">
+                        <div class="d-flex  align-items-center justify-content-between">
+                            <i class="bi bi-x-circle text-white f-22 w-500 me-2" onclick="close_window();"></i>
+                            <h1 class="text-white f-20 m-0 p-0 w-500 page-name-small">Post Notices FREE</h1>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <a href="" class="form-post-notice">Post an Offer</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="main-header small-main-header" id="light-header">
+            <div class="text-start d-flex align-items-center justify-content-between w-100">
+                <div class="d-flex">
+                    <div class="dropdown px-0">
+                        <button class="classified-drop dropdown-toggle px-0 d-block" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Classifieds
+                        </button>
+                        <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img
+                                        src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                        class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/icons/icons8-money-bag-50.png"
+                                        alt="" class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/icons/Feedback.png" alt=""
+                                        class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                            <li><a class="dropdown-item" href="#"><img
+                                        src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                        class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown px-0 ms-3">
+                        <button class="classified-drop dropdown-toggle px-0 d-block" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Offers
+                        </button>
+                        <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"> Offers (Offer Zone)</a></li>
+                            <li><a class="dropdown-item" href="#">Notices (Notice Board)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zonestab d-flex justify-content-end mb-2 h-100">
+                    <button class="formtablinks activeform  px-0" id="defaultOpenform2"
+                        onclick="formtabs(event, 'details')">Details
+                    </button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <div class="container h-100 ">
+            <div class="row h-100 main-row">
+
+                <!-- main area========================================= -->
+                <div class="col-lg-6 col-md-8  col-md-12 text-center center-part mx-auto" id="center">
+                    <div class="main-header desktop-light-header " id="light-header">
+                        <div class="text-start d-flex align-items-center justify-content-between w-100">
+                            <div class="d-flex">
+                                <div class="dropdown px-0">
+                                    <button class="classified-drop dropdown-toggle px-0 " type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Classifieds
+                                    </button>
+                                    <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><img
+                                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                    class="affilliate-iocn2 me-2 img-fluid"> Shopping</a></li>
+                                        <li><a class="dropdown-item" href="#"><img
+                                                    src="assets/images/icons/icons8-money-bag-50.png" alt=""
+                                                    class="affilliate-iocn2 me-2 img-fluid">Entertainment</a></li>
+                                        <li><a class="dropdown-item" href="#"><img
+                                                    src="assets/images/icons/Feedback.png" alt=""
+                                                    class="affilliate-iocn2 me-2 img-fluid">Classifieds</a></li>
+                                        <li><a class="dropdown-item" href="#"><img
+                                                    src="assets/images/icons/icons8-dollar-coin-64.png" alt=""
+                                                    class="affilliate-iocn2 me-2 img-fluid">Multi Zone</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown px-0 ms-3">
+                                    <button class="classified-drop dropdown-toggle px-0 " type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Offers
+                                    </button>
+                                    <ul class="dropdown-menu classify-drop" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"> Offers (Offer Zone)</a></li>
+                                        <li><a class="dropdown-item" href="#">Notices (Notice Board)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                    <div id="details" class="zonestabcontent p-0">
+                        <div class="container-fluid ">
+                            <div class="row post px-2">
+                                <div class="notice-label text-center">
+                                    <p class="mb-0 pb-0">NOTICE Board</p>
+                                    <p class="mb-0 pb-0">Post all your wanted / Enquiries / Requirments</p>
+                                </div>
+                            </div>
+                            <div class="post2 row mt-2">
+                                <div class="col-lg-12 pt-2">
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Zone<span
+                                                class="needed">*</span></h1>
+                                        <p class="sub-text f-16 w-500 mb-0 pb-0">More Accurate, Better Search Results
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <div class="specifications-row--value w-100">
+                                            <div class="custom-select d-flex custom-selct-form">
+                                                <select>
+                                                    <option value="0">Select</option>
+                                                    <option value="0">Individual Donar</option>
+                                                    <option value="1">Blood Bank</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="specifications-row--value w-100">
+                                            <div class="custom-select d-flex custom-selct-form">
+                                                <select>
+                                                    <option value="0">Select</option>
+                                                    <option value="0">Individual Donar</option>
+                                                    <option value="1">Blood Bank</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="post2 row  mt-2">
+
+                                <!-- ==========================================================categories dropdown -->
+                                <div class="col-lg-12 pt-2">
+                                    <div class="d-flex align-items-end">
+                                        <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">
+                                            Categories<span class="needed">*</span></h1>
+                                    </div>
+                                    <div class="mt-1">
+                                        <div>
+                                            <div class="specifications-row--value w-100">
+                                                <div class="custom-select d-flex custom-selct-form">
+                                                    <select>
+                                                        <option value="0">Select</option>
+                                                        <option value="0">Individual Donar</option>
+                                                        <option value="1">Blood Bank</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="specifications-row--value w-100">
+                                                <div class="custom-select d-flex custom-selct-form">
+                                                    <select>
+                                                        <option value="0">Select</option>
+                                                        <option value="0">Individual Donar</option>
+                                                        <option value="1">Blood Bank</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row post2 mt-2">
+                                <div class="d-flex justify-content-between pt-2 align-items-end">
+                                    <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Header<span
+                                            class="needed">*</span></h1>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="mb-0 pb-0 f-16 light-dark w-500 text-start">Model:</p>
+                                    <input type="text" class="form-simple-input" placeholder="2500 km">
+                                </div>
+
+                            </div>
+                            <div class="row post2 mt-2 text-start">
+                                <div class="d-flex justify-content-between pt-2 align-items-end">
+                                    <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Title<span
+                                            class="needed">*</span></h1>
+                                </div>
+                                <textarea name="" id="" rows="2" maxlength="105"
+                                    class="  form-textarea mt-3 mx-auto ellipsis-multiple textarea1"
+                                    placeholder="Include key features, Two lines maximum"></textarea>
+
+
+                            </div>
+                            <div class="row post2 mt-2 text-start ">
+                                <div class="d-flex justify-content-between align-items-end pt-2 ">
+                                    <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Description<span
+                                            class="needed">*</span></h1>
+                                    <p class="brand-blue f-18 w-500 mb-0 pb-0">1000</p>
+                                </div>
+                                <textarea name="" id="" rows="5" class="form-textarea mt-3 mx-auto"
+                                    placeholder="Description with main features in short."></textarea>
+
+
+                            </div>
+                            <div class="row post2 mt-2">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Location<span
+                                            class="needed">*</span></h1>
+                                    <p class="sub-text f-16 w-500 mb-0 pb-0 mt-2">Accurate or Nearest Location</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-start">
+                                        <div class="dropdown mt-3 text-dark ps-0 ms-0 text-start">
+                                            <button
+                                                class="classified-drop text-dark dropdown-toggle ps-0 ms-0  d-flex align-items-center justify-content-center"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#location">
+                                                <i class="bi bi-geo-alt pe-1 text-dark"></i>
+                                                <div class="location-selected pe-1 text-dark">Select Location</div>
+                                            </button>
+
+                                            <ul class="dropdown-menu location-drop py-2"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <p
+                                                        class="mb-0 pb-0 select-loaction-heading d-flex align-items-center">
+                                                        <i class="fas fa-arrow-left back-dist back-dist-text"></i>Select
+                                                        Location
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <div class="location-input-div mt-2 pb-3">
+                                                        <i class="bi bi-search"></i>
+                                                        <input type="text" placeholder="Enter Pincode or Area"
+                                                            class="location-input">
+                                                    </div>
+
+                                                </li>
+                                                <li class="p-0 locations-items">
+                                                    <div class="current-location ">
+                                                        <img src="assets/images/icons/current-location-icon.svg" alt=""
+                                                            class="img-fluid">
+                                                        <div class="ms-2">
+                                                            <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                                            <p class="pb-0 mb-0">Vennila cochin</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="recent-locations mt-3 ">
+                                                        <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">
+                                                            Recent
+                                                            Locations</p>
+                                                        <ul>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 2</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 3</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 4</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Location 5</p>
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">
+                                                            Select State &
+                                                            District</p>
+
+                                                        <div class="recent-locations p-0 m-0">
+                                                            <ul class="p-0 m-0">
+                                                                <li>
+                                                                    <p class="mb-0 pb-0 f-14 w-500 brand-blue">All India
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="all-distt ">
+
+
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman Assam</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman Assam</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman & Nichabar</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                        <div class="district-location">
+                                                            <p class="mb-0 pb-0">Andaman Assam</p>
+                                                            <i class="bi bi-chevron-right ms-auto"></i>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="recent-locations">
+                                                    <div class="find-locations">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 2</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 3</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 4</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0"> Search Lorem amet</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 6</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-geo-alt me-2"> </i>
+                                                                <p class="mb-0 pb-0">Search 7</p>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </li>
+                                                <li class="p-0">
+                                                    <div class="all-india-distt">
+                                                        <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">
+                                                            Select District
+                                                        </p>
+                                                        <ul class="recent-locations">
+                                                            <li>
+                                                                <p class="mb-0 pb-0 f-14 w-500 brand-blue">All Kerala
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="mb-0 pb-0">District 1</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mapouter">
+                                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%"
+                                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                                    src="https://maps.google.com/maps?width=120&amp;height=120&amp;hl=en&amp;q=kerala,india&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                                    href="https://piratebay-proxys.com/">Piratebay</a></div>
+                                            <style>
+                                                .mapouter {
+                                                    position: relative;
+                                                    text-align: right;
+                                                    width: 100px;
+                                                    height: 100px;
+                                                }
+
+                                                .gmap_canvas {
+                                                    overflow: hidden;
+                                                    background: none !important;
+                                                    width: 100px;
+                                                    height: 100px;
+                                                }
+
+                                                .gmap_iframe {
+                                                    height: 100px !important;
+                                                }
+                                            </style>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row post2 mt-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-end ">
+                                        <h1 class="f-24 w-600 brand-blue p-0 m-0 text-start section-header">Price</h1>
+                                        <p class="sub-text f-16 w-500 mb-0 pb-0 ps-2"> (For search result)</p>
+                                    </div>
+                                    <p class="sub-text f-16 w-500 mb-0 pb-0 mt-2">Ignore if not Applicable</p>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="mb-0 pb-0 f-16 light-dark w-500 text-start">Monthly Rent RS:</p>
+                                    <input type="text" class="form-simple-input" placeholder="Enter Price">
+                                </div>
+
+                            </div>
+                            <div class="row post2 text-start mt-2">
+                                <div class="d-flex align-items-start justify-content-between ">
+                                    <h1 class="f-24 w-600  p-0 m-0 brand-blue section-header">Thumbnail Photo
+                                    </h1>
+                                    <button class="select-from-gallery"><i class="fas fa-images"></i>Select From
+                                        Gallery</label></button>
+
+                                </div>
+                                <div class="d-flex mt-3 align-items-start">
+                                    <div class="square-img-div flex-column p-relative">
+                                        <img class="edit-img square-img img-fluid mx-auto"
+                                            src="assets/images/Thumbnail Dummy.jpg" id="dp-output" />
+                                        <p class="mb-0"><input type="file" accept="image/*" name="image" id="file3"
+                                                onchange="loaddp(event)" style="display: none;"></p>
+                                        <button class="upload-img-btn mt-2 mb-0 pb-0 mx-auto" type="file"><label
+                                                for="file3" style="cursor: pointer;">Upload</label></button>
+                                        <div class="remove-img2">
+                                            <i class="bi bi-x-circle"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="text-dark-gray ms-2 f-16 w-500">This will show up as thumbnail in your
+                                            listing
+                                            result.</p>
+                                        <p class="text-dark-gray ms-2 f-16 w-500 mb-0 pb-0">Crop to show up the close
+                                            View.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row post2  mt-2 ">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <button class="btn-blank-form" data-bs-toggle="modal"
+                                            data-bs-target="#previewModal">
+                                            PREVIEW
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <a>
+                                            <button class="form-fix-btns" data-bs-toggle="modal"
+                                                data-bs-target="#publishModal">
+                                                PUBLISH
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- backdrop -->
+    <div class="backdrop-menu" id="backdrop-menu" href="javascript:void(0)" onclick="closeNav()"></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="videopopbtn" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content video-pop-content py-0">
+                <button type="button" class="close-video-pop text-start pt-2 ps-3" data-bs-toggle="modal"
+                    href="#previewModal" data-bs-dismiss="modal"><i class="bi bi-x-circle"></i></button>
+                <div class="modal-body p-0">
+                    <video width="100%" height="100%" controls class="pop-video-width" autoplay muted>
+                        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov" type="video/mp4"
+                            class="w-100">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Loaction Modal -->
+    <div class="modal fade" id="location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-0">
+
+                <div class="modal-body p-0">
+                    <div class="dropdown text-dark ps-0 ms-0 text-start w-100">
+
+                        <ul class="dropdown-menu location-drop py-2 show on pop-location pop-location2">
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center"><i
+                                            class="fas fa-arrow-left back-dist back-dist-text"></i>Select Location
+                                    </p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="location-input-div mt-2 pb-3">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" placeholder="Enter Pincode or Area" class="location-input">
+                                </div>
+
+                            </li>
+                            <li class="p-0 locations-items">
+                                <div class="current-location ">
+                                    <img src="assets/images/icons/current-location-icon.svg" alt="" class="img-fluid">
+                                    <div class="ms-2">
+                                        <h1 class="f-14 w-500 m-0 p-0">Get Current Location</h1>
+                                        <p class="pb-0 mb-0">Vennila cochin</p>
+                                    </div>
+                                </div>
+                                <div class="recent-locations mt-3">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Recent
+                                        Locations</p>
+                                    <ul>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 2
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 3
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 4
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Location 5
+                                            </p>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="recent-locations pop-recent-locations">
+                                <div class="find-locations">
+                                    <ul>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 1</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 2</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 3</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 4</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close"> Search
+                                                Lorem amet</p>
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 6</p>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-geo-alt me-2"> </i>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">Search 7</p>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="p-0">
+                                <div class="all-india-distt">
+                                    <p class="f-14 w-500 mb-0 pb-0 pb-1 locations-items-heading">Select District
+                                    </p>
+                                    <ul class="recent-locations pop-recent-locations">
+                                        <li>
+                                            <p class="mb-0 pb-0 f-14 w-500 brand-blue">All Kerala</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0 pb-0" data-bs-dismiss="modal" aria-label="Close">District 1
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- preview  Modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable preview-dialog">
+            <div class="modal-content">
+                <div class="modal-header preview-modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Post Preview</h5>
+                    <button type="button" class="preview-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="bi bi-x-circle"></i></button>
+                </div>
+                <div class="modal-body preview-body">
+                    <div class=" px-2 py-0">
+                       
+                        <div class="post row ">
+                            <div>
+                                <div id="carouselExampleIndicators"
+                                    class="carousel slide  member-details-slider mx-auto " data-interval="false">
+                                    
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel__slide">
+                                                <figure>
+                                                    <div>
+                                                        <img src="assets/images/dylan-gillis-xKmXZ4Fv63w-unsplash.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="member-featured-tag ">
+                                                <span class="member-featured-img">
+                                                    Featured
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="member-details-text">
+                                    <div class="d-flex justify-content-between align-items-center pt-3 pb-2">
+                                        <div class="d-flex  align-items-end ">
+                                            <h1 class="f-20 brand-blue w-600 me-2 mb-0 pb-0">$ 13,000</h1>
+                                            <p class="mb-0 pb-0 f-16 text-dark-gray w-400">Monthly rent</p>
+                                        </div>
+                                        <div class="rating">
+                                            <p class="mb-0 pb-0 mb-0 pb-0 f-14">4.5</p>
+                                            <i class="bi bi-star-fill ms-1 f-12"></i>
+                                        </div>
+                                    </div>
+                                    <p class="f-18 w-500 light-dark ellipsis-multiple">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum fugit
+                                        libero error mollitia alias quisquam, dolores cumque quidem sed nobis amet
+                                        aut
+                                        praesentium. Provident, consequuntur cum quos laboriosam quas eaque
+                                        voluptatem
+                                        reprehenderit laborum vitae alias cumque molestiae! Placeat odit temporibus
+                                        at
+                                        incidunt ex ea laborum omnis sed mollitia porro?
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex">
+                                            <p class="mb-0 pb-0 f-16 text-gray-light w-400 me-1">Posted:</p>
+                                            <p class="mb-0 pb-0 f-16 text-dark-gray w-400">5 May 21</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <p class="mb-0 pb-0 f-16 text-gray-light w-400 me-1">ID:</p>
+                                            <p class="mb-0 pb-0 f-16 text-dark-gray w-400">username1234</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="row post mt-2  Feeds-row py-2 hover">
+                            <div class="col-lg-12">
+                                <div class="d-flex justify-content-between">
+                                    <div class=" directory-card w-100 align-items-start no-border py-0">
+                                        <div class="member-profile-img">
+                                            <img src="assets/images/image 224.png" alt="" class="img-fluid">
+                                            <div class="online"></div>
+                                        </div>
+                                        <div class="directory-details">
+                                            <div class="directory-text w-100 directory-text-member">
+                                                <div class="d-flex justify-content-between w-100">
+                                                    <div onclick="window.open('member-profile.html', '_blank');">
+                                                        <div class="d-flex align-items-center ">
+                                                            <h2 class="m-0 p-0 member-review-name">Jerry Varghese
+                                                            </h2>
+                                                            <img src="assets/images/icons/PRO Membership.png" alt=""
+                                                                class="follow-icons ms-1">
+                                                        </div>
+                                                        <p
+                                                            class="mb-0 pb-0 f-16 w-500 light-dark member-review-name-tagline">
+                                                            Manufacturer,Trader
+                                                        </p>
+                                                    </div>
+
+                                                    <div>
+                                                        <button class="follow-btn-member">
+                                                            <i class="bi bi-person-plus-fill me-1"></i>Follow
+                                                        </button>
+                                                        <button class="following-btn-member" data-bs-toggle="modal"
+                                                            data-bs-target="#followModal">
+                                                            Following <i
+                                                                class="bi bi-bell text-dark btn-on-alert"></i>
+                                                            <i
+                                                                class="bi bi-bell-slash-fill text-dark btn-off-alert"></i>
+                                                            <i class="bi bi-chevron-down ms-1"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-end pb-1"
+                                                    onclick="window.open('member-profile.html', '_blank');">
+                                                    <div
+                                                    class="d-flex align-items-center mt-2  location-text-member mt-2">
+                                                    <i class="bi bi-geo-alt f-18  light-dark pe-1"></i>
+                                                    <p class="mb-0  f-18">Edapily,</p>
+                                                    <p class="mb-0 pb-0 f-18 ellipsis text-gray">&nbsp;Erankulm,</p>
+        
+                                                </div>
+
+                                                    <div>
+                                                        <a href="member-profile.html" target="_blank"
+                                                            class="f-20 brand-blue w-500 me-2 decorated-btn">
+                                                            Profile
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row post mt-2 text-start">
+                            <div class="d-flex align-items-end">
+                                <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header pt-2">Description
+                                </h1>
+                            </div>
+                            <p class="showReadMore mt-3">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                passages, and more recently with desktop publishing software like Aldus PageMaker
+                                including versions of Lorem Ipsum.</p>
+                        </div>
+
+                        <div class="row post mt-2 mb-2">
+                            <div class="col-lg-12">
+                                <div class="d-flex justify-content-between w-100">
+                                    <div>
+                                        <h1 class="f-24 w-600 text-dark p-0 m-0 text-start section-header">Category
+                                        </h1>
+                                    </div>
+
+                                    <div>
+                                        <button class="view-btn w-500 alert-btn"><img
+                                                src="assets/images/icons/alert2222.PNG" alt=""
+                                                class="img-fluid me-1" height="20px" width="20px">Alert
+                                        </button>
+                                        <button class="alert-on-btn" data-bs-toggle="modal"
+                                            data-bs-target="#alertModal">
+                                            Alert On <i class="bi bi-bell btn-on-alert2"></i>
+                                            <i class="bi bi-bell-slash-fill text-dark btn-off-alert2"></i>
+                                            <i class="bi bi-chevron-down ms-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <div class="d-flex ">
+                                            <p class="mb-0 pb-0 f-18 light-dark w-500 ">Last Category:</p>
+
+                                        </div>
+                                        <div class="d-flex">
+                                            <p class="mb-0 pb-0 f-16 text-light-gray w-400">
+                                                Classifieds > Notice </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <a href="" class="f-20 active-blue w-500 me-2 decorated-btn">
+                                            Report
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row post2  mt-2 ">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div>
+                                    <button class="btn-blank-form" data-bs-dismiss="modal" aria-label="Close">
+                                        CLOSE
+                                    </button>
+                                </div>
+                                <div>
+                                    <a>
+                                        <button class="form-fix-btns">
+                                            SUBMIT
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- publish modal -->
+    <div class="modal fade" id="publishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="preview-close" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="bi bi-x-circle text-dark"></i></button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/Post-rafiki.svg" alt="" class="img-fluid publish-icon">
+                    </div>
+                    <h1 class="f-22 w-600 brand-blue text-center">Published</h1>
+                    <p class="f-18 text-gray w-500 text-center">Lorem ipsumt. Est beatae corporis provident enim labore
+                        nihil.</p>
+                    <div class="d-flex justify-content-center">
+                        <button onclick="close_window();" class="published mb-3">Published</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/forms.js"></script>
+
+</body>
+
+</html>
