@@ -1,4 +1,25 @@
+// send msg to all
+$('.send-all-msg').keyup(function(){
+  if($(this).val().length){
+  $('.blood-mic-icon').css('display','none');
+  $('.blood-send-icon').css('display','block');
+  
+} else{
+  $('.blood-mic-icon').css('display','block');
+  $('.blood-send-icon').css('display','none');
+}
+});
 
+
+// blood results
+$('.notice-btn').on('click',function(){
+  $('.show-after-search').css('display','block');
+})
+$('.notice-btn2').on('click',function(){
+  $('.show-after-search2').css('display','block');
+})
+
+// notice search 
 $('.search-btn').on("click", function() {
   $('#notice-input').focus();
 });

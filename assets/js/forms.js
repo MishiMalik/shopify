@@ -324,7 +324,7 @@ if ($(window).width() < 991) {
 }
 else {
   // $("#defaultOpenform2").click();
-  document.getElementById('details').style.display = "block";
+ $('#details').css('display','block')
 
 }
 // ==========================================================select with checkboxes

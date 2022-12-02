@@ -405,7 +405,7 @@
     transform-origin: top center;
     text-align: left;
     font-weight: 500;
-
+     z-index: 100;
     @media only screen and (max-width:991px) {
         right: unset !important;
     }
