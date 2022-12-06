@@ -266,11 +266,18 @@
     }
    
 }
-.show-after-search{
-    display: none;
+.pl-sm-0{
+    @media only screen and (max-width:340px) {
+         margin-left: -10px;
+        
+    }
+    
 }
-.show-after-search2{
-    display: none;
+.bg-name{
+    @media only screen and (max-width:340px) {
+        font-size: 14px !important;
+        
+    }
 }
 .notice-height{
     min-height: 100vh;
@@ -456,3 +463,6 @@ margin-top: 0px !important;
     height: 30px !important;
     width: auto !important;
 }
+// .be-donar-body{
+//     height: 70vh !important;
+// }

@@ -6131,11 +6131,13 @@ a {
       margin-bottom: 0;
       min-width: 60px; } }
 
-.show-after-search {
-  display: none; }
+@media only screen and (max-width: 340px) {
+  .pl-sm-0 {
+    margin-left: -10px; } }
 
-.show-after-search2 {
-  display: none; }
+@media only screen and (max-width: 340px) {
+  .bg-name {
+    font-size: 14px !important; } }
 
 .notice-height {
   min-height: 100vh; }
