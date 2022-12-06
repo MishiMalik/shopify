@@ -384,6 +384,9 @@ margin-top: 5px;
 .blood-icons{
     margin-right: -12px !important;
 }
+.blood-icons{
+    margin-right: -10px !important;
+}
 .chat-notice{
     position: relative;
     display: flex;
@@ -428,6 +431,9 @@ margin-top: 0px !important;
         font-weight: 600;
         color: #900000;
         font-size: 24px;
+        @media only screen and (max-width:450px) {
+            font-size: 18px;
+            }
     }
 }
 .blood-modal-btn{
@@ -466,3 +472,11 @@ margin-top: 0px !important;
 // .be-donar-body{
 //     height: 70vh !important;
 // }
+.wanted-icon{
+    margin-left: 7px !important;
+}
+.blood-view-all .select-items{
+    @media only screen and (max-width:767px){
+        right: 3px !important;
+    }
+}

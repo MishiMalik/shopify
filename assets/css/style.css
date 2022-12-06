@@ -6238,6 +6238,9 @@ a {
 .blood-icons {
   margin-right: -12px !important; }
 
+.blood-icons {
+  margin-right: -10px !important; }
+
 .chat-notice {
   position: relative;
   display: flex;
@@ -6274,6 +6277,9 @@ a {
     font-weight: 600;
     color: #900000;
     font-size: 24px; }
+    @media only screen and (max-width: 450px) {
+      .blood-modal-header h5 {
+        font-size: 18px; } }
 
 .blood-modal-btn {
   font-size: 18px;
@@ -6306,3 +6312,10 @@ a {
 .notice-left-icon {
   height: 30px !important;
   width: auto !important; }
+
+.wanted-icon {
+  margin-left: 7px !important; }
+
+@media only screen and (max-width: 767px) {
+  .blood-view-all .select-items {
+    right: 3px !important; } }

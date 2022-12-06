@@ -99,10 +99,10 @@
                         class="d-flex justify-content-lg-end justify-content-md-end align-items-center justify-content-end">
                         <div class="header-menu header-menu2 me-4">
                             <a class="d-flex flex-column align-items-center justify-content-center">
-                                <i class="bi bi-search f-25 text-white quick-search" data-bs-toggle="modal"
-                                    data-bs-target="#search-modal"></i>
-                                <i class="fas fa-search f-25 text-white quick-search" data-bs-toggle="modal"
-                                    data-bs-target="#search-modal"></i>
+                                <a class="d-flex flex-column align-items-center justify-content-center">
+                                    <i class="bi bi-search f-25 text-white search-btn" ></i>
+                                    <i class="fas fa-search f-25 text-white search-btn" ></i>
+                                </a>
                             </a>
                         </div>
                         <div class="header-menu header-menu2 me-4">
@@ -254,7 +254,7 @@
                                             <img src="assets/images/icons/blood.jpg" alt="" class="img-fluid">
                                         </div>
 
-                                        <a href="" class="f-16 w-500 dark-text ms-3">Blood Donation</a>
+                                        <a href="blood-donar.html" class="f-16 w-500 dark-text ms-3">Blood Donation</a>
                                     </div>
                                 </li>
 
@@ -477,9 +477,9 @@
                                             <button
                                                 class="classified-drop text-dark ps-0 ms-0  w-100 d-flex align-items-center justify-content-between"
                                                 type="button" data-bs-toggle="modal" data-bs-target="#location">
-                                                <div class="d-flex align-items-center w-100">
+                                                <div class="d-flex align-items-center w-100" >
                                                     <!-- <i class="bi bi-geo-alt pe-1 text-dark"></i> -->
-                                                    <div class="location-selected light-dark ps-3 f-16">Select Location
+                                                    <div class="location-selected light-dark ps-3 f-16" style="max-width: 100% !important;">Select Location
                                                     </div>
                                                 </div>
                                                 <div>
@@ -1365,7 +1365,7 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <ul class="dropdown-menu location-drop py-2 show on pop-location pop-location2">
                     <li>
                         <div class="d-flex justify-content-between">
-                            <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center"><i
+                            <p class="mb-0 pb-0 select-loaction-heading d-flex align-items-center " ><i
                                     class="fas fa-arrow-left back-dist back-dist-text"></i>Select Location
                             </p>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
