@@ -1,4 +1,19 @@
-// send msg to all
+// =====================================================================move header smoothly on small screen
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  // scrollFunction()
+  var currentScrollPos = window.pageYOffset ;
+
+    if (currentScrollPos < prevScrollpos) {
+        document.getElementById("header").style.top = "0";
+    } else if(currentScrollPos > prevScrollpos + 15){
+        document.getElementById("header").style.top = "-60px";
+
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+// =================================================================================send msg to all
 $('.send-all-msg').keyup(function(){
   if($(this).val().length){
   $('.blood-mic-icon').css('display','none');
@@ -11,7 +26,7 @@ $('.send-all-msg').keyup(function(){
 });
 
 
-// blood results
+// ====================================================blood results
 $('.notice-btn').on('click',function(){
   $('.show-after-search').css('display','block');
 })
@@ -19,7 +34,7 @@ $('.notice-btn2').on('click',function(){
   $('.show-after-search2').css('display','block');
 })
 
-// notice search 
+// =================================================notice search 
 $('.search-btn').on("click", function() {
   $('#notice-input').focus();
 });
@@ -41,7 +56,7 @@ $("#notice-input").focusout(function() {
 
 });
 
-// =====================write review stars
+// =========================================================write review stars
  $(function () {
   $("div.star-rating > s, div.star-rating-rtl > s").on("click", function (e) {
 
@@ -62,16 +77,7 @@ $("#notice-input").focusout(function() {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
+// ============================================number of words in paragraph
 $(document).ready(function(){
   //length in characters
 var maxLength = 340;
@@ -97,7 +103,7 @@ var removedStr = myStr.substr(maxLength, $.trim(myStr).length - maxLength);
   }
 });
 
-//function to show/hide remaining text on ReadMore button click
+//==============================================function to show/hide remaining text on ReadMore button click
 $(".ReadMore").click(function(){
  
   if($(this).hasClass("less")) {
@@ -413,20 +419,7 @@ function topFunction() {
 
 
 
-// =====================================================================move header smoothly on small screen
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  // scrollFunction()
-  var currentScrollPos = window.pageYOffset ;
 
-    if (currentScrollPos < prevScrollpos) {
-        document.getElementById("header").style.top = "0";
-    } else{
-        document.getElementById("header").style.top = "-60px";
-      
-    }
-    prevScrollpos = currentScrollPos;
-  }
 
 
 // ============================================================================categories-dropdown appear like popup on mobile
@@ -562,6 +555,15 @@ window.onscroll = function() {
     new CheckboxDropdown(checkboxesDropdowns[i]);
   }
 })(jQuery);
+
+$('.dropdown-multiple').on('click', function(e) {
+  var dropdowns = $('.dropdown-multiple');
+  for(i=0; i<dropdowns.length; i++) {
+    if(dropdowns[i] != e.currentTarget) {
+      $(dropdowns[i]).removeClass('on')
+    }
+  }
+})
 
 
 // =====================================================================custome select

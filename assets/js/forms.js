@@ -164,18 +164,18 @@ function close_window() {
 }
 // =================================================move header smoothly on small screen
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+window.onscroll = function() {
   // scrollFunction()
-  var currentScrollPos = window.pageYOffset;
+  var currentScrollPos = window.pageYOffset ;
 
-  if (currentScrollPos < prevScrollpos) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-60px";
+    if (currentScrollPos < prevScrollpos) {
+        document.getElementById("header").style.top = "0";
+    } else if(currentScrollPos > prevScrollpos + 15){
+        document.getElementById("header").style.top = "-60px";
 
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
-}
 
 
 // =====================================================================custome select

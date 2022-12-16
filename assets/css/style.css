@@ -3202,7 +3202,7 @@ a {
     border-radius: 4px;
     white-space: nowrap !important;
     text-overflow: ellipsis !important;
-    z-index: 1000; }
+    z-index: 4; }
   .dropdown-multiple .dropdown-option {
     display: flex;
     justify-content: flex-start;
